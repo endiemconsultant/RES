@@ -1,0 +1,9 @@
+<apex:page sidebar="false" showHeader="false" > 
+   <apex:includeScript value="/support/console/33.0/integration.js"/>
+       
+    <script type="text/javascript">
+        window.close();
+    </script>
+    
+      
+  </apex:page>

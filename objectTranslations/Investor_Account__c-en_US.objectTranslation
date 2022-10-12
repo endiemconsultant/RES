@@ -1,0 +1,2262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Investor Account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Investor Accounts</value>
+    </caseValues>
+    <fields>
+        <label><!-- AM Services - Third Party --></label>
+        <name>AM_Services_Third_Party__c</name>
+    </fields>
+    <fields>
+        <label><!-- AM Services --></label>
+        <name>AM_Services__c</name>
+        <picklistValues>
+            <masterLabel>In-House</masterLabel>
+            <translation><!-- In-House --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party</masterLabel>
+            <translation><!-- Third Party --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Above 50MW project AC-DC ratio used (GB) --></label>
+        <name>Above_50MW_GB_project_AC_DC_ratio_used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Above 50MW project AC-DC ratio used (IE) --></label>
+        <name>Above_50MW_IE_project_AC_DC_ratio_used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Construction Services - Third Party --></label>
+        <name>Construction_Services_Third_Party__c</name>
+    </fields>
+    <fields>
+        <label><!-- Construction Services --></label>
+        <name>Construction_Services__c</name>
+        <picklistValues>
+            <masterLabel>In-House</masterLabel>
+            <translation><!-- In-House --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party</masterLabel>
+            <translation><!-- Third Party --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hydrogen Interest in which Region? --></label>
+        <name>Hydrogen_Interest_in_which_Region__c</name>
+        <picklistValues>
+            <masterLabel>GB</masterLabel>
+            <translation><!-- GB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northern Ireland</masterLabel>
+            <translation><!-- Northern Ireland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Republic of Ireland</masterLabel>
+            <translation><!-- Republic of Ireland --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interested in Hydrogen? --></label>
+        <name>Interested_in_Hydrogen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in Onshore Wind? --></label>
+        <name>Interested_in_Onshore_Wind__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in Other Markets? --></label>
+        <name>Interested_in_Other_Markets__c</name>
+        <picklistValues>
+            <masterLabel>Australia</masterLabel>
+            <translation><!-- Australia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation><!-- French --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation><!-- German --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nordics</masterLabel>
+            <translation><!-- Nordics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkey</masterLabel>
+            <translation><!-- Turkey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US</masterLabel>
+            <translation><!-- US --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interested in Solar? --></label>
+        <name>Interested_in_Solar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interested in Storage? --></label>
+        <name>Interested_in_Storage__c</name>
+    </fields>
+    <fields>
+        <label><!-- O&amp;M Services - Third Party --></label>
+        <name>OM_Services_Third_Party__c</name>
+    </fields>
+    <fields>
+        <label><!-- O&amp;M Services --></label>
+        <name>OM_Services__c</name>
+        <picklistValues>
+            <masterLabel>In-House</masterLabel>
+            <translation><!-- In-House --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party</masterLabel>
+            <translation><!-- Third Party --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Onshore Additional Comments --></label>
+        <name>Onshore_Additional_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3rd Party-Onshore Energy Assessment (GB) --></label>
+        <name>Onshore_GB_3rd_Party_Energy_Assessment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore AFRY Revenue % (GB) --></label>
+        <name>Onshore_GB_AFRY_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Onshore Dev Risk? (GB) --></label>
+        <name>Onshore_GB_Additional_Dev_Risk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Aurora Revenue % (GB) --></label>
+        <name>Onshore_GB_Aurora_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Baringa Revenue % (GB) --></label>
+        <name>Onshore_GB_Baringa_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore CPI Inflation (GB) --></label>
+        <name>Onshore_GB_CPI_Inflation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore CPPA Revenue % (GB) --></label>
+        <name>Onshore_GB_CPPA_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore CfD Revenue % (GB) --></label>
+        <name>Onshore_GB_CfD_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Consultant Revenue Forecast (GB) --></label>
+        <name>Onshore_GB_Consultant_Revenue_Forecast__c</name>
+        <picklistValues>
+            <masterLabel>AFRY</masterLabel>
+            <translation><!-- AFRY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aurora</masterLabel>
+            <translation><!-- Aurora --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baringa</masterLabel>
+            <translation><!-- Baringa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cornwall Insight</masterLabel>
+            <translation><!-- Cornwall Insight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Onshore Cornwall Revenue % (GB) --></label>
+        <name>Onshore_GB_Cornwall_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Curtailment Consultant (GB) --></label>
+        <name>Onshore_GB_Curtailment_Consultant__c</name>
+        <picklistValues>
+            <masterLabel>AFRY</masterLabel>
+            <translation><!-- AFRY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aurora</masterLabel>
+            <translation><!-- Aurora --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baringa</masterLabel>
+            <translation><!-- Baringa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cornwall Insight</masterLabel>
+            <translation><!-- Cornwall Insight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Onshore Curtailment Grid Operator (GB) --></label>
+        <name>Onshore_GB_Curtailment_Grid_Operator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore - DD Providers (GB) --></label>
+        <name>Onshore_GB_DD_Providers__c</name>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property &amp; Planning</masterLabel>
+            <translation><!-- Property &amp; Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical</masterLabel>
+            <translation><!-- Technical --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Onshore EPC Provider (GB) --></label>
+        <name>Onshore_GB_EPC_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Energy Yield Assessment (GB) --></label>
+        <name>Onshore_GB_Energy_Yield_Assessment__c</name>
+        <picklistValues>
+            <masterLabel>In-House</masterLabel>
+            <translation><!-- In-House --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party</masterLabel>
+            <translation><!-- Third Party --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Onshore - Financial - DD Provider (GB) --></label>
+        <name>Onshore_GB_Financial_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore IRR - Fixed (GB) --></label>
+        <name>Onshore_GB_IRR_Fixed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore IRR - Merchant (GB) --></label>
+        <name>Onshore_GB_IRR_Merchant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Inflation Notes (GB) --></label>
+        <name>Onshore_GB_Inflation_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore - Legal - DD Provider (GB) --></label>
+        <name>Onshore_GB_Legal_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Merchant Revenue % (GB) --></label>
+        <name>Onshore_GB_Merchant_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Onshore Consultant Revenue %(GB) --></label>
+        <name>Onshore_GB_Other_Consultant_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other-Onshore Curtailment Consultant(GB) --></label>
+        <name>Onshore_GB_Other_Curtailment_Consultant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Onshore Revenue % (GB) --></label>
+        <name>Onshore_GB_Other_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Onshore Route Rev Forecast (GB) --></label>
+        <name>Onshore_GB_Other_Route_Rev_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Onshore Route to Market (GB) --></label>
+        <name>Onshore_GB_Other_Route_to_Market__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Outstanding Development Risk(GB) --></label>
+        <name>Onshore_GB_Outstanding_Development_Risk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore - P&amp;P - DD Provider (GB) --></label>
+        <name>Onshore_GB_PP_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore RPI Inflation (GB) --></label>
+        <name>Onshore_GB_RPI_Inflation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify Outstanding Development Risk that the investor is not comfortable taking? --></help>
+        <label><!-- Onshore Risk Investor Not Taking? (GB) --></label>
+        <name>Onshore_GB_Risk_Investor_Not_Taking__c</name>
+        <picklistValues>
+            <masterLabel>Auction / Route to Market</masterLabel>
+            <translation><!-- Auction / Route to Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Connection Offer</masterLabel>
+            <translation><!-- Grid Connection Offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Planning</masterLabel>
+            <translation><!-- Grid Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Price</masterLabel>
+            <translation><!-- Grid Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Route</masterLabel>
+            <translation><!-- Grid Route --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JR Risk</masterLabel>
+            <translation><!-- JR Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Option Lease Completed</masterLabel>
+            <translation><!-- Option Lease Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning</masterLabel>
+            <translation><!-- Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement</masterLabel>
+            <translation><!-- Procurement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Title Matters</masterLabel>
+            <translation><!-- Title Matters --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Onshore Route to Market Provider (GB) --></label>
+        <name>Onshore_GB_Route_to_Market_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Route to Market Rev Forecast(GB) --></label>
+        <name>Onshore_GB_Route_to_Market_Rev_Forecast__c</name>
+        <picklistValues>
+            <masterLabel>CPPA</masterLabel>
+            <translation><!-- CPPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CfD</masterLabel>
+            <translation><!-- CfD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant</masterLabel>
+            <translation><!-- Merchant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Onshore Route to Market (GB) --></label>
+        <name>Onshore_GB_Route_to_Market__c</name>
+        <picklistValues>
+            <masterLabel>CPPA</masterLabel>
+            <translation><!-- CPPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CfD</masterLabel>
+            <translation><!-- CfD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant</masterLabel>
+            <translation><!-- Merchant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Onshore Size Appetite (GB) --></label>
+        <name>Onshore_GB_Size_Appetite__c</name>
+        <picklistValues>
+            <masterLabel>15-50 MW</masterLabel>
+            <translation><!-- 15-50 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;15 MW</masterLabel>
+            <translation><!-- &lt;15 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;100 MW</masterLabel>
+            <translation><!-- &gt;100 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;300 MW</masterLabel>
+            <translation><!-- &gt;300 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;50 MW</masterLabel>
+            <translation><!-- &gt;50 MW --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Specify Onshore Consultant Revenue %(GB) --></label>
+        <name>Onshore_GB_Specify_Consultant_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specify Onshore Route to Market Rev%(GB) --></label>
+        <name>Onshore_GB_Specify_Route_to_Market_Rev__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore - Technical - DD Provider (GB) --></label>
+        <name>Onshore_GB_Technical_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Grid Configuration --></label>
+        <name>Onshore_Grid_Configuration__c</name>
+        <picklistValues>
+            <masterLabel>Co-located with Batteries</masterLabel>
+            <translation><!-- Co-located with Batteries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-located with H2 Electrolyser</masterLabel>
+            <translation><!-- Co-located with H2 Electrolyser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hybrid</masterLabel>
+            <translation><!-- Hybrid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standalone</masterLabel>
+            <translation><!-- Standalone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 3rd Party-Onshore Energy Assessment (IE) --></label>
+        <name>Onshore_IE_3rd_Party_Energy_Assessment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore AFRY Revenue % (IE) --></label>
+        <name>Onshore_IE_AFRY_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Onshore Dev Risk? (IE) --></label>
+        <name>Onshore_IE_Additional_Dev_Risk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Aurora Revenue % (IE) --></label>
+        <name>Onshore_IE_Aurora_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Baringa Revenue % (IE) --></label>
+        <name>Onshore_IE_Baringa_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore CPI Inflation (IE) --></label>
+        <name>Onshore_IE_CPI_Inflation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore CPPA Revenue % (IE) --></label>
+        <name>Onshore_IE_CPPA_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore CfD Revenue % (IE) --></label>
+        <name>Onshore_IE_CfD_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Consultant Revenue Forecast (IE) --></label>
+        <name>Onshore_IE_Consultant_Revenue_Forecast__c</name>
+        <picklistValues>
+            <masterLabel>AFRY</masterLabel>
+            <translation><!-- AFRY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aurora</masterLabel>
+            <translation><!-- Aurora --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baringa</masterLabel>
+            <translation><!-- Baringa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cornwall Insight</masterLabel>
+            <translation><!-- Cornwall Insight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Onshore Cornwall Revenue % (IE) --></label>
+        <name>Onshore_IE_Cornwall_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Curtailment Consultant (IE) --></label>
+        <name>Onshore_IE_Curtailment_Consultant__c</name>
+        <picklistValues>
+            <masterLabel>AFRY</masterLabel>
+            <translation><!-- AFRY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aurora</masterLabel>
+            <translation><!-- Aurora --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baringa</masterLabel>
+            <translation><!-- Baringa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cornwall Insight</masterLabel>
+            <translation><!-- Cornwall Insight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Onshore Curtailment Grid Operator (IE) --></label>
+        <name>Onshore_IE_Curtailment_Grid_Operator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore - DD Providers (IE) --></label>
+        <name>Onshore_IE_DD_Providers__c</name>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property &amp; Planning</masterLabel>
+            <translation><!-- Property &amp; Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical</masterLabel>
+            <translation><!-- Technical --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Onshore EPC Provider (IE) --></label>
+        <name>Onshore_IE_EPC_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Energy Yield Assessment (IE) --></label>
+        <name>Onshore_IE_Energy_Yield_Assessment__c</name>
+        <picklistValues>
+            <masterLabel>In-House</masterLabel>
+            <translation><!-- In-House --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party</masterLabel>
+            <translation><!-- Third Party --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Onshore - Financial - DD Provider (IE) --></label>
+        <name>Onshore_IE_Financial_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore IRR - Fixed (IE) --></label>
+        <name>Onshore_IE_IRR_Fixed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore IRR - Merchant (IE) --></label>
+        <name>Onshore_IE_IRR_Merchant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Inflation Notes (IE) --></label>
+        <name>Onshore_IE_Inflation_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore - Legal - DD Provider (IE) --></label>
+        <name>Onshore_IE_Legal_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Merchant Revenue % (IE) --></label>
+        <name>Onshore_IE_Merchant_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Onshore Consultant Revenue %(IE) --></label>
+        <name>Onshore_IE_Other_Consultant_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other-Onshore Curtailment Consultant(IE) --></label>
+        <name>Onshore_IE_Other_Curtailment_Consultant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Onshore Revenue % (IE) --></label>
+        <name>Onshore_IE_Other_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Onshore Route Rev Forecast (IE) --></label>
+        <name>Onshore_IE_Other_Route_Rev_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Onshore Route to Market (IE) --></label>
+        <name>Onshore_IE_Other_Route_to_Market__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Outstanding Development Risk(IE) --></label>
+        <name>Onshore_IE_Outstanding_Development_Risk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore - P&amp;P - DD Provider (IE) --></label>
+        <name>Onshore_IE_PP_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore RPI Inflation (IE) --></label>
+        <name>Onshore_IE_RPI_Inflation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify Outstanding Development Risk that the investor is not comfortable taking? --></help>
+        <label><!-- Onshore Risk Investor Not Taking? (IE) --></label>
+        <name>Onshore_IE_Risk_Investor_Not_Taking__c</name>
+        <picklistValues>
+            <masterLabel>Auction / Route to Market</masterLabel>
+            <translation><!-- Auction / Route to Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Connection Offer</masterLabel>
+            <translation><!-- Grid Connection Offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Planning</masterLabel>
+            <translation><!-- Grid Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Price</masterLabel>
+            <translation><!-- Grid Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Route</masterLabel>
+            <translation><!-- Grid Route --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JR Risk</masterLabel>
+            <translation><!-- JR Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Option Lease Completed</masterLabel>
+            <translation><!-- Option Lease Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning</masterLabel>
+            <translation><!-- Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement</masterLabel>
+            <translation><!-- Procurement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Title Matters</masterLabel>
+            <translation><!-- Title Matters --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Onshore Route to Market Provider (IE) --></label>
+        <name>Onshore_IE_Route_to_Market_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Route to Market Rev Forecast(IE) --></label>
+        <name>Onshore_IE_Route_to_Market_Rev_Forecast__c</name>
+        <picklistValues>
+            <masterLabel>CPPA</masterLabel>
+            <translation><!-- CPPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CfD</masterLabel>
+            <translation><!-- CfD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant</masterLabel>
+            <translation><!-- Merchant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Onshore Route to Market (IE) --></label>
+        <name>Onshore_IE_Route_to_Market__c</name>
+        <picklistValues>
+            <masterLabel>CPPA</masterLabel>
+            <translation><!-- CPPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CfD</masterLabel>
+            <translation><!-- CfD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant</masterLabel>
+            <translation><!-- Merchant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Onshore Size Appetite (IE) --></label>
+        <name>Onshore_IE_Size_Appetite__c</name>
+        <picklistValues>
+            <masterLabel>15-50 MW</masterLabel>
+            <translation><!-- 15-50 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;15 MW</masterLabel>
+            <translation><!-- &lt;15 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;100 MW</masterLabel>
+            <translation><!-- &gt;100 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;300 MW</masterLabel>
+            <translation><!-- &gt;300 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;50 MW</masterLabel>
+            <translation><!-- &gt;50 MW --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Specify Onshore Consultant Revenue %(IE) --></label>
+        <name>Onshore_IE_Specify_Consultant_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specify Onshore Route to Market Rev%(IE) --></label>
+        <name>Onshore_IE_Specify_Route_to_Market_Rev__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore - Technical - DD Provider (IE) --></label>
+        <name>Onshore_IE_Technical_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onshore Interest in which Region? --></label>
+        <name>Onshore_Interest_in_which_Region__c</name>
+        <picklistValues>
+            <masterLabel>GB</masterLabel>
+            <translation><!-- GB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northern Ireland</masterLabel>
+            <translation><!-- Northern Ireland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Republic of Ireland</masterLabel>
+            <translation><!-- Republic of Ireland --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other - Onshore Service Not Available --></label>
+        <name>Onshore_Other_Service_Not_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Which Service is Not Available to RES? --></label>
+        <name>Onshore_Service_Not_Available_to_RES__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EPC</masterLabel>
+            <translation><!-- EPC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>O&amp;M</masterLabel>
+            <translation><!-- O&amp;M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPA</masterLabel>
+            <translation><!-- PPA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other - Type of Account --></label>
+        <name>Other_Type_of_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provide Details --></label>
+        <name>Provide_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Additional Comments --></label>
+        <name>Solar_Additional_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3rd Party - Solar Energy Assessment (GB) --></label>
+        <name>Solar_GB_3rd_Party_Energy_Assessment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar AFRY Revenue % (GB) --></label>
+        <name>Solar_GB_AFRY_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Solar Dev Risk? (GB) --></label>
+        <name>Solar_GB_Additional_Dev_Risk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Aurora Revenue % (GB) --></label>
+        <name>Solar_GB_Aurora_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Baringa Revenue % (GB) --></label>
+        <name>Solar_GB_Baringa_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar CPI Inflation (GB) --></label>
+        <name>Solar_GB_CPI_Inflation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar CPPA Revenue % (GB) --></label>
+        <name>Solar_GB_CPPA_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar CfD Revenue % (GB) --></label>
+        <name>Solar_GB_CfD_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Consultant Revenue Forecast (GB) --></label>
+        <name>Solar_GB_Consultant_Revenue_Forecast__c</name>
+        <picklistValues>
+            <masterLabel>AFRY</masterLabel>
+            <translation><!-- AFRY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aurora</masterLabel>
+            <translation><!-- Aurora --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baringa</masterLabel>
+            <translation><!-- Baringa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cornwall Insight</masterLabel>
+            <translation><!-- Cornwall Insight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solar Cornwall Revenue % (GB) --></label>
+        <name>Solar_GB_Cornwall_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Curtailment Consultant (GB) --></label>
+        <name>Solar_GB_Curtailment_Consultant__c</name>
+        <picklistValues>
+            <masterLabel>AFRY</masterLabel>
+            <translation><!-- AFRY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aurora</masterLabel>
+            <translation><!-- Aurora --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baringa</masterLabel>
+            <translation><!-- Baringa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cornwall Insight</masterLabel>
+            <translation><!-- Cornwall Insight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solar Curtailment Grid Operator (GB) --></label>
+        <name>Solar_GB_Curtailment_Grid_Operator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar - DD Providers (GB) --></label>
+        <name>Solar_GB_DD_Providers__c</name>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property &amp; Planning</masterLabel>
+            <translation><!-- Property &amp; Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical</masterLabel>
+            <translation><!-- Technical --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solar EPC Provider (GB) --></label>
+        <name>Solar_GB_EPC_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Energy Yield Assessment (GB) --></label>
+        <name>Solar_GB_Energy_Yield_Assessment__c</name>
+        <picklistValues>
+            <masterLabel>In-House</masterLabel>
+            <translation><!-- In-House --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party</masterLabel>
+            <translation><!-- Third Party --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solar - Financial - DD Provider (GB) --></label>
+        <name>Solar_GB_Financial_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar GCR Ratio (GB) --></label>
+        <name>Solar_GB_GCR_Ratio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar IRR - Fixed (GB) --></label>
+        <name>Solar_GB_IRR_Fixed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar IRR - Merchant (GB) --></label>
+        <name>Solar_GB_IRR_Merchant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Inflation Notes (GB) --></label>
+        <name>Solar_GB_Inflation_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Inverter Size MW (GB) --></label>
+        <name>Solar_GB_Inverter_Size_MW__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Irradiance (options) (GB) --></label>
+        <name>Solar_GB_Irradiance_options__c</name>
+        <picklistValues>
+            <masterLabel>GHI</masterLabel>
+            <translation><!-- GHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specific Production</masterLabel>
+            <translation><!-- Specific Production --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solar - Legal - DD Provider (GB) --></label>
+        <name>Solar_GB_Legal_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Merchant Revenue % (GB) --></label>
+        <name>Solar_GB_Merchant_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Module Size W (GB) --></label>
+        <name>Solar_GB_Module_Size_W__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Solar Consultant Revenue % (GB) --></label>
+        <name>Solar_GB_Other_Consultant_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Solar Curtailment Consultant(GB) --></label>
+        <name>Solar_GB_Other_Curtailment_Consultant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Solar Irradiance Options (GB) --></label>
+        <name>Solar_GB_Other_Irradiance_Options__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Solar Revenue % (GB) --></label>
+        <name>Solar_GB_Other_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Solar Route Rev Forecast (GB) --></label>
+        <name>Solar_GB_Other_Route_Rev_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Solar Route to Market (GB) --></label>
+        <name>Solar_GB_Other_Route_to_Market__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Outstanding Development Risk (GB) --></label>
+        <name>Solar_GB_Outstanding_Development_Risk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar - P&amp;P - DD Provider (GB) --></label>
+        <name>Solar_GB_PP_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Pitch (m) (GB) --></label>
+        <name>Solar_GB_Pitch_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar RPI Inflation (GB) --></label>
+        <name>Solar_GB_RPI_Inflation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify Outstanding Development Risk that the investor is not comfortable taking? --></help>
+        <label><!-- Solar Risk Investor Not Taking? (GB) --></label>
+        <name>Solar_GB_Risk_Investor_Not_Taking__c</name>
+        <picklistValues>
+            <masterLabel>Auction / Route to Market</masterLabel>
+            <translation><!-- Auction / Route to Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Connection Offer</masterLabel>
+            <translation><!-- Grid Connection Offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Planning</masterLabel>
+            <translation><!-- Grid Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Price</masterLabel>
+            <translation><!-- Grid Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Route</masterLabel>
+            <translation><!-- Grid Route --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JR Risk</masterLabel>
+            <translation><!-- JR Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Option Lease Completed</masterLabel>
+            <translation><!-- Option Lease Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning</masterLabel>
+            <translation><!-- Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement</masterLabel>
+            <translation><!-- Procurement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Title Matters</masterLabel>
+            <translation><!-- Title Matters --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solar Route to Market Provider (GB) --></label>
+        <name>Solar_GB_Route_to_Market_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Route to Market Rev Forecast (GB) --></label>
+        <name>Solar_GB_Route_to_Market_Rev_Forecast__c</name>
+        <picklistValues>
+            <masterLabel>CPPA</masterLabel>
+            <translation><!-- CPPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CfD</masterLabel>
+            <translation><!-- CfD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant</masterLabel>
+            <translation><!-- Merchant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solar Route to Market (GB) --></label>
+        <name>Solar_GB_Route_to_Market__c</name>
+        <picklistValues>
+            <masterLabel>CPPA</masterLabel>
+            <translation><!-- CPPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CfD</masterLabel>
+            <translation><!-- CfD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant</masterLabel>
+            <translation><!-- Merchant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solar Size Appetite (GB) --></label>
+        <name>Solar_GB_Size_Appetite__c</name>
+        <picklistValues>
+            <masterLabel>10-50 MW</masterLabel>
+            <translation><!-- 10-50 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;10 MW</masterLabel>
+            <translation><!-- &lt;10 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;100 MW</masterLabel>
+            <translation><!-- &gt;100 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;300 MW</masterLabel>
+            <translation><!-- &gt;300 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;50 MW</masterLabel>
+            <translation><!-- &gt;50 MW --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Specify Solar Consultant Revenue % (GB) --></label>
+        <name>Solar_GB_Specify_Consultant_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specify Solar Route to Market Rev % (GB) --></label>
+        <name>Solar_GB_Specify_Route_to_Market_Rev__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar - Technical - DD Provider (GB) --></label>
+        <name>Solar_GB_Technical_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Tilt (degrees) (GB) --></label>
+        <name>Solar_GB_Tilt_degrees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Type of Inverter (GB) --></label>
+        <name>Solar_GB_Type_of_Inverter__c</name>
+        <picklistValues>
+            <masterLabel>Central Inverters</masterLabel>
+            <translation><!-- Central Inverters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>String</masterLabel>
+            <translation><!-- String --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solar Grid Configuration --></label>
+        <name>Solar_Grid_Configuration__c</name>
+        <picklistValues>
+            <masterLabel>Co-located with Batteries</masterLabel>
+            <translation><!-- Co-located with Batteries --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-located with H2 Electrolyser</masterLabel>
+            <translation><!-- Co-located with H2 Electrolyser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hybrid</masterLabel>
+            <translation><!-- Hybrid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standalone</masterLabel>
+            <translation><!-- Standalone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 3rd Party - Solar Energy Assessment (IE) --></label>
+        <name>Solar_IE_3rd_Party_Energy_Assessment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar AFRY Revenue % (IE) --></label>
+        <name>Solar_IE_AFRY_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Solar Dev Risk? (IE) --></label>
+        <name>Solar_IE_Additional_Dev_Risk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Aurora Revenue % (IE) --></label>
+        <name>Solar_IE_Aurora_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Baringa Revenue % (IE) --></label>
+        <name>Solar_IE_Baringa_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar CPI Inflation (IE) --></label>
+        <name>Solar_IE_CPI_Inflation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar CPPA Revenue % (IE) --></label>
+        <name>Solar_IE_CPPA_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar CfD Revenue % (IE) --></label>
+        <name>Solar_IE_CfD_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Consultant Revenue Forecast (IE) --></label>
+        <name>Solar_IE_Consultant_Revenue_Forecast__c</name>
+        <picklistValues>
+            <masterLabel>AFRY</masterLabel>
+            <translation><!-- AFRY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aurora</masterLabel>
+            <translation><!-- Aurora --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baringa</masterLabel>
+            <translation><!-- Baringa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cornwall Insight</masterLabel>
+            <translation><!-- Cornwall Insight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solar Cornwall Revenue % (IE) --></label>
+        <name>Solar_IE_Cornwall_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Curtailment Consultant (IE) --></label>
+        <name>Solar_IE_Curtailment_Consultant__c</name>
+        <picklistValues>
+            <masterLabel>AFRY</masterLabel>
+            <translation><!-- AFRY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aurora</masterLabel>
+            <translation><!-- Aurora --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baringa</masterLabel>
+            <translation><!-- Baringa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cornwall Insight</masterLabel>
+            <translation><!-- Cornwall Insight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solar Curtailment Grid Operator (IE) --></label>
+        <name>Solar_IE_Curtailment_Grid_Operator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar - DD Providers (IE) --></label>
+        <name>Solar_IE_DD_Providers__c</name>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property &amp; Planning</masterLabel>
+            <translation><!-- Property &amp; Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical</masterLabel>
+            <translation><!-- Technical --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solar EPC Provider (IE) --></label>
+        <name>Solar_IE_EPC_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Energy Yield Assessment (IE) --></label>
+        <name>Solar_IE_Energy_Yield_Assessment__c</name>
+        <picklistValues>
+            <masterLabel>In-House</masterLabel>
+            <translation><!-- In-House --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party</masterLabel>
+            <translation><!-- Third Party --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solar - Financial - DD Provider (IE) --></label>
+        <name>Solar_IE_Financial_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar GCR Ratio (IE) --></label>
+        <name>Solar_IE_GCR_Ratio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar IRR - Fixed (IE) --></label>
+        <name>Solar_IE_IRR_Fixed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar IRR - Merchant (IE) --></label>
+        <name>Solar_IE_IRR_Merchant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Inflation Notes (IE) --></label>
+        <name>Solar_IE_Inflation_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Inverter Size MW (IE) --></label>
+        <name>Solar_IE_Inverter_Size_MW__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Irradiance (options) (IE) --></label>
+        <name>Solar_IE_Irradiance_options__c</name>
+        <picklistValues>
+            <masterLabel>GHI</masterLabel>
+            <translation><!-- GHI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specific Production</masterLabel>
+            <translation><!-- Specific Production --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solar - Legal - DD Provider (IE) --></label>
+        <name>Solar_IE_Legal_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Merchant Revenue % (IE) --></label>
+        <name>Solar_IE_Merchant_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Module Size W (IE) --></label>
+        <name>Solar_IE_Module_Size_W__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Solar Consultant Revenue % (IE) --></label>
+        <name>Solar_IE_Other_Consultant_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Solar Curtailment Consultant(IE) --></label>
+        <name>Solar_IE_Other_Curtailment_Consultant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Solar Irradiance Options (IE) --></label>
+        <name>Solar_IE_Other_Irradiance_Options__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Solar Revenue % (IE) --></label>
+        <name>Solar_IE_Other_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Solar Route Rev Forecast (IE) --></label>
+        <name>Solar_IE_Other_Route_Rev_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Solar Route to Market (IE) --></label>
+        <name>Solar_IE_Other_Route_to_Market__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Outstanding Development Risk (IE) --></label>
+        <name>Solar_IE_Outstanding_Development_Risk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar - P&amp;P - DD Provider (IE) --></label>
+        <name>Solar_IE_PP_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Pitch (m) (IE) --></label>
+        <name>Solar_IE_Pitch_m__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar RPI Inflation (IE) --></label>
+        <name>Solar_IE_RPI_Inflation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify Outstanding Development Risk that the investor is not comfortable taking? --></help>
+        <label><!-- Solar Risk Investor Not Taking? (IE) --></label>
+        <name>Solar_IE_Risk_Investor_Not_Taking__c</name>
+        <picklistValues>
+            <masterLabel>Auction / Route to Market</masterLabel>
+            <translation><!-- Auction / Route to Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Connection Offer</masterLabel>
+            <translation><!-- Grid Connection Offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Planning</masterLabel>
+            <translation><!-- Grid Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Price</masterLabel>
+            <translation><!-- Grid Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Route</masterLabel>
+            <translation><!-- Grid Route --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JR Risk</masterLabel>
+            <translation><!-- JR Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Option Lease Completed</masterLabel>
+            <translation><!-- Option Lease Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning</masterLabel>
+            <translation><!-- Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement</masterLabel>
+            <translation><!-- Procurement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Title Matters</masterLabel>
+            <translation><!-- Title Matters --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solar Route to Market Provider (IE) --></label>
+        <name>Solar_IE_Route_to_Market_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Route to Market Rev Forecast (IE) --></label>
+        <name>Solar_IE_Route_to_Market_Rev_Forecast__c</name>
+        <picklistValues>
+            <masterLabel>CPPA</masterLabel>
+            <translation><!-- CPPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CfD</masterLabel>
+            <translation><!-- CfD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant</masterLabel>
+            <translation><!-- Merchant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solar Route to Market (IE) --></label>
+        <name>Solar_IE_Route_to_Market__c</name>
+        <picklistValues>
+            <masterLabel>CPPA</masterLabel>
+            <translation><!-- CPPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CfD</masterLabel>
+            <translation><!-- CfD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant</masterLabel>
+            <translation><!-- Merchant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solar Size Appetite (IE) --></label>
+        <name>Solar_IE_Size_Appetite__c</name>
+        <picklistValues>
+            <masterLabel>10-50 MW</masterLabel>
+            <translation><!-- 10-50 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;10 MW</masterLabel>
+            <translation><!-- &lt;10 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;100 MW</masterLabel>
+            <translation><!-- &gt;100 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;300 MW</masterLabel>
+            <translation><!-- &gt;300 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;50 MW</masterLabel>
+            <translation><!-- &gt;50 MW --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Specify Solar Consultant Revenue % (IE) --></label>
+        <name>Solar_IE_Specify_Consultant_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specify Solar Route to Market Rev%(IE) --></label>
+        <name>Solar_IE_Specify_Route_to_Market_Rev__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar - Technical - DD Provider (IE) --></label>
+        <name>Solar_IE_Technical_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Tilt (degrees) (IE) --></label>
+        <name>Solar_IE_Tilt_degrees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solar Type of Inverter (IE) --></label>
+        <name>Solar_IE_Type_of_Inverter__c</name>
+        <picklistValues>
+            <masterLabel>Central Inverters</masterLabel>
+            <translation><!-- Central Inverters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>String</masterLabel>
+            <translation><!-- String --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Solar Interest in which Region? --></label>
+        <name>Solar_Interest_in_which_Region__c</name>
+        <picklistValues>
+            <masterLabel>GB</masterLabel>
+            <translation><!-- GB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northern Ireland</masterLabel>
+            <translation><!-- Northern Ireland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Republic of Ireland</masterLabel>
+            <translation><!-- Republic of Ireland --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other - Solar Service Not Available --></label>
+        <name>Solar_Other_Service_Not_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Which Service is Not Available to RES? --></label>
+        <name>Solar_Service_Not_Available_to_RES__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EPC</masterLabel>
+            <translation><!-- EPC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>O&amp;M</masterLabel>
+            <translation><!-- O&amp;M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPA</masterLabel>
+            <translation><!-- PPA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Standard Account --></label>
+        <name>Standard_Account__c</name>
+        <relationshipLabel><!-- Investor Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Storage Additional Comments --></label>
+        <name>Storage_Additional_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Storage Dev Risk? (GB) --></label>
+        <name>Storage_GB_Additional_Dev_Risk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Battery Augmentation (GB) --></label>
+        <name>Storage_GB_Battery_Augmentation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Battery Manufacturer (GB) --></label>
+        <name>Storage_GB_Battery_Manufacturer__c</name>
+        <picklistValues>
+            <masterLabel>BYD</masterLabel>
+            <translation><!-- BYD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Narada</masterLabel>
+            <translation><!-- Narada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samsung</masterLabel>
+            <translation><!-- Samsung --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Storage CPI Inflation (GB) --></label>
+        <name>Storage_GB_CPI_Inflation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage Cycling Rate (GB) --></label>
+        <name>Storage_GB_Cycling_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage - DD Providers (GB) --></label>
+        <name>Storage_GB_DD_Providers__c</name>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property &amp; Planning</masterLabel>
+            <translation><!-- Property &amp; Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical</masterLabel>
+            <translation><!-- Technical --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Storage Duration Appetite (GB) --></label>
+        <name>Storage_GB_Duration_Appetite__c</name>
+        <picklistValues>
+            <masterLabel>0.5hr</masterLabel>
+            <translation><!-- 0.5hr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.5hr</masterLabel>
+            <translation><!-- 1.5hr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1hr</masterLabel>
+            <translation><!-- 1hr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2hr</masterLabel>
+            <translation><!-- 2hr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>other</masterLabel>
+            <translation><!-- other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Storage EPC Provider (GB) --></label>
+        <name>Storage_GB_EPC_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage - Financial - DD Provider (GB) --></label>
+        <name>Storage_GB_Financial_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage IRR (GB) --></label>
+        <name>Storage_GB_IRR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage Inflation Notes (GB) --></label>
+        <name>Storage_GB_Inflation_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage - Legal - DD Provider (GB) --></label>
+        <name>Storage_GB_Legal_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Battery Manufacturer (GB) --></label>
+        <name>Storage_GB_Other_Battery_Manufacturer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Storage Duration Appetite (GB) --></label>
+        <name>Storage_GB_Other_Duration_Appetite__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Storage Route to Market (GB) --></label>
+        <name>Storage_GB_Other_Route_to_Market__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage Outstanding Development Risk(GB) --></label>
+        <name>Storage_GB_Outstanding_Development_Risk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage - P&amp;P - DD Provider (GB) --></label>
+        <name>Storage_GB_PP_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage RPI Inflation (GB) --></label>
+        <name>Storage_GB_RPI_Inflation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify Outstanding Development Risk that the investor is not comfortable taking? --></help>
+        <label><!-- Storage Risk Investor Not Taking?(GB) --></label>
+        <name>Storage_GB_Risk_Investor_Not_Taking__c</name>
+        <picklistValues>
+            <masterLabel>Auction / Route to Market</masterLabel>
+            <translation><!-- Auction / Route to Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Connection Offer</masterLabel>
+            <translation><!-- Grid Connection Offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Planning</masterLabel>
+            <translation><!-- Grid Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Price</masterLabel>
+            <translation><!-- Grid Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Route</masterLabel>
+            <translation><!-- Grid Route --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JR Risk</masterLabel>
+            <translation><!-- JR Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Option Lease Completed</masterLabel>
+            <translation><!-- Option Lease Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning</masterLabel>
+            <translation><!-- Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement</masterLabel>
+            <translation><!-- Procurement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Title Matters</masterLabel>
+            <translation><!-- Title Matters --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Storage Route to Market (GB) --></label>
+        <name>Storage_GB_Route_to_Market__c</name>
+        <picklistValues>
+            <masterLabel>Ancillary Services - DS3</masterLabel>
+            <translation><!-- Ancillary Services - DS3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancillary Services - FFR</masterLabel>
+            <translation><!-- Ancillary Services - FFR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant Trading</masterLabel>
+            <translation><!-- Merchant Trading --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Storage Size Appetite (GB) --></label>
+        <name>Storage_GB_Size_Appetite__c</name>
+        <picklistValues>
+            <masterLabel>10-50 MW</masterLabel>
+            <translation><!-- 10-50 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;10 MW</masterLabel>
+            <translation><!-- &lt;10 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;100 MW</masterLabel>
+            <translation><!-- &gt;100 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;300 MW</masterLabel>
+            <translation><!-- &gt;300 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;50 MW</masterLabel>
+            <translation><!-- &gt;50 MW --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Storage - Technical - DD Provider (GB) --></label>
+        <name>Storage_GB_Technical_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage Grid Configuration --></label>
+        <name>Storage_Grid_Configuration__c</name>
+        <picklistValues>
+            <masterLabel>Co-located with H2 Electrolyser</masterLabel>
+            <translation><!-- Co-located with H2 Electrolyser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-located with Solar</masterLabel>
+            <translation><!-- Co-located with Solar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-located with Wind</masterLabel>
+            <translation><!-- Co-located with Wind --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hybrid</masterLabel>
+            <translation><!-- Hybrid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standalone</masterLabel>
+            <translation><!-- Standalone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Additional Storage Dev Risk (IE) --></label>
+        <name>Storage_IE_Additional_Dev_Risk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Battery Augmentation (IE) --></label>
+        <name>Storage_IE_Battery_Augmentation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Battery Manufacturer (IE) --></label>
+        <name>Storage_IE_Battery_Manufacturer__c</name>
+        <picklistValues>
+            <masterLabel>BYD</masterLabel>
+            <translation><!-- BYD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Narada</masterLabel>
+            <translation><!-- Narada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samsung</masterLabel>
+            <translation><!-- Samsung --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Storage CPI Inflation (IE) --></label>
+        <name>Storage_IE_CPI_Inflation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage Cycling Rate (IE) --></label>
+        <name>Storage_IE_Cycling_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage - DD Providers (IE) --></label>
+        <name>Storage_IE_DD_Providers__c</name>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property &amp; Planning</masterLabel>
+            <translation><!-- Property &amp; Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical</masterLabel>
+            <translation><!-- Technical --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Storage Duration Appetite (IE) --></label>
+        <name>Storage_IE_Duration_Appetite__c</name>
+        <picklistValues>
+            <masterLabel>0.5hr</masterLabel>
+            <translation><!-- 0.5hr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.5hr</masterLabel>
+            <translation><!-- 1.5hr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1hr</masterLabel>
+            <translation><!-- 1hr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2hr</masterLabel>
+            <translation><!-- 2hr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>other</masterLabel>
+            <translation><!-- other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Storage EPC Provider (IE) --></label>
+        <name>Storage_IE_EPC_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage - Financial - DD Provider (IE) --></label>
+        <name>Storage_IE_Financial_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage IRR (IE) --></label>
+        <name>Storage_IE_IRR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage Inflation Notes (IE) --></label>
+        <name>Storage_IE_Inflation_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage - Legal - DD Provider (IE) --></label>
+        <name>Storage_IE_Legal_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Battery Manufacturer (IE) --></label>
+        <name>Storage_IE_Other_Battery_Manufacturer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Storage Duration Appetite (IE) --></label>
+        <name>Storage_IE_Other_Duration_Appetite__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other - Storage Route to Market (IE) --></label>
+        <name>Storage_IE_Other_Route_to_Market__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage Outstanding Development Risk(IE) --></label>
+        <name>Storage_IE_Outstanding_Development_Risk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage - P&amp;P - DD Provider (IE) --></label>
+        <name>Storage_IE_PP_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage RPI Inflation (IE) --></label>
+        <name>Storage_IE_RPI_Inflation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify Outstanding Development Risk that the investor is not comfortable taking? --></help>
+        <label><!-- Storage Risk Investor Not Taking?(IE) --></label>
+        <name>Storage_IE_Risk_Investor_Not_Taking__c</name>
+        <picklistValues>
+            <masterLabel>Auction / Route to Market</masterLabel>
+            <translation><!-- Auction / Route to Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Connection Offer</masterLabel>
+            <translation><!-- Grid Connection Offer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Planning</masterLabel>
+            <translation><!-- Grid Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Price</masterLabel>
+            <translation><!-- Grid Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grid Route</masterLabel>
+            <translation><!-- Grid Route --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JR Risk</masterLabel>
+            <translation><!-- JR Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Option Lease Completed</masterLabel>
+            <translation><!-- Option Lease Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning</masterLabel>
+            <translation><!-- Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement</masterLabel>
+            <translation><!-- Procurement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Title Matters</masterLabel>
+            <translation><!-- Title Matters --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Storage Route to Market Provider (IE) --></label>
+        <name>Storage_IE_Route_to_Market_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage Route to Market (IE) --></label>
+        <name>Storage_IE_Route_to_Market__c</name>
+        <picklistValues>
+            <masterLabel>Ancillary Services - DS3</masterLabel>
+            <translation><!-- Ancillary Services - DS3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ancillary Services - FFR</masterLabel>
+            <translation><!-- Ancillary Services - FFR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant Trading</masterLabel>
+            <translation><!-- Merchant Trading --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Storage Size Appetite (IE) --></label>
+        <name>Storage_IE_Size_Appetite__c</name>
+        <picklistValues>
+            <masterLabel>10-50 MW</masterLabel>
+            <translation><!-- 10-50 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;10 MW</masterLabel>
+            <translation><!-- &lt;10 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;100 MW</masterLabel>
+            <translation><!-- &gt;100 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;300 MW</masterLabel>
+            <translation><!-- &gt;300 MW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;50 MW</masterLabel>
+            <translation><!-- &gt;50 MW --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Storage - Technical - DD Provider (IE) --></label>
+        <name>Storage_IE_Technical_DD_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage Interest in which Region? --></label>
+        <name>Storage_Interest_in_which_Region__c</name>
+        <picklistValues>
+            <masterLabel>GB</masterLabel>
+            <translation><!-- GB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northern Ireland</masterLabel>
+            <translation><!-- Northern Ireland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Republic of Ireland</masterLabel>
+            <translation><!-- Republic of Ireland --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other - Storage Service Not Available --></label>
+        <name>Storage_Other_Service_Not_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Storage Route to Market Provider (GB) --></label>
+        <name>Storage_Route_to_Market_Provider_GB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Which Service is Not Available to RES? --></label>
+        <name>Storage_Service_Not_Available_to_RES__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EPC</masterLabel>
+            <translation><!-- EPC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>O&amp;M</masterLabel>
+            <translation><!-- O&amp;M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPA</masterLabel>
+            <translation><!-- PPA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub 50MW project AC-DC ratio used (GB) --></label>
+        <name>Sub_50MW_GB_project_AC_DC_ratio_used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub 50MW project AC-DC ratio used (IE) --></label>
+        <name>Sub_50MW_IE_project_AC_DC_ratio_used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Account --></label>
+        <name>Type_of_Account__c</name>
+        <picklistValues>
+            <masterLabel>Developer</masterLabel>
+            <translation><!-- Developer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EPC Provider</masterLabel>
+            <translation><!-- EPC Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fund</masterLabel>
+            <translation><!-- Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IPP</masterLabel>
+            <translation><!-- IPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oil &amp; Gas Major</masterLabel>
+            <translation><!-- Oil &amp; Gas Major --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utility</masterLabel>
+            <translation><!-- Utility --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Relationship --></label>
+        <name>Type_of_Relationship__c</name>
+        <picklistValues>
+            <masterLabel>BL Key</masterLabel>
+            <translation><!-- BL Key --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing Client</masterLabel>
+            <translation><!-- Existing Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Key</masterLabel>
+            <translation><!-- Global Key --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regional Key</masterLabel>
+            <translation><!-- Regional Key --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supplier</masterLabel>
+            <translation><!-- Supplier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target</masterLabel>
+            <translation><!-- Target --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Investor Account Layout</layout>
+        <sections>
+            <label><!-- Client Info - GB Onshore Wind --></label>
+            <section>Client Info - GB Onshore Wind</section>
+        </sections>
+        <sections>
+            <label><!-- Client Info - GB Solar --></label>
+            <section>Client Info - GB Solar</section>
+        </sections>
+        <sections>
+            <label><!-- Client Info - GB Storage --></label>
+            <section>Client Info - GB Storage</section>
+        </sections>
+        <sections>
+            <label><!-- Client Info - Header --></label>
+            <section>Client Info - Header</section>
+        </sections>
+        <sections>
+            <label><!-- Client Info - Ireland Onshore Wind --></label>
+            <section>Client Info - Ireland Onshore Wind</section>
+        </sections>
+        <sections>
+            <label><!-- Client Info - Ireland Solar --></label>
+            <section>Client Info - Ireland Solar</section>
+        </sections>
+        <sections>
+            <label><!-- Client Info - Ireland Storage --></label>
+            <section>Client Info - Ireland Storage</section>
+        </sections>
+        <sections>
+            <label><!-- Client Info - Onshore Wind Header --></label>
+            <section>Client Info - Onshore Wind Header</section>
+        </sections>
+        <sections>
+            <label><!-- Client Info - Solar --></label>
+            <section>Client Info - Solar</section>
+        </sections>
+        <sections>
+            <label><!-- Client Info - Storage Header --></label>
+            <section>Client Info - Storage Header</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Modeling - GB Onshore Wind --></label>
+            <section>Modeling - GB Onshore Wind</section>
+        </sections>
+        <sections>
+            <label><!-- Modeling - GB Solar --></label>
+            <section>Modeling - GB Solar</section>
+        </sections>
+        <sections>
+            <label><!-- Modeling - GB Storage --></label>
+            <section>Modeling - GB Storage</section>
+        </sections>
+        <sections>
+            <label><!-- Modeling - Ireland Onshore Wind --></label>
+            <section>Modeling - Ireland Onshore Wind</section>
+        </sections>
+        <sections>
+            <label><!-- Modeling - Ireland Solar --></label>
+            <section>Modeling - Ireland Solar</section>
+        </sections>
+        <sections>
+            <label><!-- Modeling - Ireland Storage --></label>
+            <section>Modeling - Ireland Storage</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

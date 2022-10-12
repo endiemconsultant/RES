@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Legal RFP Support</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Name</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <successMessage>Congratulations you have properly submitted a legal work request.</successMessage>
+    <targetObject>Milestone1_Milestone__c</targetObject>
+    <targetParentField>Opportunity__c</targetParentField>
+    <targetRecordType>Milestone1_Milestone__c.Legal_RFP_Support</targetRecordType>
+    <type>Create</type>
+</QuickAction>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RES Team</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RES Teams</value>
+    </caseValues>
+    <fields>
+        <help><!-- Add RES Team members from CONTACTS (not SF Users) - -  This lookup field limits the results of Contacts to only those staff who exist in an Account with &apos;Renewable Energy Systems&apos; or &apos;RES T&amp;D&apos; in the name. --></help>
+        <label><!-- Employee Name --></label>
+        <lookupFilter>
+            <errorMessage><!-- Please check that this CONTACT has been created on one of the &apos;Renewable Energy System&apos; Accounts (or the &apos;RES T&amp;D&apos; Account). --></errorMessage>
+            <informationalMessage><!-- Add RES Team members from CONTACTS (not SF Users) - -  This lookup field limits the results of Contacts to only those staff who exist in an Account with &apos;Renewable Energy Systems&apos; or &apos;RES T&amp;D&apos; in the name. --></informationalMessage>
+        </lookupFilter>
+        <name>Employee_Name__c</name>
+        <relationshipLabel><!-- RES Teams --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Project__c</name>
+        <relationshipLabel><!-- RES Teams --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>RES_Opportunity__c</name>
+        <relationshipLabel><!-- RES Team --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+        <picklistValues>
+            <masterLabel>Bid Coordinator</masterLabel>
+            <translation><!-- Bid Coordinator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bid Development Manager</masterLabel>
+            <translation><!-- Bid Development Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Development</masterLabel>
+            <translation><!-- Business Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction Director</masterLabel>
+            <translation><!-- Construction Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracts Team</masterLabel>
+            <translation><!-- Contracts Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design Phase Manager</masterLabel>
+            <translation><!-- Design Phase Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering  - Mechanical</masterLabel>
+            <translation><!-- Engineering  - Mechanical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering - Civil</masterLabel>
+            <translation><!-- Engineering - Civil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering - Electrical</masterLabel>
+            <translation><!-- Engineering - Electrical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering - SCADA</masterLabel>
+            <translation><!-- Engineering - SCADA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering - Structural</masterLabel>
+            <translation><!-- Engineering - Structural --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering - Survey</masterLabel>
+            <translation><!-- Engineering - Survey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Estimator</masterLabel>
+            <translation><!-- Estimator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Champion</masterLabel>
+            <translation><!-- Executive Champion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HSQE</masterLabel>
+            <translation><!-- HSQE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operation Maintenance</masterLabel>
+            <translation><!-- Operation Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Owner</masterLabel>
+            <translation><!-- Opportunity Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM - Construction</masterLabel>
+            <translation><!-- PM - Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM - Development</masterLabel>
+            <translation><!-- PM - Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permitting - Property Manager</masterLabel>
+            <translation><!-- Permitting - Property Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Construction Manager</masterLabel>
+            <translation><!-- Pre-Construction Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procore Manager</masterLabel>
+            <translation><!-- Procore Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement</masterLabel>
+            <translation><!-- Procurement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Director</masterLabel>
+            <translation><!-- Project Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Team</masterLabel>
+            <translation><!-- Technical Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transmission Team</masterLabel>
+            <translation><!-- Transmission Team --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User&apos;s Email --></label>
+        <name>User_s_Email__c</name>
+    </fields>
+    <layouts>
+        <layout>Project Team Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,8 @@
+<apex:page standardController="Opportunity" action="New_Solar_O_M_Oppty"  >
+
+    <script> 
+    try { sforce.one.navigateToSObject('/006i000000iIJtqAAG'); 
+    catch(e) { window.location.href = '/006i000000iIJtqAAG'; }
+    </script> 
+    
+</apex:page>

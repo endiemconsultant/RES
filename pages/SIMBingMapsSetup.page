@@ -1,0 +1,576 @@
+<!--
+//Copyright (c) 2010, Mark Sivill, Sales Engineering, Salesforce.com Inc.
+//All rights reserved.
+//
+//Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+//Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. 
+//Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+//Neither the name of the salesforce.com nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. 
+//THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+//INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+//DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
+//SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
+//LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+//CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, 
+//EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+//
+// History
+//
+// Version  Date            Author          Comments
+// 1.0      22-06-2009      Mark Sivill     Initial version
+// 1.1      29-07-2009      Mark Sivill     Remove inline map example, as if problem rendering page
+//                                          (IE "opertation aborted" message) then page might not be shown
+//
+//
+// Overview
+//
+// Set up instructions
+//
+-->
+
+<apex:page title="Salesforce International Mapping using Bing Maps Setup" tabStyle="SIMBingMapsSetup__tab">
+
+<apex:sectionHeader title="Salesforce International Mapping using Bing Maps Setup"></apex:sectionHeader>
+
+<apex:pageBlock title="Setup Instructions">
+
+<apex:pageBlockSection title="Languages" columns="1">
+
+<p>
+If you need to display languages other than English then the following steps need to be followed
+</p>
+
+<ol>
+    <li>Setup "Translation Workbench", if it is not enabled contact salesforce support to get it setup</li>
+    <li>Activate the languages you need. Navigate to Setup->Administration Setup->Translation Workbench->Translation Workbench Setup</li>
+</ol>
+
+<p>
+If no other languages other than English are required then this step can be ignored.
+</p>
+
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Salesforce" columns="1">
+
+<p>
+Optionally add map to Account page
+</p>
+<ol>
+<li>Edit Account Page Layout</li>
+<li>Add new section called Map, ensure it has one column, optionally have "Display Section header On" for "Detail Page"</li>
+<li>Add SIMBingMapsEmbeddedAccount to new Map section </li>
+</ol>
+
+<p>
+Optionally add map button to Account page
+</p>
+<ol>
+<li>Edit Account Page Layout</li>
+<li>Add button "Show Map" to layout</li>
+</ol>
+
+<p>
+Optionally add link button to Account page
+</p>
+<ol>
+<li>Edit Account Page Layout</li>
+<li>Add link "Show Map" to layout</li>
+</ol>
+
+<p>
+Optionally add map to Contact page
+</p>
+ <ol>
+ <li>Edit Contact Page Layout</li>
+ <li>Add new section called Map, ensure it has one column, optionally have "Display Section header On" for "Detail Page"</li>
+ <li>Add SIMBingMapsEmbeddedContact to new Map section</li>
+ </ol>
+
+<p>
+Optionally add map button to Contact page
+</p>
+<ol>
+<li>Edit Contact Page Layout</li>
+<li>Add button "Show Map" (SIMBingMapsContactButton) to layout</li>
+</ol>
+
+<p>
+Optionally add link button to Contact page
+</p>
+<ol>
+<li>Edit Contact Page Layout</li>
+<li>Add link "Show Map" (SIMBingMapsContactLink) to layout</li>
+</ol>
+
+<p>
+The map section that has just been created is not localised to different languages if this is required make changes in Setup->Administration Setup->Translation Workbench->Translation Layout Sections. Another option is to hide the word "map" by turning "Display Section header On" off for "Detail Page"
+</p>
+</apex:pageBlockSection>
+
+</apex:pageBlock>
+
+<apex:pageBlock title="Using the map on other objects and address fields">
+
+<apex:pageBlockSection title="Customising the map" columns="1">
+
+<p>
+The map has been written as a reusable Visualforce component and can be called from different Visualforce pages using the following parameters -
+</p>
+
+<ul>
+    <li>height - Map height in pixels</li>
+    <li>width - Map width in pixels</li>
+    <li>address - Address to search for in the maps, including the country in the address helps accuracy</li>
+    <li>latitude - Latitude for pin in WGS84 format. Valid range from -90.0 to 90.0. Invalid values are set to 0.0. If address and latitude are not set then set latitude to 0.0</li>
+    <li>longitude - Longitude for pin in WGS84 format. Valid range from -180.0 to 180.0. Invalid values are set to 0.0. If address and longitude are not set then set longitude to 0.0</li>
+    <li>zoom level - The zoom level for the map. Valid values range from 1 through 19</li>
+    <li>custom icon - A URL to an image (25 by 30 pixels) that defines the custom pin</li>
+</ul>
+
+<p>
+Maps gallery showing examples with different parameter values
+</p>
+
+<ul>
+   <li><a href="./SIMBingMapsGallery1">Gallery 1</a> - custom zoom level, custom pin and custom map size</li>
+   <li><a href="./SIMBingMapsGallery2">Gallery 2</a> - using coordinates not address, custom pin, and custom map size</li>
+</ul>
+
+<p>
+This package has 6 Visualforce pages that use the component -
+</p>
+
+<ul>
+    <li>SIMBingMapsEmbeddedAccount - appears inline in an Account Record with dimensions of 700 x 200 pixels using Billing Address</li>
+    <li>SIMBingMapsAccount - appears stand alone with dimensions of 700 x 700 pixels using Billing Address on white background</li>
+    <li>SIMBingMapsEmbeddedContact - appears inline in a Contact Record with dimensions of 700 x 200 pixels using Mailing Address</li>
+    <li>SIMBingMapsContact - appears stand alone with dimensions of 700 x 700 pixels using Mailing Address</li>
+    <li>SIMBingMapsGallery1 - the above gallery 1 example</li>
+    <li>SIMBingMapsGallery2 - the above gallery 2 example</li>
+</ul>
+
+<p>
+If the org has a lead object enabled then an inline Visualforce page could be created that uses the component on a lead record.
+</p>
+
+<p>
+If the Shipping address is needed instead of Billing address for the inline Visualforce Account page, then a new Visualforce page can be created that uses this alternative address instead.
+</p>
+
+</apex:pageBlockSection>
+
+</apex:pageBlock>
+
+<apex:pageBlock title="Running the Map">
+
+<apex:pageBlockSection title="Address not found issues" columns="1">
+
+<p>
+If Bing Maps is unable to find an address please check the address against the local authority, then change the address in Salesforce accordingly.
+</p>
+<p>
+For example
+</p>
+ <ul>
+ <li><a href="http://www.ups.com/">UPS</a> (United States of America)</li>
+ <li><a href="http://www.royalmail.com/">Royal Mail</a> (United Kingdom)</li>
+ <li><a href="http://www.laposte.fr/">La Poste</a> (France)</li>
+ <li><a href="http://www.tntpost.nl/">TNT Post</a> (Netherlands)</li>
+ </ul>
+
+<p>
+To see the address being passed to Bing Maps place the mouse over the map icon marker. Then optionally click on the link "Find in Bing Maps" to see the address being displayed in the Bing Maps web site itself.
+</p>
+
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Bing Maps language support" columns="1">
+
+<p>
+Bing maps does not fully support all features for all languages as of version 6.3 for Bing Maps. For example not all map labels on the Bing Map are localised for each language.
+</p>
+<p>
+The mapping between salesforce and Bing languages codes is done through the Custom Label "SIMBingMaps_LanguageCode",
+not all languages supported by salesforce are supported by Bing Maps so the Bing component may not display the correct language,
+however the marker icon text is converted as this is done through salesforce functionality not Bing Maps. Also through the Custom Label "SIMBingMaps_LanguageCode" you can change the language/localisation used for example changing English from US to UK, (en-US -> en-GB).
+</p>
+<p>
+Below is an extract from the Bing Maps SDK documentation on language support.
+</p>
+
+<p>
+<table border="1">
+    <tr>
+        <th colspan="1">Language - Country/Region
+        </th>
+        <th colspan="1">Culture
+        </th>
+        <th colspan="1">Feature Support 
+        </th>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>Czech - Czech Republic
+            </p>
+        </td>
+        <td colspan="1">
+            <p>cs-CZ
+            </p>
+        </td>
+        <td colspan="1">
+            <p>
+                <strong>VEMap.Find
+                </strong>, 
+                <strong>VEMap.GetDirections
+                </strong>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>Danish - Denmark
+            </p>
+        </td>
+        <td colspan="1">
+            <p>da-DK
+            </p>
+        </td>
+        <td colspan="1">
+            <p>
+                <strong>VEMap.Find
+                </strong>, 
+                <strong>VEMap.GetDirections
+                </strong>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>Dutch - Netherlands
+            </p>
+        </td>
+        <td colspan="1">
+            <p>nl-NL
+            </p>
+        </td>
+        <td colspan="1">
+            <p>
+                <strong>VEMap.Find
+                </strong>, 
+                <strong>VEMap.GetDirections
+                </strong>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>English - Australia
+            </p>
+        </td>
+        <td colspan="1">
+            <p>en-AU
+            </p>
+        </td>
+        <td colspan="1">
+            <p>
+                <strong>VEMap.GetDirections 
+                </strong>using MWS
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>English - Canada
+            </p>
+        </td>
+        <td colspan="1">
+            <p>en-CA
+            </p>
+        </td>
+        <td colspan="1">
+            <p>Map control dashboard,
+                <strong> VEMap.Find
+                </strong>, 
+                <strong>VEMap.GetDirections 
+                </strong>using MWS
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>English - United Kingdom
+            </p>
+        </td>
+        <td colspan="1">
+            <p>en-GB
+            </p>
+        </td>
+        <td colspan="1">
+            <p>
+                <strong>VEMap.GetDirections
+                </strong> using MWS
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>English - United States
+            </p>
+        </td>
+        <td colspan="1">
+            <p>en-US
+            </p>
+        </td>
+        <td colspan="1">
+            <p>All features.  This is the default culture.
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>Finnish -Finland
+            </p>
+        </td>
+        <td colspan="1">
+            <p>fi-FI
+            </p>
+        </td>
+        <td colspan="1">
+            <p>
+                <strong>VEMap.Find
+                </strong>, 
+                <strong>VEMap.GetDirections
+                </strong>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>French - Canada
+            </p>
+        </td>
+        <td colspan="1">
+            <p>fr-CA
+            </p>
+        </td>
+        <td colspan="1">
+            <p>Map control dashboard, 3D dialogs, 
+                <strong>VEMap.Find
+                </strong>, 
+                <strong>VEMap.GetDirections
+                </strong>, map labels
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>French - France
+            </p>
+        </td>
+        <td colspan="1">
+            <p>fr-FR
+            </p>
+        </td>
+        <td colspan="1">
+            <p>Map control dashboard, 3D dialogs, 
+                <strong>VEMap.Find
+                </strong>, 
+                <strong>VEMap.GetDirections
+                </strong>, map labels
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>German - Germany
+            </p>
+        </td>
+        <td colspan="1">
+            <p>de-DE
+            </p>
+        </td>
+        <td colspan="1">
+            <p>Map control dashboard, 
+                <strong>VEMap.Find
+                </strong>, 
+                <strong>VEMap.GetDirections
+                </strong>, map labels
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>Italian - Italy
+            </p>
+        </td>
+        <td colspan="1">
+            <p>it-IT
+            </p>
+        </td>
+        <td colspan="1">
+            <p>Map control dashboard, 3D dialogs, 
+                <strong>VEMap.Find
+                </strong>, 
+                <strong>VEMap.GetDirections
+                </strong>, map labels
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>Japanese - Japan
+            </p>
+        </td>
+        <td colspan="1">
+            <p>ja-JP
+            </p>
+        </td>
+        <td colspan="1">
+            <p>Map control dashboard, 3D dialogs, 
+                <strong>VEMap.Find
+                </strong>, map labels
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>Norwegian (Bokmal) - Norway
+            </p>
+        </td>
+        <td colspan="1">
+            <p>nb-NO
+            </p>
+        </td>
+        <td colspan="1">
+            <p>
+                <strong>VEMap.Find
+                </strong>, 
+                <strong>VEMap.GetDirections
+                </strong>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>Portuguese - Brazil
+            </p>
+        </td>
+        <td colspan="1">
+            <p>Pt-BR
+            </p>
+        </td>
+        <td colspan="1">
+            <p>
+                <strong>VEMap.Find
+                </strong>, 
+                <strong>VEMap.GetDirections
+                </strong>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>Portuguese - Portugal
+            </p>
+        </td>
+        <td colspan="1">
+            <p>pt-PT
+            </p>
+        </td>
+        <td colspan="1">
+            <p>
+                <strong>VEMap.Find
+                </strong>, 
+                <strong>VEMap.GetDirections
+                </strong>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>Spanish - Mexico
+            </p>
+        </td>
+        <td colspan="1">
+            <p>es-MX
+            </p>
+        </td>
+        <td colspan="1">
+            <p>
+                <strong>VEMap.GetDirections 
+                </strong>using MWS, map labels
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>Spanish - Spain
+            </p>
+        </td>
+        <td colspan="1">
+            <p>es-ES
+            </p>
+        </td>
+        <td colspan="1">
+            <p>Map control dashboard, 
+                <strong>VEMap.Find
+                </strong>, 
+                <strong>VEMap.GetDirections
+                </strong>, map labels
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>Spanish - United States
+            </p>
+        </td>
+        <td colspan="1">
+            <p>es-US
+            </p>
+        </td>
+        <td colspan="1">
+            <p>Map control dashboard, 
+                <strong>VEMap.Find
+                </strong>, 
+                <strong>VEMap.GetDirections
+                </strong> using MWS, map labels
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <p>Swedish - Sweden
+            </p>
+        </td>
+        <td colspan="1">
+            <p>sv-SE
+            </p>
+        </td>
+        <td colspan="1">
+            <p>
+                <strong>VEMap.Find
+                </strong>, 
+                <strong>VEMap.GetDirections
+                </strong>
+            </p>
+        </td>
+    </tr>
+</table>
+</p>
+
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Bing Maps usage" columns="1">
+
+<p>
+This application has been configured to use Bing Maps for illustrative purposes only. Your use of Salesforce International Mapping using Bing Maps may require Bing Maps for Enterprise.
+</p>
+
+</apex:pageBlockSection>
+
+</apex:pageBlock>
+
+</apex:page>

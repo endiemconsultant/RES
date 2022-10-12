@@ -1,0 +1,7 @@
+<apex:page standardController="Landowner_Agreement__c" recordSetVar="agreements"
+    action="{!URLFOR($Action.Landowner_Agreement__c.New, null,
+    ['p3'='0120H000001QTtk','Name'='Default Value','00N0H00000IQWx0'='12',
+    '00N0H00000IQWkz'= Landowner_Agreement__c.Landowner_Parcel__c,
+            'retURL'='/'+Landowner_Agreement__c.Id],
+              true)}"
+/>

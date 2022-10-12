@@ -1,0 +1,71 @@
+<apex:page standardController="Account" extensions="KAMController" standardStylesheets="false" showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0"> 
+ 
+    <!-- Include a JavaScript file in your Visualforce page -->
+    <apex:includeScript value="/lightning/lightning.out.js" />
+            
+    <apex:remoteObjects >
+      <apex:remoteObjectModel name="Account" fields="Id,Name"/>
+    </apex:remoteObjects>
+
+    <div id="Activities" />
+
+
+  <div class="slds-scope">
+
+  <div class="slds-grid slds-wrap slds-grid_vertical-align-top slds-grid_align-center">
+  
+    <div class="slds-col slds-size_1-of-1 slds-box slds-theme_shade">
+         <table class="slds-m-left_small ">
+            <tr>
+                <td>
+                     <apex:iframe height="430" width="100%" src="/apex/Account_Page_ReportChart?id={!Account.Id}"/>
+                 </td>
+            </tr>
+          </table>
+     </div>
+         
+   <div class="slds-col slds-size_1-of-1 slds-grid_align-space">  
+    
+      <apex:form >
+        <apex:pageblock id="KDMContacts">
+          <h1 class="slds-page-header slds-page-header__title" title="Key Decision Maker Contacts"> Key Decision Maker Contacts</h1>
+              <apex:pageBlockTable value="{!kdmContacts}" var="k" cellspacing="2">
+                  <apex:column headerValue="KDM Name">
+                       <apex:outputLink value="{! URLFOR($Action.Contact.View, k.Id)}">{! k.name}</apex:outputLink>
+                  </apex:column>
+                  <apex:column value="{!k.Title}"/>
+                  <apex:column value="{!k.ReportsTo.Name}" headerValue="Reports To" />
+                  <apex:column value="{!k.Primary_Contact_Owner__c}" headerValue="Primary Owner"/>
+                  <apex:column value="{!k.Relationship_Owner__c}"/>
+                  <apex:column value="{!k.Contact_Frequency__c}"/>
+                  <apex:column value="{!k.Contact_Activity_Status__c}"/>
+                  <apex:column value="{!k.Last_Client_Meeting__c}"/>
+                  <apex:column value="{!k.View_of_RES__c}"/>
+                  <apex:column value="{!k.Influence__c}"/>
+            </apex:pageBlockTable>
+          </apex:pageBlock>
+        </apex:form> 
+    </div>  
+             
+   </div>
+  </div>
+     
+    <script>
+        $Lightning.use("c:KAM_Timeline_OpenActivities_App", function() {
+              
+              $Lightning.createComponent("c:LightningDemoHeader",
+                   { "recordId" : "{!$CurrentPage.parameters.id}" },
+                  "Activities",
+                  function(cmp) {
+                    // any further setup goes here
+              });
+              $Lightning.createComponent("c:LightningDemoActivityTimeline",
+                   { "recordId" : "{!$CurrentPage.parameters.id}" },
+                  "Activities",
+                  function(cmp) {
+                    // any further setup goes here
+              });
+        });
+    </script>
+    
+</apex:page>

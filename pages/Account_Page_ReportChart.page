@@ -1,0 +1,23 @@
+<apex:page standardController="Account" showHeader="false" lightningStylesheets="true" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+   
+<apex:includeLightning />
+<apex:includeScript value="/lightning/lightning.out.js" />
+
+<apex:stylesheet value="/resource/SLDSXXXX/assets/styles/salesforce-lightning-design-system-ltng.css"/>
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+
+      <table>
+        <tr>
+            <td>
+                <analytics:reportChart reportId="00O0H000006ePohUAE"
+                        size="medium"
+                        cacheResults="false"
+                        showRefreshButton="false"
+                        hideOnError="true"
+                        filter="[{column:'ACCOUNT_ID', operator:'equals', value:'{!Id}'}]"/>
+             </td>
+        </tr>
+      </table>
+      
+ </html>
+</apex:page>

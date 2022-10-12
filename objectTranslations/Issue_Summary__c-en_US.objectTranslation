@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Issue Summary</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Issue Summaries</value>
+    </caseValues>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Summary --></label>
+        <name>Issue_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Market &amp; Policy Issue --></label>
+        <name>Market_Policy_Issue__c</name>
+        <relationshipLabel><!-- Issue Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Region/Market --></label>
+        <name>Region_Market__c</name>
+        <relationshipLabel><!-- Issue Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reports</masterLabel>
+            <translation><!-- Reports --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Issue Summary Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description of Market &amp; Policy Issue --></label>
+            <section>Description of Market &amp; Policy Issue</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,17 @@
+<aura:component >
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- attribute to store the record Id -->
+    <aura:attribute name="recordId" type="string"/>
+    
+    <!-- register that this component will fire an event --> 
+    <aura:registerEvent name="updateSampleRecordEvent" type="c:updateRecordEvent"/> 
+
+
+    <!-- standard page markup -->
+    <div class="slds-page-header" role="banner">
+        <div class="slds-page-header__title">Meeting History</div>
+    </div>
+    
+</aura:component>

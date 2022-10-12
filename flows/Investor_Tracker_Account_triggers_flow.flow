@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <assignments>
+        <name>Assign_New_Value</name>
+        <label>Assign New Value</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>Get_M_A_Record.Standard_Account__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_M_A_record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>old = NULL
+new = New value</description>
+        <name>Assign_Standard_Account_values</name>
+        <label>Assign Standard Account values</label>
+        <locationX>578</locationX>
+        <locationY>695</locationY>
+        <assignmentItems>
+            <assignToReference>Changed_Old_Record.Standard_Account__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>NULL</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Changed_New_Record.Standard_Account__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Old</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Standard_Account_to_NULL</name>
+        <label>Set &quot;Standard Account&quot; to NULL</label>
+        <locationX>314</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>Get_Old_M_A_Record.Standard_Account__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>NULL</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Old_M_A</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <name>NULL</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>000000000000000</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <description>Decides how the Account record should be handled.</description>
+        <name>Decision</name>
+        <label>Decision</label>
+        <locationX>314</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>End_Flow</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>EndFormula</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>End Flow</label>
+        </rules>
+        <rules>
+            <name>First_M_A_Value</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>FirstValueFormula</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_M_A_Record</targetReference>
+            </connector>
+            <label>First M&amp;A Value</label>
+        </rules>
+        <rules>
+            <name>No_More_M_A_Value</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>NoMoreValueFormula</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Old_M_A_Record</targetReference>
+            </connector>
+            <label>No More M&amp;A Value</label>
+        </rules>
+        <rules>
+            <name>Changed_Existing_M_A_Value</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ChangedValueFormula</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Changed_New_Record</targetReference>
+            </connector>
+            <label>Changed Existing M&amp;A Value</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <description>This is true when the record is updated, a previous value existed, and a new, non-null, value exists.</description>
+        <name>ChangedValueFormula</name>
+        <dataType>Boolean</dataType>
+        <expression>(NOT(ISNEW()) &amp;&amp; 
+ISCHANGED({!$Record.Investor_Account__c}) &amp;&amp; 
+NOT(ISBLANK({!$Record.Investor_Account__c})) &amp;&amp; 
+NOT(ISBLANK({!$Record__Prior.Investor_Account__c})))</expression>
+    </formulas>
+    <formulas>
+        <description>These Boolean values end the flow</description>
+        <name>EndFormula</name>
+        <dataType>Boolean</dataType>
+        <expression>(ISNEW() &amp;&amp; ISBLANK({!$Record.Investor_Account__c})) 
+||
+(NOT(ISNEW()) &amp;&amp; NOT(ISCHANGED({!$Record.Investor_Account__c})))</expression>
+    </formulas>
+    <formulas>
+        <description>Checks if the &quot;M&amp;A Account&quot; value is the first for the field on this Account.</description>
+        <name>FirstValueFormula</name>
+        <dataType>Boolean</dataType>
+        <expression>(ISNEW() &amp;&amp; NOT(ISBLANK({!$Record.Investor_Account__c}))) 
+||
+(NOT(ISNEW()) &amp;&amp; ISCHANGED({!$Record.Investor_Account__c}) &amp;&amp; 
+NOT(ISBLANK({!$Record.Investor_Account__c})) &amp;&amp; ISBLANK({!$Record__Prior.Investor_Account__c}))</expression>
+    </formulas>
+    <formulas>
+        <description>This formula is true when a value previously existed in the &quot;M&amp;A Account&quot; field, but no longer does after the update.</description>
+        <name>NoMoreValueFormula</name>
+        <dataType>Boolean</dataType>
+        <expression>(NOT(ISNEW()) &amp;&amp; 
+ISCHANGED({!$Record.Investor_Account__c}) &amp;&amp; 
+ISBLANK({!$Record.Investor_Account__c}))</expression>
+    </formulas>
+    <interviewLabel>Investor Tracker - Account triggers flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Investor Tracker - Account triggers flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Changed_New_Record</name>
+        <label>Changed New Record</label>
+        <locationX>578</locationX>
+        <locationY>455</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Changed_Old_Record</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Investor_Account__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Investor_Account__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Standard_Account__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Changed_Old_Record</name>
+        <label>Changed Old Record</label>
+        <locationX>578</locationX>
+        <locationY>575</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Standard_Account_values</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record__Prior.Investor_Account__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Investor_Account__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Standard_Account__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_M_A_Record</name>
+        <label>Get M&amp;A Record</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_New_Value</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Investor_Account__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Investor_Account__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Standard_Account__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Old_M_A_Record</name>
+        <label>Get Old M&amp;A Record</label>
+        <locationX>314</locationX>
+        <locationY>455</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Standard_Account_to_NULL</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record__Prior.Investor_Account__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Investor_Account__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Standard_Account__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_M_A_record</name>
+        <label>Update M&amp;A record</label>
+        <locationX>50</locationX>
+        <locationY>695</locationY>
+        <inputReference>Get_M_A_Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_New</name>
+        <label>Update New</label>
+        <locationX>578</locationX>
+        <locationY>935</locationY>
+        <inputReference>Changed_New_Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Old</name>
+        <label>Update Old</label>
+        <locationX>578</locationX>
+        <locationY>815</locationY>
+        <connector>
+            <targetReference>Update_New</targetReference>
+        </connector>
+        <inputReference>Changed_Old_Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Old_M_A</name>
+        <label>Update Old M&amp;A</label>
+        <locationX>314</locationX>
+        <locationY>695</locationY>
+        <inputReference>Get_Old_M_A_Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Decision</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Investor_Account__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Investor_Account__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

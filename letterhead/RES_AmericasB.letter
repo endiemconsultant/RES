@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Letterhead xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <backgroundColor>#dbd7bd</backgroundColor>
+    <bodyColor>#FFFFFF</bodyColor>
+    <bottomLine>
+        <color>#7686c2</color>
+        <height>5</height>
+    </bottomLine>
+    <description>RES Americas Letter Head with Logo.</description>
+    <footer>
+        <backgroundColor>#FFFFFF</backgroundColor>
+        <height>100</height>
+        <horizontalAlignment>Left</horizontalAlignment>
+        <verticalAlignment>Top</verticalAlignment>
+    </footer>
+    <header>
+        <backgroundColor>#FFFFFF</backgroundColor>
+        <height>100</height>
+        <horizontalAlignment>Left</horizontalAlignment>
+        <logo>Logos/RESAmericas_Logo_for_E_mail_Templates.jpg</logo>
+        <verticalAlignment>Top</verticalAlignment>
+    </header>
+    <middleLine>
+        <color>#7686c2</color>
+        <height>5</height>
+    </middleLine>
+    <name>RES AmericasB</name>
+    <topLine>
+        <color>#f37421</color>
+        <height>5</height>
+    </topLine>
+</Letterhead>

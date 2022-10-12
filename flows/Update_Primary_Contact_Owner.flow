@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <assignments>
+        <description>Assigns the variable&apos;s contact record to the Primary Contact Owner field.</description>
+        <name>Assign_PCM_value_0</name>
+        <label>Assign PCM value</label>
+        <locationX>50</locationX>
+        <locationY>551</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Primary_Contact_Owner__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varPrimaryContactOwner.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Updates_the_KDM_Contact_0</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Checks if a RES employee contact record was found with the same email address as the user listed &quot;Contact Owner&quot; on the updated record.
+Yes Contact Found - flow will update the Primary Contact Owner field
+No Contact Found - flow will send email to admin</description>
+        <name>Was_Contact_Found</name>
+        <label>Was Contact Found?</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>No Contact Found</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Contact_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varPrimaryContactOwner</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_PCM_value_0</targetReference>
+            </connector>
+            <label>Yes Contact Found</label>
+        </rules>
+    </decisions>
+    <description>If an active contact is checked as a &quot;key decision maker&quot; and does not have a &quot;primary contact owner&quot; specified - then this flow will pull the email address of the user account listed as &quot;contact owner&quot; and insert the RES contact record with the matching email address. 
+---If the &quot;contact owner&quot; user account is inactive - then the &quot;contact owner&quot; field needs to be replaced with an active user.
+---If the &quot;contact owner&quot; user account is active and there isn&apos;t a RES contact created - then check the &quot;Daily User - Contact check&quot; flow is functioning properly.</description>
+    <interviewLabel>Update Primary Contact Owner {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Primary Contact Owner</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets the RES employee contact that with the same email as the Contact Owner  of the record.
+Assigns the record ID of the RES employee contact to the varPrimaryContactOwner variable</description>
+        <name>Lookup_PCM</name>
+        <label>Lookup PCM</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Was_Contact_Found</targetReference>
+        </connector>
+        <filterLogic>(1 OR (2 AND 3)) AND (4 OR 5 OR 6 OR 7 OR 8)</filterLogic>
+        <filters>
+            <field>Email</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Owner.Email</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>FirstName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Owner.FirstName</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>LastName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Owner.LastName</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>001i000000poZN3AAM</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>001i000000svaF8AAI</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>001i000000svS63AAE</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>001i000001zZ2VgAAK</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>001i000001p6troAAA</stringValue>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <outputReference>varPrimaryContactOwner</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates the contact, that triggered the entire flow, with its new PCM value</description>
+        <name>Updates_the_KDM_Contact_0</name>
+        <label>Updates the KDM Contact</label>
+        <locationX>50</locationX>
+        <locationY>671</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Lookup_PCM</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Inactive__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Primary_Contact_Owner__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Key_Decision_Maker__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Contact</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Body_Template</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Key Decision Maker contact {!$Record.Name} of {!$Record.Account.Name} does not have a Primary Contact Owner listed.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;The flow &quot;Set Primary Contact Owner&quot; could not locate a RES contact record associated with the user listed as &lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;{!$Record.Name}&apos;s contact owner.&lt;/span&gt;&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Subject_Template</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;RES User missing an associated Contact record&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <description>Stores the Primary Contact Owner record</description>
+        <name>varPrimaryContactOwner</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Contact</objectType>
+    </variables>
+</Flow>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Partner Contact Role</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Partner Contact Roles</value>
+    </caseValues>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Partner Contact Roles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Name --></label>
+        <name>Partner_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Development --></label>
+        <name>Project_Development__c</name>
+        <relationshipLabel><!-- Partner Contact Roles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Partner --></label>
+        <name>Project_Partner__c</name>
+        <relationshipLabel><!-- Partner Contact Roles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+        <picklistValues>
+            <masterLabel>Affiliate</masterLabel>
+            <translation><!-- Affiliate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broker</masterLabel>
+            <translation><!-- Broker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Member</masterLabel>
+            <translation><!-- Community Member --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Constructor</masterLabel>
+            <translation><!-- Constructor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation><!-- Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Developer/Owner/Operator</masterLabel>
+            <translation><!-- Developer/Owner/Operator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributor</masterLabel>
+            <translation><!-- Distributor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financier / Lender</masterLabel>
+            <translation><!-- Financier / Lender --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Influencer</masterLabel>
+            <translation><!-- Influencer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurer</masterLabel>
+            <translation><!-- Insurer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Land Agent</masterLabel>
+            <translation><!-- Land Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Landowner</masterLabel>
+            <translation><!-- Landowner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-statutory Consultee</masterLabel>
+            <translation><!-- Non-statutory Consultee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Statutory Consultee</masterLabel>
+            <translation><!-- Statutory Consultee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology Provider</masterLabel>
+            <translation><!-- Technology Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Body</masterLabel>
+            <translation><!-- Trade Body --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utility</masterLabel>
+            <translation><!-- Utility --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Partner Contact Role Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

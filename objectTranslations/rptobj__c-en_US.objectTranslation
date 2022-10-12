@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>rptobj</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>rptobj</value>
+    </caseValues>
+    <fields>
+        <label><!-- reporttrigger --></label>
+        <name>reporttrigger__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <workflowTasks>
+        <name>Test</name>
+        <subject><!-- Test --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Test123</name>
+        <subject><!-- Test --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

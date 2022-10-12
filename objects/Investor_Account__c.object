@@ -1,0 +1,4627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Investor_Account</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Investor_Account</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Master</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Master</fullName>
+        <fields>Name</fields>
+        <fields>OwnerId</fields>
+        <fields>Type_of_Account__c</fields>
+        <fields>Standard_Account__c</fields>
+        <label>Master</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>AM_Services_Third_Party__c</fullName>
+        <externalId>false</externalId>
+        <label>AM Services - Third Party</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AM_Services__c</fullName>
+        <externalId>false</externalId>
+        <label>AM Services</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In-House</fullName>
+                    <default>false</default>
+                    <label>In-House</label>
+                </value>
+                <value>
+                    <fullName>Third Party</fullName>
+                    <default>false</default>
+                    <label>Third Party</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Above_50MW_GB_project_AC_DC_ratio_used__c</fullName>
+        <externalId>false</externalId>
+        <label>Above 50MW project AC-DC ratio used (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Above_50MW_IE_project_AC_DC_ratio_used__c</fullName>
+        <externalId>false</externalId>
+        <label>Above 50MW project AC-DC ratio used (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Construction_Services_Third_Party__c</fullName>
+        <externalId>false</externalId>
+        <label>Construction Services - Third Party</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Construction_Services__c</fullName>
+        <externalId>false</externalId>
+        <label>Construction Services</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In-House</fullName>
+                    <default>false</default>
+                    <label>In-House</label>
+                </value>
+                <value>
+                    <fullName>Third Party</fullName>
+                    <default>false</default>
+                    <label>Third Party</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Hydrogen_Interest_in_which_Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Hydrogen Interest in which Region?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GB</fullName>
+                    <default>false</default>
+                    <label>GB</label>
+                </value>
+                <value>
+                    <fullName>Northern Ireland</fullName>
+                    <default>false</default>
+                    <label>Northern Ireland</label>
+                </value>
+                <value>
+                    <fullName>Republic of Ireland</fullName>
+                    <default>false</default>
+                    <label>Republic of Ireland</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Interested_in_Hydrogen__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Interested in Hydrogen?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Interested_in_Onshore_Wind__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Interested in Onshore Wind?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Interested_in_Other_Markets__c</fullName>
+        <externalId>false</externalId>
+        <label>Interested in Other Markets?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Australia</fullName>
+                    <default>false</default>
+                    <label>Australia</label>
+                </value>
+                <value>
+                    <fullName>French</fullName>
+                    <default>false</default>
+                    <label>French</label>
+                </value>
+                <value>
+                    <fullName>German</fullName>
+                    <default>false</default>
+                    <label>German</label>
+                </value>
+                <value>
+                    <fullName>Nordics</fullName>
+                    <default>false</default>
+                    <label>Nordics</label>
+                </value>
+                <value>
+                    <fullName>Turkey</fullName>
+                    <default>false</default>
+                    <label>Turkey</label>
+                </value>
+                <value>
+                    <fullName>US</fullName>
+                    <default>false</default>
+                    <label>US</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Interested_in_Solar__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Interested in Solar?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Interested_in_Storage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Interested in Storage?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OM_Services_Third_Party__c</fullName>
+        <externalId>false</externalId>
+        <label>O&amp;M Services - Third Party</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OM_Services__c</fullName>
+        <externalId>false</externalId>
+        <label>O&amp;M Services</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In-House</fullName>
+                    <default>false</default>
+                    <label>In-House</label>
+                </value>
+                <value>
+                    <fullName>Third Party</fullName>
+                    <default>false</default>
+                    <label>Third Party</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Onshore_Additional_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Additional Comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_3rd_Party_Energy_Assessment__c</fullName>
+        <externalId>false</externalId>
+        <label>3rd Party-Onshore Energy Assessment (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_AFRY_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore AFRY Revenue % (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Additional_Dev_Risk__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Onshore Dev Risk? (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Aurora_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Aurora Revenue % (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Baringa_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Baringa Revenue % (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_CPI_Inflation__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore CPI Inflation (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_CPPA_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore CPPA Revenue % (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_CfD_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore CfD Revenue % (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Consultant_Revenue_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Consultant Revenue Forecast (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AFRY</fullName>
+                    <default>false</default>
+                    <label>AFRY</label>
+                </value>
+                <value>
+                    <fullName>Aurora</fullName>
+                    <default>false</default>
+                    <label>Aurora</label>
+                </value>
+                <value>
+                    <fullName>Baringa</fullName>
+                    <default>false</default>
+                    <label>Baringa</label>
+                </value>
+                <value>
+                    <fullName>Cornwall Insight</fullName>
+                    <default>false</default>
+                    <label>Cornwall Insight</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Cornwall_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Cornwall Revenue % (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Curtailment_Consultant__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Curtailment Consultant (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AFRY</fullName>
+                    <default>false</default>
+                    <label>AFRY</label>
+                </value>
+                <value>
+                    <fullName>Aurora</fullName>
+                    <default>false</default>
+                    <label>Aurora</label>
+                </value>
+                <value>
+                    <fullName>Baringa</fullName>
+                    <default>false</default>
+                    <label>Baringa</label>
+                </value>
+                <value>
+                    <fullName>Cornwall Insight</fullName>
+                    <default>false</default>
+                    <label>Cornwall Insight</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Curtailment_Grid_Operator__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Curtailment Grid Operator (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_DD_Providers__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore - DD Providers (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Legal</fullName>
+                    <default>false</default>
+                    <label>Legal</label>
+                </value>
+                <value>
+                    <fullName>Property &amp; Planning</fullName>
+                    <default>false</default>
+                    <label>Property &amp; Planning</label>
+                </value>
+                <value>
+                    <fullName>Technical</fullName>
+                    <default>false</default>
+                    <label>Technical</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_EPC_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore EPC Provider (GB)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Energy_Yield_Assessment__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Energy Yield Assessment (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In-House</fullName>
+                    <default>false</default>
+                    <label>In-House</label>
+                </value>
+                <value>
+                    <fullName>Third_Party</fullName>
+                    <default>false</default>
+                    <label>Third Party</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Financial_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore - Financial - DD Provider (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_IRR_Fixed__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore IRR - Fixed (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_IRR_Merchant__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore IRR - Merchant (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Inflation_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Inflation Notes (GB)</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>20</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Legal_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore - Legal - DD Provider (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Merchant_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Merchant Revenue % (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Other_Consultant_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Onshore Consultant Revenue %(GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Other_Curtailment_Consultant__c</fullName>
+        <externalId>false</externalId>
+        <label>Other-Onshore Curtailment Consultant(GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Other_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Onshore Revenue % (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Other_Route_Rev_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Onshore Route Rev Forecast (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Other_Route_to_Market__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Onshore Route to Market (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Outstanding_Development_Risk__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Onshore Outstanding Development Risk(GB)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_PP_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore - P&amp;P - DD Provider (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_RPI_Inflation__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore RPI Inflation (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Risk_Investor_Not_Taking__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify Outstanding Development Risk that the investor is not comfortable taking?</inlineHelpText>
+        <label>Onshore Risk Investor Not Taking? (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Grid Price</fullName>
+                    <default>false</default>
+                    <label>Grid Price</label>
+                </value>
+                <value>
+                    <fullName>Grid Connection Offer</fullName>
+                    <default>false</default>
+                    <label>Grid Connection Offer</label>
+                </value>
+                <value>
+                    <fullName>Grid Route</fullName>
+                    <default>false</default>
+                    <label>Grid Route</label>
+                </value>
+                <value>
+                    <fullName>Grid Planning</fullName>
+                    <default>false</default>
+                    <label>Grid Planning</label>
+                </value>
+                <value>
+                    <fullName>Option Lease Completed</fullName>
+                    <default>false</default>
+                    <label>Option Lease Completed</label>
+                </value>
+                <value>
+                    <fullName>Title Matters</fullName>
+                    <default>false</default>
+                    <label>Title Matters</label>
+                </value>
+                <value>
+                    <fullName>Procurement</fullName>
+                    <default>false</default>
+                    <label>Procurement</label>
+                </value>
+                <value>
+                    <fullName>Auction / Route to Market</fullName>
+                    <default>false</default>
+                    <label>Auction / Route to Market</label>
+                </value>
+                <value>
+                    <fullName>Planning</fullName>
+                    <default>false</default>
+                    <label>Planning</label>
+                </value>
+                <value>
+                    <fullName>JR Risk</fullName>
+                    <default>false</default>
+                    <label>JR Risk</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Route_to_Market_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Route to Market Provider (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Route_to_Market_Rev_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Route to Market Rev Forecast(GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CfD</fullName>
+                    <default>false</default>
+                    <label>CfD</label>
+                </value>
+                <value>
+                    <fullName>CPPA</fullName>
+                    <default>false</default>
+                    <label>CPPA</label>
+                </value>
+                <value>
+                    <fullName>Merchant</fullName>
+                    <default>false</default>
+                    <label>Merchant</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Route_to_Market__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Route to Market (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Merchant</fullName>
+                    <default>false</default>
+                    <label>Merchant</label>
+                </value>
+                <value>
+                    <fullName>CfD</fullName>
+                    <default>false</default>
+                    <label>CfD</label>
+                </value>
+                <value>
+                    <fullName>CPPA</fullName>
+                    <default>false</default>
+                    <label>CPPA</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Size_Appetite__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Size Appetite (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>&lt;15 MW</fullName>
+                    <default>false</default>
+                    <label>&lt;15 MW</label>
+                </value>
+                <value>
+                    <fullName>15-50 MW</fullName>
+                    <default>false</default>
+                    <label>15-50 MW</label>
+                </value>
+                <value>
+                    <fullName>&gt;50 MW</fullName>
+                    <default>false</default>
+                    <label>&gt;50 MW</label>
+                </value>
+                <value>
+                    <fullName>&gt;100 MW</fullName>
+                    <default>false</default>
+                    <label>&gt;100 MW</label>
+                </value>
+                <value>
+                    <fullName>&gt;300 MW</fullName>
+                    <default>false</default>
+                    <label>&gt;300 MW</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Specify_Consultant_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Specify Onshore Consultant Revenue %(GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Specify_Route_to_Market_Rev__c</fullName>
+        <externalId>false</externalId>
+        <label>Specify Onshore Route to Market Rev%(GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_GB_Technical_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore - Technical - DD Provider (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_Grid_Configuration__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Grid Configuration</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Co-located with Batteries</fullName>
+                    <default>false</default>
+                    <label>Co-located with Batteries</label>
+                </value>
+                <value>
+                    <fullName>Co-located with H2 Electrolyser</fullName>
+                    <default>false</default>
+                    <label>Co-located with H2 Electrolyser</label>
+                </value>
+                <value>
+                    <fullName>Hybrid</fullName>
+                    <default>false</default>
+                    <label>Hybrid</label>
+                </value>
+                <value>
+                    <fullName>Standalone</fullName>
+                    <default>false</default>
+                    <label>Standalone</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_3rd_Party_Energy_Assessment__c</fullName>
+        <externalId>false</externalId>
+        <label>3rd Party-Onshore Energy Assessment (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_AFRY_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore AFRY Revenue % (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Additional_Dev_Risk__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Onshore Dev Risk? (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Aurora_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Aurora Revenue % (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Baringa_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Baringa Revenue % (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_CPI_Inflation__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore CPI Inflation (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_CPPA_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore CPPA Revenue % (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_CfD_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore CfD Revenue % (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Consultant_Revenue_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Consultant Revenue Forecast (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AFRY</fullName>
+                    <default>false</default>
+                    <label>AFRY</label>
+                </value>
+                <value>
+                    <fullName>Aurora</fullName>
+                    <default>false</default>
+                    <label>Aurora</label>
+                </value>
+                <value>
+                    <fullName>Baringa</fullName>
+                    <default>false</default>
+                    <label>Baringa</label>
+                </value>
+                <value>
+                    <fullName>Cornwall Insight</fullName>
+                    <default>false</default>
+                    <label>Cornwall Insight</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Cornwall_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Cornwall Revenue % (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Curtailment_Consultant__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Curtailment Consultant (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AFRY</fullName>
+                    <default>false</default>
+                    <label>AFRY</label>
+                </value>
+                <value>
+                    <fullName>Aurora</fullName>
+                    <default>false</default>
+                    <label>Aurora</label>
+                </value>
+                <value>
+                    <fullName>Baringa</fullName>
+                    <default>false</default>
+                    <label>Baringa</label>
+                </value>
+                <value>
+                    <fullName>Cornwall Insight</fullName>
+                    <default>false</default>
+                    <label>Cornwall Insight</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Curtailment_Grid_Operator__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Curtailment Grid Operator (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_DD_Providers__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore - DD Providers (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Legal</fullName>
+                    <default>false</default>
+                    <label>Legal</label>
+                </value>
+                <value>
+                    <fullName>Property &amp; Planning</fullName>
+                    <default>false</default>
+                    <label>Property &amp; Planning</label>
+                </value>
+                <value>
+                    <fullName>Technical</fullName>
+                    <default>false</default>
+                    <label>Technical</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_EPC_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore EPC Provider (IE)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Energy_Yield_Assessment__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Energy Yield Assessment (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In-House</fullName>
+                    <default>false</default>
+                    <label>In-House</label>
+                </value>
+                <value>
+                    <fullName>Third_Party</fullName>
+                    <default>false</default>
+                    <label>Third Party</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Financial_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore - Financial - DD Provider (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_IRR_Fixed__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore IRR - Fixed (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_IRR_Merchant__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore IRR - Merchant (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Inflation_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Inflation Notes (IE)</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>20</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Legal_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore - Legal - DD Provider (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Merchant_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Merchant Revenue % (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Other_Consultant_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Onshore Consultant Revenue %(IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Other_Curtailment_Consultant__c</fullName>
+        <externalId>false</externalId>
+        <label>Other-Onshore Curtailment Consultant(IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Other_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Onshore Revenue % (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Other_Route_Rev_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Onshore Route Rev Forecast (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Other_Route_to_Market__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Onshore Route to Market (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Outstanding_Development_Risk__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Onshore Outstanding Development Risk(IE)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_PP_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore - P&amp;P - DD Provider (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_RPI_Inflation__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore RPI Inflation (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Risk_Investor_Not_Taking__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify Outstanding Development Risk that the investor is not comfortable taking?</inlineHelpText>
+        <label>Onshore Risk Investor Not Taking? (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Grid Price</fullName>
+                    <default>false</default>
+                    <label>Grid Price</label>
+                </value>
+                <value>
+                    <fullName>Grid Connection Offer</fullName>
+                    <default>false</default>
+                    <label>Grid Connection Offer</label>
+                </value>
+                <value>
+                    <fullName>Grid Route</fullName>
+                    <default>false</default>
+                    <label>Grid Route</label>
+                </value>
+                <value>
+                    <fullName>Grid Planning</fullName>
+                    <default>false</default>
+                    <label>Grid Planning</label>
+                </value>
+                <value>
+                    <fullName>Option Lease Completed</fullName>
+                    <default>false</default>
+                    <label>Option Lease Completed</label>
+                </value>
+                <value>
+                    <fullName>Title Matters</fullName>
+                    <default>false</default>
+                    <label>Title Matters</label>
+                </value>
+                <value>
+                    <fullName>Procurement</fullName>
+                    <default>false</default>
+                    <label>Procurement</label>
+                </value>
+                <value>
+                    <fullName>Auction / Route to Market</fullName>
+                    <default>false</default>
+                    <label>Auction / Route to Market</label>
+                </value>
+                <value>
+                    <fullName>Planning</fullName>
+                    <default>false</default>
+                    <label>Planning</label>
+                </value>
+                <value>
+                    <fullName>JR Risk</fullName>
+                    <default>false</default>
+                    <label>JR Risk</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Route_to_Market_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Route to Market Provider (IE)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Route_to_Market_Rev_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Route to Market Rev Forecast(IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CfD</fullName>
+                    <default>false</default>
+                    <label>CfD</label>
+                </value>
+                <value>
+                    <fullName>CPPA</fullName>
+                    <default>false</default>
+                    <label>CPPA</label>
+                </value>
+                <value>
+                    <fullName>Merchant</fullName>
+                    <default>false</default>
+                    <label>Merchant</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Route_to_Market__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Route to Market (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Merchant</fullName>
+                    <default>false</default>
+                    <label>Merchant</label>
+                </value>
+                <value>
+                    <fullName>CfD</fullName>
+                    <default>false</default>
+                    <label>CfD</label>
+                </value>
+                <value>
+                    <fullName>CPPA</fullName>
+                    <default>false</default>
+                    <label>CPPA</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Size_Appetite__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Size Appetite (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>&lt;15 MW</fullName>
+                    <default>false</default>
+                    <label>&lt;15 MW</label>
+                </value>
+                <value>
+                    <fullName>15-50 MW</fullName>
+                    <default>false</default>
+                    <label>15-50 MW</label>
+                </value>
+                <value>
+                    <fullName>&gt;50 MW</fullName>
+                    <default>false</default>
+                    <label>&gt;50 MW</label>
+                </value>
+                <value>
+                    <fullName>&gt;100 MW</fullName>
+                    <default>false</default>
+                    <label>&gt;100 MW</label>
+                </value>
+                <value>
+                    <fullName>&gt;300 MW</fullName>
+                    <default>false</default>
+                    <label>&gt;300 MW</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Specify_Consultant_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Specify Onshore Consultant Revenue %(IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Specify_Route_to_Market_Rev__c</fullName>
+        <externalId>false</externalId>
+        <label>Specify Onshore Route to Market Rev%(IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Onshore_IE_Technical_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore - Technical - DD Provider (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_Interest_in_which_Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Onshore Interest in which Region?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GB</fullName>
+                    <default>false</default>
+                    <label>GB</label>
+                </value>
+                <value>
+                    <fullName>Northern Ireland</fullName>
+                    <default>false</default>
+                    <label>Northern Ireland</label>
+                </value>
+                <value>
+                    <fullName>Republic of Ireland</fullName>
+                    <default>false</default>
+                    <label>Republic of Ireland</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Onshore_Other_Service_Not_Available__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Onshore Service Not Available</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Onshore_Service_Not_Available_to_RES__c</fullName>
+        <externalId>false</externalId>
+        <label>Which Service is Not Available to RES?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>EPC</fullName>
+                    <default>false</default>
+                    <label>EPC</label>
+                </value>
+                <value>
+                    <fullName>AM</fullName>
+                    <default>false</default>
+                    <label>AM</label>
+                </value>
+                <value>
+                    <fullName>O&amp;M</fullName>
+                    <default>false</default>
+                    <label>O&amp;M</label>
+                </value>
+                <value>
+                    <fullName>PPA</fullName>
+                    <default>false</default>
+                    <label>PPA</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Other_Type_of_Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Type of Account</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Provide_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Provide Details</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>20</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_Additional_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Additional Comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_3rd_Party_Energy_Assessment__c</fullName>
+        <externalId>false</externalId>
+        <label>3rd Party - Solar Energy Assessment (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_AFRY_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar AFRY Revenue % (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Additional_Dev_Risk__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Solar Dev Risk? (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Aurora_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Aurora Revenue % (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Baringa_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Baringa Revenue % (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_CPI_Inflation__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar CPI Inflation (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_CPPA_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar CPPA Revenue % (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_CfD_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar CfD Revenue % (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Consultant_Revenue_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Consultant Revenue Forecast (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AFRY</fullName>
+                    <default>false</default>
+                    <label>AFRY</label>
+                </value>
+                <value>
+                    <fullName>Aurora</fullName>
+                    <default>false</default>
+                    <label>Aurora</label>
+                </value>
+                <value>
+                    <fullName>Baringa</fullName>
+                    <default>false</default>
+                    <label>Baringa</label>
+                </value>
+                <value>
+                    <fullName>Cornwall Insight</fullName>
+                    <default>false</default>
+                    <label>Cornwall Insight</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Cornwall_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Cornwall Revenue % (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Curtailment_Consultant__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Curtailment Consultant (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AFRY</fullName>
+                    <default>false</default>
+                    <label>AFRY</label>
+                </value>
+                <value>
+                    <fullName>Baringa</fullName>
+                    <default>false</default>
+                    <label>Baringa</label>
+                </value>
+                <value>
+                    <fullName>Aurora</fullName>
+                    <default>false</default>
+                    <label>Aurora</label>
+                </value>
+                <value>
+                    <fullName>Cornwall Insight</fullName>
+                    <default>false</default>
+                    <label>Cornwall Insight</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Curtailment_Grid_Operator__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Curtailment Grid Operator (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_DD_Providers__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar - DD Providers (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Legal</fullName>
+                    <default>false</default>
+                    <label>Legal</label>
+                </value>
+                <value>
+                    <fullName>Property &amp; Planning</fullName>
+                    <default>false</default>
+                    <label>Property &amp; Planning</label>
+                </value>
+                <value>
+                    <fullName>Technical</fullName>
+                    <default>false</default>
+                    <label>Technical</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_EPC_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar EPC Provider (GB)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Energy_Yield_Assessment__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Energy Yield Assessment (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In-House</fullName>
+                    <default>false</default>
+                    <label>In-House</label>
+                </value>
+                <value>
+                    <fullName>Third_Party</fullName>
+                    <default>false</default>
+                    <label>Third Party</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Financial_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar - Financial - DD Provider (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_GCR_Ratio__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar GCR Ratio (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_IRR_Fixed__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar IRR - Fixed (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_IRR_Merchant__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar IRR - Merchant (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Inflation_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Inflation Notes (GB)</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>20</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Inverter_Size_MW__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Inverter Size MW (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Irradiance_options__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Irradiance (options) (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GHI</fullName>
+                    <default>false</default>
+                    <label>GHI</label>
+                </value>
+                <value>
+                    <fullName>Specific Production</fullName>
+                    <default>false</default>
+                    <label>Specific Production</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Legal_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar - Legal - DD Provider (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Merchant_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Merchant Revenue % (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Module_Size_W__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Module Size W (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Other_Consultant_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Solar Consultant Revenue % (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Other_Curtailment_Consultant__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Solar Curtailment Consultant(GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Other_Irradiance_Options__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Solar Irradiance Options (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Other_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Solar Revenue % (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Other_Route_Rev_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Solar Route Rev Forecast (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Other_Route_to_Market__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Solar Route to Market (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Outstanding_Development_Risk__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Solar Outstanding Development Risk (GB)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_PP_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar - P&amp;P - DD Provider (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Pitch_m__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Pitch (m) (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_RPI_Inflation__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar RPI Inflation (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Risk_Investor_Not_Taking__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify Outstanding Development Risk that the investor is not comfortable taking?</inlineHelpText>
+        <label>Solar Risk Investor Not Taking? (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Grid Price</fullName>
+                    <default>false</default>
+                    <label>Grid Price</label>
+                </value>
+                <value>
+                    <fullName>Grid Connection Offer</fullName>
+                    <default>false</default>
+                    <label>Grid Connection Offer</label>
+                </value>
+                <value>
+                    <fullName>Grid Route</fullName>
+                    <default>false</default>
+                    <label>Grid Route</label>
+                </value>
+                <value>
+                    <fullName>Grid Planning</fullName>
+                    <default>false</default>
+                    <label>Grid Planning</label>
+                </value>
+                <value>
+                    <fullName>Option Lease Completed</fullName>
+                    <default>false</default>
+                    <label>Option Lease Completed</label>
+                </value>
+                <value>
+                    <fullName>Title Matters</fullName>
+                    <default>false</default>
+                    <label>Title Matters</label>
+                </value>
+                <value>
+                    <fullName>Procurement</fullName>
+                    <default>false</default>
+                    <label>Procurement</label>
+                </value>
+                <value>
+                    <fullName>Auction / Route to Market</fullName>
+                    <default>false</default>
+                    <label>Auction / Route to Market</label>
+                </value>
+                <value>
+                    <fullName>Planning</fullName>
+                    <default>false</default>
+                    <label>Planning</label>
+                </value>
+                <value>
+                    <fullName>JR Risk</fullName>
+                    <default>false</default>
+                    <label>JR Risk</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Route_to_Market_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Route to Market Provider (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Route_to_Market_Rev_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Route to Market Rev Forecast (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>CfD</fullName>
+                    <default>false</default>
+                    <label>CfD</label>
+                </value>
+                <value>
+                    <fullName>CPPA</fullName>
+                    <default>false</default>
+                    <label>CPPA</label>
+                </value>
+                <value>
+                    <fullName>Merchant</fullName>
+                    <default>false</default>
+                    <label>Merchant</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Route_to_Market__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Route to Market (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Merchant</fullName>
+                    <default>false</default>
+                    <label>Merchant</label>
+                </value>
+                <value>
+                    <fullName>CfD</fullName>
+                    <default>false</default>
+                    <label>CfD</label>
+                </value>
+                <value>
+                    <fullName>CPPA</fullName>
+                    <default>false</default>
+                    <label>CPPA</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Size_Appetite__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Size Appetite (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>&lt;10 MW</fullName>
+                    <default>false</default>
+                    <label>&lt;10 MW</label>
+                </value>
+                <value>
+                    <fullName>10-50 MW</fullName>
+                    <default>false</default>
+                    <label>10-50 MW</label>
+                </value>
+                <value>
+                    <fullName>&gt;50 MW</fullName>
+                    <default>false</default>
+                    <label>&gt;50 MW</label>
+                </value>
+                <value>
+                    <fullName>&gt;100 MW</fullName>
+                    <default>false</default>
+                    <label>&gt;100 MW</label>
+                </value>
+                <value>
+                    <fullName>&gt;300 MW</fullName>
+                    <default>false</default>
+                    <label>&gt;300 MW</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Specify_Consultant_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Specify Solar Consultant Revenue % (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Specify_Route_to_Market_Rev__c</fullName>
+        <externalId>false</externalId>
+        <label>Specify Solar Route to Market Rev % (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Technical_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar - Technical - DD Provider (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Tilt_degrees__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Tilt (degrees) (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_GB_Type_of_Inverter__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Type of Inverter (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Central Inverters</fullName>
+                    <default>false</default>
+                    <label>Central Inverters</label>
+                </value>
+                <value>
+                    <fullName>String</fullName>
+                    <default>false</default>
+                    <label>String</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Solar_Grid_Configuration__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Grid Configuration</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Co-located with Batteries</fullName>
+                    <default>false</default>
+                    <label>Co-located with Batteries</label>
+                </value>
+                <value>
+                    <fullName>Co-located with H2 Electrolyser</fullName>
+                    <default>false</default>
+                    <label>Co-located with H2 Electrolyser</label>
+                </value>
+                <value>
+                    <fullName>Hybrid</fullName>
+                    <default>false</default>
+                    <label>Hybrid</label>
+                </value>
+                <value>
+                    <fullName>Standalone</fullName>
+                    <default>false</default>
+                    <label>Standalone</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_3rd_Party_Energy_Assessment__c</fullName>
+        <externalId>false</externalId>
+        <label>3rd Party - Solar Energy Assessment (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_AFRY_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar AFRY Revenue % (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Additional_Dev_Risk__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Solar Dev Risk? (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Aurora_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Aurora Revenue % (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Baringa_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Baringa Revenue % (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_CPI_Inflation__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar CPI Inflation (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_CPPA_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar CPPA Revenue % (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_CfD_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar CfD Revenue % (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Consultant_Revenue_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Consultant Revenue Forecast (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AFRY</fullName>
+                    <default>false</default>
+                    <label>AFRY</label>
+                </value>
+                <value>
+                    <fullName>Aurora</fullName>
+                    <default>false</default>
+                    <label>Aurora</label>
+                </value>
+                <value>
+                    <fullName>Baringa</fullName>
+                    <default>false</default>
+                    <label>Baringa</label>
+                </value>
+                <value>
+                    <fullName>Cornwall Insight</fullName>
+                    <default>false</default>
+                    <label>Cornwall Insight</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Cornwall_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Cornwall Revenue % (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Curtailment_Consultant__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Curtailment Consultant (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AFRY</fullName>
+                    <default>false</default>
+                    <label>AFRY</label>
+                </value>
+                <value>
+                    <fullName>Aurora</fullName>
+                    <default>false</default>
+                    <label>Aurora</label>
+                </value>
+                <value>
+                    <fullName>Baringa</fullName>
+                    <default>false</default>
+                    <label>Baringa</label>
+                </value>
+                <value>
+                    <fullName>Cornwall Insight</fullName>
+                    <default>false</default>
+                    <label>Cornwall Insight</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Curtailment_Grid_Operator__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Curtailment Grid Operator (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_DD_Providers__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar - DD Providers (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Legal</fullName>
+                    <default>false</default>
+                    <label>Legal</label>
+                </value>
+                <value>
+                    <fullName>Property &amp; Planning</fullName>
+                    <default>false</default>
+                    <label>Property &amp; Planning</label>
+                </value>
+                <value>
+                    <fullName>Technical</fullName>
+                    <default>false</default>
+                    <label>Technical</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_EPC_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar EPC Provider (IE)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Energy_Yield_Assessment__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Energy Yield Assessment (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In-House</fullName>
+                    <default>false</default>
+                    <label>In-House</label>
+                </value>
+                <value>
+                    <fullName>Third_Party</fullName>
+                    <default>false</default>
+                    <label>Third Party</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Financial_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar - Financial - DD Provider (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_GCR_Ratio__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar GCR Ratio (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_IRR_Fixed__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar IRR - Fixed (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_IRR_Merchant__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar IRR - Merchant (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Inflation_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Inflation Notes (IE)</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>20</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Inverter_Size_MW__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Inverter Size MW (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Irradiance_options__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Irradiance (options) (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GHI</fullName>
+                    <default>false</default>
+                    <label>GHI</label>
+                </value>
+                <value>
+                    <fullName>Specific Production</fullName>
+                    <default>false</default>
+                    <label>Specific Production</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Legal_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar - Legal - DD Provider (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Merchant_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Merchant Revenue % (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Module_Size_W__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Module Size W (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Other_Consultant_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Solar Consultant Revenue % (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Other_Curtailment_Consultant__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Solar Curtailment Consultant(IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Other_Irradiance_Options__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Solar Irradiance Options (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Other_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Solar Revenue % (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Other_Route_Rev_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Solar Route Rev Forecast (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Other_Route_to_Market__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Solar Route to Market (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Outstanding_Development_Risk__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Solar Outstanding Development Risk (IE)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_PP_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar - P&amp;P - DD Provider (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Pitch_m__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Pitch (m) (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_RPI_Inflation__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar RPI Inflation (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Risk_Investor_Not_Taking__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify Outstanding Development Risk that the investor is not comfortable taking?</inlineHelpText>
+        <label>Solar Risk Investor Not Taking? (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Grid Price</fullName>
+                    <default>false</default>
+                    <label>Grid Price</label>
+                </value>
+                <value>
+                    <fullName>Grid Route</fullName>
+                    <default>false</default>
+                    <label>Grid Route</label>
+                </value>
+                <value>
+                    <fullName>Grid Connection Offer</fullName>
+                    <default>false</default>
+                    <label>Grid Connection Offer</label>
+                </value>
+                <value>
+                    <fullName>Grid Planning</fullName>
+                    <default>false</default>
+                    <label>Grid Planning</label>
+                </value>
+                <value>
+                    <fullName>Option Lease Completed</fullName>
+                    <default>false</default>
+                    <label>Option Lease Completed</label>
+                </value>
+                <value>
+                    <fullName>Title Matters</fullName>
+                    <default>false</default>
+                    <label>Title Matters</label>
+                </value>
+                <value>
+                    <fullName>Procurement</fullName>
+                    <default>false</default>
+                    <label>Procurement</label>
+                </value>
+                <value>
+                    <fullName>Auction / Route to Market</fullName>
+                    <default>false</default>
+                    <label>Auction / Route to Market</label>
+                </value>
+                <value>
+                    <fullName>Planning</fullName>
+                    <default>false</default>
+                    <label>Planning</label>
+                </value>
+                <value>
+                    <fullName>JR Risk</fullName>
+                    <default>false</default>
+                    <label>JR Risk</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Route_to_Market_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Route to Market Provider (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Route_to_Market_Rev_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Route to Market Rev Forecast (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Merchant</fullName>
+                    <default>false</default>
+                    <label>Merchant</label>
+                </value>
+                <value>
+                    <fullName>CfD</fullName>
+                    <default>false</default>
+                    <label>CfD</label>
+                </value>
+                <value>
+                    <fullName>CPPA</fullName>
+                    <default>false</default>
+                    <label>CPPA</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Route_to_Market__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Route to Market (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Merchant</fullName>
+                    <default>false</default>
+                    <label>Merchant</label>
+                </value>
+                <value>
+                    <fullName>CfD</fullName>
+                    <default>false</default>
+                    <label>CfD</label>
+                </value>
+                <value>
+                    <fullName>CPPA</fullName>
+                    <default>false</default>
+                    <label>CPPA</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Size_Appetite__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Size Appetite (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>&lt;10 MW</fullName>
+                    <default>false</default>
+                    <label>&lt;10 MW</label>
+                </value>
+                <value>
+                    <fullName>10-50 MW</fullName>
+                    <default>false</default>
+                    <label>10-50 MW</label>
+                </value>
+                <value>
+                    <fullName>&gt;50 MW</fullName>
+                    <default>false</default>
+                    <label>&gt;50 MW</label>
+                </value>
+                <value>
+                    <fullName>&gt;100 MW</fullName>
+                    <default>false</default>
+                    <label>&gt;100 MW</label>
+                </value>
+                <value>
+                    <fullName>&gt;300 MW</fullName>
+                    <default>false</default>
+                    <label>&gt;300 MW</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Specify_Consultant_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Specify Solar Consultant Revenue % (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Specify_Route_to_Market_Rev__c</fullName>
+        <externalId>false</externalId>
+        <label>Specify Solar Route to Market Rev%(IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Technical_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar - Technical - DD Provider (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Tilt_degrees__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Tilt (degrees) (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_IE_Type_of_Inverter__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Type of Inverter (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Central Inverters</fullName>
+                    <default>false</default>
+                    <label>Central Inverters</label>
+                </value>
+                <value>
+                    <fullName>String</fullName>
+                    <default>false</default>
+                    <label>String</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Solar_Interest_in_which_Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Solar Interest in which Region?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GB</fullName>
+                    <default>false</default>
+                    <label>GB</label>
+                </value>
+                <value>
+                    <fullName>Northern Ireland</fullName>
+                    <default>false</default>
+                    <label>Northern Ireland</label>
+                </value>
+                <value>
+                    <fullName>Republic of Ireland</fullName>
+                    <default>false</default>
+                    <label>Republic of Ireland</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Solar_Other_Service_Not_Available__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Solar Service Not Available</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solar_Service_Not_Available_to_RES__c</fullName>
+        <externalId>false</externalId>
+        <label>Which Service is Not Available to RES?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>EPC</fullName>
+                    <default>false</default>
+                    <label>EPC</label>
+                </value>
+                <value>
+                    <fullName>AM</fullName>
+                    <default>false</default>
+                    <label>AM</label>
+                </value>
+                <value>
+                    <fullName>O&amp;M</fullName>
+                    <default>false</default>
+                    <label>O&amp;M</label>
+                </value>
+                <value>
+                    <fullName>PPA</fullName>
+                    <default>false</default>
+                    <label>PPA</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Standard_Account__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Standard Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>M_A_Accounts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Storage_Additional_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage Additional Comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_Additional_Dev_Risk__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Storage Dev Risk? (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_Battery_Augmentation__c</fullName>
+        <externalId>false</externalId>
+        <label>Battery Augmentation (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_Battery_Manufacturer__c</fullName>
+        <externalId>false</externalId>
+        <label>Battery Manufacturer (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>BYD</fullName>
+                    <default>false</default>
+                    <label>BYD</label>
+                </value>
+                <value>
+                    <fullName>Narada</fullName>
+                    <default>false</default>
+                    <label>Narada</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Samsung</fullName>
+                    <default>false</default>
+                    <label>Samsung</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_CPI_Inflation__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage CPI Inflation (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_Cycling_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage Cycling Rate (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_DD_Providers__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage - DD Providers (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Legal</fullName>
+                    <default>false</default>
+                    <label>Legal</label>
+                </value>
+                <value>
+                    <fullName>Property &amp; Planning</fullName>
+                    <default>false</default>
+                    <label>Property &amp; Planning</label>
+                </value>
+                <value>
+                    <fullName>Technical</fullName>
+                    <default>false</default>
+                    <label>Technical</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_Duration_Appetite__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage Duration Appetite (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0.5hr</fullName>
+                    <default>false</default>
+                    <label>0.5hr</label>
+                </value>
+                <value>
+                    <fullName>1hr</fullName>
+                    <default>false</default>
+                    <label>1hr</label>
+                </value>
+                <value>
+                    <fullName>1.5hr</fullName>
+                    <default>false</default>
+                    <label>1.5hr</label>
+                </value>
+                <value>
+                    <fullName>2hr</fullName>
+                    <default>false</default>
+                    <label>2hr</label>
+                </value>
+                <value>
+                    <fullName>other</fullName>
+                    <default>false</default>
+                    <label>other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_EPC_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage EPC Provider (GB)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_Financial_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage - Financial - DD Provider (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_IRR__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage IRR (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_Inflation_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage Inflation Notes (GB)</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_Legal_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage - Legal - DD Provider (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_Other_Battery_Manufacturer__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Battery Manufacturer (GB)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_Other_Duration_Appetite__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Storage Duration Appetite (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_Other_Route_to_Market__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Storage Route to Market (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_Outstanding_Development_Risk__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Storage Outstanding Development Risk(GB)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_PP_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage - P&amp;P - DD Provider (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_RPI_Inflation__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage RPI Inflation (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_Risk_Investor_Not_Taking__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify Outstanding Development Risk that the investor is not comfortable taking?</inlineHelpText>
+        <label>Storage Risk Investor Not Taking?(GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Grid Price</fullName>
+                    <default>false</default>
+                    <label>Grid Price</label>
+                </value>
+                <value>
+                    <fullName>Grid Route</fullName>
+                    <default>false</default>
+                    <label>Grid Route</label>
+                </value>
+                <value>
+                    <fullName>Grid Connection Offer</fullName>
+                    <default>false</default>
+                    <label>Grid Connection Offer</label>
+                </value>
+                <value>
+                    <fullName>Grid Planning</fullName>
+                    <default>false</default>
+                    <label>Grid Planning</label>
+                </value>
+                <value>
+                    <fullName>Option Lease Completed</fullName>
+                    <default>false</default>
+                    <label>Option Lease Completed</label>
+                </value>
+                <value>
+                    <fullName>Title Matters</fullName>
+                    <default>false</default>
+                    <label>Title Matters</label>
+                </value>
+                <value>
+                    <fullName>Procurement</fullName>
+                    <default>false</default>
+                    <label>Procurement</label>
+                </value>
+                <value>
+                    <fullName>Auction / Route to Market</fullName>
+                    <default>false</default>
+                    <label>Auction / Route to Market</label>
+                </value>
+                <value>
+                    <fullName>Planning</fullName>
+                    <default>false</default>
+                    <label>Planning</label>
+                </value>
+                <value>
+                    <fullName>JR Risk</fullName>
+                    <default>false</default>
+                    <label>JR Risk</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_Route_to_Market__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage Route to Market (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Merchant Trading</fullName>
+                    <default>false</default>
+                    <label>Merchant Trading</label>
+                </value>
+                <value>
+                    <fullName>Ancillary Services - FFR</fullName>
+                    <default>false</default>
+                    <label>Ancillary Services - FFR</label>
+                </value>
+                <value>
+                    <fullName>Ancillary Services - DS3</fullName>
+                    <default>false</default>
+                    <label>Ancillary Services - DS3</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_Size_Appetite__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage Size Appetite (GB)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>&lt;10 MW</fullName>
+                    <default>false</default>
+                    <label>&lt;10 MW</label>
+                </value>
+                <value>
+                    <fullName>10-50 MW</fullName>
+                    <default>false</default>
+                    <label>10-50 MW</label>
+                </value>
+                <value>
+                    <fullName>&gt;50 MW</fullName>
+                    <default>false</default>
+                    <label>&gt;50 MW</label>
+                </value>
+                <value>
+                    <fullName>&gt;100 MW</fullName>
+                    <default>false</default>
+                    <label>&gt;100 MW</label>
+                </value>
+                <value>
+                    <fullName>&gt;300 MW</fullName>
+                    <default>false</default>
+                    <label>&gt;300 MW</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Storage_GB_Technical_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage - Technical - DD Provider (GB)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_Grid_Configuration__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage Grid Configuration</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Co-located with H2 Electrolyser</fullName>
+                    <default>false</default>
+                    <label>Co-located with H2 Electrolyser</label>
+                </value>
+                <value>
+                    <fullName>Co-located with Solar</fullName>
+                    <default>false</default>
+                    <label>Co-located with Solar</label>
+                </value>
+                <value>
+                    <fullName>Co-located with Wind</fullName>
+                    <default>false</default>
+                    <label>Co-located with Wind</label>
+                </value>
+                <value>
+                    <fullName>Hybrid</fullName>
+                    <default>false</default>
+                    <label>Hybrid</label>
+                </value>
+                <value>
+                    <fullName>Standalone</fullName>
+                    <default>false</default>
+                    <label>Standalone</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_Additional_Dev_Risk__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Storage Dev Risk (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_Battery_Augmentation__c</fullName>
+        <externalId>false</externalId>
+        <label>Battery Augmentation (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_Battery_Manufacturer__c</fullName>
+        <externalId>false</externalId>
+        <label>Battery Manufacturer (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>BYD</fullName>
+                    <default>false</default>
+                    <label>BYD</label>
+                </value>
+                <value>
+                    <fullName>Narada</fullName>
+                    <default>false</default>
+                    <label>Narada</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Samsung</fullName>
+                    <default>false</default>
+                    <label>Samsung</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_CPI_Inflation__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage CPI Inflation (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_Cycling_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage Cycling Rate (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_DD_Providers__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage - DD Providers (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Legal</fullName>
+                    <default>false</default>
+                    <label>Legal</label>
+                </value>
+                <value>
+                    <fullName>Technical</fullName>
+                    <default>false</default>
+                    <label>Technical</label>
+                </value>
+                <value>
+                    <fullName>Property &amp; Planning</fullName>
+                    <default>false</default>
+                    <label>Property &amp; Planning</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_Duration_Appetite__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage Duration Appetite (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0.5hr</fullName>
+                    <default>false</default>
+                    <label>0.5hr</label>
+                </value>
+                <value>
+                    <fullName>1hr</fullName>
+                    <default>false</default>
+                    <label>1hr</label>
+                </value>
+                <value>
+                    <fullName>1.5hr</fullName>
+                    <default>false</default>
+                    <label>1.5hr</label>
+                </value>
+                <value>
+                    <fullName>2hr</fullName>
+                    <default>false</default>
+                    <label>2hr</label>
+                </value>
+                <value>
+                    <fullName>other</fullName>
+                    <default>false</default>
+                    <label>other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_EPC_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage EPC Provider (IE)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_Financial_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage - Financial - DD Provider (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_IRR__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage IRR (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_Inflation_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage Inflation Notes (IE)</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_Legal_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage - Legal - DD Provider (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_Other_Battery_Manufacturer__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Battery Manufacturer (IE)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_Other_Duration_Appetite__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Storage Duration Appetite (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_Other_Route_to_Market__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Storage Route to Market (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_Outstanding_Development_Risk__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Storage Outstanding Development Risk(IE)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_PP_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage - P&amp;P - DD Provider (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_RPI_Inflation__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage RPI Inflation (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_Risk_Investor_Not_Taking__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify Outstanding Development Risk that the investor is not comfortable taking?</inlineHelpText>
+        <label>Storage Risk Investor Not Taking?(IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Grid Price</fullName>
+                    <default>false</default>
+                    <label>Grid Price</label>
+                </value>
+                <value>
+                    <fullName>Grid Route</fullName>
+                    <default>false</default>
+                    <label>Grid Route</label>
+                </value>
+                <value>
+                    <fullName>Grid Connection Offer</fullName>
+                    <default>false</default>
+                    <label>Grid Connection Offer</label>
+                </value>
+                <value>
+                    <fullName>Grid Planning</fullName>
+                    <default>false</default>
+                    <label>Grid Planning</label>
+                </value>
+                <value>
+                    <fullName>Option Lease Completed</fullName>
+                    <default>false</default>
+                    <label>Option Lease Completed</label>
+                </value>
+                <value>
+                    <fullName>Title Matters</fullName>
+                    <default>false</default>
+                    <label>Title Matters</label>
+                </value>
+                <value>
+                    <fullName>Procurement</fullName>
+                    <default>false</default>
+                    <label>Procurement</label>
+                </value>
+                <value>
+                    <fullName>Auction / Route to Market</fullName>
+                    <default>false</default>
+                    <label>Auction / Route to Market</label>
+                </value>
+                <value>
+                    <fullName>Planning</fullName>
+                    <default>false</default>
+                    <label>Planning</label>
+                </value>
+                <value>
+                    <fullName>JR Risk</fullName>
+                    <default>false</default>
+                    <label>JR Risk</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_Route_to_Market_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage Route to Market Provider (IE)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_Route_to_Market__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage Route to Market (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Merchant Trading</fullName>
+                    <default>false</default>
+                    <label>Merchant Trading</label>
+                </value>
+                <value>
+                    <fullName>Ancillary Services - FFR</fullName>
+                    <default>false</default>
+                    <label>Ancillary Services - FFR</label>
+                </value>
+                <value>
+                    <fullName>Ancillary Services - DS3</fullName>
+                    <default>false</default>
+                    <label>Ancillary Services - DS3</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_Size_Appetite__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage Size Appetite (IE)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>&lt;10 MW</fullName>
+                    <default>false</default>
+                    <label>&lt;10 MW</label>
+                </value>
+                <value>
+                    <fullName>10-50 MW</fullName>
+                    <default>false</default>
+                    <label>10-50 MW</label>
+                </value>
+                <value>
+                    <fullName>&gt;50 MW</fullName>
+                    <default>false</default>
+                    <label>&gt;50 MW</label>
+                </value>
+                <value>
+                    <fullName>&gt;100 MW</fullName>
+                    <default>false</default>
+                    <label>&gt;100 MW</label>
+                </value>
+                <value>
+                    <fullName>&gt;300 MW</fullName>
+                    <default>false</default>
+                    <label>&gt;300 MW</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Storage_IE_Technical_DD_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage - Technical - DD Provider (IE)</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_Interest_in_which_Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage Interest in which Region?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GB</fullName>
+                    <default>false</default>
+                    <label>GB</label>
+                </value>
+                <value>
+                    <fullName>Northern Ireland</fullName>
+                    <default>false</default>
+                    <label>Northern Ireland</label>
+                </value>
+                <value>
+                    <fullName>Republic of Ireland</fullName>
+                    <default>false</default>
+                    <label>Republic of Ireland</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Storage_Other_Service_Not_Available__c</fullName>
+        <externalId>false</externalId>
+        <label>Other - Storage Service Not Available</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_Route_to_Market_Provider_GB__c</fullName>
+        <externalId>false</externalId>
+        <label>Storage Route to Market Provider (GB)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Storage_Service_Not_Available_to_RES__c</fullName>
+        <externalId>false</externalId>
+        <label>Which Service is Not Available to RES?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>EPC</fullName>
+                    <default>false</default>
+                    <label>EPC</label>
+                </value>
+                <value>
+                    <fullName>AM</fullName>
+                    <default>false</default>
+                    <label>AM</label>
+                </value>
+                <value>
+                    <fullName>O&amp;M</fullName>
+                    <default>false</default>
+                    <label>O&amp;M</label>
+                </value>
+                <value>
+                    <fullName>PPA</fullName>
+                    <default>false</default>
+                    <label>PPA</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sub_50MW_GB_project_AC_DC_ratio_used__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub 50MW project AC-DC ratio used (GB)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sub_50MW_IE_project_AC_DC_ratio_used__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub 50MW project AC-DC ratio used (IE)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_of_Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Developer</fullName>
+                    <default>false</default>
+                    <label>Developer</label>
+                </value>
+                <value>
+                    <fullName>EPC Provider</fullName>
+                    <default>false</default>
+                    <label>EPC Provider</label>
+                </value>
+                <value>
+                    <fullName>Fund</fullName>
+                    <default>false</default>
+                    <label>Fund</label>
+                </value>
+                <value>
+                    <fullName>IPP</fullName>
+                    <default>false</default>
+                    <label>IPP</label>
+                </value>
+                <value>
+                    <fullName>Oil &amp; Gas Major</fullName>
+                    <default>false</default>
+                    <label>Oil &amp; Gas Major</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Utility</fullName>
+                    <default>false</default>
+                    <label>Utility</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type_of_Relationship__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Relationship</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Global Key</fullName>
+                    <default>false</default>
+                    <label>Global Key</label>
+                </value>
+                <value>
+                    <fullName>Regional Key</fullName>
+                    <default>false</default>
+                    <label>Regional Key</label>
+                </value>
+                <value>
+                    <fullName>BL Key</fullName>
+                    <default>false</default>
+                    <label>BL Key</label>
+                </value>
+                <value>
+                    <fullName>Target</fullName>
+                    <default>false</default>
+                    <label>Target</label>
+                </value>
+                <value>
+                    <fullName>Prospect</fullName>
+                    <default>false</default>
+                    <label>Prospect</label>
+                </value>
+                <value>
+                    <fullName>Supplier</fullName>
+                    <default>false</default>
+                    <label>Supplier</label>
+                </value>
+                <value>
+                    <fullName>Existing Client</fullName>
+                    <default>false</default>
+                    <label>Existing Client</label>
+                </value>
+                <value>
+                    <fullName>Competitor</fullName>
+                    <default>false</default>
+                    <label>Competitor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Investor Account</label>
+    <nameField>
+        <label>Investor Account Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Investor Accounts</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

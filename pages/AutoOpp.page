@@ -1,0 +1,9 @@
+<apex:page standardController="RES_Projects__c" >
+
+    <!-- finishLocation="/flow/AutoCreateOpp?retURL={!RES_Projects__c.Id}" -->
+    
+    <flow:interview name="AutoCreateOpp" >    
+        <apex:param name="varRecordId" value="{!RES_Projects__c.Id}"/>
+    </flow:interview> 
+
+</apex:page>

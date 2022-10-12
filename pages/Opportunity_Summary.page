@@ -1,0 +1,306 @@
+<apex:page standardController="Opportunity" extensions="Opportunity_Summary" showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" >
+    
+    <apex:includeLightning />
+    <apex:includeScript value="/lightning/lightning.out.js" />
+    <apex:slds />
+    
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Opportunity Summary:  {!opportunity.name}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      
+     <!--Salesforce Lightning Design System Trailhead Module -->
+  <style  type="text/css">
+     html, body {
+        margin: 10;
+        padding: 3 auto;
+        }
+      rowStyle{
+        margin: 0 auto;
+        padding: 0px 10px auto;
+        text-align: center;
+        overflow-x:auto;
+        width: auto;
+        height: auto;
+        }
+
+      .h5 {
+        margin: 10;
+        padding: 3 auto;
+        text-align: right;
+        overflow-x:auto;
+        width: auto;
+        height: auto;
+        }
+        
+        .reportCharts img, .reportCharts .analyticsEmbeddedReportChart, .reportCharts .outerbound, .reportCharts .asOfDateContainer, .reportCharts .refreshButtonContainer{
+           width : 350px;
+           display: inline-block;
+           background-color: red !important;
+        }
+        
+        .reportCharts .outerbound, .reportCharts .asOfDateContainer, .reportCharts .refreshButtonContainer{
+            margin: 0 auto !important
+             background-color: green !important;
+        }
+        
+        [id*='auraElement-']{
+            display: inline-block;
+            margin-top : 20px;
+        }
+   
+        
+        #lightningComponent {width: 100%; height: 100%;}
+    </style>
+
+</head> 
+  
+<body>
+
+    <apex:remoteObjects >
+      <apex:remoteObjectModel name="Opportunity" fields="Id,Name"/>
+    </apex:remoteObjects>
+   
+     <!-- REQUIRED SLDS WRAPPER -->
+  <div class="slds-scope">
+
+    <!-- MASTHEAD -->
+    <p class="slds-text-heading--label slds-m-bottom--small"> <a href="https://res-group.lightning.force.com/lightning/r/Opportunity/{!opportunity.id}/view">{!opportunity.name}</a> Opportunity Summary</p>
+    <!-- / MASTHEAD -->
+
+    <!-- PAGE HEADER -->
+    <div class="slds-page-header" >
+
+      <!-- LAYOUT GRID -->
+      <div class="slds-grid slds-grid_align-center">
+
+        <!-- GRID COL -->
+        <div class="slds-col">
+        
+          <!-- HEADING AREA -->
+          <p class="slds-text-title_bold slds-align_absolute-center slds-line-height--reset">OPPORTUNITY SUMMARY</p>
+          <h1 class="slds-text-heading_large slds-align_absolute-center" title="Opportunity">{!opportunity.name}</h1>
+          <!-- / HEADING AREA -->
+          
+        </div>
+
+        <!-- ACTION BUTTONS -->
+
+        <!-- / ACTION BUTTONS -->
+
+      </div>
+      <!-- / LAYOUT GRID -->
+   
+        <!-- PAGE HEADER DETAIL ROW -->
+		        <ul class="slds-grid slds-page-header__detail-row">
+        <div class="slds-grid slds-wrap">
+            
+            <div class="slds-col slds-size_1-of-7">
+            <span>
+          		<p class="slds-text-title_bold slds-m-bottom--xx-small" title="Account Name">Account Name</p>
+          		<p class="slds-text-body--regular" title="Account Name">{!opportunity.Account.Name}</p>
+          	</span> 
+            </div>
+            
+            <div class="slds-col slds-size_1-of-7">
+            <span>
+            	<p class="slds-text-title_bold slds-m-bottom--xx-small" title="T&D Project Owner">T&amp;D Project Owner</p>
+            	<p class="slds-text-body--regular" title="T&D Project Owner">{!opportunity.Transmission_Project_Owner__r.Name}</p>
+          	</span>
+            </div>
+            
+            <div class="slds-col slds-size_1-of-7">
+            <span>
+            	<p class="slds-text-title_bold slds-m-bottom--xx-small" title="Opportunity Owner">Opportunity Owner</p>
+            	<p class="slds-text-body--regular" title="Opportunity Owner">{!opportunity.Owner.Name}</p>
+          	</span>
+            </div>
+            
+            <!-- Bid Coordinator
+            <li> <apex:pageBlock >
+            	<apex:pageBlockTable value="{!resTeam}" var="r" cellspacing="2">
+                	<apex:column value="{!r.Employee_Name__c}" headerValue="Bid Coordinator" />
+            	</apex:pageBlockTable>
+            </apex:pageBlock> </li> -->
+            
+            <div class="slds-col slds-size_1-of-7">
+            <span>
+				<p class="slds-text-title_bold slds-m-bottom--xx-small" title="Amount">Amount</p>                
+                <apex:outputText value="{0, number, $000,000.00}">
+                    <apex:param value="{!opportunity.amount}"/>
+                </apex:outputText>
+            </span>
+            </div>
+           
+          <div class="slds-col slds-size_1-of-7">
+          <span>
+              <p class="slds-text-title_bold slds-m-bottom--xx-small" title="Location">Location</p>
+              <p class="slds-text-body--regular" title="Location">{!opportunity.Location__c}</p>
+          </span>  
+          </div>
+           
+          <div class="slds-col slds-size_1-of-7">
+          <span>
+              <p class="slds-text-title_bold slds-m-bottom--xx-small" title="State / Province">State / Province</p>
+              <p class="slds-text-body--regular" title="State / Province">{!opportunity.State_Province__c}</p>
+          </span> 
+          </div> 
+              
+            <div class="slds-col slds-size_1-of-7">
+            <span>
+              <p class="slds-text-title_bold slds-m-bottom--xx-small" title="Technology Type">Technology Type</p>
+            <p class="slds-text-body--regular" title="Technology Type">{!opportunity.RES_Technology_Type__c}</p>
+          </span>
+            </div>
+                
+            <!--
+            <div class="slds-col slds-size_1-of-">
+            <span>
+				<p class="slds-text-title_bold slds-m-bottom--xx-small" title="Close Date">Close Date</p>                
+                <apex:outputText value="{0, date,long}">
+                    <apex:param value="{!opportunity.closedate}"/>
+                </apex:outputText>
+            </span>
+            </div> -->
+            
+        </div>
+        </ul>            
+  </div>
+            
+   <apex:form >    
+       <div class="slds-grid slds-wrap slds-wrap slds-m-horizontal_medium">
+           <div class="slds-col slds-grid_align-space" >
+            
+            <br />
+            <ul>
+            <li >
+            <apex:pageBlock >
+                <p class="slds-text-title_bold slds-m-bottom--xx-small" title="RFP/ITT Issued Date">RFP/ITT Issued Date</p>                
+                <apex:outputText value="{0, date,long}">
+                    <apex:param value="{!opportunity.RFP_Issued_Date__c}"/>
+                </apex:outputText>
+            </apex:pageBlock>
+            </li>
+            </ul>
+               
+            <br />
+            <ul>
+            <li >
+            <apex:pageBlock >
+				<p class="slds-text-title_bold slds-m-bottom--xx-small" title="Proposal Due Date">Proposal Due Date</p>                
+                <apex:outputText value="{0, date,long}">
+                    <apex:param value="{!opportunity.Proposal_Due_Date__c}"/>
+                </apex:outputText>
+            </apex:pageBlock>
+            </li>
+            </ul>
+               
+            <br />
+            <ul>
+            <li >
+            <apex:pageBlock >
+				<p class="slds-text-title_bold slds-m-bottom--xx-small" title="T&D Due Date">T&amp;D Due Date</p>                
+                <apex:outputText value="{0, date,long}">
+                    <apex:param value="{!opportunity.T_D_Due_Date__c}"/>
+                </apex:outputText>
+            </apex:pageBlock>
+            </li>
+            </ul>
+              
+            <br />
+            <ul>
+            <li >
+            <apex:pageBlock >
+				<p class="slds-text-title_bold slds-m-bottom--xx-small" title="Close Date">Close Date</p>                
+                <apex:outputText value="{0, date,long}">
+                    <apex:param value="{!opportunity.CloseDate}"/>
+                </apex:outputText>
+            </apex:pageBlock>
+            </li>
+            </ul> 
+               
+            <br />
+            <ul>
+            <li >
+            <apex:pageBlock >
+				<p class="slds-text-title_bold slds-m-bottom--xx-small" title="Construction Start">Construction Start</p>                
+                <apex:outputText value="{0, date,long}">
+                    <apex:param value="{!opportunity.Construction_Start__c}"/>
+                </apex:outputText>
+            </apex:pageBlock>
+            </li>
+            </ul>
+              
+               
+            <br />
+            <ul>
+            <li >
+            <apex:pageBlock >
+				<p class="slds-text-title_bold slds-m-bottom--xx-small" title="Substantial Completion Date">Substantial Completion Date</p>                
+                <apex:outputText value="{0, date,long}">
+                    <apex:param value="{!opportunity.Construction_Completion_Date__c}"/>
+                </apex:outputText>
+            </apex:pageBlock>
+            </li>
+            </ul>
+                  
+            <br />
+            <ul>
+            <li >
+            <apex:pageBlock >
+				<p class="slds-text-title_bold slds-m-bottom--xx-small" title="Final Completion Date">Final Completion Date</p>                
+                <apex:outputText value="{0, date,long}">
+                    <apex:param value="{!opportunity.Final_Completion_Date__c}"/>
+                </apex:outputText>
+            </apex:pageBlock>
+            </li>
+            </ul>
+               
+            <br />
+            <ul>
+            <li >
+            <apex:pageBlock >
+				<p class="slds-text-title_bold slds-m-bottom--xx-small" title="COD">COD</p>                
+                <apex:outputText value="{0, date,long}">
+                    <apex:param value="{!opportunity.COD_Date__c}"/>
+                </apex:outputText>
+            </apex:pageBlock>
+            </li>
+            </ul>
+               
+             <br />
+             <ul>
+             <li>
+             	<p class="slds-text-title_bold slds-truncate slds-m-bottom_xx-small" title="Latest Update">Latest Update</p>
+             	<div class="slds-text-longform">
+             	<p>
+                <apex:outputText escape="false" value="{!opportunity.Latest_Update__c}" />
+                </p>
+                </div> 
+             </li>
+             </ul>
+               
+             <br />
+             <ul>
+             <li>
+             	<p class="slds-text-title_bold slds-truncate slds-m-bottom_xx-small" title="Description">Description</p>
+             	<div class="slds-text-longform">
+             	<p>
+                <apex:outputText escape="false" value="{!opportunity.Description}" />
+                </p>
+                </div> 
+             </li>
+             </ul>
+              
+  
+             </div>
+          </div>        
+    </apex:form>       
+        
+    </div>
+
+    </body>      
+    </html>
+</apex:page>

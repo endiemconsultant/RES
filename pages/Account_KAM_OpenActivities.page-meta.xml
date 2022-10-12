@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>40.0</apiVersion>
+    <availableInTouch>true</availableInTouch>
+    <confirmationTokenRequired>false</confirmationTokenRequired>
+    <description>To show just the Activities (Open Tasks &amp; Meetings) without all the other KAM page stuff</description>
+    <label>Account_KAM_OpenActivities</label>
+</ApexPage>

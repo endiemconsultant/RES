@@ -1,0 +1,7 @@
+<aura:component implements="force:hasRecordId,flexipage:availableForAllPageTypes,force:lightningQuickAction,force:appHostable" >
+    <kkltng:Hierarchy apexClassForData="Org_Contacts_ApexCls" fetchFullData="True" 
+                      apexInput="" 
+                      hierarchyData="" title="AccountRecordDetail3"
+                      rnIconLeftURL="" rnIconRightURL=""
+                      fontSize="1" showSearch="True"/>
+</aura:component>

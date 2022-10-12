@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <assignments>
+        <description>Activates an inactive contact that has the same email address of a RES employee&apos;s active user account</description>
+        <name>Assign_Active_Status</name>
+        <label>Assign Active Status</label>
+        <locationX>314</locationX>
+        <locationY>516</locationY>
+        <assignmentItems>
+            <assignToReference>Lookup_Contacts.Inactive__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Active_Status</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Checks to see if an active contact was found with the active user&apos;s email address.
+If an active contact is found, then the flow ends.
+If an inactive contact is found, then the flow makes the contact active.
+If no contact is found, then the flow creates a contact record and assigns to the appropriate RES account, and currency, based upon the user&apos;s country field.
+If</description>
+        <name>Active_Contact_Found</name>
+        <label>Active Contact Found?</label>
+        <locationX>314</locationX>
+        <locationY>396</locationY>
+        <defaultConnectorLabel>Active Contact Found</defaultConnectorLabel>
+        <rules>
+            <name>No_Contact_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Lookup_Contacts</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Contact</targetReference>
+            </connector>
+            <label>No Contact Found</label>
+        </rules>
+        <rules>
+            <name>Inactive_Contact_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Lookup_Contacts</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Lookup_Contacts.Inactive__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Active_Status</targetReference>
+            </connector>
+            <label>Inactive Contact Found</label>
+        </rules>
+    </decisions>
+    <description>Daily Flow that runs to check active users have active contacts</description>
+    <formulas>
+        <description>Uses a user&apos;s country field to select the RES Account associated with the newly created contact of a RES employee.</description>
+        <name>AssignRESAccount</name>
+        <dataType>String</dataType>
+        <expression>IF( {!$Record.Country}= &apos;Australia&apos;, &apos;001i000001zZ2VgAAK&apos;, 
+IF( {!$Record.Country}=&apos;Canada&apos;, &apos;001i000000svS63AAE&apos;,
+IF( {!$Record.Country}= &apos;United States&apos;, &apos;001i000000svaF8AAI&apos;, &apos;001i000000poZN3AAM&apos; )))</expression>
+    </formulas>
+    <formulas>
+        <name>CurrencyAssignment</name>
+        <dataType>String</dataType>
+        <expression>IF( {!$Record.Country} = &apos;Australia&apos;, &apos;AUD&apos;, 
+IF( {!$Record.Country} = &apos;Canada&apos;, &apos;CAD&apos;,
+IF( {!$Record.Country} = &apos;United States&apos;, &apos;USD&apos;, 
+IF( {!$Record.Country} = &apos;Germany&apos;, &apos;EUR&apos;, 
+IF( {!$Record.Country} = &apos;France&apos;, &apos;EUR&apos;,
+IF( {!$Record.Country} = &apos;Sweden&apos;, &apos;EUR&apos;,&apos;GBP&apos; ))))))</expression>
+    </formulas>
+    <interviewLabel>Daily User - Contact checkl {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Daily User - Contact check</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Creates a contact with the same email as the active user record</description>
+        <name>Create_Contact</name>
+        <label>Create Contact</label>
+        <locationX>50</locationX>
+        <locationY>516</locationY>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>AssignRESAccount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CurrencyIsoCode</field>
+            <value>
+                <elementReference>CurrencyAssignment</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Department</field>
+            <value>
+                <elementReference>$Record.Department</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Email</field>
+            <value>
+                <elementReference>$Record.Email</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FirstName</field>
+            <value>
+                <elementReference>$Record.FirstName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Inactive__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LastName</field>
+            <value>
+                <elementReference>$Record.LastName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Title</field>
+            <value>
+                <elementReference>$Record.Title</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>Pulls Contacts with the same emails as active users</description>
+        <name>Lookup_Contacts</name>
+        <label>Lookup Contacts</label>
+        <locationX>314</locationX>
+        <locationY>276</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Active_Contact_Found</targetReference>
+        </connector>
+        <filterLogic>(1 OR (2 AND 3)) AND (4 OR 5 OR 6 OR 7 OR 8)</filterLogic>
+        <filters>
+            <field>Email</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Email</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>FirstName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.FirstName</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>LastName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.LastName</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>001i000000poZN3AAM</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>001i000000svaF8AAI</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>001i000000svS63AAE</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>001i000001zZ2VgAAK</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>001i000001p6troAAA</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates the contact to active status</description>
+        <name>Update_Active_Status</name>
+        <label>Update Active Status</label>
+        <locationX>314</locationX>
+        <locationY>636</locationY>
+        <inputReference>Lookup_Contacts</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Lookup_Contacts</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>IsActive</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Email</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>noreply@salesforce.com</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Email</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>automatedcase@00di0000000iacveau.ext</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Email</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>autoproc@00di0000000iacveau</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Email</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>salesforce.system@res-group.com</stringValue>
+            </value>
+        </filters>
+        <object>User</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2021-08-05</startDate>
+            <startTime>08:10:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

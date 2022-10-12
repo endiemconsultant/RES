@@ -1,0 +1,50 @@
+<apex:page standardController="Account">
+
+<apex:includeScript value="https://www.google.com/jsapi" />
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+</head> 
+    <script src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load('search', '1');
+
+      var newsSearch;
+
+      function searchComplete() {
+      
+        document.getElementById('content').innerHTML = '';
+        if (newsSearch.results && newsSearch.results.length > 0) {
+          for (var i = 0; i < newsSearch.results.length; i++) {
+
+            var p = document.createElement('p');
+            var a = document.createElement('a');
+            a.href="/news-search/v1/newsSearch.results[i].url;"
+            a.innerHTML = newsSearch.results[i].title;
+
+            // Append search results to the HTML nodes
+            p.appendChild(a);
+            document.body.appendChild(p);
+          }
+        }
+      }
+
+      function onLoad() {
+
+        newsSearch = new google.search.NewsSearch();
+  
+        newsSearch.setSearchCompleteCallback(this, searchComplete, null);
+
+        newsSearch.execute('Barack Obama');
+
+        google.search.Search.getBranding('branding');
+      }
+
+      google.setOnLoadCallback(onLoad);
+    </script>
+</html>
+
+    <div id="branding"  style="float: left;"></div><br />
+    <div id="content">Loading...</div>
+
+</apex:page>

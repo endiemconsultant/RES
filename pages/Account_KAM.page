@@ -1,0 +1,488 @@
+<apex:page standardController="Account" extensions="KAMController" showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+
+<apex:includeLightning />
+<apex:includeScript value="/lightning/lightning.out.js" />
+
+<apex:stylesheet value="/resource/SLDSXXXX/assets/styles/salesforce-lightning-design-system-ltng.css"/>
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Key Account Management Plan: {!account.name}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!--Salesforce Lightning Design System Trailhead Module -->
+  <style  type="text/css">
+     html, body {
+        margin: 10;
+        padding: 3 auto;
+        }
+      rowStyle{
+        margin: 0 auto;
+        padding: 0px 10px auto;
+        text-align: center;
+        overflow-x:auto;
+        width: auto;
+        height: auto;
+        }
+
+      .h5 {
+        margin: 10;
+        padding: 3 auto;
+        text-align: right;
+        overflow-x:auto;
+        width: auto;
+        height: auto;
+        }
+        
+        .reportCharts img, .reportCharts .analyticsEmbeddedReportChart, .reportCharts .outerbound, .reportCharts .asOfDateContainer, .reportCharts .refreshButtonContainer{
+           width : 350px;
+           display: inline-block;
+           background-color: red !important;
+        }
+        
+        .reportCharts .outerbound, .reportCharts .asOfDateContainer, .reportCharts .refreshButtonContainer{
+            margin: 0 auto !important
+             background-color: green !important;
+        }
+        
+        [id*='auraElement-']{
+            display: inline-block;
+            margin-top : 20px;
+        }
+   
+        
+        #lightningComponent {width: 100%;}
+    </style>
+
+</head> 
+  
+<body>
+
+    <apex:remoteObjects >
+      <apex:remoteObjectModel name="Account" fields="Id,Name"/>
+    </apex:remoteObjects>
+
+  <!-- REQUIRED SLDS WRAPPER -->
+  <div class="slds-scope">
+
+    <!-- MASTHEAD -->
+    <p class="slds-text-heading--label slds-m-bottom--small"><a href="https://res-group.lightning.force.com/lightning/r/Account/{!account.id}/view">{!account.name}</a> Key Account Management Plan</p>
+    <!-- / MASTHEAD -->
+
+    <!-- PAGE HEADER -->
+    <div class="slds-page-header">
+
+      <!-- LAYOUT GRID -->
+      <div class="slds-grid slds-grid_align-center">
+
+        <!-- GRID COL -->
+        <div class="slds-col">
+        
+          <!-- HEADING AREA -->
+          <p class="slds-text-title_bold slds-align_absolute-center slds-line-height--reset">KAM SUMMARY</p>
+          <h1 class="slds-text-heading_large slds-align_absolute-center" title="Account">{!account.name}</h1>
+          <!-- / HEADING AREA -->
+          
+        </div>
+
+        <!-- ACTION BUTTONS -->
+
+        <!-- / ACTION BUTTONS -->
+
+      </div>
+      <!-- / LAYOUT GRID -->
+
+      <!-- PAGE HEADER DETAIL ROW -->
+        <ul class="slds-grid slds-page-header__detail-row">
+          <li class="slds-page-header__detail-block">
+            <p class="slds-text-title_bold slds-m-bottom--xx-small" title="Account Owner">Account Owner</p>
+            <p class="slds-text-body--regular" title="Owner">{!account.Owner.Name}</p>
+          </li>
+          <li class="slds-page-header__detail-block">
+            <p class="slds-text-title_bold slds-m-bottom--xx-small" title="Account Sponsor">Account Sponsor</p>
+            <p class="slds-text-body--regular" title="Sponsor">{!account.Executive_Sponsor__r.Name}</p>
+          </li>
+          <li class="slds-page-header__detail-block">
+            <p class="slds-text-title_bold slds-m-bottom--xx-small" title="Type of Relationship">Type of Relationship</p>
+            <p class="slds-text-body--regular" title="Owner">{!account.Tier__c}</p>
+          </li>
+          <li class="slds-page-header__detail-block">
+            <p class="slds-text-title_bold slds-m-bottom--xx-small" title="Type of Company">Type of Company</p>
+            <p class="slds-text-body--regular">{!account.Account_Type__c}</p>
+          </li>
+          <li class="slds-page-header__detail-block slds-truncate_container_33">
+            <p class="slds-text-title_bold slds-m-bottom_xx-small" title="Technology Business Lines">Technology Business Lines</p>
+            <p class="slds-text-body_regular slds-truncate">{!account.Technology_Business_Lines__c}</p>
+         </li>
+        </ul>
+            
+  </div>
+            
+   <apex:form >    
+       <div class="slds-grid slds-wrap slds-wrap slds-m-horizontal_medium">
+           <div class="slds-col slds-grid_align-space" >
+            <ul>
+                <li >
+                    <p class="slds-text-title_bold " title="Account Team Vision (2-3 Yrs)">Account Team Vision (2-3 Yrs)</p>
+                      <div class="slds-text-longform">
+                        <p>
+                            <apex:outputText escape="false" value="{!account.Account_Team_Vision__c}" />
+                        </p>
+                    </div>                  
+                </li>
+             </ul>
+             
+             <ul>
+                <li >
+                  <p class="slds-text-title_bold slds-m-bottom_xx-small" title="Client's Vision/Business Goals">Client's Vision/Business Goals</p>
+                    <div class="slds-text-longform">
+                        <p>
+                            <apex:outputText escape="false" value="{!account.State_of_the_Account__c}" />
+                        </p>
+                    </div> 
+                </li>
+             </ul>
+             <ul>
+                <li>
+                  <p class="slds-text-title_bold slds-truncate slds-m-bottom_xx-small" title="RES's Unique Selling Propositions">RES's Unique Selling Propositions</p>
+                    <div class="slds-text-longform">
+                        <p>
+                            <apex:outputText escape="false" value="{!account.Account_Unique_Selling_Propositions__c}" />
+                        </p>
+                    </div> 
+                </li>
+             </ul>
+  
+             </div>
+          </div>        
+    </apex:form>         
+     
+    <apex:form > 
+         <div class="slds-grid slds-wrap slds-m-horizontal_medium slds-grid_vertical-align-center slds-grid_align-center">          
+           <div class="slds-col slds-size_1-of-1 slds-large-size_9-of-12 slds-grid_align-space" >
+             <ul>
+                <li>
+                  <p class="slds-text-title_bold slds-truncate slds-m-bottom_xx-small" title="Issue 1 Details">Issue 1 Details</p>
+                    <div class="slds-text-longform">
+                        <p>
+                            <apex:outputText escape="false" value="{!account.Current_Issues__c}" />
+                        </p>
+                    </div>
+                </li>
+             </ul>      
+             <apex:pageBlock id="KASOs">
+                  <h1 class="slds-page-header slds-page-header__title" title="Key Account Strategic Objectives">Key Account Strategic Objectives</h1>
+                  <apex:pageBlockTable value="{!kasos}" var="kaso" cellspacing="2">
+                      <apex:column headerValue="KASO Name">
+                           <apex:outputLink value="{! URLFOR($Action.KA_Strategic_Objective__c.View, kaso.Id)}">{!kaso.name}</apex:outputLink>
+                      </apex:column>
+                      <apex:column value="{!kaso.Objective_Title__c}"/>
+                      <apex:column value="{!kaso.Objective_Owner__c}" headerValue="Objective's Owner" />
+                      <apex:column value="{!kaso.Category__c}"/>
+                      <apex:column value="{!kaso.Date_for_Closure__c}"/>
+                      <apex:column value="{!kaso.Completed__c}"/>                  
+                 </apex:pageBlockTable>
+            </apex:pageBlock>  
+               <apex:pageBlock id="archivedKASOs">
+                  <h1 class="slds-page-header slds-page-header__title" title="Archived KASOs (Last 2 Years)">Archived KASOs (Last 2 Years)</h1>
+                  <apex:pageBlockTable value="{!archivedKasos}" var="archivedKaso" cellspacing="2">
+                      <apex:column headerValue="KASO Name">
+                           <apex:outputLink value="{! URLFOR($Action.KA_Strategic_Objective__c.View, archivedKaso.Id)}">{!archivedKaso.name}</apex:outputLink>
+                      </apex:column>
+                      <apex:column value="{!archivedKaso.Objective_Title__c}"/>
+                      <apex:column value="{!archivedKaso.Objective_Owner__c}" headerValue="Objective's Owner" />
+                      <apex:column value="{!archivedKaso.Category__c}"/>
+                      <apex:column value="{!archivedKaso.Date_for_Closure__c}"/>
+                      <apex:column value="{!archivedKaso.Completed__c}"/>                  
+                 </apex:pageBlockTable>
+            </apex:pageBlock> 
+            </div>          
+             <br/>  
+        <!-- / PAGE HEADER DETAIL ROW -->
+        
+         <!--<div class="slds-grid slds-wrap">-->
+              <div class="slds-col slds-p-horizontal_medium slds-size_1-of-1 slds-large-size_3-of-12 slds-grid_align-space">
+                <apex:pageBlock id="AccTeam">
+                    <h1 class="slds-page-header__title slds-m-right_small slds-align-middle slds-truncate" title="RES Account Team"> RES Account Team</h1>
+                    <apex:pageBlockTable value="{!accMembers}" var="m" cellspacing="4">
+                            <apex:column value="{!m.Team_Member__c}"/>
+                            <apex:column value="{!m.Role__c}"/>
+                        </apex:pageBlockTable>
+                </apex:pageBlock>
+              </div>
+                
+         </div>
+      </apex:form>
+    
+    <!-- / PAGE HEADER -->
+
+    <!-- PRIMARY CONTENT WRAPPER --
+    <div class="myapp slds-p-horizontal--medium">
+      <ul id="contact-list" class="slds-has-dividers--bottom-space"></ul>
+    </div>
+    !-- / PRIMARY CONTENT WRAPPER -->
+  <div class="slds-grid slds-wrap slds-m-horizontal_medium slds-grid_vertical-align-top slds-grid_align-center">
+   
+  
+  
+    <div class="slds-col slds-size_1-of-1 slds-large-size_8-of-12 slds-grid_align-space">
+    <apex:form >
+        <apex:pageBlock id="KDMContacts">
+        <h1 class="slds-page-header slds-page-header__title" title="Key Decision Maker Contacts"> Key Decision Maker Contacts</h1>
+            <apex:pageBlockTable value="{!kdmContacts}" var="k" cellspacing="2">
+                <apex:column headerValue="KDM Name">
+                     <apex:outputLink value="{! URLFOR($Action.Contact.View, k.Id)}">{! k.name}</apex:outputLink>
+                </apex:column>
+                <apex:column value="{!k.Title}"/>
+                <apex:column value="{!k.ReportsTo.Name}" headerValue="Reports To" />
+                <apex:column value="{!k.Primary_Contact_Owner__c}" headerValue="Primary Owner"/>
+                <apex:column value="{!k.Relationship_Owner__c}"/>
+                <apex:column value="{!k.Contact_Frequency__c}"/>
+                <apex:column value="{!k.Last_Client_Meeting__c}"/>
+                                
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        </apex:form>  
+      </div> 
+    
+       <div class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 slds-grid_align-space slds-p-left_medium"> 
+          <table class="slds-m-left_small">
+            <tr>
+               <td width="100%">
+                    <apex:iframe height="410px" src="/apex/Account_Page_ReportChart?id={!Id}"/>
+                 </td>             
+            </tr>
+          </table>
+        </div>
+       
+    <div class="slds-grid slds-wrap slds-grid_vertical-align-center slds-grid_align-center slds-m-left_small">
+        <apex:form >  
+        <apex:pageBlock id="openOpportunities" >
+         <h1 class="slds-page-header slds-page-header__title" title="Open Opportunities (Priority 1&2)">Open Opportunities (Priority 1&amp;2)</h1>
+            <apex:pageBlockTable rowClasses="rowStyle" value="{!openOpps}" var="o" cellspacing="2">
+                <apex:column headerValue="Opportunity Name">
+                    <apex:outputLink value="{! URLFOR($Action.Opportunity.View, o.Id)}"> {! o.name} </apex:outputLink>
+                </apex:column>
+                
+                <apex:column value="{!o.Business_Line__c}"/>
+                <apex:column value="{!o.Contract_Type__c}"/>
+                <apex:column value="{!o.Size__c}"/>
+                <apex:column value="{!o.State_Province__c}"/>
+                
+                <apex:column value="{!o.CloseDate}"/>
+                <apex:column value="{!o.StageName}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+        <br/>
+        
+        <apex:pageBlock id="BrokerOpps" rendered="{!brokerOpps.size>0}">
+         <h1 class="slds-page-header slds-page-header__title" title="Open Broker Opportunities">Open Opportunities Brokered with {!account.name}</h1>
+            <apex:pageBlockTable rowClasses="rowStyle" value="{!brokerOpps}" var="bk" cellspacing="2">
+                <apex:column headerValue="Opportunity Name">
+                    <apex:outputLink value="{! URLFOR($Action.Opportunity.View, bk.Id)}"> {! bk.name} </apex:outputLink>
+                </apex:column>                
+                <apex:column value="{!bk.Business_Line__c}"/>
+                <apex:column value="{!bk.Contract_Type__c}"/>
+                <apex:column value="{!bk.Size__c}"/>
+                <apex:column value="{!bk.State_Province__c}"/>                
+                <apex:column value="{!bk.CloseDate}"/>
+                <apex:column value="{!bk.StageName}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+            
+     <div id="ClosedMeetings" />
+
+     <br/>        
+
+        <apex:pageBlock id="closedOpportunities">
+         <h1 class="slds-page-header slds-page-header__title" title="Closed Opportunities (Last 2 Fiscal Quarters)">Closed Opportunities (Last 2 Fiscal Quarters)</h1>
+            <apex:pageBlockTable rowClasses="rowStyle" value="{!closedOpps}" var="c" cellspacing="4">
+                  
+                <apex:column headerValue="Opportunity Name" width="15%">
+                       <apex:outputLink value="{! URLFOR($Action.Opportunity.View, c.Id)}">{! c.name}</apex:outputLink>
+                </apex:column>
+                <apex:column value="{!c.OwnerId}" />
+                <apex:column value="{!c.Business_Line__c}" />
+                <apex:column value="{!c.Contract_Type__c}" />
+                <apex:column value="{!c.Size__c}" />
+                <apex:column value="{!c.State_Province__c}"/>
+                <apex:column value="{!c.CloseDate}" />
+                <apex:column value="{!c.StageName}"/>
+                <apex:column value="{!c.Outcome_Reason__c}"/>
+                <apex:column value="{!c.Closed_Reason_Notes__c}" width="18%"/> 
+                <apex:column value="{!c.Broker_Account__c}" rendered="{!closedBrokerOpps.size>0}">
+                </apex:column>                                   
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+             
+       <!--<apex:pageBlock id="ClosedBrokerOpps" rendered="{!closedOpps.size>0}">
+            <h1 class="slds-page-header__title slds-m-right_small slds-align-middle" title="Closed Broker Opportunities">
+              Closed Opportunities Brokered with {!account.name}
+            </h1>
+            <table border="0" width="100%">
+              <tr>
+                <th>Broker Account</th>
+              </tr>
+        
+            <apex:repeat var="n" value="{!closedOpps}" rendered="{!openOpps.size>0}">
+                  <tr>
+                  <td><apex:outputfield value="{!n.Broker_Account__c}"></apex:outputfield></td>
+                </tr>       
+            </apex:repeat>
+            </table>
+        </apex:pageBlock>-->
+    
+            
+    <!-- This is the "Open Tasks & Activities" item -->       
+    <div class="slds-col slds-size_1-of-1 slds-grid_align-space">
+    <div id="Lightning" />
+    </div>
+                
+    </apex:form>
+    </div>
+  </div>
+    </div>
+
+    <!-- FOOTER -->
+    <br/>
+    <!-- / FOOTER -->
+
+  <!-- / REQUIRED SLDS WRAPPER -->
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+        $Lightning.use("c:KAM_Timeline_OpenActivities_App", function() {
+            $Lightning.createComponent("c:KAM_Header_OpenActivities",
+                   { "recordId" : "{!$CurrentPage.parameters.id}" },
+                  "Lightning",
+                  function(cmp) {
+                    // any further setup goes here
+              });
+
+              $Lightning.createComponent("c:KAM_Timeline_OpenActivities",
+                   { "recordId" : "{!$CurrentPage.parameters.id}" },
+                  "Lightning",
+                  function(cmp) {
+                    // any further setup goes here
+              });
+
+        });
+    </script>
+    
+    <script>
+        $Lightning.use("c:KAM_Timeline_OpenActivities_App", function() {
+            
+              $Lightning.createComponent("c:LightningDemoHeader",
+                   { "recordId" : "{!$CurrentPage.parameters.id}" },
+                  "ClosedMeetings",
+                  function(cmp) {
+                    // any further setup goes here
+              });
+              $Lightning.createComponent("c:LightningDemoActivityTimeline",
+                   { "recordId" : "{!$CurrentPage.parameters.id}" },
+                  "ClosedMeetings",
+                  function(cmp) {
+                    // any further setup goes here
+              });
+        });
+    </script>
+    
+    <script type="text/javascript">
+        function Test(){
+            var url = 'https://ap1.salesforce.com/00O900000070URt';
+            window.parent.location.replace(url);
+        }
+    </script>
+ 
+
+
+    <!--<script>
+        function saveData(data, callback){
+                //TO DO
+            }
+
+            $Lightning.use("DemoApp", function() {
+                $Lightning.createComponent("KAM_PDF_Download",
+                {
+                    sendData : saveData
+                },
+                "lightning",
+                function(cmp) {
+                    // do some stuff
+                });
+            });
+    </script>-->
+
+
+    <!--<script>
+      (function() {
+        var contact = new SObjectModel.Contact();
+        var contactList = document.getElementById('contact-list');
+
+        function createTile (record) {
+          return [
+            '<li class="slds-item">',
+              '<div class="slds-tile slds-media">',
+                '<div class="slds-media__body">',
+                  '<h3 class="slds-truncate" title="', record.get('Name'), '"><a href="javascript:void(0);">', record.get('Name') ,'</a></h3>',
+                  '<div class="slds-tile__detail slds-text-body--small">',
+                    '<p class="slds-truncate">', record.get('Title') ,'</p>',
+                  '</div>',
+                '</div>',
+              '</div>',
+            '</li>'
+          ].join('');
+        }
+
+        contact.retrieve(
+          { orderby: [{ LastModifiedDate: 'DESC' }], limit: 10 },
+          function(error, records) {
+            if (error) {
+              alert(error.message);
+            } else {
+              contactList.innerHTML = records.map(createTile).join('');
+            }
+          }
+        );
+      })();
+
+    </script>
+
+    <apex:remoteObjects >
+      <apex:remoteObjectModel name="Account" fields="Id,Name"/>
+    </apex:remoteObjects>
+
+    <script>
+        var recordId = '{!Account.Id}';
+        var myUserContext = "{!$User.UITheme}";
+        $Lightning.use("c:AccountHierarchyApp", function() {
+            $Lightning.createComponent("c:AccountHierarchyCmp",
+                                       {recordId: recordId},
+                                       "lightningComponent",
+                                       function(cmp) {
+                                           $A.eventService.addHandler({
+                                               event: 'force:navigateToSObject',
+                                               handler: function(event) {
+                                                   if (myUserContext == 'Theme4t' || myUserContext == 'Theme4d') {
+                                                       // The Visualforce page is in S1 or Lightning Experience
+                                                       sforce.one.navigateToSObject(event.getParams().recordId);
+                                                   } else if (myUserContext == 'Theme3') {
+                                                       // The Visualforce page is  running in Classic
+                                                       window.parent.location = '/' + event.getParams().recordId;
+                                                   } else {
+                                                       console.log("Unsupported theme");
+                                                   }
+                                               }
+                                           });
+                                       }
+                                      );
+        });
+        </script>-->
+    <!-- / JAVASCRIPT --> 
+
+</body>
+</html>
+</apex:page>

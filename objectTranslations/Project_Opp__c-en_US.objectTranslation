@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project / Opp</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Project / Opps</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Commercial Operations Date --></help>
+        <label><!-- COD --></label>
+        <name>COD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Date --></label>
+        <name>Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- DC/AC Ratio --></label>
+        <name>DC_AC_Ratio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Point --></label>
+        <name>Delivery_Point__c</name>
+        <picklistValues>
+            <masterLabel>AEP</masterLabel>
+            <translation><!-- AEP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AEP-Day</masterLabel>
+            <translation><!-- AEP-Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arkansas Hub</masterLabel>
+            <translation><!-- Arkansas Hub --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dominion</masterLabel>
+            <translation><!-- Dominion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Houston Hub</masterLabel>
+            <translation><!-- Houston Hub --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Illinois Hub</masterLabel>
+            <translation><!-- Illinois Hub --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indiana Hub</masterLabel>
+            <translation><!-- Indiana Hub --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Louisiana Hub</masterLabel>
+            <translation><!-- Louisiana Hub --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minn Hub</masterLabel>
+            <translation><!-- Minn Hub --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Hub</masterLabel>
+            <translation><!-- North Hub --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POI</masterLabel>
+            <translation><!-- POI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPP-North</masterLabel>
+            <translation><!-- SPP-North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPP-South</masterLabel>
+            <translation><!-- SPP-South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Hub</masterLabel>
+            <translation><!-- South Hub --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Texas Hub</masterLabel>
+            <translation><!-- Texas Hub --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transmission Rights Required</masterLabel>
+            <translation><!-- Transmission Rights Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Hub</masterLabel>
+            <translation><!-- West Hub --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zone A</masterLabel>
+            <translation><!-- Zone A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zone B</masterLabel>
+            <translation><!-- Zone B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zone C</masterLabel>
+            <translation><!-- Zone C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zone E</masterLabel>
+            <translation><!-- Zone E --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Dev Site link to the Project Development. --></help>
+        <label><!-- Dev Link --></label>
+        <name>Dev_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Update from Project --></label>
+        <name>Do_Not_Update_from_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed/Track --></label>
+        <name>Fixed_Tracker__c</name>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tracker</masterLabel>
+            <translation><!-- Tracker --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- GBDB Update Time --></label>
+        <name>GBDB_Update_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Update --></label>
+        <name>Latest_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latitude --></label>
+        <name>Latitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Longitude --></label>
+        <name>Longitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCF --></label>
+        <name>NCF__c</name>
+    </fields>
+    <fields>
+        <label><!-- NERC Region --></label>
+        <name>NERC_Region__c</name>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caribbean</masterLabel>
+            <translation><!-- Caribbean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chile-Aysen</masterLabel>
+            <translation><!-- Chile-Aysen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chile-Magallanes</masterLabel>
+            <translation><!-- Chile-Magallanes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chile-SIC</masterLabel>
+            <translation><!-- Chile-SIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chile-SING</masterLabel>
+            <translation><!-- Chile-SING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERCOT</masterLabel>
+            <translation><!-- ERCOT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISO</masterLabel>
+            <translation><!-- MISO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEISO</masterLabel>
+            <translation><!-- NEISO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NYISO</masterLabel>
+            <translation><!-- NYISO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PJM</masterLabel>
+            <translation><!-- PJM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPP</masterLabel>
+            <translation><!-- SPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WECC</masterLabel>
+            <translation><!-- WECC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Offtaker subject to RPS? --></label>
+        <name>Offtaker_subject_to_RPS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Type --></label>
+        <name>Opportunity_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Project / Opps --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PPA Escalation --></label>
+        <name>PPA_Escalation__c</name>
+    </fields>
+    <fields>
+        <label><!-- PPA Price --></label>
+        <name>PPA_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Development --></label>
+        <name>Project_Development__c</name>
+        <relationshipLabel><!-- Project / Opps --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Number --></label>
+        <name>Project_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- REC Type --></label>
+        <name>REC_Type__c</name>
+        <picklistValues>
+            <masterLabel>Ercot</masterLabel>
+            <translation><!-- Ercot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green-e</masterLabel>
+            <translation><!-- Green-e --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M-RETS</masterLabel>
+            <translation><!-- M-RETS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRECS</masterLabel>
+            <translation><!-- MRECS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAR</masterLabel>
+            <translation><!-- NAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC-RETS</masterLabel>
+            <translation><!-- NC-RETS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEPOOL Class1</masterLabel>
+            <translation><!-- NEPOOL Class1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEPOOL Class2</masterLabel>
+            <translation><!-- NEPOOL Class2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NVTREC</masterLabel>
+            <translation><!-- NVTREC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NYSERDA</masterLabel>
+            <translation><!-- NYSERDA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PJM-GATS</masterLabel>
+            <translation><!-- PJM-GATS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project</masterLabel>
+            <translation><!-- Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WREGIS</masterLabel>
+            <translation><!-- WREGIS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canada - Solar</masterLabel>
+            <translation><!-- Canada - Solar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canada - Wind</masterLabel>
+            <translation><!-- Canada - Wind --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North</masterLabel>
+            <translation><!-- North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North - Solar</masterLabel>
+            <translation><!-- North - Solar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North - Wind</masterLabel>
+            <translation><!-- North - Wind --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South</masterLabel>
+            <translation><!-- South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South - Solar</masterLabel>
+            <translation><!-- South - Solar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South - Wind</masterLabel>
+            <translation><!-- South - Wind --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select this box if you would like to have the information from the Development Website, and the associated Project Development to update and override certain Opportunity fields. --></help>
+        <label><!-- Selected Bid --></label>
+        <name>Selected_Bid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Size (MW) --></label>
+        <name>Size_MW__c</name>
+    </fields>
+    <fields>
+        <label><!-- Size MWh --></label>
+        <name>Size_MWh__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Status, or Phase, of the particular Bid. --></help>
+        <label><!-- Stage --></label>
+        <name>Stage_Phase__c</name>
+        <picklistValues>
+            <masterLabel>Closed Lost</masterLabel>
+            <translation><!-- Closed Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Won</masterLabel>
+            <translation><!-- Closed Won --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Won - Not Selected</masterLabel>
+            <translation><!-- Closed Won - Not Selected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negotiations</masterLabel>
+            <translation><!-- Negotiations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Notice of Award</masterLabel>
+            <translation><!-- Notice of Award --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proposal Preparation</masterLabel>
+            <translation><!-- Proposal Preparation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proposal Submitted</masterLabel>
+            <translation><!-- Proposal Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shortlist</masterLabel>
+            <translation><!-- Shortlist --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submitted Date --></label>
+        <name>Submitted_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target PPA Price --></label>
+        <name>Target_PPA_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technology Type --></label>
+        <name>Technology_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term (Yrs) --></label>
+        <name>Term_Yrs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Revenue --></label>
+        <name>Total_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transmission Mileage --></label>
+        <name>Transmission_Mileage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Project --></label>
+        <name>Update_Project__c</name>
+    </fields>
+    <layouts>
+        <layout>Project / Opp Layout</layout>
+        <sections>
+            <label><!-- Additional Project Info --></label>
+            <section>Additional Project Info</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Deleted Fields --></label>
+            <section>Deleted Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Location --></label>
+            <section>Location</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

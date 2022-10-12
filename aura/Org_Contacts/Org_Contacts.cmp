@@ -1,0 +1,4 @@
+<aura:component controller="Org_Contacts_ApexCls" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="parentid" type="Id" />
+</aura:component>

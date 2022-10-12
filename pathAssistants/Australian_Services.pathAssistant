@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Australian Services</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Latest_Update__c</fieldNames>
+        <fieldNames>Next_Steps__c</fieldNames>
+        <picklistValueName>Contract Negotiations</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Latest_Update__c</fieldNames>
+        <fieldNames>Next_Steps__c</fieldNames>
+        <picklistValueName>Pending Decision</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Latest_Update__c</fieldNames>
+        <fieldNames>Next_Steps__c</fieldNames>
+        <info>&lt;p&gt;More Guidance...&lt;/p&gt;</info>
+        <picklistValueName>Pending RFP</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Latest_Update__c</fieldNames>
+        <fieldNames>Next_Steps__c</fieldNames>
+        <picklistValueName>Proposal Prep</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Latest_Update__c</fieldNames>
+        <fieldNames>Next_Steps__c</fieldNames>
+        <picklistValueName>Proposal Submitted - ongoing development</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Support_Services_Sub_type__c</fieldNames>
+        <fieldNames>Latest_Update__c</fieldNames>
+        <picklistValueName>Prospect</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Latest_Update__c</fieldNames>
+        <fieldNames>Next_Steps__c</fieldNames>
+        <picklistValueName>Shelved/Client Not Proceeding</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Latest_Update__c</fieldNames>
+        <fieldNames>Next_Steps__c</fieldNames>
+        <picklistValueName>Shortlisted</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Australian_Services</recordTypeName>
+</PathAssistant>

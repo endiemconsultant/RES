@@ -1,0 +1,221 @@
+<template>
+
+    <!-- #region View Form-->
+    <template if:false={editForm}>
+    <lightning-accordion
+        allow-multiple-sections-open
+        active-section-name={activeSections}>
+    <lightning-card id="viewReleaseGateCard">
+        <lightning-button-stateful 
+            id="btnEdit"
+            variant="brand"
+            label-when-off="Edit"
+            label-when-on="Cancel"
+            onclick={handleEdit}
+            selected={editForm}>
+        </lightning-button-stateful>
+    
+        <div class="slds-var-m-around_medium">
+        <lightning-record-view-form 
+            object-api-name="Case"
+            record-id={recordId}>
+
+                <br>
+                <lightning-accordion-section if:false={editForm} name="viewImpact" label="Impact">
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field
+                            field-name={areOtherStakeholdersImpactedField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={impactedStakeholdersField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={areImpactedStakeholdersAwareField}>
+                        </lightning-output-field>  
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field
+                            field-name={anyStakeholderConcersField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={listStakeholderConcernsField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={allStakeholderConcernsResolvedField}>
+                        </lightning-output-field>
+                    </div>
+                </div>
+                </lightning-accordion-section>
+
+                <br>
+                <lightning-accordion-section if:false={editForm} name="viewTesting" label="Testing">
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_2-of-2">
+                        <lightning-output-field
+                            field-name={adminTestingCompletedField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={userTestingCompletedField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={describeTheTestingField}>
+                        </lightning-output-field>
+                    </div>
+                </div>
+                </lightning-accordion-section>
+                
+                <br>
+                <lightning-accordion-section if:false={editForm} name="viewProcess" label="Process">
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field
+                            field-name={newProcessField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={userTrainingCompletedField}>
+                        </lightning-output-field>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field
+                            field-name={processDocumentCreatedField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={processDocumentLinkField}>
+                        </lightning-output-field>
+                    </div>
+                </div>
+                </lightning-accordion-section>
+
+                <br>
+                <lightning-output-field
+                    field-name={serviceTeamReleaseField]>
+                </lightning-output-field>
+
+        </lightning-record-view-form>
+        </div>
+    </lightning-card>
+    </lightning-accordion>
+    </template>
+    <!-- #endregion -->
+    
+    <!-- #region Edit Form-->
+    <template if:true={editForm}>
+    <lightning-accordion
+        allow-multiple-sections-open
+        active-section-name={activeSections}>
+    <lightning-card id="editReleaseGateCard">
+        <lightning-button-stateful 
+                id="btnCancel"
+                variant="brand"
+                label-when-off="Edit"
+                label-when-on="Cancel"
+                onclick={handleEdit}
+                selected={editForm}>
+        </lightning-button-stateful>
+        <br>
+        <br>
+        <lightning-button  
+            id="btnUpdate1"
+            variant="brand"
+            class="slds-m-top_small"  
+            type="submit"  
+            name="updateForm"  
+            onclick={handleUpdate}
+            label="Update">  
+        </lightning-button> 
+        <div class="slds-var-m-around_medium">
+        <lightning-record-edit-form 
+            object-api-name="Case"
+            record-id={recordId}
+            onsuccess={handleUpdate}>
+            
+            <br>
+            <lightning-accordion-section if:true={editForm} name="editImpact" label="Impact">
+            <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field
+                        field-name={areOtherStakeholdersImpactedField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={impactedStakeholdersField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={areImpactedStakeholdersAwareField}>
+                    </lightning-input-field>  
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field
+                        field-name={anyStakeholderConcersField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={listStakeholderConcernsField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={allStakeholderConcernsResolvedField}>
+                    </lightning-input-field>
+                </div>
+            </div>
+            </lightning-accordion-section>
+
+            <br>
+            <lightning-accordion-section if:true={editForm} name="editTesting" label="Testing">
+            <div class="slds-grid">
+                <div class="slds-col slds-size_2-of-2">
+                    <lightning-input-field
+                        field-name={adminTestingCompletedField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={userTestingCompletedField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={describeTheTestingField}>
+                    </lightning-input-field>
+                </div>
+            </div>
+            </lightning-accordion-section>
+                
+                <br>
+                <lightning-accordion-section if:true={editForm} name="editProcess" label="Process">
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field
+                            field-name={newProcessField}>
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={userTrainingCompletedField}>
+                        </lightning-input-field>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field
+                            field-name={processDocumentCreatedField}>
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={processDocumentLinkField}>
+                        </lightning-input-field>
+                    </div>
+                </div>
+                </lightning-accordion-section>
+
+                <br>
+                <lightning-input-field
+                    field-name={serviceTeamReleaseField]>
+                </lightning-input-field>
+            
+            <lightning-button  
+                id="btnUpdate2"
+                variant="brand"
+                class="slds-m-top_small"  
+                type="submit"  
+                name="updateForm"  
+                label="Update">  
+            </lightning-button>         
+        </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+    </lightning-accordion>
+    </template>
+    <!-- #endregion -->
+    
+    
+    </template>

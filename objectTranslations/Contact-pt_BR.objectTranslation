@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Actions to Become a Stronger Sponsor --></label>
+        <name>Actions_Stronger_Sponsor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calls &amp; Meetings FY (Event) --></label>
+        <name>Calls_Meetings_FY_Event__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calculates the number of Calls and Meetings we have had with this Client for the current Year. --></help>
+        <label><!-- Calls &amp; Meetings FY (Tsk) --></label>
+        <name>Calls_Meetings_FY_Tsk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calls &amp; Meetings this FY --></label>
+        <name>Calls_Meetings_this_FY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Categories --></label>
+        <name>Categories__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments about Contact --></label>
+        <name>Comments_about_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Meeting Status --></label>
+        <name>Contact_Activity_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Frequency --></label>
+        <name>Contact_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bi-Weekly</masterLabel>
+            <translation><!-- Bi-Weekly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biannually</masterLabel>
+            <translation><!-- Biannually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Contacts --></label>
+        <name>Contacts__c</name>
+    </fields>
+    <fields>
+        <help><!-- # of Days left until we have to reach out to this Contact: 
+Negative #s = Late / Behind Schedule
+Positive #s = Ahead of Schedule
+Calculation looks at the &quot;Contact Frequency&quot; field and compares it with the &quot;Last Client Meeting&quot; date. --></help>
+        <label><!-- Days until Next Activity --></label>
+        <name>Days_until_Next_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- EA Biography --></label>
+        <name>EnergyAcuity__Biography__c</name>
+    </fields>
+    <fields>
+        <label><!-- EA CompanyID --></label>
+        <name>EnergyAcuity__Energy_Acuity_CompanyID__c</name>
+    </fields>
+    <fields>
+        <label><!-- EA ExecutiveID --></label>
+        <name>EnergyAcuity__Energy_Acuity_ExecutiveID__c</name>
+    </fields>
+    <fields>
+        <label><!-- EA Executive Name --></label>
+        <name>EnergyAcuity__Executive_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- EA Rating --></label>
+        <name>EnergyAcuity__Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Activity Date --></label>
+        <name>Expected_Activity_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExternalID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter in any relevant notes about this Contact&apos;s Family. --></help>
+        <label><!-- Family Notes --></label>
+        <name>Family_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does this Contact still work here, for this Account? --></help>
+        <label><!-- Inactive? --></label>
+        <name>Inactive__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the level of influence this individual has?
+
+Values 1 to 10. (10 being high)
+
+When two contacts have the same level then mark one with an extra point 5 (0.5) value to allow them both  to be seen on the Sponsor Blocker chart. --></help>
+        <label><!-- Influence --></label>
+        <name>Influence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investor Contact? --></label>
+        <name>Investor_Contact__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field will be eliminated and merged into the Influence. Please ensure any values here are reflected properly in the Influence field. --></help>
+        <label><!-- KDM Rank --></label>
+        <name>KDM_Rank__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Key Decision Maker --></label>
+        <name>Key_Decision_Maker__c</name>
+    </fields>
+    <fields>
+        <label><!-- Landowner Role --></label>
+        <name>Landowner_Role__c</name>
+        <picklistValues>
+            <masterLabel>Attorney</masterLabel>
+            <translation><!-- Attorney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mineral Owner</masterLabel>
+            <translation><!-- Mineral Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surface Owner</masterLabel>
+            <translation><!-- Surface Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surface Owner – Point of Contact</masterLabel>
+            <translation><!-- Surface Owner – Point of Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tenant</masterLabel>
+            <translation><!-- Tenant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date stamp of when the last Face to Face Meeting was held for this Contact. --></help>
+        <label><!-- Last Client Meeting --></label>
+        <name>Last_Client_Meeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Newsletter --></label>
+        <name>Newsletter__c</name>
+        <picklistValues>
+            <masterLabel>French Newsletter</masterLabel>
+            <translation><!-- French Newsletter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nordics AM new lead</masterLabel>
+            <translation><!-- Nordics AM new lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK&amp;I Customer Survey</masterLabel>
+            <translation><!-- UK&amp;I Customer Survey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK&amp;I Newsletter</masterLabel>
+            <translation><!-- UK&amp;I Newsletter --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opt-In Consent --></label>
+        <name>Opt_In_Consent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Interests --></label>
+        <name>Personal_Interests__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Wins --></label>
+        <name>Personal_Wins__c</name>
+    </fields>
+    <fields>
+        <help><!-- If left blank, this field will automatically pull the USER from within the Contact&apos;s &quot;Owner&quot; field and replace it with the associated RES CONTACT. --></help>
+        <label><!-- Primary Contact Owner --></label>
+        <lookupFilter>
+            <errorMessage><!-- This Contact does not exist on one of the &quot;Renewable Energy System&quot; Accounts. Please create their Contact here: https://res-group.lightning.force.com/one/one.app#/sObject/001i000000svaF8AAI/view --></errorMessage>
+        </lookupFilter>
+        <name>Primary_Contact_Owner__c</name>
+        <relationshipLabel><!-- Contacts (Primary Contact Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Check if True --></help>
+        <label><!-- Is Private? --></label>
+        <name>RES_Is_Private__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Email --></label>
+        <name>RES_Other_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- RES Employee who is also responsible for the relationship of this Contact and the necessary outreach. --></help>
+        <label><!-- Secondary Contact Owner --></label>
+        <lookupFilter>
+            <errorMessage><!-- This RES Employee must already exist as a Contact on one of the &quot;Renewable Energy Systems&quot; Accounts. If they don&apos;t exist yet, please add them to as new Contact on the parent, or one of the subsidiary RES Accounts. --></errorMessage>
+            <informationalMessage><!-- Must be a Contact on one of the &quot;Renewable Energy System&quot; Accounts. --></informationalMessage>
+        </lookupFilter>
+        <name>Relationship_Owner__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Contact&apos;s relationship to RES. NOT their Title. --></help>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the Client&apos;s perception of RES?  Please input a range between -5 and +5.
+
+Definitions of these values can be found via the URL link on this contact page (below). --></help>
+        <label><!-- View of RES --></label>
+        <name>View_of_RES__c</name>
+    </fields>
+    <layouts>
+        <layout>Contact Layout Master</layout>
+        <sections>
+            <label><!-- Address Information &amp; Contact Photo --></label>
+            <section>Address Information &amp; Contact Photo</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Preferences --></label>
+            <section>Contact Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Key Account Management Fields --></label>
+            <section>Key Account Management Fields</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Personal Contact Notes --></label>
+            <section>Personal Contact Notes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Investor Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Landowners</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Personal Contact Notes --></label>
+            <section>Personal Contact Notes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Origination</layout>
+        <sections>
+            <label><!-- Address Information &amp; Contact Photo --></label>
+            <section>Address Information &amp; Contact Photo</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Preferences --></label>
+            <section>Contact Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Key Account Management Fields --></label>
+            <section>Key Account Management Fields</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Personal Contact Notes --></label>
+            <section>Personal Contact Notes</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Picture Upload Layout</layout>
+        <sections>
+            <label><!-- Contact Picture --></label>
+            <section>Contact Picture</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>System Administrator Layout</layout>
+        <sections>
+            <label><!-- Address Information &amp; Contact Photo --></label>
+            <section>Address Information &amp; Contact Photo</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Preferences --></label>
+            <section>Contact Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Key Account Management Fields --></label>
+            <section>Key Account Management Fields</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Personal Contact Notes --></label>
+            <section>Personal Contact Notes</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Upload Picture --></label>
+        <name>Upload_Picture</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Landowner --></label>
+        <name>Landowner</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prospect Contact --></label>
+        <name>Prospect_Contact</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please enter either the Phone, Email, or Mobile. --></errorMessage>
+        <name>Contact_Media_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The value for &apos;Influence&apos; must be greater than 0 and less than (or equal to) 10 --></errorMessage>
+        <name>Influence_between_0_and_10</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a value for both the &apos;Influence&apos; AND &apos;View of RES &apos; fields (required fields when a Contact is a KDM on a Key Account). --></errorMessage>
+        <name>KDMs_need_Influence_and_View_of_RES</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The value for &apos;View of RES&apos; must be between -5 and +5 --></errorMessage>
+        <name>View_of_RES_between_minus_5_and_5</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_to_Mass_Merge_List --></label>
+        <name>SDOC__Add_to_Mass_Merge_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Email_Docs --></label>
+        <name>SDOC__Email_Docs</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- S_Docs --></label>
+        <name>SDOC__S_Docs</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Mass_Merge_List --></label>
+        <name>SDOC__View_Mass_Merge_List</name>
+    </webLinks>
+    <webLinks>
+        <label>Mostrar mapa</label>
+        <name>SIMBingMapsContactButton</name>
+    </webLinks>
+    <webLinks>
+        <label>Mostrar mapa</label>
+        <name>SIMBingMapsContactLink</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Upload_Picture --></label>
+        <name>Upload_Picture</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_Hierarchy --></label>
+        <name>View_Hierarchy</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- View_of_RES_Influence_guide --></label>
+        <name>View_of_RES_Influence_guide</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooWeather --></label>
+        <name>YahooWeather</name>
+    </webLinks>
+</CustomObjectTranslation>

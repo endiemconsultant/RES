@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Strategic Objective</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Strategic Objectives</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Strategic Objectives --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Client Development</masterLabel>
+            <translation><!-- Client Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Project Management</masterLabel>
+            <translation><!-- Client Project Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Protection</masterLabel>
+            <translation><!-- Client Protection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management of Fee Earning Work</masterLabel>
+            <translation><!-- Management of Fee Earning Work --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Understanding</masterLabel>
+            <translation><!-- Understanding --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Is this KA Strategic Objective complete? --></help>
+        <label><!-- Completed? --></label>
+        <name>Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date for Closure --></label>
+        <name>Date_for_Closure__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExternalID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <label><!-- KASO Number --></label>
+        <name>KASO_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checks the &apos;Type of Company&apos; field in the parent Account to see if this is a Key Account. --></help>
+        <label><!-- Key Account? --></label>
+        <name>Key_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of this KA Strategic Objective --></help>
+        <label><!-- Objective Description --></label>
+        <name>Objective_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Objective Owner --></label>
+        <name>Objective_Owner__c</name>
+        <relationshipLabel><!-- Strategic Objectives --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Objective Title --></label>
+        <name>Objective_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- RAG Status Color --></label>
+        <name>RAG_Status_Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- RAG Status --></label>
+        <name>RAG_Status__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation><!-- Amber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Latest Update for this Task --></help>
+        <label><!-- Update --></label>
+        <name>Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- ignore --></label>
+        <name>ignore__c</name>
+    </fields>
+    <layouts>
+        <layout>KA Strategic Objective Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- KASO Information --></label>
+            <section>KASO Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

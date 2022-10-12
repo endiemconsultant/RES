@@ -1,0 +1,84 @@
+<apex:page controller="GoogleControllerNew">
+
+    <!-- Google API inclusion -->
+    <apex:includeScript id="a" value="https://www.gstatic.com/charts/loader.js" />
+
+     
+    <apex:sectionHeader subtitle="New - Market & Policy Issues" title="Ordered by Created Date"/>
+ 
+    <!-- Google Charts will be drawn in this DIV -->
+    <div id="table_div" />
+    
+    <style type='text/css'>
+          .html{
+                font-weight: bold;
+                all; inherit;
+              }
+    </style>
+    
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['table']});
+      google.charts.setOnLoadCallback(drawTable);
+
+        function drawTable() {
+        
+         var cssClassNames = {
+            'headerRow': '',
+            'tableRow': '',
+            'oddTableRow': '',
+            'selectedTableRow': '',
+            'hoverTableRow': 'html',
+            'headerCell': '',
+            'tableCell': '',
+            'rowNumberCell': ''}; 
+                
+        var accountId='{!$currentPage.parameters.id}';
+        var string = 1359147598000;
+        var date = new Date(string).toLocaleDateString();
+        console.log(date);
+        var d2 = Date.parse(date);
+        console.log(d2);        
+        console.log(typeof d2); 
+
+        Visualforce.remoting.Manager.invokeAction(
+            '{!$RemoteAction.GoogleControllerNew.loadIssues}',  
+            accountId,    
+          // [<namespace>.]<controller>.<method>([params...,] <callbackFunction>(result, event) {...}
+          
+                 function(result, event){ 
+                     
+                     var data = new google.visualization.DataTable();
+                     data.addColumn('string', 'Link to Issue');
+                     data.addColumn('string', 'Issue Link');
+                     data.addColumn('string', 'Issue Summary'); 
+                     data.addColumn('string', 'Created Date'); 
+                     for(var i =0; i<result.length;i++){
+                        var r = result[i];
+                        data.addRow([r.Name, 'https://na15.salesforce.com/'+r.Market_Policy_Issue__c, r.Issue_Summary__c, r.Created_Date__c]);
+                        } 
+                   
+                   var options = {'showRowNumber': true, 'allowHtml': true, 'cssClassNames': cssClassNames};
+                    
+                   var formatter = new google.visualization.PatternFormat(
+                        '<a href="{1}">{0}</a>');
+                  formatter.format(data, [0, 1]);
+                  
+                  var formatter1 = new google.visualization.PatternFormat(
+                        "'{0}'");
+                  formatter1.format(data,[2]);
+                           
+                   var view = new google.visualization.DataView(data);
+                     view.setColumns([0,2,3]);  
+                        
+                    var container = document.getElementById('table_div');
+                    var table = new google.visualization.Table(container);
+                    table.draw(view, options);
+                    table.setSelection([{'row': 3}]);
+
+                     
+              });
+             
+          } 
+    </script>
+
+</apex:page>

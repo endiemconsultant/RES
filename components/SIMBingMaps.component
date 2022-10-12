@@ -1,0 +1,193 @@
+<!--
+//Copyright (c) 2010, Mark Sivill, Sales Engineering, Salesforce.com Inc.
+//All rights reserved.
+//
+//Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+//Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. 
+//Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+//Neither the name of the salesforce.com nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. 
+//THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+//INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+//DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
+//SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
+//LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+//CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, 
+//EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+//
+// History
+//
+// Version  Date            Author          Comments
+// 1.0      29-05-2009      Mark Sivill     Initial version
+// 1.1      29-07-2009      Mark Sivill     Fix issue with IE, ensure scripts are run after page has loaded
+// 1.2      15-03-2010      Mark Sivill     Updated to support different themes
+// 1.3      06-05-2010      Mark Sivill     Checks to see if component is visible before drawing (Bing Maps drawing workaround)
+// 1.4      13-08-2010      Mark Sivill     Allow zoom level, pin icon and coordinate to be set
+// 1.5      05-09-2010      Mark Sivill     Rename location to mapLocation to avoid browser error in firefox and safari
+// 1.6      23-09-2010      Mark Sivill     Fix to stop IE throwing error when address is being used but no value is set for address
+//                                          Also made infobox pop up when no address is found
+//
+-->
+<apex:component >
+
+    <apex:attribute name="address" description="Address to search for in the map, including the country in the address helps accuraccy" type="string" />
+    <apex:attribute name="latitude" description="Latitude for pin in WGS84 format. Valid range from -90.0 to 90.0. Invalid values are set to 0.0. If address and latitude are not set then set latitude to 0.0." type="decimal" />
+    <apex:attribute name="longitude" description="Longitude for pin in WGS84 format. Valid range from -180.0 to 180.0. Invalid values are set to 0.0. If address and longitude are not set then set longitude to 0.0." type="decimal" />
+    <apex:attribute name="width" description="Map width in pixels." type="integer" default="700" />
+    <apex:attribute name="height" description="Map height in pixels." type="integer" default="200" />
+    <apex:attribute name="zoomLevel" description="The zoom level for the map. Valid values range from 1 through 19." type="integer" default="15" />
+    <apex:attribute name="customIcon" description="A URL to an image (25 by 30 pixels) that defines the custom pin." type="string" />
+
+    <!-- disable bird eye view popup -->
+    <!-- css work around for pin image offset issue -->
+    <style type="text/css"> 
+        #MSVE_obliqueNotification {visibility: hidden;} 
+        .myPushpin { position:absolute; left:0px; top:-13px;} 
+    </style>
+    
+    <apex:outputPanel id="top_level_panel" layout="block" style="margin-left: auto; margin-right: auto">
+        <apex:outputPanel id="map_canvas" layout="block" style="position:relative; width:{!width}px; height:{!height}px; margin-left: auto; margin-right: auto"></apex:outputPanel>
+    </apex:outputPanel>
+
+    <!-- multi-line workround as BillingStreet (or MailingStreet) may have more than one line -->
+    <!-- which causes problems when text is placed directly into javascript -->
+    <div id="hiddenAddress" style="display:none">{!address}</div>
+    <div id="hiddenCustomIcon" style="display:none">{!customIcon}</div>
+    <div id="hiddenUsingAddress" style="display:none">{!$Label.SIMBingMaps_UsingAddress}</div>
+    <div id="hiddenUsingCoordinate" style="display:none">{!$Label.SIMBingMaps_UsingCoordinate}</div>
+    <div id="hiddenLanguageCode" style="display:none">{!$Label.SIMBingMaps_LanguageCode}</div>
+    <div id="hiddenFindInBing" style="display:none">{!$Label.SIMBingMaps_FindInBing}</div>
+
+    <script type="text/javascript">
+        // address multi-line workaround
+        var safeAddress = document.getElementById('hiddenAddress').innerHTML.replace(/\s+/g, ' ');
+
+        // 1.6 change - ensure IE does not through an error if no value is set for address
+        if ((safeAddress == null) || (safeAddress == ''))
+        {
+          safeAddress = ' ';
+        }
+
+        var safeCustomIcon = document.getElementById('hiddenCustomIcon').innerHTML.replace(/\s+/g, ' ');
+        // also need to have if any Label span more than one line
+        var safeUsingAddress = document.getElementById('hiddenUsingAddress').innerHTML.replace(/\s+/g, ' ');
+        var safeUsingCoordinate = document.getElementById('hiddenUsingCoordinate').innerHTML.replace(/\s+/g, ' ');
+        var safeLanguageCode = document.getElementById('hiddenLanguageCode').innerHTML.replace(/\s+/g, ' ');
+        var safeFindinBing = document.getElementById('hiddenFindInBing').innerHTML.replace(/\s+/g, ' ');
+    </script>
+        
+    <script type="text/javascript">
+        //set language for api
+        document.write('<script type="text/javascript" src="https://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.3&mkt=' + safeLanguageCode + '"><\/scr' + 'ipt>'); 
+    </script>
+
+    <script type="text/javascript">            
+
+        var map = null; 
+        var myShape = null;
+        var mapLocation = new VELatLong(0,0); 
+        
+        // change to custom icon if set else use 'default' red pin
+        var customIcon = "{!IF( ISNULL(customIcon), URLFOR($Resource.SIMBingMapsIcons, 'red.png'), customIcon )}";
+
+        // check zoom level is correct
+        var zoomLevel = {!IF(OR( zoomLevel < 1, zoomLevel > 19), 15, zoomLevel)};
+
+        function DisplayMap() 
+        {         
+            try
+            {
+                map = new VEMap('{!$Component.map_canvas}');
+                
+                // using address
+                if({!IF(ISNULL(address),false,true)})
+                {                
+                   map.LoadMap(mapLocation, zoomLevel, VEMapStyle.Road, false, VEMapMode.Mode2D, false);
+                   map.Find(null, safeAddress, null, null, null, null, true, true, null, true, GetCoordinates); 
+                }
+                // using latitude and longitude
+                else
+                {
+                   mapLocation =  new VELatLong({!IF(OR( latitude < -90, latitude > 90, ISNULL(latitude)), 0, latitude)},{!IF(OR( longitude < -180, longitude> 180, ISNULL(longitude) ), 0, longitude)});        
+                   map.LoadMap(mapLocation, zoomLevel, VEMapStyle.Road, false, VEMapMode.Mode2D, false);
+                   myShape = new VEShape(VEShapeType.Pushpin, mapLocation);
+                   myShape.SetTitle(safeUsingCoordinate);
+                   myShape.SetDescription('<div>' + mapLocation.Latitude + ' ' + mapLocation.Longitude + '</div><div><a href="http://bing.com/maps/default.aspx?v=2&mkt=' + safeLanguageCode + '&cp=' + mapLocation.Latitude + '~' + mapLocation.Longitude + '" target="_top">' + safeFindinBing + '</a></div>');
+                   myShape.SetCustomIcon("<div><img src=\"" + customIcon + "\" originalAttribute=\"src\" originalPath=\"" + customIcon + "\" class=\"myPushpin\" /></div>");  
+                   map.AddShape(myShape);
+                }
+
+                map.AttachEvent("onmouseover",mouseOverHandler);
+
+            }
+            catch(e)
+            {
+                alert(e.message);
+            }     
+        }
+
+        // work around to get infobox to appear at pin point (current mapLocation)
+        function mouseOverHandler(e)
+        {
+            map.ShowInfoBox(map.GetShapeByID(e.elementID), mapLocation);
+            return true;
+        }
+
+        // 1.3 change - check component is visible
+        function isVisible()
+        {
+            return document.getElementById('{!$Component.top_level_panel}').offsetWidth > 0 && document.getElementById('{!$Component.top_level_panel}').offsetHeight > 0;
+        }
+        
+        // 1.3 change - check component is visible before drawing map (Bing Maps workaround)
+        function waitTillVisible()
+        {        
+            if(isVisible())
+            {
+                DisplayMap();
+            }
+            else
+            {
+                setTimeout("waitTillVisible()", 1000);
+            }       
+        }
+
+        function GetCoordinates(layer, resultsArray, places, hasMore, veErrorMessage)
+        {        
+
+            if( null == veErrorMessage)
+            {
+                // address(es) found
+                mapLocation = places[0].LatLong;
+                myShape = new VEShape(VEShapeType.Pushpin, mapLocation);
+                myShape.SetTitle(safeUsingAddress);
+                myShape.SetDescription('<div>' + '"' + safeAddress  + '"' + '</div><div><a href="http://bing.com/maps/default.aspx?v=2&mkt=' + safeLanguageCode + '&where1=' + escape(safeAddress) + '" target="_top">' + safeFindinBing + '</a></div>');
+                myShape.SetCustomIcon("<div><img src=\"" + customIcon + "\" originalAttribute=\"src\" originalPath=\"" + customIcon + "\" class=\"myPushpin\" /></div>");  
+                map.AddShape(myShape);
+
+            }
+            else
+            {
+                // no address found
+                myShape = new VEShape(VEShapeType.Pushpin, mapLocation);
+                myShape.SetTitle(safeUsingAddress);
+                myShape.SetDescription('<div>' + '"' + safeAddress  + '"' + '</div><div>' + veErrorMessage  + '</div><div><a href="http://bing.com/maps/default.aspx?v=2&mkt=' + safeLanguageCode + '&where1=' + escape(safeAddress) + '" target="_top">' + safeFindinBing + '</a></div>');
+                myShape.SetCustomIcon("<div><img src=\"" + customIcon + "\" originalAttribute=\"src\" originalPath=\"" + customIcon + "\" class=\"myPushpin\" /></div>");  
+                map.AddShape(myShape);
+                map.ShowInfoBox(myShape);
+                
+            }
+
+        }
+        
+        // 1.1 change - run javascript after page has loaded to avoid IE errors
+        // 1.3 change - check component is visible before drawing map (Bing Maps workaround)
+        if (window.attachEvent) {
+            window.attachEvent("onload", waitTillVisible);   
+        } else {
+            window.addEventListener("load", waitTillVisible, false);
+        }
+                
+        </script>
+    
+</apex:component>

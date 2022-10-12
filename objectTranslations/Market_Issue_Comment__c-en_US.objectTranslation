@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Market Issue Comment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Market Issue Comments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Comment/Question --></label>
+        <name>Comment_Question__c</name>
+    </fields>
+    <fields>
+        <label><!-- Market &amp; Policy Issue --></label>
+        <name>Market_Policy_Issue__c</name>
+        <relationshipLabel><!-- Market Issue Comments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- OwnerEmail --></label>
+        <name>OwnerEmail__c</name>
+    </fields>
+    <layouts>
+        <layout>Market Issue Comment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,25 @@
+<aura:component controller="KAM_ActivityTimeline_Controller"  implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global">
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:attribute name="recordId" type="string"/>
+            
+    <!-- Handler for Record Update <aura:handler event="force:refreshView" action="{!c.doInit}" />-->
+    <aura:handler event="force:refreshView" action="{!c.doInit}"/>
+    
+    <!-- List of Activity Timeline Items -->
+    <aura:attribute name="timeLineItems" type="ActivityTimeline_Model"/>
+    
+
+	<ul class="timeline">
+      
+        <aura:iteration items="{!v.timeLineItems}" var="item">
+        	<div>
+                <c:ActivityTimeLine_Item activityType="{!item.ActivityTimelineType}" itemDetail="{!item}"/>		
+    		</div>
+        </aura:iteration>
+         
+	</ul>
+      
+
+</aura:component>

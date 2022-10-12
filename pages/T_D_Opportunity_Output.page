@@ -1,0 +1,97 @@
+<apex:page standardController="Opportunity" showHeader="false" lightningStylesheets="true" sidebar="false" docType="html-5.0">
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title>Key Account Management Plan</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+      <!--Salesforce Lightning Design System Trailhead Module -->
+      <style  type="text/css">
+         html, body {
+            margin: 10;
+            padding: 3 auto;
+            }
+          rowStyle{
+            margin: 0 auto;
+            padding: 0px 10px auto;
+            text-align: center;
+            overflow-x:auto;
+            width: auto;
+            height: auto;
+            }
+    
+          .h5 {
+            margin: 10;
+            padding: 3 auto;
+            text-align: right;
+            overflow-x:auto;
+            width: auto;
+            height: auto;
+            }            
+        </style>    
+ </head>       
+ <body>
+ 
+    <apex:remoteObjects >
+      <apex:remoteObjectModel name="Opportunity" fields="Id,Name"/>
+    </apex:remoteObjects>
+    
+    <h1 title="Opportunity">{!opportunity.name} Project Info </h1>
+    
+    <apex:pageBlock title="{!opportunity.name} Project Info ">
+        <apex:pageBlockTable value="{!Opportunity}" var="opp">
+            <apex:column value="{!opp.AccountId}"/>
+            <apex:column value="{!opp.Transmission_Project_Owner__c}"/>
+            <apex:column value="{!opp.Contract_Type__c}"/>
+            <apex:column value="{!opp.Bid_Type__c}"/>
+            <apex:column value="{!opp.T_D_Due_Date__c}"/>
+            <apex:column value="{!opp.Proposal_Due_Date__c}"/>
+            <apex:column >
+              <apex:facet name="header">
+                <apex:outputtext value="Total Amount" />
+              </apex:facet>
+              <apex:outputText value="{0,number,$#,###,###}">
+                <apex:param value="{!opp.Amount}" />
+              </apex:outputText>
+            </apex:column>
+            <apex:column >                
+               <apex:facet name="header">
+                <apex:outputtext value="T&D Revenue" />
+              </apex:facet>
+              <apex:outputText value="{0,number,$#,###,###}">
+                <apex:param value="{!opp.Transmission_Revenue__c}" />
+              </apex:outputText>
+            </apex:column>
+            <apex:column value="{!opp.Location__c}"/>
+            <apex:column value="{!opp.State_Province__c}" headerValue="State"/>
+        </apex:pageBlockTable>
+        
+        <apex:pageBlockSection title="A Section Title">
+            <apex:outputField value="{!opportunity.RES_Technology_Type__c}"/>
+            <apex:outputField value="{!opportunity.Description}"/>
+        </apex:pageBlockSection>
+        
+        <apex:repeat value="{!Opportunity.RES_Team__r}" var="row">
+            <apex:outputText value="{!row.Employee_Name__r.Name}" />
+            <br/>
+            <apex:outputText value="{!row.Role__c}" />
+        </apex:repeat>
+        
+     <table>
+        <tr>
+            <td><apex:outputField value="{!opportunity.OwnerId}" /> </td>
+        </tr>
+    </table>
+        
+        <apex:variable var="v" value="'{!Opportunity.RES_Team__r}'"/>
+        <apex:variable var="v2" value="0"/>
+
+         <apex:relatedList list="RES_Team__r" rendered="{!v <> v2}"/>
+         
+    </apex:pageBlock>
+
+
+
+</body>
+
+</apex:page>

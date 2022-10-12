@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Distributed_PM_Past_Due_Milestone_Alert</name>
+        <label>Distributed PM - Past Due Milestone Alert</label>
+        <locationX>341</locationX>
+        <locationY>190</locationY>
+        <actionName>Milestone1_Milestone__c.Distributed_PM_Past_Due_Milestone_Alert</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>Milestone.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <interviewLabel>Distributed PM -  {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Distributed PM - Milestone Past Due</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Find_Past_Due_Milestone</name>
+        <label>Find Past Due Milestone</label>
+        <locationX>116</locationX>
+        <locationY>81</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Distributed_PM_Past_Due_Milestone_Alert</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Complete__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Deadline__c</field>
+            <operator>LessThan</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </filters>
+        <object>Milestone1_Milestone__c</object>
+        <outputAssignments>
+            <assignToReference>Milestone.Id</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+    </recordLookups>
+    <startElementReference>Find_Past_Due_Milestone</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>Milestone</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Milestone1_Milestone__c</objectType>
+    </variables>
+</Flow>

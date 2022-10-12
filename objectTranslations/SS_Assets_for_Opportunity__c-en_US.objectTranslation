@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SS Assets for Opportunity</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SS Assets for Opportunities</value>
+    </caseValues>
+    <fields>
+        <help><!-- Equal to the capacity of the Support Services Asset --></help>
+        <label><!-- Calculate Asset Capacity (MW) --></label>
+        <name>Aus_Calc_Asset_Capacity_MW__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Asset Capacity --></label>
+        <name>Display_Asset_Capacity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- SS Assets for Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Support Services Asset --></label>
+        <name>Support_Services_Asset__c</name>
+        <relationshipLabel><!-- SS Assets for Opportunities --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

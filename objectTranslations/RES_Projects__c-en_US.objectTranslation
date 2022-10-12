@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project Development</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Project Developments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Auto Create Opportunity --></label>
+        <name>Auto_Create_Opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- COD Date --></label>
+        <name>COD_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- ConstructionNTP Month --></label>
+        <name>ConstructionNTPMonth__c</name>
+    </fields>
+    <fields>
+        <label><!-- ConstructionNTP Year --></label>
+        <name>ConstructionNTPYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Construction NTP Date --></label>
+        <name>Construction_NTP_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>County__c</name>
+    </fields>
+    <fields>
+        <label><!-- DC/AC Ratio --></label>
+        <name>DC_AC_Ratio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dev Lead --></label>
+        <lookupFilter>
+            <errorMessage><!-- This RES Employee has not been entered as a Contact on the Renewable Energy Account. Please follow this link and add them as a Contact: https://res-group.my.salesforce.com/001i000000svaF8AAI. --></errorMessage>
+        </lookupFilter>
+        <name>Dev_Lead__c</name>
+        <relationshipLabel><!-- Project Developments (Dev Lead) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DevelopmentManagerFirstName --></label>
+        <name>DevelopmentManagerFirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- DevelopmentManagerLastName --></label>
+        <name>DevelopmentManagerLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Development Manager Full Name --></label>
+        <name>Development_Manager_Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Development Manager --></label>
+        <name>Development_Manager__c</name>
+        <relationshipLabel><!-- Project Developments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Engineering Class --></label>
+        <name>Engineering_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimating Level --></label>
+        <name>Estimating_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed or Tracker --></label>
+        <name>Fixed_or_tracker__c</name>
+        <picklistValues>
+            <masterLabel>Fixed</masterLabel>
+            <translation><!-- Fixed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tracker</masterLabel>
+            <translation><!-- Tracker --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- NCF --></label>
+        <name>NCF__c</name>
+    </fields>
+    <fields>
+        <help><!-- AKA = NERC Region
+The value within this field mirrors the &quot;NERC Region&quot; field within the Dev Site. --></help>
+        <label><!-- RTO Region --></label>
+        <name>NERC_Region__c</name>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caribbean</masterLabel>
+            <translation><!-- Caribbean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chile-Aysen</masterLabel>
+            <translation><!-- Chile-Aysen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chile-Magallanes</masterLabel>
+            <translation><!-- Chile-Magallanes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chile-SIC</masterLabel>
+            <translation><!-- Chile-SIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chile-SING</masterLabel>
+            <translation><!-- Chile-SING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERCOT</masterLabel>
+            <translation><!-- ERCOT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISO</masterLabel>
+            <translation><!-- MISO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEISO</masterLabel>
+            <translation><!-- NEISO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NYISO</masterLabel>
+            <translation><!-- NYISO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PJM</masterLabel>
+            <translation><!-- PJM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPP</masterLabel>
+            <translation><!-- SPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WECC</masterLabel>
+            <translation><!-- WECC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Nearest City --></label>
+        <name>Nearest_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operator --></label>
+        <name>Operator__c</name>
+        <relationshipLabel><!-- Project Development (Operators) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PPA Price --></label>
+        <name>PPA_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of PPAs --></label>
+        <name>PPA_Sum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase Description --></label>
+        <name>Phase_Description__c</name>
+        <picklistValues>
+            <masterLabel>Advanced Permitting</masterLabel>
+            <translation><!-- Advanced Permitting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction Bids</masterLabel>
+            <translation><!-- Construction Bids --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Development</masterLabel>
+            <translation><!-- General Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Construction</masterLabel>
+            <translation><!-- In Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mast Erected</masterLabel>
+            <translation><!-- Mast Erected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mid-Stage Permitting</masterLabel>
+            <translation><!-- Mid-Stage Permitting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operational</masterLabel>
+            <translation><!-- Operational --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPA</masterLabel>
+            <translation><!-- PPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site Selection</masterLabel>
+            <translation><!-- Site Selection --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phase Number SubPhase --></label>
+        <name>Phase_Number_SubPhase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phase Number --></label>
+        <name>Phase_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Port / Harbor --></label>
+        <name>Port_Harbor__c</name>
+        <picklistValues>
+            <masterLabel>Harbor</masterLabel>
+            <translation><!-- Harbor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Port</masterLabel>
+            <translation><!-- Port --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Port --></label>
+        <name>Port__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Partner --></label>
+        <name>Primary_Partner__c</name>
+        <relationshipLabel><!-- Project Developments (Primary Partner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- External ID --></help>
+        <label><!-- Project Number --></label>
+        <name>Project_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Project Opps --></label>
+        <name>Project_Opps_Sum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Owner --></label>
+        <name>Project_Owner__c</name>
+        <relationshipLabel><!-- Project Developments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- # of Projects --></label>
+        <name>Projects__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Unit --></label>
+        <name>RES_Business_Unit__c</name>
+        <picklistValues>
+            <masterLabel>Advisory</masterLabel>
+            <translation><!-- Advisory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Americas</masterLabel>
+            <translation><!-- Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mediterranean</masterLabel>
+            <translation><!-- Mediterranean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium Wind</masterLabel>
+            <translation><!-- Medium Wind --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nordisk Vindkraft</masterLabel>
+            <translation><!-- Nordisk Vindkraft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offshore</masterLabel>
+            <translation><!-- Offshore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK Development</masterLabel>
+            <translation><!-- UK Development --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>RES_Country__c</name>
+        <picklistValues>
+            <masterLabel>Australia</masterLabel>
+            <translation><!-- Australia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chile</masterLabel>
+            <translation><!-- Chile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>England</masterLabel>
+            <translation><!-- England --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>France</masterLabel>
+            <translation><!-- France --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Germany</masterLabel>
+            <translation><!-- Germany --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italy</masterLabel>
+            <translation><!-- Italy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japan</masterLabel>
+            <translation><!-- Japan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northern Ireland</masterLabel>
+            <translation><!-- Northern Ireland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norway</masterLabel>
+            <translation><!-- Norway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puerto Rico</masterLabel>
+            <translation><!-- Puerto Rico --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Republic of Ireland</masterLabel>
+            <translation><!-- Republic of Ireland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scotland</masterLabel>
+            <translation><!-- Scotland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Africa</masterLabel>
+            <translation><!-- South Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sweden</masterLabel>
+            <translation><!-- Sweden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkey</masterLabel>
+            <translation><!-- Turkey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United States</masterLabel>
+            <translation><!-- United States --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wales</masterLabel>
+            <translation><!-- Wales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>RES_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Development Database Link --></label>
+        <name>RES_Development_Database_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- ECM Link --></label>
+        <name>RES_ECM_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Value --></label>
+        <name>RES_Estimated_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latitude --></label>
+        <name>RES_Latitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Longitude --></label>
+        <name>RES_Longitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapping Link --></label>
+        <name>RES_Mapping_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>RES_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter MW --></help>
+        <label><!-- Project Size (MW) --></label>
+        <name>RES_Project_Size_MW__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Status --></label>
+        <name>RES_Project_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Archived</masterLabel>
+            <translation><!-- Archived --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Technology Type --></label>
+        <name>RES_Technology_Type__c</name>
+        <picklistValues>
+            <masterLabel>DSM</masterLabel>
+            <translation><!-- DSM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy Storage</masterLabel>
+            <translation><!-- Energy Storage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offshore Wind</masterLabel>
+            <translation><!-- Offshore Wind --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onshore Wind</masterLabel>
+            <translation><!-- Onshore Wind --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solar - Other</masterLabel>
+            <translation><!-- Solar - Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solar - PV</masterLabel>
+            <translation><!-- Solar - PV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transmission</masterLabel>
+            <translation><!-- Transmission --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transmission Distance (Mileage) --></label>
+        <name>RES_Transmission_Distance_Mileage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chile</masterLabel>
+            <translation><!-- Chile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jamaica</masterLabel>
+            <translation><!-- Jamaica --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mexico</masterLabel>
+            <translation><!-- Mexico --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North</masterLabel>
+            <translation><!-- North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South</masterLabel>
+            <translation><!-- South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Caribbean</masterLabel>
+            <translation><!-- The Caribbean --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Agreement Expire Date --></label>
+        <name>Service_Agreement_Expire_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- State/Province --></label>
+        <name>State_Province__c</name>
+        <picklistValues>
+            <masterLabel>AB</masterLabel>
+            <translation><!-- AB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BC</masterLabel>
+            <translation><!-- BC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GU</masterLabel>
+            <translation><!-- GU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MB</masterLabel>
+            <translation><!-- MB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MH</masterLabel>
+            <translation><!-- MH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MP</masterLabel>
+            <translation><!-- MP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NB</masterLabel>
+            <translation><!-- NB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NF</masterLabel>
+            <translation><!-- NF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NS</masterLabel>
+            <translation><!-- NS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NT</masterLabel>
+            <translation><!-- NT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ON</masterLabel>
+            <translation><!-- ON --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PE</masterLabel>
+            <translation><!-- PE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PW</masterLabel>
+            <translation><!-- PW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QC</masterLabel>
+            <translation><!-- QC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SK</masterLabel>
+            <translation><!-- SK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VI</masterLabel>
+            <translation><!-- VI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YT</masterLabel>
+            <translation><!-- YT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Is this a 3rd Party Construction project? --></help>
+        <label><!-- Third Party --></label>
+        <name>Third_Party__c</name>
+    </fields>
+    <fields>
+        <label><!-- WTG Capacity (MW) --></label>
+        <name>WTG_Capacity_MW__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Equipment Manufacturer for Turbines --></help>
+        <label><!-- WTG OEM --></label>
+        <name>WTG_OEM__c</name>
+        <picklistValues>
+            <masterLabel>Adwen</masterLabel>
+            <translation><!-- Adwen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Areva</masterLabel>
+            <translation><!-- Areva --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bard</masterLabel>
+            <translation><!-- Bard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MHI Vestas</masterLabel>
+            <translation><!-- MHI Vestas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nordex</masterLabel>
+            <translation><!-- Nordex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Senivon</masterLabel>
+            <translation><!-- Senivon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Siemens</masterLabel>
+            <translation><!-- Siemens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vestas</masterLabel>
+            <translation><!-- Vestas --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The Total Number of Turbines at this roject Development --></help>
+        <label><!-- WTG Quantity --></label>
+        <name>WTG_Quantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please search for the Account/Company who will be this Project&apos;s Service Provider. --></help>
+        <label><!-- WTG Service Provider --></label>
+        <name>WTG_Service_Provider__c</name>
+        <relationshipLabel><!-- Project Developments (WTG Service Provider) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- WTG Sub-Structure Type --></label>
+        <name>WTG_Sub_Structure_Type__c</name>
+        <picklistValues>
+            <masterLabel>Floating</masterLabel>
+            <translation><!-- Floating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gravity</masterLabel>
+            <translation><!-- Gravity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jacket</masterLabel>
+            <translation><!-- Jacket --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lattice</masterLabel>
+            <translation><!-- Lattice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monopile</masterLabel>
+            <translation><!-- Monopile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tripile</masterLabel>
+            <translation><!-- Tripile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tripod</masterLabel>
+            <translation><!-- Tripod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Various</masterLabel>
+            <translation><!-- Various --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The specific model of the wind turbine --></help>
+        <label><!-- WTG Type --></label>
+        <name>WTG_Type__c</name>
+        <picklistValues>
+            <masterLabel>5M</masterLabel>
+            <translation><!-- 5M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6.2M 126</masterLabel>
+            <translation><!-- 6.2M 126 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bard 5.0</masterLabel>
+            <translation><!-- Bard 5.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bonus B35</masterLabel>
+            <translation><!-- Bonus B35 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bonus B76</masterLabel>
+            <translation><!-- Bonus B76 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M5000-116</masterLabel>
+            <translation><!-- M5000-116 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N90/2300</masterLabel>
+            <translation><!-- N90/2300 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N90/2500</masterLabel>
+            <translation><!-- N90/2500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SWT-2.3-82</masterLabel>
+            <translation><!-- SWT-2.3-82 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SWT-2.3-93</masterLabel>
+            <translation><!-- SWT-2.3-93 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SWT-3.6-107</masterLabel>
+            <translation><!-- SWT-3.6-107 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SWT-3.6-120</masterLabel>
+            <translation><!-- SWT-3.6-120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SWT-4.0-120</masterLabel>
+            <translation><!-- SWT-4.0-120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SWT-4.0-130</masterLabel>
+            <translation><!-- SWT-4.0-130 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SWT-6.0-120</masterLabel>
+            <translation><!-- SWT-6.0-120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SWT-6.0-154</masterLabel>
+            <translation><!-- SWT-6.0-154 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SWT-7.0-154</masterLabel>
+            <translation><!-- SWT-7.0-154 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V112-3.0</masterLabel>
+            <translation><!-- V112-3.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V126-3.3</masterLabel>
+            <translation><!-- V126-3.3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V164-8.0</masterLabel>
+            <translation><!-- V164-8.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V39-500kW</masterLabel>
+            <translation><!-- V39-500kW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V66-2.0</masterLabel>
+            <translation><!-- V66-2.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V80-2.0</masterLabel>
+            <translation><!-- V80-2.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V90-3.0</masterLabel>
+            <translation><!-- V90-3.0 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field corresponds to the &apos;Weekly Update&apos; field in the Development Database, as well as the &apos;Latest Update&apos; Field on the associated Opportunity. --></help>
+        <label><!-- Weekly Update --></label>
+        <name>Weekly_Update__c</name>
+    </fields>
+    <layouts>
+        <layout>Offshore</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment --></label>
+            <section>Equipment</section>
+        </sections>
+        <sections>
+            <label><!-- Location Information --></label>
+            <section>Location Information</section>
+        </sections>
+        <sections>
+            <label><!-- Operational Info --></label>
+            <section>Operational Info</section>
+        </sections>
+        <sections>
+            <label><!-- Project Phase Info --></label>
+            <section>Project Phase Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Project Development Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Location Information --></label>
+            <section>Location Information</section>
+        </sections>
+        <sections>
+            <label><!-- Project Phase Info --></label>
+            <section>Project Phase Info</section>
+        </sections>
+        <sections>
+            <label><!-- Solar Specific Fields --></label>
+            <section>Solar Specific Fields</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Update Project Development --></label>
+        <name>AutoCreateOpp</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Auto Create Opp --></label>
+        <name>Auto_Create_Opp</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Opp Test --></label>
+        <name>Opp_Test</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- In order for you to create a new Opportunity, either COD Date, or Construction NTP, must be entered. --></errorMessage>
+        <name>Auto_Create_Opportunity</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Auto_Create_Opportunity --></label>
+        <name>Auto_Create_Opportunity</name>
+    </webLinks>
+</CustomObjectTranslation>

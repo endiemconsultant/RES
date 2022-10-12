@@ -1,0 +1,2051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Project_Development_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>CompactLayout1</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>CompactLayout1</fullName>
+        <fields>Name</fields>
+        <fields>Project_Number__c</fields>
+        <fields>Development_Manager_Full_Name__c</fields>
+        <fields>RES_Technology_Type__c</fields>
+        <fields>Stage__c</fields>
+        <fields>COD_Date__c</fields>
+        <fields>Construction_NTP_Date__c</fields>
+        <fields>State_Province__c</fields>
+        <fields>RES_Country__c</fields>
+        <fields>Region__c</fields>
+        <label>CompactLayout1</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Vertiba 2/17/2014 - Created to track the development information associated to an opportunity</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Auto_Create_Opportunity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Auto Create Opportunity</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>COD_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>COD Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ConstructionNTPMonth__c</fullName>
+        <externalId>false</externalId>
+        <label>ConstructionNTP Month</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ConstructionNTPYear__c</fullName>
+        <externalId>false</externalId>
+        <label>ConstructionNTP Year</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Construction_NTP_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISNULL(ConstructionNTPYear__c),null,DATE(ConstructionNTPYear__c, ConstructionNTPMonth__c, 1))</formula>
+        <label>Construction NTP Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>County__c</fullName>
+        <externalId>false</externalId>
+        <label>County</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DC_AC_Ratio__c</fullName>
+        <externalId>false</externalId>
+        <label>DC/AC Ratio</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dev_Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Dev Lead</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <errorMessage>This RES Employee has not been entered as a Contact on the Renewable Energy Account. Please follow this link and add them as a Contact: https://res-group.my.salesforce.com/001i000000svaF8AAI.</errorMessage>
+            <filterItems>
+                <field>Contact.Account.Name</field>
+                <operation>contains</operation>
+                <value>Renewable Energy Systems</value>
+            </filterItems>
+            <filterItems>
+                <field>Contact.Account.Name</field>
+                <operation>contains</operation>
+                <value>RES T&amp;D</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Project Developments (Dev Lead)</relationshipLabel>
+        <relationshipName>Project_Developments1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>DevelopmentManagerFirstName__c</fullName>
+        <externalId>false</externalId>
+        <label>DevelopmentManagerFirstName</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DevelopmentManagerLastName__c</fullName>
+        <externalId>false</externalId>
+        <label>DevelopmentManagerLastName</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Development_Manager_Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>DevelopmentManagerFirstName__c &amp; &quot; &quot;&amp; DevelopmentManagerLastName__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Development Manager Full Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Development_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Development Manager</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.Account.Name</field>
+                <operation>contains</operation>
+                <value>Renewable Energy Systems</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Project Developments</relationshipLabel>
+        <relationshipName>Project_Developments</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Engineering_Class__c</fullName>
+        <externalId>false</externalId>
+        <label>Engineering Class</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Estimating_Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimating Level</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fixed_or_tracker__c</fullName>
+        <externalId>false</externalId>
+        <label>Fixed or Tracker</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed</fullName>
+                    <default>false</default>
+                    <label>Fixed</label>
+                </value>
+                <value>
+                    <fullName>Tracker</fullName>
+                    <default>false</default>
+                    <label>Tracker</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>NCF__c</fullName>
+        <externalId>false</externalId>
+        <label>NCF</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>NERC_Region__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>AKA = NERC Region
+The value within this field mirrors the &quot;NERC Region&quot; field within the Dev Site.</inlineHelpText>
+        <label>RTO Region</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Canada</fullName>
+                    <default>false</default>
+                    <label>Canada</label>
+                </value>
+                <value>
+                    <fullName>Caribbean</fullName>
+                    <default>false</default>
+                    <label>Caribbean</label>
+                </value>
+                <value>
+                    <fullName>Chile-SIC</fullName>
+                    <default>false</default>
+                    <label>Chile-SIC</label>
+                </value>
+                <value>
+                    <fullName>Chile-SING</fullName>
+                    <default>false</default>
+                    <label>Chile-SING</label>
+                </value>
+                <value>
+                    <fullName>Chile-Aysen</fullName>
+                    <default>false</default>
+                    <label>Chile-Aysen</label>
+                </value>
+                <value>
+                    <fullName>Chile-Magallanes</fullName>
+                    <default>false</default>
+                    <label>Chile-Magallanes</label>
+                </value>
+                <value>
+                    <fullName>ERCOT</fullName>
+                    <default>false</default>
+                    <label>ERCOT</label>
+                </value>
+                <value>
+                    <fullName>MISO</fullName>
+                    <default>false</default>
+                    <label>MISO</label>
+                </value>
+                <value>
+                    <fullName>NEISO</fullName>
+                    <default>false</default>
+                    <label>NEISO</label>
+                </value>
+                <value>
+                    <fullName>NYISO</fullName>
+                    <default>false</default>
+                    <label>NYISO</label>
+                </value>
+                <value>
+                    <fullName>PJM</fullName>
+                    <default>false</default>
+                    <label>PJM</label>
+                </value>
+                <value>
+                    <fullName>SPP</fullName>
+                    <default>false</default>
+                    <label>SPP</label>
+                </value>
+                <value>
+                    <fullName>WECC</fullName>
+                    <default>false</default>
+                    <label>WECC</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Nearest_City__c</fullName>
+        <externalId>false</externalId>
+        <label>Nearest City</label>
+        <length>150</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Operator__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Operator</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Project Development (Operators)</relationshipLabel>
+        <relationshipName>Operator_Project_Developments</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PPA_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>PPA Price</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PPA_Sum__c</fullName>
+        <externalId>false</externalId>
+        <label># of PPAs</label>
+        <summaryForeignKey>PPA_Bid__c.Project_Development__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Phase_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Phase Description</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Site Selection</fullName>
+                    <default>false</default>
+                    <label>Site Selection</label>
+                </value>
+                <value>
+                    <fullName>Mast Erected</fullName>
+                    <default>false</default>
+                    <label>Mast Erected</label>
+                </value>
+                <value>
+                    <fullName>Mid-Stage Permitting</fullName>
+                    <default>false</default>
+                    <label>Mid-Stage Permitting</label>
+                </value>
+                <value>
+                    <fullName>Advanced Permitting</fullName>
+                    <default>false</default>
+                    <label>Advanced Permitting</label>
+                </value>
+                <value>
+                    <fullName>PPA</fullName>
+                    <default>false</default>
+                    <label>PPA</label>
+                </value>
+                <value>
+                    <fullName>In Construction</fullName>
+                    <default>false</default>
+                    <label>In Construction</label>
+                </value>
+                <value>
+                    <fullName>Operational</fullName>
+                    <default>false</default>
+                    <label>Operational</label>
+                </value>
+                <value>
+                    <fullName>General Development</fullName>
+                    <default>false</default>
+                    <label>General Development</label>
+                </value>
+                <value>
+                    <fullName>Construction Bids</fullName>
+                    <default>false</default>
+                    <label>Construction Bids</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Phase_Number_SubPhase__c</fullName>
+        <externalId>false</externalId>
+        <label>Phase Number SubPhase</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phase_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Phase Number</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Port_Harbor__c</fullName>
+        <externalId>false</externalId>
+        <label>Port / Harbor</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Port</fullName>
+                    <default>false</default>
+                    <label>Port</label>
+                </value>
+                <value>
+                    <fullName>Harbor</fullName>
+                    <default>false</default>
+                    <label>Harbor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Port__c</fullName>
+        <externalId>false</externalId>
+        <label>Port</label>
+        <length>250</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Partner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Primary Partner</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Project Developments (Primary Partner)</relationshipLabel>
+        <relationshipName>Project_Developments</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Project_Number__c</fullName>
+        <description>Vertiba3/10/2014 - Phase1</description>
+        <externalId>false</externalId>
+        <inlineHelpText>External ID</inlineHelpText>
+        <label>Project Number</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Opps_Sum__c</fullName>
+        <externalId>false</externalId>
+        <label># of Project Opps</label>
+        <summaryForeignKey>Project_Opp__c.Project_Development__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Project_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Project Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>RES_Projects</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Projects__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label># of Projects</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RES_Business_Unit__c</fullName>
+        <description>Vertiba 04/22/2014 Phase 1</description>
+        <externalId>false</externalId>
+        <label>Business Unit</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Advisory</fullName>
+                    <default>false</default>
+                    <label>Advisory</label>
+                </value>
+                <value>
+                    <fullName>Americas</fullName>
+                    <default>false</default>
+                    <label>Americas</label>
+                </value>
+                <value>
+                    <fullName>Mediterranean</fullName>
+                    <default>false</default>
+                    <label>Mediterranean</label>
+                </value>
+                <value>
+                    <fullName>Medium Wind</fullName>
+                    <default>false</default>
+                    <label>Medium Wind</label>
+                </value>
+                <value>
+                    <fullName>Nordisk Vindkraft</fullName>
+                    <default>false</default>
+                    <label>Nordisk Vindkraft</label>
+                </value>
+                <value>
+                    <fullName>Offshore</fullName>
+                    <default>false</default>
+                    <label>Offshore</label>
+                </value>
+                <value>
+                    <fullName>UK Development</fullName>
+                    <default>false</default>
+                    <label>UK Development</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RES_Country__c</fullName>
+        <description>Vertiba 4/10/2014 - Phase 1</description>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Australia</fullName>
+                    <default>false</default>
+                    <label>Australia</label>
+                </value>
+                <value>
+                    <fullName>Canada</fullName>
+                    <default>false</default>
+                    <label>Canada</label>
+                </value>
+                <value>
+                    <fullName>Chile</fullName>
+                    <default>false</default>
+                    <label>Chile</label>
+                </value>
+                <value>
+                    <fullName>England</fullName>
+                    <default>false</default>
+                    <label>England</label>
+                </value>
+                <value>
+                    <fullName>France</fullName>
+                    <default>false</default>
+                    <label>France</label>
+                </value>
+                <value>
+                    <fullName>Germany</fullName>
+                    <default>false</default>
+                    <label>Germany</label>
+                </value>
+                <value>
+                    <fullName>Italy</fullName>
+                    <default>false</default>
+                    <label>Italy</label>
+                </value>
+                <value>
+                    <fullName>Japan</fullName>
+                    <default>false</default>
+                    <label>Japan</label>
+                </value>
+                <value>
+                    <fullName>Northern Ireland</fullName>
+                    <default>false</default>
+                    <label>Northern Ireland</label>
+                </value>
+                <value>
+                    <fullName>Norway</fullName>
+                    <default>false</default>
+                    <label>Norway</label>
+                </value>
+                <value>
+                    <fullName>Puerto Rico</fullName>
+                    <default>false</default>
+                    <label>Puerto Rico</label>
+                </value>
+                <value>
+                    <fullName>Republic of Ireland</fullName>
+                    <default>false</default>
+                    <label>Republic of Ireland</label>
+                </value>
+                <value>
+                    <fullName>Scotland</fullName>
+                    <default>false</default>
+                    <label>Scotland</label>
+                </value>
+                <value>
+                    <fullName>South Africa</fullName>
+                    <default>false</default>
+                    <label>South Africa</label>
+                </value>
+                <value>
+                    <fullName>Sweden</fullName>
+                    <default>false</default>
+                    <label>Sweden</label>
+                </value>
+                <value>
+                    <fullName>Turkey</fullName>
+                    <default>false</default>
+                    <label>Turkey</label>
+                </value>
+                <value>
+                    <fullName>United States</fullName>
+                    <default>false</default>
+                    <label>United States</label>
+                </value>
+                <value>
+                    <fullName>Wales</fullName>
+                    <default>false</default>
+                    <label>Wales</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RES_Description__c</fullName>
+        <description>Vertiba3/10/2014 - Phase1</description>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>RES_Development_Database_Link__c</fullName>
+        <description>Vertiba3/10/2014 - Phase1</description>
+        <externalId>false</externalId>
+        <label>Development Database Link</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>RES_ECM_Link__c</fullName>
+        <description>Vertiba3/10/2014 - Phase1</description>
+        <externalId>false</externalId>
+        <label>ECM Link</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>RES_Estimated_Value__c</fullName>
+        <description>Vertiba3/10/2014 - Phase1</description>
+        <externalId>false</externalId>
+        <label>Estimated Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>RES_Latitude__c</fullName>
+        <description>Vertiba3/10/2014 - Phase1</description>
+        <externalId>false</externalId>
+        <label>Latitude</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RES_Longitude__c</fullName>
+        <description>Vertiba3/10/2014 - Phase1</description>
+        <externalId>false</externalId>
+        <label>Longitude</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RES_Mapping_Link__c</fullName>
+        <description>Vertiba 04/10/2014 - Created for Phase1</description>
+        <externalId>false</externalId>
+        <label>Mapping Link</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>RES_Postal_Code__c</fullName>
+        <description>Vertiba3/10/2014 - Phase1</description>
+        <externalId>false</externalId>
+        <label>Postal Code</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RES_Project_Size_MW__c</fullName>
+        <description>Vertiba3/10/2014 - Phase1</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter MW</inlineHelpText>
+        <label>Project Size (MW)</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RES_Project_Status__c</fullName>
+        <description>Vertiba3/10/2014 - Phase1</description>
+        <externalId>false</externalId>
+        <label>Project Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Archived</fullName>
+                    <default>false</default>
+                    <label>Archived</label>
+                </value>
+                <value>
+                    <fullName>On Hold</fullName>
+                    <default>false</default>
+                    <label>On Hold</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RES_Technology_Type__c</fullName>
+        <description>Vertiba3/10/2014 - Phase1</description>
+        <externalId>false</externalId>
+        <label>Technology Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Onshore Wind</fullName>
+                    <default>false</default>
+                    <label>Onshore Wind</label>
+                </value>
+                <value>
+                    <fullName>Offshore Wind</fullName>
+                    <default>false</default>
+                    <label>Offshore Wind</label>
+                </value>
+                <value>
+                    <fullName>Solar - PV</fullName>
+                    <default>false</default>
+                    <label>Solar - PV</label>
+                </value>
+                <value>
+                    <fullName>Solar - Other</fullName>
+                    <default>false</default>
+                    <label>Solar - Other</label>
+                </value>
+                <value>
+                    <fullName>DSM</fullName>
+                    <default>false</default>
+                    <label>DSM</label>
+                </value>
+                <value>
+                    <fullName>Transmission</fullName>
+                    <default>false</default>
+                    <label>Transmission</label>
+                </value>
+                <value>
+                    <fullName>Energy Storage</fullName>
+                    <default>false</default>
+                    <label>Energy Storage</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RES_Transmission_Distance_Mileage__c</fullName>
+        <description>Vertiba3/10/2014 - Phase1</description>
+        <externalId>false</externalId>
+        <label>Transmission Distance (Mileage)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>North</fullName>
+                    <default>false</default>
+                    <label>North</label>
+                </value>
+                <value>
+                    <fullName>South</fullName>
+                    <default>false</default>
+                    <label>South</label>
+                </value>
+                <value>
+                    <fullName>Canada</fullName>
+                    <default>false</default>
+                    <label>Canada</label>
+                </value>
+                <value>
+                    <fullName>Chile</fullName>
+                    <default>false</default>
+                    <label>Chile</label>
+                </value>
+                <value>
+                    <fullName>Jamaica</fullName>
+                    <default>false</default>
+                    <label>Jamaica</label>
+                </value>
+                <value>
+                    <fullName>Mexico</fullName>
+                    <default>false</default>
+                    <label>Mexico</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>The Caribbean</fullName>
+                    <default>false</default>
+                    <label>The Caribbean</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Service_Agreement_Expire_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Service Agreement Expire Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Stage__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Phase_Number__c =0, &quot;0. Site Selection&quot;,
+IF(Phase_Number__c =1, &quot;1. Concept/Prospecting&quot;,
+IF(Phase_Number__c =2, &quot;2. Early Stage&quot;,
+IF(Phase_Number__c =3, &quot;3. Mid Stage&quot;,
+IF(Phase_Number__c =4, &quot;4. Late Stage&quot;,
+IF(Phase_Number__c =5, &quot;5. In Construction&quot;,
+IF(Phase_Number__c =6, &quot;6. Operational&quot;,
+IF(Phase_Number__c =7, &quot;7. General Development&quot;,
+IF(Phase_Number__c =8, &quot;8. Construction Bids&quot;,&quot;&quot;
+))))
+))))
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State_Province__c</fullName>
+        <externalId>false</externalId>
+        <label>State/Province</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AB</fullName>
+                    <default>false</default>
+                    <label>AB</label>
+                </value>
+                <value>
+                    <fullName>AK</fullName>
+                    <default>false</default>
+                    <label>AK</label>
+                </value>
+                <value>
+                    <fullName>AL</fullName>
+                    <default>false</default>
+                    <label>AL</label>
+                </value>
+                <value>
+                    <fullName>AR</fullName>
+                    <default>false</default>
+                    <label>AR</label>
+                </value>
+                <value>
+                    <fullName>AZ</fullName>
+                    <default>false</default>
+                    <label>AZ</label>
+                </value>
+                <value>
+                    <fullName>BC</fullName>
+                    <default>false</default>
+                    <label>BC</label>
+                </value>
+                <value>
+                    <fullName>CA</fullName>
+                    <default>false</default>
+                    <label>CA</label>
+                </value>
+                <value>
+                    <fullName>CO</fullName>
+                    <default>false</default>
+                    <label>CO</label>
+                </value>
+                <value>
+                    <fullName>CT</fullName>
+                    <default>false</default>
+                    <label>CT</label>
+                </value>
+                <value>
+                    <fullName>DC</fullName>
+                    <default>false</default>
+                    <label>DC</label>
+                </value>
+                <value>
+                    <fullName>DE</fullName>
+                    <default>false</default>
+                    <label>DE</label>
+                </value>
+                <value>
+                    <fullName>FL</fullName>
+                    <default>false</default>
+                    <label>FL</label>
+                </value>
+                <value>
+                    <fullName>GA</fullName>
+                    <default>false</default>
+                    <label>GA</label>
+                </value>
+                <value>
+                    <fullName>GU</fullName>
+                    <default>false</default>
+                    <label>GU</label>
+                </value>
+                <value>
+                    <fullName>HI</fullName>
+                    <default>false</default>
+                    <label>HI</label>
+                </value>
+                <value>
+                    <fullName>IA</fullName>
+                    <default>false</default>
+                    <label>IA</label>
+                </value>
+                <value>
+                    <fullName>ID</fullName>
+                    <default>false</default>
+                    <label>ID</label>
+                </value>
+                <value>
+                    <fullName>IL</fullName>
+                    <default>false</default>
+                    <label>IL</label>
+                </value>
+                <value>
+                    <fullName>IN</fullName>
+                    <default>false</default>
+                    <label>IN</label>
+                </value>
+                <value>
+                    <fullName>KS</fullName>
+                    <default>false</default>
+                    <label>KS</label>
+                </value>
+                <value>
+                    <fullName>KY</fullName>
+                    <default>false</default>
+                    <label>KY</label>
+                </value>
+                <value>
+                    <fullName>LA</fullName>
+                    <default>false</default>
+                    <label>LA</label>
+                </value>
+                <value>
+                    <fullName>MA</fullName>
+                    <default>false</default>
+                    <label>MA</label>
+                </value>
+                <value>
+                    <fullName>MB</fullName>
+                    <default>false</default>
+                    <label>MB</label>
+                </value>
+                <value>
+                    <fullName>MD</fullName>
+                    <default>false</default>
+                    <label>MD</label>
+                </value>
+                <value>
+                    <fullName>ME</fullName>
+                    <default>false</default>
+                    <label>ME</label>
+                </value>
+                <value>
+                    <fullName>MH</fullName>
+                    <default>false</default>
+                    <label>MH</label>
+                </value>
+                <value>
+                    <fullName>MI</fullName>
+                    <default>false</default>
+                    <label>MI</label>
+                </value>
+                <value>
+                    <fullName>MN</fullName>
+                    <default>false</default>
+                    <label>MN</label>
+                </value>
+                <value>
+                    <fullName>MO</fullName>
+                    <default>false</default>
+                    <label>MO</label>
+                </value>
+                <value>
+                    <fullName>MP</fullName>
+                    <default>false</default>
+                    <label>MP</label>
+                </value>
+                <value>
+                    <fullName>MS</fullName>
+                    <default>false</default>
+                    <label>MS</label>
+                </value>
+                <value>
+                    <fullName>MT</fullName>
+                    <default>false</default>
+                    <label>MT</label>
+                </value>
+                <value>
+                    <fullName>NB</fullName>
+                    <default>false</default>
+                    <label>NB</label>
+                </value>
+                <value>
+                    <fullName>NC</fullName>
+                    <default>false</default>
+                    <label>NC</label>
+                </value>
+                <value>
+                    <fullName>ND</fullName>
+                    <default>false</default>
+                    <label>ND</label>
+                </value>
+                <value>
+                    <fullName>NE</fullName>
+                    <default>false</default>
+                    <label>NE</label>
+                </value>
+                <value>
+                    <fullName>NF</fullName>
+                    <default>false</default>
+                    <label>NF</label>
+                </value>
+                <value>
+                    <fullName>NH</fullName>
+                    <default>false</default>
+                    <label>NH</label>
+                </value>
+                <value>
+                    <fullName>NJ</fullName>
+                    <default>false</default>
+                    <label>NJ</label>
+                </value>
+                <value>
+                    <fullName>NM</fullName>
+                    <default>false</default>
+                    <label>NM</label>
+                </value>
+                <value>
+                    <fullName>NS</fullName>
+                    <default>false</default>
+                    <label>NS</label>
+                </value>
+                <value>
+                    <fullName>NT</fullName>
+                    <default>false</default>
+                    <label>NT</label>
+                </value>
+                <value>
+                    <fullName>NV</fullName>
+                    <default>false</default>
+                    <label>NV</label>
+                </value>
+                <value>
+                    <fullName>NY</fullName>
+                    <default>false</default>
+                    <label>NY</label>
+                </value>
+                <value>
+                    <fullName>OH</fullName>
+                    <default>false</default>
+                    <label>OH</label>
+                </value>
+                <value>
+                    <fullName>OK</fullName>
+                    <default>false</default>
+                    <label>OK</label>
+                </value>
+                <value>
+                    <fullName>ON</fullName>
+                    <default>false</default>
+                    <label>ON</label>
+                </value>
+                <value>
+                    <fullName>OR</fullName>
+                    <default>false</default>
+                    <label>OR</label>
+                </value>
+                <value>
+                    <fullName>PA</fullName>
+                    <default>false</default>
+                    <label>PA</label>
+                </value>
+                <value>
+                    <fullName>PE</fullName>
+                    <default>false</default>
+                    <label>PE</label>
+                </value>
+                <value>
+                    <fullName>PR</fullName>
+                    <default>false</default>
+                    <label>PR</label>
+                </value>
+                <value>
+                    <fullName>PW</fullName>
+                    <default>false</default>
+                    <label>PW</label>
+                </value>
+                <value>
+                    <fullName>QC</fullName>
+                    <default>false</default>
+                    <label>QC</label>
+                </value>
+                <value>
+                    <fullName>RI</fullName>
+                    <default>false</default>
+                    <label>RI</label>
+                </value>
+                <value>
+                    <fullName>SC</fullName>
+                    <default>false</default>
+                    <label>SC</label>
+                </value>
+                <value>
+                    <fullName>SD</fullName>
+                    <default>false</default>
+                    <label>SD</label>
+                </value>
+                <value>
+                    <fullName>SK</fullName>
+                    <default>false</default>
+                    <label>SK</label>
+                </value>
+                <value>
+                    <fullName>TN</fullName>
+                    <default>false</default>
+                    <label>TN</label>
+                </value>
+                <value>
+                    <fullName>TX</fullName>
+                    <default>false</default>
+                    <label>TX</label>
+                </value>
+                <value>
+                    <fullName>UT</fullName>
+                    <default>false</default>
+                    <label>UT</label>
+                </value>
+                <value>
+                    <fullName>VA</fullName>
+                    <default>false</default>
+                    <label>VA</label>
+                </value>
+                <value>
+                    <fullName>VI</fullName>
+                    <default>false</default>
+                    <label>VI</label>
+                </value>
+                <value>
+                    <fullName>VT</fullName>
+                    <default>false</default>
+                    <label>VT</label>
+                </value>
+                <value>
+                    <fullName>WA</fullName>
+                    <default>false</default>
+                    <label>WA</label>
+                </value>
+                <value>
+                    <fullName>WI</fullName>
+                    <default>false</default>
+                    <label>WI</label>
+                </value>
+                <value>
+                    <fullName>WV</fullName>
+                    <default>false</default>
+                    <label>WV</label>
+                </value>
+                <value>
+                    <fullName>WY</fullName>
+                    <default>false</default>
+                    <label>WY</label>
+                </value>
+                <value>
+                    <fullName>YT</fullName>
+                    <default>false</default>
+                    <label>YT</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Third_Party__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Is this a 3rd Party Construction project?</inlineHelpText>
+        <label>Third Party</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>WTG_Capacity_MW__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(WTG_Type__c, &quot;M5000-116&quot;),5,
+IF(ISPICKVAL(WTG_Type__c, &quot;Bonus B35&quot;),0.45,
+IF(ISPICKVAL(WTG_Type__c, &quot;Bonus B76&quot;),2,
+IF(ISPICKVAL(WTG_Type__c, &quot;6.2M 126&quot;),6.2,
+IF(ISPICKVAL(WTG_Type__c, &quot;5M&quot;),5,
+IF(ISPICKVAL(WTG_Type__c, &quot;V39-500kW&quot;),0.5,
+IF(ISPICKVAL(WTG_OEM__c, &quot;Vestas&quot;), VALUE(Right(TEXT(WTG_Type__c),3)),
+IF(ISPICKVAL(WTG_OEM__c, &quot;Siemens&quot;),VALUE(LEFT(SUBSTITUTE(TEXT(WTG_Type__c),&quot;SWT-&quot;,&quot;&quot;),3)),
+VALUE(Right(TEXT(WTG_Type__c),4))/1000
+))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>WTG Capacity (MW)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WTG_OEM__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The Equipment Manufacturer for Turbines</inlineHelpText>
+        <label>WTG OEM</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Adwen</fullName>
+                    <default>false</default>
+                    <label>Adwen</label>
+                </value>
+                <value>
+                    <fullName>Areva</fullName>
+                    <default>false</default>
+                    <label>Areva</label>
+                </value>
+                <value>
+                    <fullName>Bard</fullName>
+                    <default>false</default>
+                    <label>Bard</label>
+                </value>
+                <value>
+                    <fullName>MHI Vestas</fullName>
+                    <default>false</default>
+                    <label>MHI Vestas</label>
+                </value>
+                <value>
+                    <fullName>Nordex</fullName>
+                    <default>false</default>
+                    <label>Nordex</label>
+                </value>
+                <value>
+                    <fullName>Senivon</fullName>
+                    <default>false</default>
+                    <label>Senivon</label>
+                </value>
+                <value>
+                    <fullName>Siemens</fullName>
+                    <default>false</default>
+                    <label>Siemens</label>
+                </value>
+                <value>
+                    <fullName>Vestas</fullName>
+                    <default>false</default>
+                    <label>Vestas</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WTG_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The Total Number of Turbines at this roject Development</inlineHelpText>
+        <label>WTG Quantity</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WTG_Service_Provider__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Please search for the Account/Company who will be this Project&apos;s Service Provider.</inlineHelpText>
+        <label>WTG Service Provider</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Project Developments (WTG Service Provider)</relationshipLabel>
+        <relationshipName>Project_Developments1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WTG_Sub_Structure_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>WTG Sub-Structure Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Floating</fullName>
+                    <default>false</default>
+                    <label>Floating</label>
+                </value>
+                <value>
+                    <fullName>Gravity</fullName>
+                    <default>false</default>
+                    <label>Gravity</label>
+                </value>
+                <value>
+                    <fullName>Jacket</fullName>
+                    <default>false</default>
+                    <label>Jacket</label>
+                </value>
+                <value>
+                    <fullName>Lattice</fullName>
+                    <default>false</default>
+                    <label>Lattice</label>
+                </value>
+                <value>
+                    <fullName>Monopile</fullName>
+                    <default>false</default>
+                    <label>Monopile</label>
+                </value>
+                <value>
+                    <fullName>Tripile</fullName>
+                    <default>false</default>
+                    <label>Tripile</label>
+                </value>
+                <value>
+                    <fullName>Tripod</fullName>
+                    <default>false</default>
+                    <label>Tripod</label>
+                </value>
+                <value>
+                    <fullName>Various</fullName>
+                    <default>false</default>
+                    <label>Various</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WTG_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The specific model of the wind turbine</inlineHelpText>
+        <label>WTG Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>WTG_OEM__c</controllingField>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>5M</fullName>
+                    <default>false</default>
+                    <label>5M</label>
+                </value>
+                <value>
+                    <fullName>6.2M 126</fullName>
+                    <default>false</default>
+                    <label>6.2M 126</label>
+                </value>
+                <value>
+                    <fullName>Bard 5.0</fullName>
+                    <default>false</default>
+                    <label>Bard 5.0</label>
+                </value>
+                <value>
+                    <fullName>Bonus B35</fullName>
+                    <default>false</default>
+                    <label>Bonus B35</label>
+                </value>
+                <value>
+                    <fullName>Bonus B76</fullName>
+                    <default>false</default>
+                    <label>Bonus B76</label>
+                </value>
+                <value>
+                    <fullName>M5000-116</fullName>
+                    <default>false</default>
+                    <label>M5000-116</label>
+                </value>
+                <value>
+                    <fullName>N90/2300</fullName>
+                    <default>false</default>
+                    <label>N90/2300</label>
+                </value>
+                <value>
+                    <fullName>N90/2500</fullName>
+                    <default>false</default>
+                    <label>N90/2500</label>
+                </value>
+                <value>
+                    <fullName>SWT-2.3-82</fullName>
+                    <default>false</default>
+                    <label>SWT-2.3-82</label>
+                </value>
+                <value>
+                    <fullName>SWT-2.3-93</fullName>
+                    <default>false</default>
+                    <label>SWT-2.3-93</label>
+                </value>
+                <value>
+                    <fullName>SWT-3.6-107</fullName>
+                    <default>false</default>
+                    <label>SWT-3.6-107</label>
+                </value>
+                <value>
+                    <fullName>SWT-3.6-120</fullName>
+                    <default>false</default>
+                    <label>SWT-3.6-120</label>
+                </value>
+                <value>
+                    <fullName>SWT-4.0-120</fullName>
+                    <default>false</default>
+                    <label>SWT-4.0-120</label>
+                </value>
+                <value>
+                    <fullName>SWT-4.0-130</fullName>
+                    <default>false</default>
+                    <label>SWT-4.0-130</label>
+                </value>
+                <value>
+                    <fullName>SWT-6.0-120</fullName>
+                    <default>false</default>
+                    <label>SWT-6.0-120</label>
+                </value>
+                <value>
+                    <fullName>SWT-6.0-154</fullName>
+                    <default>false</default>
+                    <label>SWT-6.0-154</label>
+                </value>
+                <value>
+                    <fullName>SWT-7.0-154</fullName>
+                    <default>false</default>
+                    <label>SWT-7.0-154</label>
+                </value>
+                <value>
+                    <fullName>V112-3.0</fullName>
+                    <default>false</default>
+                    <label>V112-3.0</label>
+                </value>
+                <value>
+                    <fullName>V126-3.3</fullName>
+                    <default>false</default>
+                    <label>V126-3.3</label>
+                </value>
+                <value>
+                    <fullName>V164-8.0</fullName>
+                    <default>false</default>
+                    <label>V164-8.0</label>
+                </value>
+                <value>
+                    <fullName>V39-500kW</fullName>
+                    <default>false</default>
+                    <label>V39-500kW</label>
+                </value>
+                <value>
+                    <fullName>V66-2.0</fullName>
+                    <default>false</default>
+                    <label>V66-2.0</label>
+                </value>
+                <value>
+                    <fullName>V80-2.0</fullName>
+                    <default>false</default>
+                    <label>V80-2.0</label>
+                </value>
+                <value>
+                    <fullName>V90-3.0</fullName>
+                    <default>false</default>
+                    <label>V90-3.0</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Siemens</controllingFieldValue>
+                <valueName>Bonus B35</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Siemens</controllingFieldValue>
+                <valueName>Bonus B76</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Siemens</controllingFieldValue>
+                <valueName>SWT-2.3-82</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Siemens</controllingFieldValue>
+                <valueName>SWT-2.3-93</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Siemens</controllingFieldValue>
+                <valueName>SWT-3.6-107</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Siemens</controllingFieldValue>
+                <valueName>SWT-3.6-120</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Siemens</controllingFieldValue>
+                <valueName>SWT-4.0-120</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Siemens</controllingFieldValue>
+                <valueName>SWT-4.0-130</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Siemens</controllingFieldValue>
+                <valueName>SWT-6.0-120</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Siemens</controllingFieldValue>
+                <valueName>SWT-6.0-154</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Siemens</controllingFieldValue>
+                <valueName>SWT-7.0-154</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Vestas</controllingFieldValue>
+                <valueName>V112-3.0</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Vestas</controllingFieldValue>
+                <valueName>V126-3.3</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Vestas</controllingFieldValue>
+                <valueName>V39-500kW</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Vestas</controllingFieldValue>
+                <valueName>V66-2.0</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Vestas</controllingFieldValue>
+                <valueName>V80-2.0</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Vestas</controllingFieldValue>
+                <valueName>V90-3.0</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MHI Vestas</controllingFieldValue>
+                <valueName>V164-8.0</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Senivon</controllingFieldValue>
+                <valueName>5M</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Senivon</controllingFieldValue>
+                <valueName>6.2M 126</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Nordex</controllingFieldValue>
+                <valueName>N90/2300</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Nordex</controllingFieldValue>
+                <valueName>N90/2500</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Areva</controllingFieldValue>
+                <valueName>M5000-116</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bard</controllingFieldValue>
+                <valueName>Bard 5.0</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Weekly_Update__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field corresponds to the &apos;Weekly Update&apos; field in the Development Database, as well as the &apos;Latest Update&apos; Field on the associated Opportunity.</inlineHelpText>
+        <label>Weekly Update</label>
+        <length>20000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <label>Project Development</label>
+    <nameField>
+        <label>Project Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Project Developments</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Project_Number__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RES_Project_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RES_Technology_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RES_Estimated_Value__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RES_Project_Size_MW__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Project_Number__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RES_Project_Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RES_Technology_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RES_Estimated_Value__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RES_Project_Size_MW__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Project_Number__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RES_Project_Status__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RES_Technology_Type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RES_Estimated_Value__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RES_Project_Size_MW__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Project_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RES_Project_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RES_Technology_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RES_Estimated_Value__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RES_Project_Size_MW__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Auto_Create_Opportunity</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ISCHANGED(Auto_Create_Opportunity__c),
+OR(
+ISNULL( ConstructionNTPYear__c),
+ISNULL(COD_Date__c)
+))</errorConditionFormula>
+        <errorMessage>In order for you to create a new Opportunity, either COD Date, or Construction NTP, must be entered.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Auto_Create_Opportunity</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Auto Create Opportunity</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/32.0/connection.js&quot;)}
+
+if(&quot;{!RES_Projects__c.ConstructionNTPMonth__c}&quot; == &apos;&apos; || &quot;{!RES_Projects__c.ConstructionNTPYear__c}&quot; == &apos;&apos; || &quot;{!RES_Projects__c.RES_Technology_Type__c}&quot; == &apos;&apos; || &quot;{!RES_Projects__c.RES_Project_Size_MW__c}&quot; == &apos;&apos;)
+{
+alert(&quot;Please fill out the &apos;Project Size (MW)&apos;, &apos;Technology Type&apos;, &apos;Construction NTP Month&apos;, &amp; &apos;Year&apos; fields before submitting this request.&quot;);
+}
+else
+{
+if({!RES_Projects__c.Auto_Create_Opportunity__c} == false)
+{
+var c = new sforce.SObject(&quot;RES_Projects__c&quot;);
+c.id = &quot;{!RES_Projects__c.Id}&quot;;
+c.Auto_Create_Opportunity__c = true;
+result = sforce.connection.update([c]);
+if ( result[0].getBoolean( &quot;success&quot; ) )
+{
+window.location.reload();
+}
+else
+{
+alert( result[0].errors.message);
+}
+}
+else
+{
+var c = new sforce.SObject(&quot;RES_Projects__c&quot;);
+c.id = &quot;{!RES_Projects__c.Id}&quot;;
+c.Auto_Create_Opportunity__c = false;
+result = sforce.connection.update([c]);
+alert(&quot; Well done, {!$User.FirstName}. well done.&quot;);
+if ( result[0].getBoolean( &quot;success&quot; ) )
+{
+window.location.reload();
+}
+else
+{
+alert( result[0].errors.message);
+}
+}
+}</url>
+    </webLinks>
+</CustomObject>

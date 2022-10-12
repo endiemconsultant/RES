@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Competitor</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Competitors</value>
+    </caseValues>
+    <fields>
+        <help><!-- Similar fields can be created in order to compare our Offering verses our Comptitor. (e.g. Price, Customer Relationship, Cost Structure, Supplier Relationships, Past Experience, Capital ...etc.) --></help>
+        <label><!-- Competitor&apos;s Technology Rating --></label>
+        <name>Competitor_s_Technology_Rating__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Incumbent --></label>
+        <name>Incumbent__c</name>
+    </fields>
+    <fields>
+        <label><!-- PPA Price --></label>
+        <name>PPA_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Name --></label>
+        <name>RES_Competitor_Name__c</name>
+        <relationshipLabel><!-- Competitor Opportunity Involvement --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>RES_Opportunity__c</name>
+        <relationshipLabel><!-- Competitors --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Strengths --></label>
+        <name>RES_Strengths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weaknesses --></label>
+        <name>RES_Weaknesses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Winning Competitor --></label>
+        <name>Winning_Competitor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Winning Price --></label>
+        <name>Winning_Price__c</name>
+    </fields>
+    <layouts>
+        <layout>Competitor Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- SWOT --></label>
+            <section>SWOT</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

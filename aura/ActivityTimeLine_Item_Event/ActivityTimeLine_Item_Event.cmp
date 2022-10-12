@@ -1,0 +1,68 @@
+<aura:component >
+	<ltng:require styles="/resource/SLDS203/assets/styles/salesforce-lightning-design-system-ltng.css" /> 
+    
+    <aura:attribute name="itemDetail" type="ActivityTimeline_Model"/>
+    
+    <aura:attribute name="tsk" type="Task"/>
+    
+    <li class="slds-timeline__item">
+    <span class="slds-assistive-text">Event</span>
+    <div class="slds-media">
+      <div class="slds-media__body">
+        <div class="slds-media slds-media--timeline slds-timeline__media--event">
+          <div class="slds-media__figure">
+          		<c:svg class="slds-icon slds-icon-standard-event slds-timeline__icon" xlinkHref="/resource/SLDS0120/assets/icons/standard-sprite/svg/symbols.svg#event">
+    			</c:svg>
+          </div>
+            
+          <div class="slds-media__body">
+            <p><a href="{!'/one/one.app?#/sObject/'+ v.itemDetail.RecordId +'/view'}" target="_blank">{!v.itemDetail.Subject}</a></p>
+           	<p><ui:outputTextArea value="{!v.itemDetail.Detail}"/></p>
+           
+              
+              <!-- Only input this info for events. Meetings not required -->
+              <aura:if isTrue="{!v.itemDetail.ActivityTimelineType == 'Event'}">
+              
+           			<ul class="slds-list--horizontal slds-text-body--small">
+              		<li class="slds-list__item slds-m-right--large">
+                
+
+                    <span>Time:</span>
+                    <span class="slds-m-left--xx-small"><a href="#">{!v.itemDetail.EventTime}</a></span>
+                      
+                      
+                      
+                      
+                  </li>
+                  <li class="slds-list__item">
+                    <span>Location:</span>
+                    <span class="slds-m-left--xx-small"><a href="#">{!v.itemDetail.Location}</a></span>
+                  </li>
+                  
+            		</ul>
+              </aura:if>
+              
+            <ul class="slds-list--horizontal slds-text-body--small">
+              <li class="slds-list__item slds-m-right--large">
+                <span>Name:</span>
+                <span class="slds-m-left--xx-small"><a href="{!'/one/one.app?#/sObject/'+ v.itemDetail.OwnerId +'/view'}" target="_blank">{!v.itemDetail.Recipients}</a></span>
+              </li>
+              <li class="slds-list__item slds-m-right--large">
+                <span>Attendees:</span>
+                <span class="slds-m-left--xx-small">{!v.itemDetail.Attendees}</span>
+              </li>
+              <li class="slds-list__item">
+                <span>Assigned to:</span>
+                <span class="slds-m-left--xx-small"><a href="{!'/one/one.app?#/sObject/'+ v.itemDetail.AssignedId +'/view'}" target="_blank">{!v.itemDetail.Assigned}</a></span>
+              </li>
+            </ul>
+              
+          </div>
+        </div>
+      </div>     
+        
+        <c:ActivityTimeLine_Item_DropDown shortDate="{!v.itemDetail.ShortDate}"/>
+    </div>
+  </li>
+	
+</aura:component>

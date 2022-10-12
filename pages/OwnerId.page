@@ -1,0 +1,7 @@
+<apex:page Controller="Milestone1_Charts_GanttController" sidebar="false">
+
+    <apex:form >
+        <c:TestComponent componentValue="Hi there, {!mytarget}"/>
+    </apex:form>
+ 
+</apex:page>

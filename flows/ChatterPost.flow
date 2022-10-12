@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>PostToChatter</name>
+        <label>PostToChatter</label>
+        <locationX>110</locationX>
+        <locationY>63</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>varRecordId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>Hello from Flow!</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>varRecordId</assignToReference>
+            <name>feedItemId</name>
+        </outputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <interviewLabel>Test {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ChatterPost</label>
+    <processType>AutoLaunchedFlow</processType>
+    <startElementReference>PostToChatter</startElementReference>
+    <status>Obsolete</status>
+    <variables>
+        <name>varRecordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

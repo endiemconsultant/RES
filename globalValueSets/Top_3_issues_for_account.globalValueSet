@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Lack of trust</fullName>
+        <default>false</default>
+        <label>Lack of trust</label>
+    </customValue>
+    <customValue>
+        <fullName>Pricing</fullName>
+        <default>false</default>
+        <label>Pricing</label>
+    </customValue>
+    <customValue>
+        <fullName>Limited opportunities</fullName>
+        <default>false</default>
+        <label>Limited opportunities</label>
+    </customValue>
+    <customValue>
+        <fullName>Resource issues - Client team time limited to deliver actions/engage</fullName>
+        <default>false</default>
+        <label>Resource issues - Client team time limited to deliver actions/engage</label>
+    </customValue>
+    <customValue>
+        <fullName>Struggling to build relationships with client</fullName>
+        <default>false</default>
+        <label>Struggling to build relationships with client</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Top 3 issues for account</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

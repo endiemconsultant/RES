@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <assignments>
+        <description>Add the contact record to the collection of contact records to update.</description>
+        <name>Add_to_Collection</name>
+        <label>Add to Collection</label>
+        <locationX>138</locationX>
+        <locationY>878</locationY>
+        <assignmentItems>
+            <assignToReference>varCollectionForContactUpdate</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Lookup_Contact</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>CheckContactLoop</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Updates the Last Client Meeting field on the contact.</description>
+        <name>Update_Contacts_Last_Client_Meeting</name>
+        <label>Update Contacts Last Client Meeting</label>
+        <locationX>138</locationX>
+        <locationY>758</locationY>
+        <assignmentItems>
+            <assignToReference>Lookup_Contact.Last_Client_Meeting__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varEndDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_to_Collection</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Determine whether records are found from the Get Records step.</description>
+        <name>Records_Found</name>
+        <label>Records Found</label>
+        <locationX>182</locationX>
+        <locationY>278</locationY>
+        <defaultConnectorLabel>No Records</defaultConnectorLabel>
+        <rules>
+            <name>Records_Found1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>InitialContactCollection</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>CheckContactLoop</targetReference>
+            </connector>
+            <label>Records Found</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Compares the Last Client Meeting with the Activity Date to determine whether the field should be updated on the contact</description>
+        <name>Should_Last_Client_Meeting_Be_Updated</name>
+        <label>Should Last Client Meeting Be Updated?</label>
+        <locationX>270</locationX>
+        <locationY>638</locationY>
+        <defaultConnector>
+            <targetReference>CheckContactLoop</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Update</defaultConnectorLabel>
+        <rules>
+            <name>Update_Last_Client_Meeting</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varEndDate</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <elementReference>Lookup_Contact.Last_Client_Meeting__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Contacts_Last_Client_Meeting</targetReference>
+            </connector>
+            <label>Update Last Client Meeting</label>
+        </rules>
+    </decisions>
+    <description>Updates the Last Client Meeting for event records, with start dates today or in the past, that have been created or changed.</description>
+    <interviewLabel>Last Client Meeting_Events {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Last Client Meeting_Events</label>
+    <loops>
+        <description>Starts the loop</description>
+        <name>CheckContactLoop</name>
+        <label>CheckContactLoop</label>
+        <locationX>50</locationX>
+        <locationY>398</locationY>
+        <collectionReference>InitialContactCollection</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Lookup_Contact</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Collection</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Pulls the record of the contact going through the loop</description>
+        <name>Lookup_Contact</name>
+        <label>Lookup Contact</label>
+        <locationX>270</locationX>
+        <locationY>518</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Should_Last_Client_Meeting_Be_Updated</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>CheckContactLoop.RelationId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Last_Client_Meeting__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Find Salesforce records and store their field values in flow variables.</description>
+        <name>Lookup_Contacts_associated_to_the_Event</name>
+        <label>Lookup Contacts associated to the Event</label>
+        <locationX>182</locationX>
+        <locationY>158</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Records_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>EventId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varEventId</elementReference>
+            </value>
+        </filters>
+        <object>EventWhoRelation</object>
+        <outputReference>InitialContactCollection</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>EventId</queriedFields>
+        <queriedFields>RelationId</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update all contact records in the collection.  These are the ones that need the Last Client Meeting field updated.</description>
+        <name>Update_Collection</name>
+        <label>Update Collection</label>
+        <locationX>50</locationX>
+        <locationY>1190</locationY>
+        <inputReference>varCollectionForContactUpdate</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Lookup_Contacts_associated_to_the_Event</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Pulls all the contacts from the event</description>
+        <name>InitialContactCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>EventWhoRelation</objectType>
+    </variables>
+    <variables>
+        <description>Stores contact record(s), that meet the requirements or the Last Client Meeting field update, in a record collection to update.</description>
+        <name>varCollectionForContactUpdate</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Contact</objectType>
+    </variables>
+    <variables>
+        <description>Stores the End Date of the Event</description>
+        <name>varEndDate</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Stores the Event Id</description>
+        <name>varEventId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

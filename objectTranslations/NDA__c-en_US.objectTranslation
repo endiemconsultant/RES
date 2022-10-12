@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>NDA</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>NDAs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Investor Account --></label>
+        <name>Investor_Account__c</name>
+        <relationshipLabel><!-- NDAs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Link --></label>
+        <name>Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- NDA Expiry Date --></label>
+        <name>NDA_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- NDA Owner --></label>
+        <name>NDA_Owner__c</name>
+        <relationshipLabel><!-- NDAs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>NDA_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approaching Expiration</masterLabel>
+            <translation><!-- Approaching Expiration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Archived</masterLabel>
+            <translation><!-- Archived --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live</masterLabel>
+            <translation><!-- Live --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- NDA Technology Cover --></label>
+        <name>NDA_Technology_Cover__c</name>
+        <picklistValues>
+            <masterLabel>Onshore Wind</masterLabel>
+            <translation><!-- Onshore Wind --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solar</masterLabel>
+            <translation><!-- Solar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Storage</masterLabel>
+            <translation><!-- Storage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Regions Covered --></label>
+        <name>Regions_Covered__c</name>
+        <picklistValues>
+            <masterLabel>Australia</masterLabel>
+            <translation><!-- Australia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>France</masterLabel>
+            <translation><!-- France --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GB</masterLabel>
+            <translation><!-- GB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation><!-- German --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ireland</masterLabel>
+            <translation><!-- Ireland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nordics</masterLabel>
+            <translation><!-- Nordics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkey</masterLabel>
+            <translation><!-- Turkey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US</masterLabel>
+            <translation><!-- US --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Scope --></label>
+        <name>Scope__c</name>
+    </fields>
+    <layouts>
+        <layout>NDA Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

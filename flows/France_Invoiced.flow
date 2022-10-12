@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>What_Does_The_Name_Start_With</name>
+        <label>What Does The Name Start With?</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>Append_Invoiced</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Just The Oppty Name</defaultConnectorLabel>
+        <rules>
+            <name>Invoiced</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Name</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>Invoiced: </stringValue>
+                </rightValue>
+            </conditions>
+            <label>Invoiced:</label>
+        </rules>
+        <rules>
+            <name>To_Be_Invoiced</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Name</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>To Be Invoiced: </stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Substitute_Invoiced</targetReference>
+            </connector>
+            <label>To Be Invoiced:</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>Append_Invoiced_Formula</name>
+        <dataType>String</dataType>
+        <expression>&quot;Invoiced: &quot; + {!$Record.Name}</expression>
+    </formulas>
+    <formulas>
+        <description>Removing the &quot;To Be Invoiced: &quot; (16 characters) from the Opportunity Name and changing it to &quot;Invoiced: &quot;</description>
+        <name>Invoiced_NameChange</name>
+        <dataType>String</dataType>
+        <expression>SUBSTITUTE({!$Record.Name},&quot;To Be Invoiced: &quot; , &quot;Invoiced: &quot;)</expression>
+    </formulas>
+    <interviewLabel>France - Invoiced {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>France - Invoiced</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Append_Invoiced</name>
+        <label>Append &quot;Invoiced: &quot;</label>
+        <locationX>440</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>Append_Invoiced_Formula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Substitute_Invoiced</name>
+        <label>Substitute &quot;Invoiced: &quot;</label>
+        <locationX>176</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>Invoiced_NameChange</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>What_Does_The_Name_Start_With</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Invoiced__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RES_Geography__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>France</stringValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

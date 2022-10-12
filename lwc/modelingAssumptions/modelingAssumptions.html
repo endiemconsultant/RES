@@ -1,0 +1,1760 @@
+<template >
+
+    <!-- #region Country Button-->
+    
+        <div class="slds-align_absolute-center">
+            <lightning-radio-group 
+                id="rdoCountry"
+                name="radioCountry" 
+                options={countryOptions} 
+                onchange={handleCountrySelection}
+                type="button">
+            </lightning-radio-group>
+        </div>
+    
+    <!--#endregion-->
+    
+    
+    <!-- #region Technology Interest Checkboxes-->
+            <br>
+            <div class="slds-align_absolute-center">
+            <div class="slds-form-element__control">
+              <div class="slds-checkbox_button-group">
+                <span class="slds-button slds-checkbox_button">
+                  <input type="checkbox" id="chkSolarDisplay" value={solarDisplay} name="checkbox" onchange={handleSolarDisplay} />
+                  <label class="slds-checkbox_button__label" for="chkSolarDisplay">
+                    <span class="slds-checkbox_faux">Solar</span>
+                  </label>
+                </span> 
+                <span class="slds-button slds-checkbox_button">
+                    <input type="checkbox" id="chkOnshoreWindDisplay" value={onshoreWindDisplay} name="checkbox" onchange={handleOnshoreWindDisplay} />
+                    <label class="slds-checkbox_button__label" for="chkOnshoreWindDisplay">
+                      <span class="slds-checkbox_faux">Onshore</span>
+                    </label>
+                  </span> 
+                <span class="slds-button slds-checkbox_button">
+                  <input type="checkbox" id="chkStorageDisplay" value={storageDisplay} name="checkbox" onchange={handleStorageDisplay} />
+                  <label class="slds-checkbox_button__label" for="chkStorageDisplay">
+                    <span class="slds-checkbox_faux">Storage</span>
+                  </label> 
+                </span>
+              </div>
+            </div>
+            </div>
+    <!-- #endregion-->
+    
+    <lightning-accordion 
+        allow-multiple-sections-open 
+        active-section-name={activeSections}>
+    
+    <!-- #region Solar-->
+        <lightning-accordion-section if:true={solarDisplay} name="Solar" label="Solar">
+            
+            <template   if:true={viewGBSolar} >
+    
+                <lightning-card id="viewGBSolarCard" title="GB Solar"> 
+    
+                    <lightning-button-stateful 
+                        id="btnEditGBSolar"
+                        variant="brand"
+                        label-when-off="Edit"
+                        label-when-on="Cancel"
+                        onclick={handleGBSolarEdit}
+                        selected={editGBSolar}>
+                    </lightning-button-stateful>
+            
+                    <div class="slds-var-m-around_medium">
+                    <lightning-record-view-form 
+                        object-api-name="Investor_Account__c"
+                        record-id={recordId}>
+            
+                        <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field
+                            field-name={solarGBIRRMerchantField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBIRRFixedField}>
+                        </lightning-output-field>
+                        
+
+                        <lightning-output-field
+                            field-name={solarGBCurtailmentConsultantField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBOtherCurtailmentConsultantField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBCurtalimentGridOperatorField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBAbove50MWACDCRatioField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBSub50MWACDCRatioField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBGCRRatioField} >
+                        </lightning-output-field>
+    
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field
+                            field-name={solarGBTypeOfInverterField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBInverterSizeField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBModuleSizeField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBPitchField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBTiltField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBIrradianceField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBOtherIrradianceField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBEPCProviderField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBRouteToMarketProviderField} >
+                        </lightning-output-field>
+
+
+                        <lightning-output-field
+                            field-name={solarGBCPIInflationField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBRPIInflationField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBInflationNotesField}>
+                        </lightning-output-field>
+                        
+                        </div>
+    
+                        </div>
+    
+                    </lightning-record-view-form>   
+                    </div>
+                </lightning-card>
+            </template>
+    
+            <template   if:true={viewIrelandSolar}>
+    
+                <lightning-card id="viewIrelandSolarCard" title="Ireland Solar"> 
+    
+                    <lightning-button-stateful 
+                        id="btnEditIrelandSolar"
+                        variant="brand"
+                        label-when-off="Edit"
+                        label-when-on="Cancel"
+                        onclick={handleIrelandSolarEdit}
+                        selected={editIrelandSolar}>
+                    </lightning-button-stateful>
+            
+                    <div class="slds-var-m-around_medium">
+                    <lightning-record-view-form 
+                        object-api-name="Investor_Account__c"
+                        record-id={recordId}>
+            
+                        <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field
+                            field-name={solarIEIRRMerchantField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIEIRRFixedField}>
+                        </lightning-output-field>
+          
+
+                        <lightning-output-field
+                            field-name={solarIECurtailmentConsultantField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIEOtherCurtailmentConsultantField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIECurtalimentGridOperatorField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIEAbove50MWACDCRatioField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIESub50MWACDCRatioField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIEGCRRatioField} >
+                        </lightning-output-field>
+                        </div>
+                        
+                        <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field
+                            field-name={solarIETypeOfInverterField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIEInverterSizeField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIEModuleSizeField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIEPitchField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIETiltField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIEIrradianceField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIEOtherIrradianceField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIEEPCProviderField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIERouteToMarketProviderField} >
+                        </lightning-output-field>
+
+                        <lightning-output-field
+                            field-name={solarIECPIInflationField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIERPIInflationField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIEInflationNotesField}>
+                        </lightning-output-field>
+
+
+                        </div>
+                        </div>
+    
+                    </lightning-record-view-form>   
+                    </div>
+                </lightning-card>
+            </template>
+    
+        </lightning-accordion-section>
+    
+        <template if:true={editGBSolar} >
+    
+            <lightning-card id="editGBSolarCard" title="GB Solar"> 
+    
+                <lightning-button-stateful 
+                    id="btnCancelGBSolar"
+                    variant="brand"
+                    label-when-off="Edit"
+                    label-when-on="Cancel"
+                    onclick={handleGBSolarEdit}
+                    selected={editGBSolar}>
+                </lightning-button-stateful>
+        
+                <div class="slds-var-m-around_medium">
+                <lightning-record-edit-form 
+                    object-api-name="Investor_Account__c"
+                    record-id={recordId}
+                    onsuccess={gbSolarSuccess}>
+        
+                    <lightning-button  
+                        class="slds-m-top_small"  
+                        variant="brand"  
+                        type="submit"  
+                        id="btnUpdateGBSolar1"
+                        name="updateGBSolar"  
+                        label="Update">  
+                    </lightning-button>
+
+                    <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field
+                        field-name={solarGBIRRMerchantField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBIRRFixedField}>
+                    </lightning-input-field>
+
+                    <lightning-input-field
+                        field-name={solarGBCurtailmentConsultantField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBOtherCurtailmentConsultantField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBCurtalimentGridOperatorField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBAbove50MWACDCRatioField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBSub50MWACDCRatioField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBGCRRatioField} >
+                    </lightning-input-field>
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field
+                        field-name={solarGBTypeOfInverterField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBInverterSizeField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBModuleSizeField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBPitchField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBTiltField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBIrradianceField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBOtherIrradianceField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBEPCProviderField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBRouteToMarketProviderField} >
+                    </lightning-input-field>
+
+                    <lightning-input-field
+                        field-name={solarGBCPIInflationField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBRPIInflationField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBInflationNotesField}>
+                    </lightning-input-field>
+
+                    </div>
+                    </div>
+    
+                    <lightning-button  
+                        class="slds-m-top_small"  
+                        variant="brand"  
+                        type="submit"  
+                        id="btnUpdateGBSolar2"
+                        name="updateGBSolar"  
+                        label="Update">  
+                    </lightning-button> 
+    
+                </lightning-record-edit-form>   
+                </div>
+            </lightning-card>
+        </template>
+    
+        <template if:true={editIrelandSolar} >
+    
+            <lightning-card id="editIrelandSolarCard" title="Ireland Solar"> 
+    
+                <lightning-button-stateful 
+                    id="btnCancelIrelandSolar"
+                    variant="brand"
+                    label-when-off="Edit"
+                    label-when-on="Cancel"
+                    onclick={handleIrelandSolarEdit}
+                    selected={editIrelandSolar}>
+                </lightning-button-stateful>
+        
+                <div class="slds-var-m-around_medium">
+                <lightning-record-edit-form 
+                    object-api-name="Investor_Account__c"
+                    record-id={recordId}
+                    onsuccess={irelandSolarSuccess}>
+        
+                    <lightning-button  
+                        class="slds-m-top_small"  
+                        variant="brand"  
+                        type="submit"  
+                        id="btnUpdateIrelandSolar1"
+                        name="updateIrelandSolar"  
+                        label="Update">  
+                    </lightning-button> 
+
+                    <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field
+                        field-name={solarIEIRRMerchantField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIEIRRFixedField}>
+                    </lightning-input-field>
+
+
+                    <lightning-input-field
+                        field-name={solarIECurtailmentConsultantField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIEOtherCurtailmentConsultantField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIECurtalimentGridOperatorField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIEAbove50MWACDCRatioField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIESub50MWACDCRatioField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIEGCRRatioField} >
+                    </lightning-input-field>
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field
+                        field-name={solarIETypeOfInverterField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIEInverterSizeField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIEModuleSizeField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIEPitchField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIETiltField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIEIrradianceField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIEOtherIrradianceField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIEEPCProviderField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIERouteToMarketProviderField} >
+                    </lightning-input-field>
+
+                    <lightning-input-field
+                        field-name={solarIECPIInflationField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIERPIInflationField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIEInflationNotesField}>
+                    </lightning-input-field>
+
+                    </div>
+                    </div>
+                    
+                    <lightning-button  
+                        class="slds-m-top_small"  
+                        variant="brand"  
+                        type="submit"  
+                        id="btnUpdateIrelandSolar2"
+                        name="updateIrelandSolar"  
+                        label="Update">  
+                    </lightning-button> 
+    
+                </lightning-record-edit-form>   
+                </div>
+            </lightning-card>
+        </template>
+    
+        <lightning-accordion-section if:true={solarDisplay} name="Solar Revenue" label="Solar Revenue">
+            
+            <template   if:true={viewGBSolar} >
+
+                <lightning-card id="viewGBSolarRevenueCard" title="GB Solar Revenue"> 
+    
+                    <lightning-button-stateful 
+                        id="btnEditGBSolarRevenue"
+                        variant="brand"
+                        label-when-off="Edit"
+                        label-when-on="Cancel"
+                        onclick={handleGBSolarEdit}
+                        selected={editGBSolar}>
+                    </lightning-button-stateful>
+            
+                    <div class="slds-var-m-around_medium">
+                    <lightning-record-view-form 
+                        object-api-name="Investor_Account__c"
+                        record-id={recordId}>
+                            
+                        <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field
+                            field-name={solarGBConsultantRevForecastField}>
+                        </lightning-output-field>
+                        <lightning-output-field 
+                            field-name={solarGBSpecifyConsultantRevenueField}>
+                        </lightning-output-field>
+                        <!-- <lightning-output-field
+                            field-name={solarGBAFRYRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBAuroraRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBBaringaRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBCornwallRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBOtherConsultantRevenueField}>
+                        </lightning-output-field> -->
+                        </div>
+
+                        <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field
+                            field-name={solarGBRouteToMarketRevForecastField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBSpecifyRouteToMarketRevenueField}>
+                        </lightning-output-field>
+                        <!-- <lightning-output-field
+                            field-name={solarGBCfDRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBCPPARevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBMerchantRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBOtherRevenueForecastField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarGBOtherRevenueField}>
+                        </lightning-output-field> -->
+                            </div>
+                            </div>
+
+                    </lightning-record-view-form>
+                    </div>
+                </lightning-card>
+            </template>
+
+            <template   if:true={viewIrelandSolar} >
+
+                <lightning-card id="viewIrelandSolarRevenueCard" title="Ireland Solar Revenue"> 
+    
+                    <lightning-button-stateful 
+                        id="btnEditIrelandSolarRevenue"
+                        variant="brand"
+                        label-when-off="Edit"
+                        label-when-on="Cancel"
+                        onclick={handleIrelandSolarEdit}
+                        selected={editIrelandSolar}>
+                    </lightning-button-stateful>
+            
+                    <div class="slds-var-m-around_medium">
+                    <lightning-record-view-form 
+                        object-api-name="Investor_Account__c"
+                        record-id={recordId}>
+            
+                        <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field
+                            field-name={solarIEConsultantRevForecastField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIESpecifyConsultantRevenueField}>
+                        </lightning-output-field>
+                        <!-- <lightning-output-field
+                            field-name={solarIEAFRYRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIEAuroraRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIEBaringaRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIECornwallRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIEOtherConsultantRevenueField}>
+                        </lightning-output-field> -->
+                        </div>
+
+                        <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field
+                            field-name={solarIERouteToMarketRevForecastField}>
+                        </lightning-output-field>
+                        <lightning-output-field 
+                            field-name={solarIESpecifyRouteToMarketRevenueField}>
+                        </lightning-output-field>
+                        <!-- <lightning-output-field
+                            field-name={solarIECfDRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIECPPARevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIEMerchantRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIEOtherRevenueForecastField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={solarIEOtherRevenueField}>
+                        </lightning-output-field> -->
+                        </div>
+                        </div>
+                    </lightning-record-view-form>
+                    </div>
+                </lightning-card>
+            </template>
+
+        </lightning-accordion-section>
+
+        <template if:true={editGBSolar} >
+    
+            <lightning-card id="editGBSolarRevenueCard" title="GB Solar Revenue"> 
+    
+                <lightning-button-stateful 
+                    id="btnCancelGBSolarRevenue"
+                    variant="brand"
+                    label-when-off="Edit"
+                    label-when-on="Cancel"
+                    onclick={handleGBSolarEdit}
+                    selected={editGBSolar}>
+                </lightning-button-stateful>
+        
+                <div class="slds-var-m-around_medium">
+                <lightning-record-edit-form 
+                    object-api-name="Investor_Account__c"
+                    record-id={recordId}
+                    onsuccess={gbSolarSuccess}>
+        
+                    <lightning-button  
+                        class="slds-m-top_small"  
+                        variant="brand"  
+                        type="submit"  
+                        id="btnUpdateGBSolarRevenue1"
+                        name="updateGBSolarRevenue"  
+                        label="Update">  
+                    </lightning-button>
+
+                    <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field
+                        field-name={solarGBConsultantRevForecastField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBSpecifyConsultantRevenueField}>
+                    </lightning-input-field>
+                    <!-- <lightning-input-field
+                        field-name={solarGBAFRYRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBAuroraRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBBaringaRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBCornwallRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBOtherConsultantRevenueField}>
+                    </lightning-input-field> -->
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field
+                        field-name={solarGBRouteToMarketRevForecastField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBSpecifyRouteToMarketRevenueField}>
+                    </lightning-input-field>
+                    <!-- <lightning-input-field
+                        field-name={solarGBCfDRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBCPPARevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBMerchantRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBOtherRevenueForecastField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarGBOtherRevenueField}>
+                    </lightning-input-field> -->
+                    </div>
+                    </div>
+    
+                    <lightning-button  
+                        class="slds-m-top_small"  
+                        variant="brand"  
+                        type="submit"  
+                        id="btnUpdateGBSolarRevenue2"
+                        name="updateGBSolarRevenue"  
+                        label="Update">  
+                    </lightning-button> 
+    
+                </lightning-record-edit-form>   
+                </div>
+            </lightning-card>
+        </template>
+    
+        <template if:true={editIrelandSolar} >
+    
+            <lightning-card id="editIrelandSolarRevenueCard" title="Ireland Solar Revenue"> 
+    
+                <lightning-button-stateful 
+                    id="btnCancelIrelandSolarRevenue"
+                    variant="brand"
+                    label-when-off="Edit"
+                    label-when-on="Cancel"
+                    onclick={handleIrelandSolarEdit}
+                    selected={editIrelandSolar}>
+                </lightning-button-stateful>
+        
+                <div class="slds-var-m-around_medium">
+                <lightning-record-edit-form 
+                    object-api-name="Investor_Account__c"
+                    record-id={recordId}
+                    onsuccess={irelandSolarSuccess}>
+        
+                    <lightning-button  
+                        class="slds-m-top_small"  
+                        variant="brand"  
+                        type="submit"  
+                        id="btnUpdateIrelandSolarRevenue1"
+                        name="updateIrelandSolarRevenue"  
+                        label="Update">  
+                    </lightning-button> 
+
+                    <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field
+                        field-name={solarIEConsultantRevForecastField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIESpecifyConsultantRevenueField}>
+                    </lightning-input-field>
+                    <!-- <lightning-input-field
+                        field-name={solarIEAFRYRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIEAuroraRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIEBaringaRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIECornwallRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIEOtherConsultantRevenueField}>
+                    </lightning-input-field> -->
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field
+                        field-name={solarIERouteToMarketRevForecastField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIESpecifyRouteToMarketRevenueField}>
+                    </lightning-input-field>
+                    <!-- <lightning-input-field
+                        field-name={solarIECfDRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIECPPARevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIEMerchantRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIEOtherRevenueForecastField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={solarIEOtherRevenueField}>
+                    </lightning-input-field> -->
+                    </div>
+                    </div>
+                    
+                    <lightning-button  
+                        class="slds-m-top_small"  
+                        variant="brand"  
+                        type="submit"  
+                        id="btnUpdateIrelandSolarRevenue2"
+                        name="updateIrelandSolarRevenue"  
+                        label="Update">  
+                    </lightning-button> 
+    
+                </lightning-record-edit-form>   
+                </div>
+            </lightning-card>
+        </template>
+    <!-- #endregion -->
+    
+    <!-- #region Onshore Wind-->
+        <lightning-accordion-section if:true={onshoreWindDisplay} name="Onshore" label="Onshore">
+    
+            <template   if:true={viewGBOnshoreWind} >
+    
+                <lightning-card id="viewGBOnshoreWindCard" title="GB Onshore Wind"> 
+    
+                    <lightning-button-stateful 
+                        id="btnEditGBOnshoreWind"
+                        variant="brand"
+                        label-when-off="Edit"
+                        label-when-on="Cancel"
+                        onclick={handleGBOnshoreWindEdit}
+                        selected={editGBOnshoreWind}>
+                    </lightning-button-stateful>
+            
+                    <div class="slds-var-m-around_medium">
+                    <lightning-record-view-form 
+                        object-api-name="Investor_Account__c"
+                        record-id={recordId}>
+            
+                        <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field
+                            field-name={onshoreGBIRRMerchantField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreGBIRRFixedField}>
+                        </lightning-output-field>
+
+                        <lightning-output-field
+                            field-name={onshoreGBCurtailmentConsultantField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreGBOtherCurtailmentConsultantField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreGBCurtalimentGridOperatorField}>
+                        </lightning-output-field>
+    
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field
+                            field-name={onshoreGBEPCProviderField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreGBRouteToMarketProviderField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreGBCPIInflationField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreGBRPIInflationField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreGBInflationNotesField}>
+                        </lightning-output-field>
+                        </div>
+                        </div>
+    
+                    </lightning-record-view-form>   
+                    </div>
+                </lightning-card>
+            </template>
+    
+            <template   if:true={viewIrelandOnshoreWind} >
+    
+                <lightning-card id="viewIrelandOnshoreWindCard" title="Ireland Onshore Wind"> 
+    
+                    <lightning-button-stateful 
+                        id="btnEditIrelandOnshoreWind"
+                        variant="brand"
+                        label-when-off="Edit"
+                        label-when-on="Cancel"
+                        onclick={handleIrelandOnshoreWindEdit}
+                        selected={editIrelandOnshoreWind}>
+                    </lightning-button-stateful>
+            
+                    <div class="slds-var-m-around_medium">
+                    <lightning-record-view-form 
+                        object-api-name="Investor_Account__c"
+                        record-id={recordId}>
+            
+                        <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field
+                            field-name={onshoreIEIRRMerchantField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreIEIRRFixedField}>
+                        </lightning-output-field>
+
+                        <lightning-output-field
+                            field-name={onshoreIECurtailmentConsultantField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreIEOtherCurtailmentConsultantField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreIECurtalimentGridOperatorField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={}>
+                        </lightning-output-field>
+    
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field
+                            field-name={onshoreIEEPCProviderField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreIERouteToMarketProviderField} >
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreIECPIInflationField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreIERPIInflationField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreIEInflationNotesField}>
+                        </lightning-output-field>
+                        </div>
+                        </div>
+    
+                    </lightning-record-view-form>   
+                    </div>
+                </lightning-card>
+            </template>
+    
+        </lightning-accordion-section>
+      
+        <template   if:true={editGBOnshoreWind} >
+    
+            <lightning-card id="editGBOnshoreWindCard" title="GB Solar"> 
+    
+                <lightning-button-stateful 
+                    id="btnCancelGBOnshoreWind"
+                    variant="brand"
+                    label-when-off="Edit"
+                    label-when-on="Cancel"
+                    onclick={handleGBOnshoreWindEdit}
+                    selected={editGBOnshoreWind}>
+                </lightning-button-stateful>
+        
+                <div class="slds-var-m-around_medium">
+                <lightning-record-edit-form 
+                    object-api-name="Investor_Account__c"
+                    record-id={recordId}
+                    onsuccess={gbOnshoreWindSuccess}>
+        
+                    <lightning-button  
+                        class="slds-m-top_small"  
+                        variant="brand"  
+                        type="submit"  
+                        id="btnUpdateGBOnshoreWind1"
+                        name="updateGBOnshoreWind"  
+                        label="Update">  
+                    </lightning-button>
+
+                    <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field
+                        field-name={onshoreGBIRRMerchantField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBIRRFixedField}>
+                    </lightning-input-field>
+
+                    <lightning-input-field
+                        field-name={onshoreGBCurtailmentConsultantField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBOtherCurtailmentConsultantField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBCurtalimentGridOperatorField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={}>
+                    </lightning-input-field>
+    
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field
+                            field-name={onshoreGBEPCProviderField} >
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={onshoreGBRouteToMarketProviderField} >
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={onshoreGBCPIInflationField}>
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={onshoreGBRPIInflationField}>
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={onshoreGBInflationNotesField}>
+                        </lightning-input-field>
+                    </div>
+                    </div>
+    
+                    <lightning-button  
+                        class="slds-m-top_small"  
+                        variant="brand"  
+                        type="submit"  
+                        id="btnUpdateGBOnshoreWind2"
+                        name="updateGBOnshoreWind"  
+                        label="Update">  
+                    </lightning-button> 
+    
+                </lightning-record-edit-form>   
+                </div>
+            </lightning-card>
+        </template>
+    
+        <template if:true={editIrelandOnshoreWind} >
+    
+            <lightning-card id="editIrelandOnshoreWindCard" title="Ireland Onshore Wind"> 
+    
+                <lightning-button-stateful 
+                    id="btnCancelIrelandOnshoreWind"
+                    variant="brand"
+                    label-when-off="Edit"
+                    label-when-on="Cancel"
+                    onclick={handleIrelandOnshoreWindEdit}
+                    selected={editIrelandOnshoreWind}>
+                </lightning-button-stateful>
+        
+                <div class="slds-var-m-around_medium">
+                <lightning-record-edit-form 
+                    object-api-name="Investor_Account__c"
+                    record-id={recordId}
+                    onsuccess={irelandOnshoreWindSuccess}>
+        
+                    <lightning-button  
+                        class="slds-m-top_small"  
+                        variant="brand"  
+                        type="submit"  
+                        id="btnUpdateIrelandOnshoreWind1"
+                        name="updateIrelandOnshoreWind"  
+                        label="Update">  
+                    </lightning-button>
+
+                    <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field
+                        field-name={onshoreIEIRRMerchantField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIEIRRFixedField}>
+                    </lightning-input-field>
+
+                    <lightning-input-field
+                        field-name={onshoreIECurtailmentConsultantField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIEOtherCurtailmentConsultantField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIECurtalimentGridOperatorField}>
+                    </lightning-input-field>
+                    
+    
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field
+                            field-name={onshoreIEEPCProviderField} >
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={onshoreIERouteToMarketProviderField} >
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={onshoreIECPIInflationField}>
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={onshoreIERPIInflationField}>
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={onshoreIEInflationNotesField}>
+                        </lightning-input-field>
+                    </div>
+                    </div>
+    
+                    <lightning-button  
+                        class="slds-m-top_small"  
+                        variant="brand"  
+                        type="submit"  
+                        id="btnUpdateIrelandOnshoreWind2"
+                        name="updateIrelandOnshoreWind"  
+                        label="Update">  
+                    </lightning-button> 
+    
+                </lightning-record-edit-form>   
+                </div>
+            </lightning-card>
+        </template>
+
+        <lightning-accordion-section if:true={onshoreWindDisplay} name="Onshore Revenue" label="Onshore Revenue">
+            
+            <template   if:true={viewGBOnshoreWind} >
+
+                <lightning-card id="viewGBOnshoreRevenueCard" title="GB Onshore Revenue"> 
+    
+                    <lightning-button-stateful 
+                        id="btnEditGBOnshoreRevenue"
+                        variant="brand"
+                        label-when-off="Edit"
+                        label-when-on="Cancel"
+                        onclick={handleGBOnshoreWindEdit}
+                        selected={editGBOnshoreWind}>
+                    </lightning-button-stateful>
+            
+                    <div class="slds-var-m-around_medium">
+                    <lightning-record-view-form 
+                        object-api-name="Investor_Account__c"
+                        record-id={recordId}>
+                            
+                        <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field
+                            field-name={onshoreGBConsultantRevForecastField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreGBSpecifyConsultantRevenueField}>
+                        </lightning-output-field>
+                        <!-- <lightning-output-field
+                            field-name={onshoreGBAFRYRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreGBAuroraRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreGBBaringaRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreGBCornwallRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreGBOtherConsultantRevenueField}>
+                        </lightning-output-field> -->
+                        </div>
+
+                        <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field
+                            field-name={onshoreGBRouteToMarketRevForecastField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreGBSpecifyRouteToMarketRevenueField}>
+                        </lightning-output-field>
+                        <!-- <lightning-output-field
+                            field-name={onshoreGBCfDRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreGBCPPARevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreGBMerchantRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreGBOtherRevenueForecastField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreGBOtherRevenueField}>
+                        </lightning-output-field> -->
+                            </div>
+                            </div>
+
+                    </lightning-record-view-form>
+                    </div>
+                </lightning-card>
+            </template>
+
+            <template   if:true={viewIrelandOnshoreWind} >
+
+                <lightning-card id="viewIrelandOnshoreRevenueCard" title="Ireland Onshore Revenue"> 
+    
+                    <lightning-button-stateful 
+                        id="btnEditIrelandOnshoreRevenue"
+                        variant="brand"
+                        label-when-off="Edit"
+                        label-when-on="Cancel"
+                        onclick={handleIrelandOnshoreWindEdit}
+                        selected={editIrelandOnshoreWind}>
+                    </lightning-button-stateful>
+            
+                    <div class="slds-var-m-around_medium">
+                    <lightning-record-view-form 
+                        object-api-name="Investor_Account__c"
+                        record-id={recordId}>
+            
+                        <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field
+                            field-name={onshoreIEConsultantRevForecastField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreIESpecifyConsultantRevenueField}>
+                        </lightning-output-field>
+                        <!-- <lightning-output-field
+                            field-name={onshoreIEAFRYRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreIEAuroraRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreIEBaringaRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreIECornwallRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreIEOtherConsultantRevenueField}>
+                        </lightning-output-field> -->
+                        </div>
+
+                        <div class="slds-col slds-size_1-of-2">
+                        <lightning-output-field
+                            field-name={onshoreIERouteToMarketRevForecastField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreIESpecifyRouteToMarketRevenueField}>
+                        </lightning-output-field>
+                        <!-- <lightning-output-field
+                            field-name={onshoreIECfDRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreIECPPARevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreIEMerchantRevenueField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreIEOtherRevenueForecastField}>
+                        </lightning-output-field>
+                        <lightning-output-field
+                            field-name={onshoreIEOtherRevenueField}>
+                        </lightning-output-field> -->
+                        </div>
+                        </div>
+                    </lightning-record-view-form>
+                    </div>
+                </lightning-card>
+            </template>
+
+        </lightning-accordion-section>
+
+        <template if:true={editGBOnshoreWind} >
+    
+            <lightning-card id="editGBOnshoreRevenueCard" title="GB Onshore Revenue"> 
+    
+                <lightning-button-stateful 
+                    id="btnCancelGBOnshoreRevenue"
+                    variant="brand"
+                    label-when-off="Edit"
+                    label-when-on="Cancel"
+                    onclick={handleGBOnshoreWindEdit}
+                    selected={editGBOnshoreWind}>
+                </lightning-button-stateful>
+        
+                <div class="slds-var-m-around_medium">
+                <lightning-record-edit-form 
+                    object-api-name="Investor_Account__c"
+                    record-id={recordId}
+                    onsuccess={gbOnshoreWindSuccess}>
+        
+                    <lightning-button  
+                        class="slds-m-top_small"  
+                        variant="brand"  
+                        type="submit"  
+                        id="btnUpdateGBOnshoreRevenue1"
+                        name="updateGBOnshoreRevenue"  
+                        label="Update">  
+                    </lightning-button>
+
+                    <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field
+                        field-name={onshoreGBConsultantRevForecastField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBSpecifyConsultantRevenueField}>
+                    </lightning-input-field>
+                    <!-- <lightning-input-field
+                        field-name={onshoreGBAFRYRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBAuroraRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBBaringaRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBCornwallRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBOtherConsultantRevenueField}>
+                    </lightning-input-field> -->
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field
+                        field-name={onshoreGBRouteToMarketRevForecastField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBSpecifyRouteToMarketRevenueField}>
+                    </lightning-input-field>
+                    <!-- <lightning-input-field
+                        field-name={onshoreGBCfDRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBCPPARevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBMerchantRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBOtherRevenueForecastField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBOtherRevenueField}>
+                    </lightning-input-field> -->
+                    </div>
+                    </div>
+    
+                    <lightning-button  
+                        class="slds-m-top_small"  
+                        variant="brand"  
+                        type="submit"  
+                        id="btnUpdateGBOnshoreRevenue2"
+                        name="updateGBOnshoreRevenue"  
+                        label="Update">  
+                    </lightning-button> 
+    
+                </lightning-record-edit-form>   
+                </div>
+            </lightning-card>
+        </template>
+    
+        <template if:true={editIrelandOnshoreWind} >
+    
+            <lightning-card id="editIrelandOnshoreRevenueCard" title="Ireland Onshore Revenue"> 
+    
+                <lightning-button-stateful 
+                    id="btnCancelIrelandOnshoreRevenue"
+                    variant="brand"
+                    label-when-off="Edit"
+                    label-when-on="Cancel"
+                    onclick={handleIrelandOnshoreWindEdit}
+                    selected={editIrelandOnshoreWind}>
+                </lightning-button-stateful>
+        
+                <div class="slds-var-m-around_medium">
+                <lightning-record-edit-form 
+                    object-api-name="Investor_Account__c"
+                    record-id={recordId}
+                    onsuccess={irelandOnshoreWindSuccess}>
+        
+                    <lightning-button  
+                        class="slds-m-top_small"  
+                        variant="brand"  
+                        type="submit"  
+                        id="btnUpdateIrelandOnshoreRevenue1"
+                        name="updateIrelandOnshoreRevenue"  
+                        label="Update">  
+                    </lightning-button> 
+
+                    <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field
+                        field-name={onshoreIEConsultantRevForecastField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIESpecifyConsultantRevenueField}>
+                    </lightning-input-field>
+                    <!-- <lightning-input-field
+                        field-name={onshoreIEAFRYRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIEAuroraRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIEBaringaRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIECornwallRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIEOtherConsultantRevenueField}>
+                    </lightning-input-field> -->
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field
+                        field-name={onshoreIERouteToMarketRevForecastField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIESpecifyRouteToMarketRevenueField}>
+                    </lightning-input-field>   
+                    <!-- <lightning-input-field
+                        field-name={onshoreIECfDRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIECPPARevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIEMerchantRevenueField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIEOtherRevenueForecastField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIEOtherRevenueField}>
+                    </lightning-input-field> -->
+                    </div>
+                    </div>
+                    
+                    <lightning-button  
+                        class="slds-m-top_small"  
+                        variant="brand"  
+                        type="submit"  
+                        id="btnUpdateIrelandOnshoreRevenue2"
+                        name="updateIrelandOnshoreRevenue"  
+                        label="Update">  
+                    </lightning-button> 
+    
+                </lightning-record-edit-form>   
+                </div>
+            </lightning-card>
+        </template>
+    
+    <!-- #endregion -->
+    
+    <!-- #region Storage-->
+        <lightning-accordion-section if:true={storageDisplay} name="Storage" label="Storage">
+    
+        <template   if:true={viewGBStorage} >
+    
+                <lightning-card id="viewGBStorageCard" title="GB Storage"> 
+    
+                <lightning-button-stateful 
+                    id="btnEditGBStorage"
+                    variant="brand"
+                    label-when-off="Edit"
+                    label-when-on="Cancel"
+                    onclick={handleGBStorageEdit}
+                    selected={editGBStorage}>
+                </lightning-button-stateful>
+        
+                <div class="slds-var-m-around_medium">
+                <lightning-record-view-form 
+                    object-api-name="Investor_Account__c"
+                    record-id={recordId}>
+        
+                    <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-output-field
+                        field-name={storageGBIRRField}>
+                    </lightning-output-field>
+
+                    <lightning-output-field
+                        field-name={storageGBDurationField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={storageGBCyclingRateField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={storageGBBatteryAugmentationField}>
+                    </lightning-output-field>
+                    </div>
+    
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-output-field
+                        field-name={storageGBEPCProviderField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={storageGBRouteToMarketProviderField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={storageGBBatteryManufacturerField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={storageGBOtherBatteryManufacturerField} >
+                    </lightning-output-field>
+
+                    <lightning-output-field
+                        field-name={storageGBCPIInflationField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={storageGBRPIInflationField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={storageGBInflationNotesField}>
+                    </lightning-output-field>
+
+                    </div>
+                    </div>
+    
+                </lightning-record-view-form>   
+                </div>
+            </lightning-card>
+            </template>
+    
+        <template   if:true={viewIrelandStorage} >
+    
+            <lightning-card id="viewIrelandStorageCard" title="Ireland Storage"> 
+    
+                <lightning-button-stateful 
+                    id="btnEditIrelandStorage"
+                    variant="brand"
+                    label-when-off="Edit"
+                    label-when-on="Cancel"
+                    onclick={handleIrelandStorageEdit}
+                    selected={editIrelandStorage}>
+                </lightning-button-stateful>
+        
+                <div class="slds-var-m-around_medium">
+                <lightning-record-view-form 
+                    object-api-name="Investor_Account__c"
+                    record-id={recordId}>
+        
+                    <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-output-field
+                        field-name={storageIEIRRField}>
+                    </lightning-output-field>
+
+                    <lightning-output-field
+                        field-name={storageIEDurationField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={storageIECyclingRateField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={storageIEBatteryAugmentationField}>
+                    </lightning-output-field>
+    
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-output-field
+                        field-name={storageIEEPCProviderField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={storageIERouteToMarketProviderField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={storageIEBatteryManufacturerField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={storageIEOtherBatteryManufacturerField} >
+                    </lightning-output-field>
+
+                    <lightning-output-field
+                        field-name={storageIECPIInflationField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={storageIERPIInflationField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={storageIEInflationNotesField}>
+                    </lightning-output-field>
+
+                    </div>
+                    </div>
+    
+                </lightning-record-view-form>   
+                </div>
+            </lightning-card>
+            </template>
+    
+        </lightning-accordion-section>
+        
+    
+        <template   if:true={editGBStorage} >
+    
+        <lightning-card id="editGBStorageCard" title="GB Storage"> 
+    
+            <lightning-button-stateful 
+                id="btnCancelGBStorage"
+                variant="brand"
+                label-when-off="Edit"
+                label-when-on="Cancel"
+                onclick={handleGBStorageEdit}
+                selected={editGBStorage}>
+            </lightning-button-stateful>
+    
+            <div class="slds-var-m-around_medium">
+            <lightning-record-edit-form 
+                object-api-name="Investor_Account__c"
+                record-id={recordId}
+                onsuccess={gbStorageSuccess}>
+    
+                <lightning-button  
+                    class="slds-m-top_small"  
+                    variant="brand"  
+                    type="submit"  
+                    id="btnUpdateGBStorage1"
+                    name="updateGBStorage"  
+                    label="Update">  
+                </lightning-button> 
+
+                <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-2">
+                <lightning-input-field
+                    field-name={storageGBIRRField}>
+                </lightning-input-field>
+
+                <lightning-input-field
+                    field-name={storageGBDurationField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageGBCyclingRateField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageGBBatteryAugmentationField}>
+                </lightning-input-field>
+    
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                <lightning-input-field
+                    field-name={storageGBEPCProviderField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageGBRouteToMarketProviderField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageGBBatteryManufacturerField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageGBOtherBatteryManufacturerField} >
+                </lightning-input-field>
+
+                <lightning-input-field
+                    field-name={storageGBCPIInflationField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageGBRPIInflationField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageGBInflationNotesField}>
+                </lightning-input-field>
+
+                </div>
+                </div>
+    
+                <lightning-button  
+                    class="slds-m-top_small"  
+                    variant="brand"  
+                    type="submit"  
+                    id="btnUpdateGBStorage2"
+                    name="updateGBStorage"  
+                    label="Update">  
+                </lightning-button> 
+    
+            </lightning-record-edit-form>   
+            </div>
+        </lightning-card>
+    
+        </template>
+    
+        <template   if:true={editIrelandStorage} >
+    
+        <lightning-card id="editIrelandStorageCard" title="Ireland Storage"> 
+    
+            <lightning-button-stateful 
+                id="btnCancelIrelandStorage"
+                variant="brand"
+                label-when-off="Edit"
+                label-when-on="Cancel"
+                onclick={handleIrelandStorageEdit}
+                selected={editIrelandStorage}>
+            </lightning-button-stateful>
+    
+            <div class="slds-var-m-around_medium">
+            <lightning-record-edit-form 
+                object-api-name="Investor_Account__c"
+                record-id={recordId}
+                onsuccess={irelandStorageSuccess}>
+    
+                <lightning-button  
+                    class="slds-m-top_small"  
+                    variant="brand"  
+                    type="submit"  
+                    id="btnUpdateIrelandStorage1"
+                    name="updateIrelandStorage"  
+                    label="Update">  
+                </lightning-button> 
+
+                <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-2">
+                <lightning-input-field
+                    field-name={storageIEIRRField}>
+                </lightning-input-field>
+
+                <lightning-input-field
+                    field-name={storageIEDurationField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageIECyclingRateField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageIEBatteryAugmentationField}>
+                </lightning-input-field>
+    
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                <lightning-output-field
+                    field-name={storageIEEPCProviderField} >
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageIERouteToMarketProviderField} >
+                </lightning-output-field>
+                <lightning-input-field
+                    field-name={storageIEBatteryManufacturerField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageIEOtherBatteryManufacturerField} >
+                </lightning-input-field>
+
+                <lightning-input-field
+                    field-name={storageIECPIInflationField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageIERPIInflationField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageIEInflationNotesField}>
+                </lightning-input-field>
+
+                </div>
+                </div>
+    
+                <lightning-button  
+                    class="slds-m-top_small"  
+                    variant="brand"  
+                    type="submit"  
+                    id="btnUpdateIrelandStorage2"
+                    name="updateIrelandStorage"  
+                    label="Update">  
+                </lightning-button> 
+    
+            </lightning-record-edit-form>   
+            </div>
+        </lightning-card>
+    
+        </template>
+    
+    <!-- #endregion -->
+    
+    </lightning-accordion>
+    
+</template>

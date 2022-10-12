@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Agreement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Agreements</value>
+    </caseValues>
+    <fields>
+        <label><!-- $/Acre --></label>
+        <name>Acre__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acres --></label>
+        <name>Acres__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Owner --></label>
+        <name>Agreement_Owner__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Agreement Start Date --></label>
+        <name>Agreement_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Status --></label>
+        <name>Agreement_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred</masterLabel>
+            <translation><!-- Deferred --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation><!-- Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passive</masterLabel>
+            <translation><!-- Passive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminated</masterLabel>
+            <translation><!-- Terminated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Agreement Terms --></label>
+        <name>Agreement_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Number --></label>
+        <name>Auto_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decommissioning Extension Date --></label>
+        <name>Decommissioning_Extension_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decommissioning Terms --></label>
+        <name>Decommissioning_Terms__c</name>
+    </fields>
+    <fields>
+        <help><!-- Agreement Notes --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dev Extension Date --></label>
+        <name>Dev_Extension_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dev PMT Due Date --></label>
+        <name>Dev_PMT_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dev PMT End Date --></label>
+        <name>Dev_PMT_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Development PMT --></label>
+        <name>Development_PMT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Development Term --></label>
+        <name>Development_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Easement Width --></label>
+        <name>Easement_Width__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date the Agreement has been signed by all the necessary parties --></help>
+        <label><!-- Execution Date --></label>
+        <name>Execution_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extension Signed Date --></label>
+        <name>Extension_Signed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extension Terms --></label>
+        <name>Extension_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guranteees --></label>
+        <name>Guranteees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Landowner Parcel --></label>
+        <name>Landowner_Parcel__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Obligation Terms --></label>
+        <name>Obligation_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Obligations Extenstion Date --></label>
+        <name>Obligations_Extenstion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operations Term --></label>
+        <name>Operations_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PMT Amount Paid --></label>
+        <name>PMT_Amount_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- PMT Frequency --></label>
+        <name>PMT_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One-time PMT</masterLabel>
+            <translation><!-- One-time PMT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The Ending Date in which the Payments due will have been paid in full. --></help>
+        <label><!-- PMTs End Date --></label>
+        <name>PMTs_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term (Yrs) --></label>
+        <name>Term_Yrs__c</name>
+    </fields>
+    <layouts>
+        <layout>Access Easement</layout>
+        <sections>
+            <label><!-- Agreement Terms &amp; Dates --></label>
+            <section>Agreement Terms &amp; Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Information --></label>
+            <section>Payment Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Letter of Intent Layout</layout>
+        <sections>
+            <label><!-- Agreement Terms &amp; Dates --></label>
+            <section>Agreement Terms &amp; Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Information --></label>
+            <section>Payment Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Option to Lease</layout>
+        <sections>
+            <label><!-- Agreement Terms &amp; Dates --></label>
+            <section>Agreement Terms &amp; Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Information --></label>
+            <section>Payment Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Solar Energy Ground Layout</layout>
+        <sections>
+            <label><!-- Agreement Dates --></label>
+            <section>Agreement Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Agreement Terms --></label>
+            <section>Agreement Terms</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Terms &amp; Info --></label>
+            <section>Payment Terms &amp; Info</section>
+        </sections>
+        <sections>
+            <label><!-- SEGL - Decommissioning Terms --></label>
+            <section>SEGL - Decommissioning Terms</section>
+        </sections>
+        <sections>
+            <label><!-- SEGL - Development Terms --></label>
+            <section>SEGL - Development Terms</section>
+        </sections>
+        <sections>
+            <label><!-- SEGL - Obligations Terms --></label>
+            <section>SEGL - Obligations Terms</section>
+        </sections>
+        <sections>
+            <label><!-- SEGL - Operations Terms --></label>
+            <section>SEGL - Operations Terms</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Transmission Easement</layout>
+        <sections>
+            <label><!-- Agreement Terms &amp; Dates --></label>
+            <section>Agreement Terms &amp; Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Information --></label>
+            <section>Payment Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Waiver of Surface Rights Agreement</layout>
+        <sections>
+            <label><!-- Agreement Terms &amp; Dates --></label>
+            <section>Agreement Terms &amp; Dates</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Notes --></label>
+            <section>Notes</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Access Easement --></label>
+        <name>Access_Easement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Letter Of Intent --></label>
+        <name>Letter_Of_Intent</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Option to Lease --></label>
+        <name>Option_to_Lease</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Solar Energy Ground Lease --></label>
+        <name>Solar_Energy_Ground_Lease</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Transmission Easement --></label>
+        <name>Transmission_Easement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Waiver of Surface Rights Agreement --></label>
+        <name>Waiver_of_Surface_Rights_Agreement</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- New_Easement --></label>
+        <name>New_Easement</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_SEGL --></label>
+        <name>New_SEGL</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Surface_Rights --></label>
+        <name>New_Surface_Rights</name>
+    </webLinks>
+    <workflowTasks>
+        <name>New_Task</name>
+        <subject><!-- New Task --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

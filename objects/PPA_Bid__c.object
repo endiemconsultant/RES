@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Project_Opportunity_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>CompactLayout1</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>CompactLayout1</fullName>
+        <fields>Name</fields>
+        <fields>Stage_Phase__c</fields>
+        <fields>Selected_Bid__c</fields>
+        <fields>Account_Name__c</fields>
+        <fields>Project_Development__c</fields>
+        <fields>Region__c</fields>
+        <fields>Proposal_Due_Date__c</fields>
+        <fields>COD__c</fields>
+        <fields>PPA_Price__c</fields>
+        <fields>PPA_Escalation__c</fields>
+        <label>CompactLayout1</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Amount</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Basis_Risk_Premium__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Premium added to the Base price, to account for risk associated with delivering power to a hub.</inlineHelpText>
+        <label>Basis Risk Premium ($/MWh)</label>
+        <precision>13</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Bid_Amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The Contract Value for this particular Bid</inlineHelpText>
+        <label>Bid Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Broker_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Broker Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>PPA Bids</relationshipLabel>
+        <relationshipName>PPA_Bids</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>COD__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Commercial Operations Date</inlineHelpText>
+        <label>COD</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Close_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Close Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Project_Development__r.RES_Country__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DC_AC_Ratio__c</fullName>
+        <externalId>false</externalId>
+        <label>DC/AC Ratio</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DSP_Premium__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Premium added to the base price to account for risk associated with providing downside protection.</inlineHelpText>
+        <label>DSP Premium ($/MWh)</label>
+        <precision>13</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>DSP_Type_Other__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>($/MWh) 
+Input a value in this field when “Other” is selected for the &apos;Downside Protection (DSP) Type&apos; field</inlineHelpText>
+        <label>DSP Type -Other</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Delivery_Point__c</fullName>
+        <externalId>false</externalId>
+        <label>Delivery Point</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>AEP</fullName>
+                    <default>false</default>
+                    <label>AEP</label>
+                </value>
+                <value>
+                    <fullName>AEP-Day</fullName>
+                    <default>false</default>
+                    <label>AEP-Day</label>
+                </value>
+                <value>
+                    <fullName>Arkansas Hub</fullName>
+                    <default>false</default>
+                    <label>Arkansas Hub</label>
+                </value>
+                <value>
+                    <fullName>Dominion</fullName>
+                    <default>false</default>
+                    <label>Dominion</label>
+                </value>
+                <value>
+                    <fullName>EAI.CLWALD</fullName>
+                    <default>false</default>
+                    <label>EAI.CLWALD</label>
+                </value>
+                <value>
+                    <fullName>ERCOT N/S Split</fullName>
+                    <default>false</default>
+                    <label>ERCOT N/S Split</label>
+                </value>
+                <value>
+                    <fullName>Houston Hub</fullName>
+                    <default>false</default>
+                    <label>Houston Hub</label>
+                </value>
+                <value>
+                    <fullName>Illinois Hub</fullName>
+                    <default>false</default>
+                    <label>Illinois Hub</label>
+                </value>
+                <value>
+                    <fullName>Indiana Hub</fullName>
+                    <default>false</default>
+                    <label>Indiana Hub</label>
+                </value>
+                <value>
+                    <fullName>LCRA Load Zone</fullName>
+                    <default>false</default>
+                    <label>LCRA Load Zone</label>
+                </value>
+                <value>
+                    <fullName>Louisiana Hub</fullName>
+                    <default>false</default>
+                    <label>Louisiana Hub</label>
+                </value>
+                <value>
+                    <fullName>Michigan Hub</fullName>
+                    <default>false</default>
+                    <label>Michigan Hub</label>
+                </value>
+                <value>
+                    <fullName>Minn Hub</fullName>
+                    <default>false</default>
+                    <label>Minn Hub</label>
+                </value>
+                <value>
+                    <fullName>Northern Illinois Hub</fullName>
+                    <default>false</default>
+                    <label>Northern Illinois Hub</label>
+                </value>
+                <value>
+                    <fullName>North Hub</fullName>
+                    <default>false</default>
+                    <label>North Hub</label>
+                </value>
+                <value>
+                    <fullName>PECO Zone</fullName>
+                    <default>false</default>
+                    <label>PECO Zone</label>
+                </value>
+                <value>
+                    <fullName>POI</fullName>
+                    <default>false</default>
+                    <label>POI</label>
+                </value>
+                <value>
+                    <fullName>PPL Zone</fullName>
+                    <default>false</default>
+                    <label>PPL Zone</label>
+                </value>
+                <value>
+                    <fullName>South Hub</fullName>
+                    <default>false</default>
+                    <label>South Hub</label>
+                </value>
+                <value>
+                    <fullName>SPP-North</fullName>
+                    <default>false</default>
+                    <label>SPP-North</label>
+                </value>
+                <value>
+                    <fullName>SPP-South</fullName>
+                    <default>false</default>
+                    <label>SPP-South</label>
+                </value>
+                <value>
+                    <fullName>Texas Hub</fullName>
+                    <default>false</default>
+                    <label>Texas Hub</label>
+                </value>
+                <value>
+                    <fullName>Transmission Rights Required</fullName>
+                    <default>false</default>
+                    <label>Transmission Rights Required</label>
+                </value>
+                <value>
+                    <fullName>West Hub</fullName>
+                    <default>false</default>
+                    <label>West Hub</label>
+                </value>
+                <value>
+                    <fullName>Zone A</fullName>
+                    <default>false</default>
+                    <label>Zone A</label>
+                </value>
+                <value>
+                    <fullName>Zone B</fullName>
+                    <default>false</default>
+                    <label>Zone B</label>
+                </value>
+                <value>
+                    <fullName>Zone C</fullName>
+                    <default>false</default>
+                    <label>Zone C</label>
+                </value>
+                <value>
+                    <fullName>Zone E</fullName>
+                    <default>false</default>
+                    <label>Zone E</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Do_Not_Update_from_Project__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Do Not Update from Project</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Downside_Protection_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Protection that the client requests in case of exposure to negative pricing.   
+If you select &apos;Other&apos;, please explain in the &apos;DSP Type -Other&apos; field.</inlineHelpText>
+        <label>Downside Protection (DSP) Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Non-settlement below $0/MWh</fullName>
+                    <default>false</default>
+                    <label>Non-settlement below $0/MWh</label>
+                </value>
+                <value>
+                    <fullName>$10/MWh Price Floor</fullName>
+                    <default>false</default>
+                    <label>$10/MWh Price Floor</label>
+                </value>
+                <value>
+                    <fullName>$5/MWh Price Floor</fullName>
+                    <default>false</default>
+                    <label>$5/MWh Price Floor</label>
+                </value>
+                <value>
+                    <fullName>$0/MWh Price Floor</fullName>
+                    <default>false</default>
+                    <label>$0/MWh Price Floor</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Fixed_Tracker__c</fullName>
+        <externalId>false</externalId>
+        <label>Fixed/Track</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed</fullName>
+                    <default>false</default>
+                    <label>Fixed</label>
+                </value>
+                <value>
+                    <fullName>Tracker</fullName>
+                    <default>false</default>
+                    <label>Tracker</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GBDB_Update_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>GBDB Update Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Latest_Update__c</fullName>
+        <externalId>false</externalId>
+        <label>Latest Update</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Latitude__c</fullName>
+        <externalId>false</externalId>
+        <label>Latitude</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos;City: &apos;&amp;Project_Development__r.Nearest_City__c &amp; 
+&apos;   County: &apos;&amp;Project_Development__r.County__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Location</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Longitude__c</fullName>
+        <externalId>false</externalId>
+        <label>Longitude</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Max_Amount_Range__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If the Bid Amount, or the Contract Value, is within a certain range, use this field to indicate the maximum value.</inlineHelpText>
+        <label>Max Amount Range</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Min_Amount_Range__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If the Bid Amount, or the Contract Value, is within a certain range, use this field to indicate the minimum value.</inlineHelpText>
+        <label>Min Amount Range</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>NCF__c</fullName>
+        <externalId>false</externalId>
+        <label>NCF</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>NERC_Region__c</fullName>
+        <externalId>false</externalId>
+        <label>NERC Region</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Canada</fullName>
+                    <default>false</default>
+                    <label>Canada</label>
+                </value>
+                <value>
+                    <fullName>Caribbean</fullName>
+                    <default>false</default>
+                    <label>Caribbean</label>
+                </value>
+                <value>
+                    <fullName>Chile-SIC</fullName>
+                    <default>false</default>
+                    <label>Chile-SIC</label>
+                </value>
+                <value>
+                    <fullName>Chile-SING</fullName>
+                    <default>false</default>
+                    <label>Chile-SING</label>
+                </value>
+                <value>
+                    <fullName>Chile-Aysen</fullName>
+                    <default>false</default>
+                    <label>Chile-Aysen</label>
+                </value>
+                <value>
+                    <fullName>Chile-Magallanes</fullName>
+                    <default>false</default>
+                    <label>Chile-Magallanes</label>
+                </value>
+                <value>
+                    <fullName>ERCOT</fullName>
+                    <default>false</default>
+                    <label>ERCOT</label>
+                </value>
+                <value>
+                    <fullName>MISO</fullName>
+                    <default>false</default>
+                    <label>MISO</label>
+                </value>
+                <value>
+                    <fullName>NEISO</fullName>
+                    <default>false</default>
+                    <label>NEISO</label>
+                </value>
+                <value>
+                    <fullName>NYISO</fullName>
+                    <default>false</default>
+                    <label>NYISO</label>
+                </value>
+                <value>
+                    <fullName>PJM</fullName>
+                    <default>false</default>
+                    <label>PJM</label>
+                </value>
+                <value>
+                    <fullName>SPP</fullName>
+                    <default>false</default>
+                    <label>SPP</label>
+                </value>
+                <value>
+                    <fullName>WECC</fullName>
+                    <default>false</default>
+                    <label>WECC</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Opportunity__r.Contract_Type__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>Project_Developements_Opportunties</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>PPA_Escalation__c</fullName>
+        <externalId>false</externalId>
+        <label>PPA Escalation</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>PPA_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>PPA Price</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Project_Partner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Primary Project Partner</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>PPA Bids</relationshipLabel>
+        <relationshipName>PPA_Bids</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Project_Development__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Development</label>
+        <referenceTo>RES_Projects__c</referenceTo>
+        <relationshipLabel>PPA Bids</relationshipLabel>
+        <relationshipName>PPA_Bids</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Project_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Project_Development__r.Project_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Project Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Size__c</fullName>
+        <externalId>false</externalId>
+        <formula>Project_Development__r.RES_Project_Size_MW__c</formula>
+        <label>Project Size (MW)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Proposal_Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Proposal Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Proposal_Submitted_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If left empty upon PPA Bid creation, this field will automatically be updated by the &apos;Proposal Due Date&apos;. Then after the PPA has been created this field can be overridden and you can select whatever date is appropriate.</inlineHelpText>
+        <label>Proposal Submitted Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>REC_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>REC Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Green-e</fullName>
+                    <default>false</default>
+                    <label>Green-e</label>
+                </value>
+                <value>
+                    <fullName>Ercot</fullName>
+                    <default>false</default>
+                    <label>Ercot</label>
+                </value>
+                <value>
+                    <fullName>M-RETS</fullName>
+                    <default>false</default>
+                    <label>M-RETS</label>
+                </value>
+                <value>
+                    <fullName>MRECS</fullName>
+                    <default>false</default>
+                    <label>MRECS</label>
+                </value>
+                <value>
+                    <fullName>NAR</fullName>
+                    <default>false</default>
+                    <label>NAR</label>
+                </value>
+                <value>
+                    <fullName>NEPOOL Class1</fullName>
+                    <default>false</default>
+                    <label>NEPOOL Class1</label>
+                </value>
+                <value>
+                    <fullName>NEPOOL Class2</fullName>
+                    <default>false</default>
+                    <label>NEPOOL Class2</label>
+                </value>
+                <value>
+                    <fullName>NC-RETS</fullName>
+                    <default>false</default>
+                    <label>NC-RETS</label>
+                </value>
+                <value>
+                    <fullName>NVTREC</fullName>
+                    <default>false</default>
+                    <label>NVTREC</label>
+                </value>
+                <value>
+                    <fullName>NYSERDA</fullName>
+                    <default>false</default>
+                    <label>NYSERDA</label>
+                </value>
+                <value>
+                    <fullName>PJM-GATS</fullName>
+                    <default>false</default>
+                    <label>PJM-GATS</label>
+                </value>
+                <value>
+                    <fullName>WREGIS</fullName>
+                    <default>false</default>
+                    <label>WREGIS</label>
+                </value>
+                <value>
+                    <fullName>Project</fullName>
+                    <default>false</default>
+                    <label>Project</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>North - Wind</fullName>
+                    <default>false</default>
+                    <label>North - Wind</label>
+                </value>
+                <value>
+                    <fullName>North - Solar</fullName>
+                    <default>false</default>
+                    <label>North - Solar</label>
+                </value>
+                <value>
+                    <fullName>South - Wind</fullName>
+                    <default>false</default>
+                    <label>South - Wind</label>
+                </value>
+                <value>
+                    <fullName>South - Solar</fullName>
+                    <default>false</default>
+                    <label>South - Solar</label>
+                </value>
+                <value>
+                    <fullName>Canada - Wind</fullName>
+                    <default>false</default>
+                    <label>Canada - Wind</label>
+                </value>
+                <value>
+                    <fullName>Canada - Solar</fullName>
+                    <default>false</default>
+                    <label>Canada - Solar</label>
+                </value>
+                <value>
+                    <fullName>North</fullName>
+                    <default>false</default>
+                    <label>North</label>
+                </value>
+                <value>
+                    <fullName>South</fullName>
+                    <default>false</default>
+                    <label>South</label>
+                </value>
+                <value>
+                    <fullName>Canada</fullName>
+                    <default>false</default>
+                    <label>Canada</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Selected_Bid__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Select this box if you would like to have the information from the Development Website, and the associated Project Development to update and override certain Opportunity fields.</inlineHelpText>
+        <label>Selected Bid</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Size_MW__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Bid Size</inlineHelpText>
+        <label>Size (MW)</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Size_MWh__c</fullName>
+        <externalId>false</externalId>
+        <label>Size MWh</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stage_Phase__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The Status, or Phase, of the particular Bid.</inlineHelpText>
+        <label>Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Closed Won</fullName>
+                    <default>false</default>
+                    <label>Closed Won</label>
+                </value>
+                <value>
+                    <fullName>Closed Won - Not Selected</fullName>
+                    <default>false</default>
+                    <label>Closed Won - Not Selected</label>
+                </value>
+                <value>
+                    <fullName>Closed Lost</fullName>
+                    <default>false</default>
+                    <label>Closed Lost</label>
+                </value>
+                <value>
+                    <fullName>Negotiations</fullName>
+                    <default>false</default>
+                    <label>Negotiations</label>
+                </value>
+                <value>
+                    <fullName>Notice of Award</fullName>
+                    <default>false</default>
+                    <label>Notice of Award</label>
+                </value>
+                <value>
+                    <fullName>Proposal Preparation</fullName>
+                    <default>false</default>
+                    <label>Proposal Preparation</label>
+                </value>
+                <value>
+                    <fullName>Proposal Submitted</fullName>
+                    <default>false</default>
+                    <label>Proposal Submitted</label>
+                </value>
+                <value>
+                    <fullName>Shortlist</fullName>
+                    <default>false</default>
+                    <label>Shortlist</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Project_Development__r.State_Province__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>State</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Technology_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Project_Development__r.RES_Technology_Type__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Technology Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Term_Yrs__c</fullName>
+        <externalId>false</externalId>
+        <label>Term (Yrs)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transmission_Mileage__c</fullName>
+        <externalId>false</externalId>
+        <label>Transmission Mileage</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Upside_Share__c</fullName>
+        <description>Percentage of the upside that goes to us, the seller.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>% of upside going to Seller</inlineHelpText>
+        <label>Upside Share</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>of_Nameplate__c</fullName>
+        <externalId>false</externalId>
+        <formula>Size_MW__c  /Project_Size__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>% of Nameplate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <label>PPA Bid</label>
+    <nameField>
+        <displayFormat>#{000000}</displayFormat>
+        <label>PPA Bid Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>PPA Bids</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Project_Development__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Selected_Bid__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Opportunity__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Account_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Opportunity_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PPA_Escalation__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PPA_Price__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Delivery_Point__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Project_Development__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Selected_Bid__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Opportunity__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Account_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Opportunity_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PPA_Escalation__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PPA_Price__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Delivery_Point__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Project_Development__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Selected_Bid__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Opportunity__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Account_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Opportunity_Type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PPA_Escalation__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PPA_Price__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Delivery_Point__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CREATED_DATE</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Project_Development__c</searchFilterFields>
+        <searchFilterFields>Selected_Bid__c</searchFilterFields>
+        <searchFilterFields>Opportunity__c</searchFilterFields>
+        <searchFilterFields>Account_Name__c</searchFilterFields>
+        <searchFilterFields>Opportunity_Type__c</searchFilterFields>
+        <searchFilterFields>Delivery_Point__c</searchFilterFields>
+        <searchFilterFields>PPA_Price__c</searchFilterFields>
+        <searchFilterFields>PPA_Escalation__c</searchFilterFields>
+        <searchFilterFields>CREATED_DATE</searchFilterFields>
+        <searchResultsAdditionalFields>Project_Development__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Selected_Bid__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Opportunity__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Opportunity_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Delivery_Point__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PPA_Price__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PPA_Escalation__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Closed_Won</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ISPICKVAL(Stage_Phase__c, &quot;Closed Won&quot;),
+ISPICKVAL(Opportunity__r.Outcome_Reason__c, &quot;&quot;)
+)</errorConditionFormula>
+        <errorMessage>Please indicated Closed Outcome in the Parent Opportunity before marking this PPA Bid as Closed Won.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Downside_Risk_Protection_is_YesOther</fullName>
+        <active>true</active>
+        <description>If  &apos;Downside Protection (DSP) -Type&apos; = &apos;Yes- Other&quot;, then the User must input a value in the &apos;DSP Type -Other&apos; field</description>
+        <errorConditionFormula>AND(
+ISPICKVAL(Downside_Protection_Type__c,&quot;Yes- Other&quot;),
+ISBLANK(DSP_Type_Other__c))</errorConditionFormula>
+        <errorDisplayField>DSP_Type_Other__c</errorDisplayField>
+        <errorMessage>You selected &apos;Yes- Other&apos; for the &apos;Downside Protection (DSP) -Type&apos;  field. Please input a value in the &apos;DSP Type -Other&apos; field</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Only_one_Bid_Selected_Checked</fullName>
+        <active>true</active>
+        <errorConditionFormula>Opportunity__r.Selected_Bid_Count__c &gt; 1</errorConditionFormula>
+        <errorDisplayField>Selected_Bid__c</errorDisplayField>
+        <errorMessage>There is already another Opportunity with the &apos;Bid Selected&apos; field checked. If you would like to change which Project is mapped to this Opportunity, please navigate back to the &quot;Project / Opportunity&quot; and uncheck the appropriate record.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

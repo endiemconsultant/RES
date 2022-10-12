@@ -1,0 +1,6 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId" >
+   <!-- <aura:attribute name="project" type="RES_Projects__c" />
+    <aura:attribute name="checkbox" type="Auto_Create_Opportunity__c" /> -->
+    Record Id is {!v.recordId.Auto_Create_Opportunity__c}
+    <ui:button label="Auto Create Opp" press="{!c.AutoCreateOpp}"/> 
+</aura:component>

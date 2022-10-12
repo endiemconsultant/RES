@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Bid Development Manager</fullName>
+        <default>false</default>
+        <label>Bid Development Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Bid Director</fullName>
+        <default>false</default>
+        <label>Bid Director</label>
+    </customValue>
+    <customValue>
+        <fullName>Bid Manager</fullName>
+        <default>false</default>
+        <label>Bid Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Business Development</fullName>
+        <default>false</default>
+        <label>Business Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Communications - Marketing</fullName>
+        <default>false</default>
+        <label>Communications - Marketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Construction</fullName>
+        <default>false</default>
+        <label>Construction</label>
+    </customValue>
+    <customValue>
+        <fullName>Contracts Team</fullName>
+        <default>false</default>
+        <label>Contracts Team</label>
+    </customValue>
+    <customValue>
+        <fullName>Engineering - Civil</fullName>
+        <default>false</default>
+        <label>Engineering - Civil</label>
+    </customValue>
+    <customValue>
+        <fullName>Engineering - Electrical</fullName>
+        <default>false</default>
+        <label>Engineering - Electrical</label>
+    </customValue>
+    <customValue>
+        <fullName>Engineering - Mechanical</fullName>
+        <default>false</default>
+        <label>Engineering - Mechanical</label>
+    </customValue>
+    <customValue>
+        <fullName>Engineering - SCADA</fullName>
+        <default>false</default>
+        <label>Engineering - SCADA</label>
+    </customValue>
+    <customValue>
+        <fullName>Engineering - Structural</fullName>
+        <default>false</default>
+        <label>Engineering - Structural</label>
+    </customValue>
+    <customValue>
+        <fullName>Engineering - Survey</fullName>
+        <default>false</default>
+        <label>Engineering - Survey</label>
+    </customValue>
+    <customValue>
+        <fullName>Estimator</fullName>
+        <default>false</default>
+        <label>Estimator</label>
+    </customValue>
+    <customValue>
+        <fullName>Executive Champion</fullName>
+        <default>false</default>
+        <label>Executive Champion</label>
+    </customValue>
+    <customValue>
+        <fullName>Finance</fullName>
+        <default>false</default>
+        <label>Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>HSQE</fullName>
+        <default>false</default>
+        <label>HSQE</label>
+    </customValue>
+    <customValue>
+        <fullName>IT</fullName>
+        <default>false</default>
+        <label>IT</label>
+    </customValue>
+    <customValue>
+        <fullName>Legal</fullName>
+        <default>false</default>
+        <label>Legal</label>
+    </customValue>
+    <customValue>
+        <fullName>Operation Maintenance</fullName>
+        <default>false</default>
+        <label>Operation Maintenance</label>
+    </customValue>
+    <customValue>
+        <fullName>Opportunity Owner</fullName>
+        <default>false</default>
+        <label>Opportunity Owner</label>
+    </customValue>
+    <customValue>
+        <fullName>Permitting - Property Manager</fullName>
+        <default>false</default>
+        <label>Permitting - Property Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>PM - Construction</fullName>
+        <default>false</default>
+        <label>PM - Construction</label>
+    </customValue>
+    <customValue>
+        <fullName>PM - Development</fullName>
+        <default>false</default>
+        <label>PM - Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Procurement</fullName>
+        <default>false</default>
+        <label>Procurement</label>
+    </customValue>
+    <customValue>
+        <fullName>Proposal Manager</fullName>
+        <default>false</default>
+        <label>Proposal Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Team</fullName>
+        <default>false</default>
+        <label>Technical Team</label>
+    </customValue>
+    <customValue>
+        <fullName>Transmission Team</fullName>
+        <default>false</default>
+        <label>Transmission Team</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Business Analyst</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Business Analyst</label>
+    </customValue>
+    <masterLabel>Role</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

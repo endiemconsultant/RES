@@ -1,0 +1,41 @@
+<apex:page standardController="Account" extensions="KAMController" standardStylesheets="false" showHeader="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0"> 
+ 
+    <!-- Include a JavaScript file in your Visualforce page -->
+    <apex:includeScript value="/lightning/lightning.out.js" />
+    
+    <apex:includeLightning />
+    
+    <apex:remoteObjects >
+      <apex:remoteObjectModel name="Account" fields="Id,Name"/>
+    </apex:remoteObjects>
+
+  <div class="slds-scope">
+
+  <div class="slds-grid slds-wrap slds-grid_vertical-align-top slds-grid_align-center">
+  
+    <div class="slds-col slds-size_1-of-1 slds-box slds-theme_shade">
+          <div id="Activities" />
+     </div>
+            
+   </div>
+  </div>
+     
+    <script>
+        $Lightning.use("c:KAM_Timeline_OpenActivities_App", function() {
+            $Lightning.createComponent("c:KAM_Header_OpenActivities",
+                   { "recordId" : "{!$CurrentPage.parameters.id}" },
+                  "Activities",
+                  function(cmp) {
+                    // any further setup goes here
+              });
+            
+              $Lightning.createComponent("c:KAM_Timeline_OpenActivities",
+                   { "recordId" : "{!$CurrentPage.parameters.id}" },
+                  "Activities",
+                  function(cmp) {
+                    // any further setup goes here
+              });     
+        });
+    </script>
+    
+</apex:page>

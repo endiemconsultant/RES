@@ -1,0 +1,7 @@
+<apex:page standardController="opportunity">
+	<style>
+        body{background:{!IF($User.UIThemeDisplayed=='Theme3','#ffffff;','#f3f3ec;')}}
+    </style>
+    <c:SIMBingMaps latitude="{!opportunity.Latitude__c}" longitude="{!opportunity.Longitude__c}"
+    />
+</apex:page>

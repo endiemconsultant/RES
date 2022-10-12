@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Support Services Asset</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Support Services Assets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Capacity (MW) --></label>
+        <name>Capacity_MW__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incumbent AM --></label>
+        <name>Incumbent_AM__c</name>
+        <relationshipLabel><!-- Support Services Assets (Incumbent AM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Original Equipment Manufacturer --></help>
+        <label><!-- OEM --></label>
+        <name>OEM__c</name>
+        <relationshipLabel><!-- Support Services Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PPA Owner --></label>
+        <name>PPA_Owner__c</name>
+        <relationshipLabel><!-- Support Services Assets (PPA Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Classification --></label>
+        <name>Project_Classification__c</name>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation><!-- External --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Developer --></label>
+        <name>Project_Developer__c</name>
+        <relationshipLabel><!-- Support Services Assets (Project Developer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- State/ Province --></label>
+        <name>State_Province__c</name>
+        <picklistValues>
+            <masterLabel>New South Wales</masterLabel>
+            <translation><!-- New South Wales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queensland</masterLabel>
+            <translation><!-- Queensland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Australia</masterLabel>
+            <translation><!-- South Australia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tasmania</masterLabel>
+            <translation><!-- Tasmania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Victoria</masterLabel>
+            <translation><!-- Victoria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Western Australia</masterLabel>
+            <translation><!-- Western Australia --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Technology Type --></label>
+        <name>Technology_Type__c</name>
+        <picklistValues>
+            <masterLabel>Solar</masterLabel>
+            <translation><!-- Solar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Storage</masterLabel>
+            <translation><!-- Storage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wind - Onshore</masterLabel>
+            <translation><!-- Wind - Onshore --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Support Services Asset Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

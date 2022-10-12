@@ -1,0 +1,1417 @@
+<template >
+
+<!-- #region Country Button-->
+
+    <div class="slds-align_absolute-center">
+        <lightning-radio-group 
+            id="rdoCountry"
+            name="radioCountry" 
+            options={countryOptions} 
+            onchange={handleCountrySelection}
+            type="button">
+        </lightning-radio-group>
+    </div>
+
+<!--#endregion-->
+
+<!-- #region Technology Interest Checkboxes-->
+        <br>
+        <div class="slds-align_absolute-center">
+        <div class="slds-form-element__control">
+          <div class="slds-checkbox_button-group">
+            <span class="slds-button slds-checkbox_button">
+                <input type="checkbox" id="chkHeaderDisplay" value={headerDisplay} name="checkbox" onchange={handleHeaderDisplay} />
+                <label class="slds-checkbox_button__label" for="chkHeaderDisplay">
+                  <span class="slds-checkbox_faux">Header</span>
+                </label>
+              </span> 
+            <span class="slds-button slds-checkbox_button">
+              <input type="checkbox" id="chkSolarDisplay" value={solarDisplay} name="checkbox" onchange={handleSolarDisplay} />
+              <label class="slds-checkbox_button__label" for="chkSolarDisplay">
+                <span class="slds-checkbox_faux">Solar</span>
+              </label>
+            </span> 
+            <span class="slds-button slds-checkbox_button">
+                <input type="checkbox" id="chkOnshoreWindDisplay" value={onshoreWindDisplay} name="checkbox" onchange={handleOnshoreWindDisplay} />
+                <label class="slds-checkbox_button__label" for="chkOnshoreWindDisplay">
+                  <span class="slds-checkbox_faux">Onshore</span>
+                </label>
+              </span> 
+            <span class="slds-button slds-checkbox_button">
+              <input type="checkbox" id="chkStorageDisplay" value={storageDisplay} name="checkbox" onchange={handleStorageDisplay} />
+              <label class="slds-checkbox_button__label" for="chkStorageDisplay">
+                <span class="slds-checkbox_faux">Storage</span>
+              </label> 
+            </span>
+          </div>
+        </div>
+        </div>
+<!-- #endregion-->
+
+<lightning-accordion 
+    allow-multiple-sections-open
+    
+    active-section-name={activeSections}>
+
+<!-- #region Header-->
+<lightning-accordion-section if:true={headerDisplay} name="Header" label="Header" >
+    
+    <template if:false={editHeader}>
+        <lightning-card id="viewHeaderCard" title="Header"> 
+            
+            <lightning-button-stateful 
+                    id="btnEditHeader"
+                    variant="brand"
+                    label-when-off="Edit"
+                    label-when-on="Cancel"
+                    onclick={handleHeaderEdit}
+                    selected={editHeader}>
+            </lightning-button-stateful>
+
+            <div class="slds-var-m-around_medium">
+
+                <lightning-record-view-form 
+                        object-api-name="Investor_Account__c"
+                        record-id={recordId}>
+
+                    <div class="slds-grid">
+
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field
+                                field-name={nameField}>
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={standardAccountField}>
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={ownerField}>
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={amServicesField} >
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={amServicesThirdPartyField} >
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={constructionServicesField} >
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={constructionServicesThirdPartyField} >
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={omServicesField} >
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={omServicesThirdPartyField} >
+                            </lightning-output-field>
+                        </div>
+
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field
+                                field-name={accountTypeField}>
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={otherAccountTypeField}>
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={relationshipTypeField} >
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={solarInterestField} >
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={solarInterestWhichRegionField}>
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={onshoreWindInterestField} >
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={onshoreInterestWhichRegionField}>
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={storageInterestField} >
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={storageInterestWhichRegionField}>
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={hydrogenInterestField} >
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={hydrogenInterestWhichRegionField}>
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={marketsField} >
+                            </lightning-output-field>
+                            <lightning-output-field
+                                field-name={provideDetailsField}>
+                            </lightning-output-field>
+
+                        </div>
+                    </div>
+                </lightning-record-view-form>
+
+            </div>
+
+        </lightning-card>
+
+    </template>
+
+</lightning-accordion-section>
+
+<template if:true={editHeader}>
+    <lightning-card id="editHeaderCard" title="Edit Header"> 
+        <lightning-button-stateful 
+            id="btnCancelHeader"
+            variant="brand"
+            label-when-off="Edit"
+            label-when-on="Cancel"
+            onclick={handleHeaderEdit}
+            selected={editHeader}>
+        </lightning-button-stateful>
+
+        <div class="slds-var-m-around_medium">
+            <lightning-record-edit-form 
+                object-api-name="Investor_Account__c"
+                record-id={recordId}
+                onsuccess={headerSuccess}>
+
+                <lightning-button  
+                class="slds-m-top_small"  
+                variant="brand"  
+                type="submit"  
+                id="btnUpdateHeader1"
+                name="updateHeader"  
+                label="Update">  
+                </lightning-button> 
+
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field
+                            field-name={nameField}>
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={standardAccountField}>
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={ownerField}>
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={amServicesField}>
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={amServicesThirdPartyField} >
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={constructionServicesField}>
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={constructionServicesThirdPartyField} >
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={omServicesField}>
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={omServicesThirdPartyField} >
+                        </lightning-input-field>
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input-field
+                            field-name={accountTypeField}>
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={otherAccountTypeField}>
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={relationshipTypeField}>
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={solarInterestField} >
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={solarInterestWhichRegionField}>
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={onshoreWindInterestField} >
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={onshoreInterestWhichRegionField}>
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={storageInterestField} >
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={storageInterestWhichRegionField}>
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={hydrogenInterestField} >
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={hydrogenInterestWhichRegionField}>
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={marketsField} >
+                        </lightning-input-field>
+                        <lightning-input-field
+                            field-name={provideDetailsField} >
+                        </lightning-input-field>
+
+                    </div>
+                </div>
+                <lightning-button  
+                            class="slds-m-top_small"  
+                            variant="brand"  
+                            type="submit"  
+                            id="btnUpdateHeader2"
+                            name="updateHeader"  
+                            label="Update">  
+                </lightning-button> 
+            </lightning-record-edit-form>   
+         </div>
+
+    </lightning-card>
+</template>
+
+<!-- #endregion -->
+
+<!-- #region Solar-->
+    <lightning-accordion-section if:true={solarDisplay} name="Solar" label="Solar">
+        
+        <template   if:true={viewGBSolar} id="viewGBSolar">
+
+            <lightning-card id="viewGBSolarCard" title="GB Solar"> 
+
+                <lightning-button-stateful 
+                    id="btnEditGBSolar"
+                    variant="brand"
+                    label-when-off="Edit"
+                    label-when-on="Cancel"
+                    onclick={handleGBSolarEdit}
+                    selected={editGBSolar}>
+                </lightning-button-stateful>
+        
+                <div class="slds-var-m-around_medium">
+                <lightning-record-view-form 
+                    object-api-name="Investor_Account__c"
+                    record-id={recordId}>
+        
+                <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-output-field
+                        field-name={solarGridConfigurationField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarServiceNotAvailableField}>
+                    </lightning-output-field >
+                    <template if:true={viewSolarOtherServiceNotAvailableField} id="outputSolarGBOtherServiceNotAvailable">
+                        <lightning-output-field 
+                            field-name={solarOtherServiceNotAvailableField}>
+                        </lightning-output-field>
+                    </template>
+                    <lightning-output-field
+                        field-name={solarGBFinancialDDProviderField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarGBLegalDDProviderField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarGBTechnicalDDProviderField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarGBPPDDProviderField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarAdditionalCommentsField}>
+                    </lightning-output-field>
+                </div>
+
+
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-output-field
+                        field-name={solarGBEnergyAssessmentField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarGB3rdPartyEnergyField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarGBRouteToMarketField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarGBOtherRouteToMarketField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarGBSizeAppetiteField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarGBOutstandingRiskField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarGBRiskInvestorNotTakingField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarGBAdditionalRiskField} >
+                    </lightning-output-field>
+                </div>
+
+                </div>
+
+                </lightning-record-view-form>   
+                </div>
+            </lightning-card>
+        </template>
+
+        <template   if:true={viewIrelandSolar} id="viewIrelandSolar">
+
+            <lightning-card id="viewIrelandSolarCard" title="Ireland Solar"> 
+
+                <lightning-button-stateful 
+                    id="btnEditIrelandSolar"
+                    variant="brand"
+                    label-when-off="Edit"
+                    label-when-on="Cancel"
+                    onclick={handleIrelandSolarEdit}
+                    selected={editIrelandSolar}>
+                </lightning-button-stateful>
+        
+                <div class="slds-var-m-around_medium">
+                <lightning-record-view-form 
+                    object-api-name="Investor_Account__c"
+                    record-id={recordId}>
+        
+                <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-2">
+                    
+                    <lightning-output-field
+                        field-name={solarGridConfigurationField}>
+                    </lightning-output-field>
+
+                    <lightning-output-field
+                        field-name={solarServiceNotAvailableField}>
+                    </lightning-output-field>
+
+                    <template if:true={viewSolarOtherServiceNotAvailableField} id="outputSolarIEOtherServiceNotAvailable">
+                        <lightning-output-field 
+                            field-name={solarOtherServiceNotAvailableField}>
+                        </lightning-output-field>
+                    </template>
+
+                    <lightning-output-field
+                        field-name={solarIEFinancialDDProviderField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarIELegalDDProviderField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarIETechnicalDDProviderField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarIEPPDDProviderField}>
+                    </lightning-output-field>
+
+                    <lightning-output-field
+                        field-name={solarAdditionalCommentsField}>
+                    </lightning-output-field>
+
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-output-field
+                        field-name={solarIEEnergyAssessmentField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarIE3rdPartyEnergyField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarIERouteToMarketField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarIEOtherRouteToMarketField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarIESizeAppetiteField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarIEOutstandingRiskField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarIERiskInvestorNotTakingField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={solarIEAdditionalRiskField} >
+                    </lightning-output-field>
+                    </div>
+                </div>
+
+                </lightning-record-view-form>   
+                </div>
+            </lightning-card>
+        </template>
+
+    </lightning-accordion-section>
+
+    <template if:true={editGBSolar} id="editGBSolar">
+
+        <lightning-card id="editGBSolarCard" title="GB Solar"> 
+
+            <lightning-button-stateful 
+                id="btnCancelGBSolar"
+                variant="brand"
+                label-when-off="Edit"
+                label-when-on="Cancel"
+                onclick={handleGBSolarEdit}
+                selected={editGBSolar}>
+            </lightning-button-stateful>
+    
+            <div class="slds-var-m-around_medium">
+            <lightning-record-edit-form 
+                object-api-name="Investor_Account__c"
+                record-id={recordId}
+                onsuccess={gbSolarSuccess}>
+    
+                <lightning-button  
+                    class="slds-m-top_small"  
+                    variant="brand"  
+                    type="submit"  
+                    id="btnUpdateGBSolar1"
+                    name="updateGBSolar"  
+                    label="Update">  
+                </lightning-button> 
+
+            <div class="slds-grid">
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-input-field
+                    field-name={solarGridConfigurationField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarServiceNotAvailableField}>
+                </lightning-input-field>
+                <template if:true={viewSolarOtherServiceNotAvailableField} id="inputSolarGBOtherServiceNotAvailable">
+                    <lightning-input-field
+                            field-name={solarOtherServiceNotAvailableField}>
+                    </lightning-input-field>
+                </template>
+                <lightning-input-field
+                    field-name={solarGBFinancialDDProviderField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarGBLegalDDProviderField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarGBTechnicalDDProviderField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarGBPPDDProviderField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarAdditionalCommentsField}>
+                </lightning-input-field>
+            </div>
+
+
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-input-field
+                    field-name={solarGBEnergyAssessmentField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarGB3rdPartyEnergyField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarGBRouteToMarketField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarGBOtherRouteToMarketField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarGBSizeAppetiteField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarGBOutstandingRiskField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarGBRiskInvestorNotTakingField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarGBAdditionalRiskField} >
+                </lightning-input-field>
+            </div>
+            </div>
+
+                <lightning-button  
+                    class="slds-m-top_small"  
+                    variant="brand"  
+                    type="submit"  
+                    id="btnUpdateGBSolar2"
+                    name="updateGBSolar"  
+                    label="Update">  
+                </lightning-button> 
+
+            </lightning-record-edit-form>   
+            </div>
+        </lightning-card>
+    </template>
+
+    <template if:true={editIrelandSolar} id="editIrelandSolar">
+
+        <lightning-card id="editIrelandSolarCard" title="Ireland Solar"> 
+
+            <lightning-button-stateful 
+                id="btnCancelIrelandSolar"
+                variant="brand"
+                label-when-off="Edit"
+                label-when-on="Cancel"
+                onclick={handleIrelandSolarEdit}
+                selected={editIrelandSolar}>
+            </lightning-button-stateful>
+            
+            <div class="slds-var-m-around_medium">
+            <lightning-record-edit-form 
+                object-api-name="Investor_Account__c"
+                record-id={recordId}
+                onsuccess={irelandSolarSuccess}>
+
+                <lightning-button  
+                    class="slds-m-top_small"  
+                    variant="brand"  
+                    type="submit"  
+                    id="btnUpdateIrelandSolar1"
+                    name="updateIrelandSolar"  
+                    label="Update">  
+                </lightning-button>
+
+            <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-2">
+                
+                <lightning-input-field
+                    field-name={solarGridConfigurationField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarServiceNotAvailableField}>
+                </lightning-input-field>
+                <template if:true={viewSolarOtherServiceNotAvailableField} id="inputSolarIEOtherServiceNotAvailable">
+                    <lightning-input-field
+                        field-name={solarOtherServiceNotAvailableField}>
+                    </lightning-input-field>
+                </template>
+                <lightning-input-field
+                    field-name={solarIEFinancialDDProviderField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarIELegalDDProviderField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarIETechnicalDDProviderField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarIEPPDDProviderField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarAdditionalCommentsField}>
+                </lightning-input-field>
+                </div>
+                
+
+                <div class="slds-col slds-size_1-of-2">
+                <lightning-input-field
+                    field-name={solarIEEnergyAssessmentField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarIE3rdPartyEnergyField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarIERouteToMarketField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarIEOtherRouteToMarketField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarIESizeAppetiteField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarIEOutstandingRiskField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarIERiskInvestorNotTakingField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={solarIEAdditionalRiskField} >
+                </lightning-input-field>
+                </div>
+            </div>
+                
+                <lightning-button  
+                    class="slds-m-top_small"  
+                    variant="brand"  
+                    type="submit"  
+                    id="btnUpdateIrelandSolar2"
+                    name="updateIrelandSolar"  
+                    label="Update">  
+                </lightning-button> 
+
+            </lightning-record-edit-form>   
+            </div>
+        </lightning-card>
+    </template>
+
+<!-- #endregion -->
+
+<!-- #region Onshore Wind-->
+    <lightning-accordion-section if:true={onshoreWindDisplay} name="Onshore" label="Onshore">
+
+        <template   if:true={viewGBOnshoreWind} if:false={editGBOnshoreWind} id="viewGBOnshoreWind">
+
+            <lightning-card id="viewGBOnshoreWindCard" title="GB Onshore Wind"> 
+
+                <lightning-button-stateful 
+                    id="btnEditGBOnshoreWind"
+                    variant="brand"
+                    label-when-off="Edit"
+                    label-when-on="Cancel"
+                    onclick={handleGBOnshoreWindEdit}
+                    selected={editGBOnshoreWind}>
+                </lightning-button-stateful>
+        
+                <div class="slds-var-m-around_medium">
+                <lightning-record-view-form 
+                    object-api-name="Investor_Account__c"
+                    record-id={recordId}>
+        
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2">
+                    
+                    <lightning-output-field
+                        field-name={onshoreGridConfigurationField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreServiceNotAvailableField}>
+                    </lightning-output-field>
+                    <template if:true={viewOnshoreOtherServiceNotAvailableField} id="outputOnshoreGBOtherServiceNotAvailable">
+                        <lightning-output-field 
+                            field-name={onshoreOtherServiceNotAvailableField}>
+                        </lightning-output-field>
+                    </template>
+                    <lightning-output-field
+                        field-name={onshoreGBFinancialDDProviderField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreGBLegalDDProviderField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreGBTechnicalDDProviderField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreGBPPDDProviderField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreAdditionalCommentsField}>
+                    </lightning-output-field>
+                    </div>
+
+
+                    <div class="slds-col slds-size_1-of-2">
+                    <lightning-output-field
+                        field-name={onshoreGBEnergyAssessmentField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreGB3rdPartyEnergyField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreGBRouteToMarketField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreGBOtherRouteToMarketField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreGBSizeAppetiteField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreGBOutstandingRiskField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreGBRiskInvestorNotTakingField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreGBAdditionalRiskField} >
+                    </lightning-output-field>
+                    </div>
+                </div>
+
+                </lightning-record-view-form>   
+                </div>
+            </lightning-card>
+        </template>
+
+        <template   if:true={viewIrelandOnshoreWind} if:false={editIrelandOnshoreWind} id="viewIrelandOnshoreWind">
+
+            <lightning-card id="viewIrelandOnshoreWindCard" title="Ireland Onshore Wind"> 
+
+                <lightning-button-stateful 
+                    id="btnEditIrelandOnshoreWind"
+                    variant="brand"
+                    label-when-off="Edit"
+                    label-when-on="Cancel"
+                    onclick={handleIrelandOnshoreWindEdit}
+                    selected={editIrelandOnshoreWind}>
+                </lightning-button-stateful>
+        
+                <div class="slds-var-m-around_medium">
+                <lightning-record-view-form 
+                    object-api-name="Investor_Account__c"
+                    record-id={recordId}>
+        
+                <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-2">
+                    
+                    <lightning-output-field
+                        field-name={onshoreGridConfigurationField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreServiceNotAvailableField}>
+                    </lightning-output-field>
+                    <template if:true={viewOnshoreOtherServiceNotAvailableField} id="outputOnshoreIEOtherServiceNotAvailable">
+                        <lightning-output-field 
+                            field-name={onshoreOtherServiceNotAvailableField}>
+                        </lightning-output-field>
+                    </template>
+                    <lightning-output-field
+                        field-name={onshoreIEFinancialDDProviderField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreIELegalDDProviderField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreIETechnicalDDProviderField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreIEPPDDProviderField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreAdditionalCommentsField}>
+                    </lightning-output-field>
+                </div>
+
+
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-output-field
+                        field-name={onshoreIEEnergyAssessmentField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreIE3rdPartyEnergyField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreIERouteToMarketField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreIEOtherRouteToMarketField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreIESizeAppetiteField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreIEOutstandingRiskField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreIERiskInvestorNotTakingField} >
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={onshoreIEAdditionalRiskField} >
+                    </lightning-output-field>
+                </div>
+                </div>
+
+                </lightning-record-view-form>   
+                </div>
+            </lightning-card>
+        </template>
+
+    </lightning-accordion-section>
+
+
+    <template   if:true={editGBOnshoreWind} id="editGBOnshoreWind">
+
+        <lightning-card id="editGBOnshoreWindCard" title="GB Solar"> 
+
+            <lightning-button-stateful 
+                id="btnCancelGBOnshoreWind"
+                variant="brand"
+                label-when-off="Edit"
+                label-when-on="Cancel"
+                onclick={handleGBOnshoreWindEdit}
+                selected={editGBOnshoreWind}>
+            </lightning-button-stateful>
+    
+            <div class="slds-var-m-around_medium">
+            <lightning-record-edit-form 
+                object-api-name="Investor_Account__c"
+                record-id={recordId}
+                onsuccess={gbOnshoreWindSuccess}>
+    
+                <lightning-button  
+                    class="slds-m-top_small"  
+                    variant="brand"  
+                    type="submit"  
+                    id="btnUpdateGBOnshoreWind1"
+                    name="updateGBOnshoreWind"  
+                    label="Update">  
+                </lightning-button> 
+
+                <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-2">
+                    
+                    <lightning-input-field
+                        field-name={onshoreGridConfigurationField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreServiceNotAvailableField}>
+                    </lightning-input-field>
+                    <template if:true={viewOnshoreOtherServiceNotAvailableField} id="inputOnshoreGBOtherServiceNotAvailable">
+                        <lightning-input-field
+                            field-name={onshoreOtherServiceNotAvailableField}>
+                        </lightning-input-field>
+                    </template>
+                    <lightning-input-field
+                        field-name={onshoreGBFinancialDDProviderField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBLegalDDProviderField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBTechnicalDDProviderField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBPPDDProviderField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreAdditionalCommentsField}>
+                    </lightning-input-field>
+                </div>
+
+
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field
+                        field-name={onshoreGBEnergyAssessmentField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGB3rdPartyEnergyField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBRouteToMarketField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBOtherRouteToMarketField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBSizeAppetiteField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBOutstandingRiskField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBRiskInvestorNotTakingField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreGBAdditionalRiskField} >
+                    </lightning-input-field>
+                </div>
+                </div>
+
+                <lightning-button  
+                    class="slds-m-top_small"  
+                    variant="brand"  
+                    type="submit"  
+                    id="btnUpdateGBOnshoreWind2"
+                    name="updateGBOnshoreWind"  
+                    label="Update">  
+                </lightning-button> 
+
+            </lightning-record-edit-form>   
+            </div>
+        </lightning-card>
+    </template>
+
+    <template if:true={editIrelandOnshoreWind} id="editIrelandOnshoreWind">
+
+        <lightning-card id="editIrelandOnshoreWindCard" title="Ireland Onshore Wind"> 
+
+            <lightning-button-stateful 
+                id="btnCancelIrelandOnshoreWind"
+                variant="brand"
+                label-when-off="Edit"
+                label-when-on="Cancel"
+                onclick={handleIrelandOnshoreWindEdit}
+                selected={editIrelandOnshoreWind}>
+            </lightning-button-stateful>
+    
+            <div class="slds-var-m-around_medium">
+            <lightning-record-edit-form 
+                object-api-name="Investor_Account__c"
+                record-id={recordId}
+                onsuccess={irelandOnshoreWindSuccess}>
+    
+                <lightning-button  
+                    class="slds-m-top_small"  
+                    variant="brand"  
+                    type="submit"  
+                    id="btnUpdateIrelandOnshoreWind1"
+                    name="updateIrelandOnshoreWind"  
+                    label="Update">  
+                </lightning-button> 
+
+                <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-2">
+                    
+                    <lightning-input-field
+                        field-name={onshoreGridConfigurationField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreServiceNotAvailableField}>
+                    </lightning-input-field>
+                    <template if:true={viewOnshoreOtherServiceNotAvailableField} id="inputOnshoreIEOtherServiceNotAvailable">
+                        <lightning-input-field
+                            field-name={onshoreOtherServiceNotAvailableField}>
+                        </lightning-input-field>
+                    </template>
+                    <lightning-input-field
+                        field-name={onshoreIEFinancialDDProviderField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIELegalDDProviderField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIETechnicalDDProviderField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIEPPDDProviderField}>
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreAdditionalCommentsField}>
+                    </lightning-input-field>
+                </div>
+
+
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-input-field
+                        field-name={onshoreIEEnergyAssessmentField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIE3rdPartyEnergyField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIERouteToMarketField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIEOtherRouteToMarketField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIESizeAppetiteField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIEOutstandingRiskField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIERiskInvestorNotTakingField} >
+                    </lightning-input-field>
+                    <lightning-input-field
+                        field-name={onshoreIEAdditionalRiskField} >
+                    </lightning-input-field>
+                </div>
+                </div>
+
+                <lightning-button  
+                    class="slds-m-top_small"  
+                    variant="brand"  
+                    type="submit"  
+                    id="btnUpdateIrelandOnshoreWind2"
+                    name="updateIrelandOnshoreWind"  
+                    label="Update">  
+                </lightning-button> 
+
+            </lightning-record-edit-form>   
+            </div>
+        </lightning-card>
+    </template>
+
+<!-- #endregion -->
+
+<!-- #region Storage-->
+    <lightning-accordion-section if:true={storageDisplay} name="Storage" label="Storage">
+
+        <template   if:true={viewGBStorage} if:false={editGBStorage} id="viewGBStorage">
+
+            <lightning-card id="viewGBStorageCard" title="GB Storage"> 
+
+            <lightning-button-stateful 
+                id="btnEditGBStorage"
+                variant="brand"
+                label-when-off="Edit"
+                label-when-on="Cancel"
+                onclick={handleGBStorageEdit}
+                selected={editGBStorage}>
+            </lightning-button-stateful>
+    
+            <div class="slds-var-m-around_medium">
+            <lightning-record-view-form 
+                object-api-name="Investor_Account__c"
+                record-id={recordId}>
+    
+            <div class="slds-grid">
+            <div class="slds-col slds-size_1-of-2">
+               
+                <lightning-output-field
+                    field-name={storageGridConfigurationField}>
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageServiceNotAvailableField}>
+                </lightning-output-field>
+                <template if:true={viewStorageOtherServiceNotAvailableField} id="outputStorageGBOtherServiceNotAvailable">
+                    <lightning-output-field 
+                        field-name={storageOtherServiceNotAvailableField}>
+                    </lightning-output-field>
+                </template>
+                <lightning-output-field
+                    field-name={storageGBFinancialDDProviderField}>
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageGBLegalDDProviderField}>
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageGBTechnicalDDProviderField}>
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageGBPPDDProviderField}>
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageAdditionalCommentsField}>
+                </lightning-output-field>
+            </div>
+
+
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-output-field
+                    field-name={storageGBDurationAppetiteField} >
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageGBOtherDurationAppetiteField} >
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageGBRouteToMarketField} >
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageGBOtherRouteToMarketField} >
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageGBSizeAppetiteField} >
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageGBOutstandingRiskField} >
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageGBRiskInvestorNotTakingField} >
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageGBAdditionalRiskField} >
+                </lightning-output-field>
+            </div>
+            </div>
+
+            </lightning-record-view-form>   
+            </div>
+        </lightning-card>
+        </template>
+
+        <template   if:true={viewIrelandStorage} if:false={editIrelandStorage} id="viewIrelandStorage">
+
+        <lightning-card id="viewIrelandStorageCard" title="Ireland Storage"> 
+
+            <lightning-button-stateful 
+                id="btnEditIrelandStorage"
+                variant="brand"
+                label-when-off="Edit"
+                label-when-on="Cancel"
+                onclick={handleIrelandStorageEdit}
+                selected={editIrelandStorage}>
+            </lightning-button-stateful>
+    
+            <div class="slds-var-m-around_medium">
+            <lightning-record-view-form 
+                object-api-name="Investor_Account__c"
+                record-id={recordId}>
+    
+            <div class="slds-grid">
+            <div class="slds-col slds-size_1-of-2">
+                
+                <lightning-output-field
+                    field-name={storageGridConfigurationField}>
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageServiceNotAvailableField}>
+                </lightning-output-field>
+                <template if:true={viewStorageOtherServiceNotAvailableField} id="outputStorageIEOtherServiceNotAvailable">
+                    <lightning-output-field 
+                        field-name={storageOtherServiceNotAvailableField}>
+                    </lightning-output-field>
+                </template>
+                <lightning-output-field
+                    field-name={storageIEFinancialDDProviderField}>
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageIELegalDDProviderField}>
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageIETechnicalDDProviderField}>
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageIEPPDDProviderField}>
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageAdditionalCommentsField}>
+                </lightning-output-field>
+            </div>
+
+
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-output-field
+                    field-name={storageIEDurationAppetiteField} >
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageIEOtherDurationAppetiteField} >
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageIERouteToMarketField} >
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageIEOtherRouteToMarketField} >
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageIESizeAppetiteField} >
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageIEOutstandingRiskField} >
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageIERiskInvestorNotTakingField} >
+                </lightning-output-field>
+                <lightning-output-field
+                    field-name={storageIEAdditionalRiskField} >
+                </lightning-output-field>
+            </div>
+            </div>
+
+            </lightning-record-view-form>   
+            </div>
+        </lightning-card>
+        </template>
+
+    </lightning-accordion-section>
+
+
+    <template   if:true={editGBStorage} id="editGBStorage">
+
+    <lightning-card id="editGBStorageCard" title="GB Storage"> 
+
+        <lightning-button-stateful 
+            id="btnCancelGBStorage"
+            variant="brand"
+            label-when-off="Edit"
+            label-when-on="Cancel"
+            onclick={handleGBStorageEdit}
+            selected={editGBStorage}>
+        </lightning-button-stateful>
+
+        <div class="slds-var-m-around_medium">
+        <lightning-record-edit-form 
+            object-api-name="Investor_Account__c"
+            record-id={recordId}
+            onsuccess={gbStorageSuccess}>
+
+            <lightning-button  
+                class="slds-m-top_small"  
+                variant="brand"  
+                type="submit"  
+                id="btnUpdateGBStorage1"
+                name="updateGBStorage"  
+                label="Update">  
+            </lightning-button> 
+
+            <div class="slds-grid">
+            <div class="slds-col slds-size_1-of-2">
+                
+                <lightning-input-field
+                    field-name={storageGridConfigurationField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageServiceNotAvailableField}>
+                </lightning-input-field>
+                <template if:true={viewStorageOtherServiceNotAvailableField} id="inputStorageGBOtherServiceNotAvailable">
+                    <lightning-input-field
+                        field-name={storageOtherServiceNotAvailableField}>
+                    </lightning-input-field>
+                </template>
+                <lightning-input-field
+                    field-name={storageGBFinancialDDProviderField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageGBLegalDDProviderField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageGBTechnicalDDProviderField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageGBPPDDProviderField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageAdditionalCommentsField}>
+                </lightning-input-field>
+            </div>
+
+
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-input-field
+                    field-name={storageGBDurationAppetiteField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageGBOtherDurationAppetiteField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageGBRouteToMarketField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageGBOtherRouteToMarketField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageGBSizeAppetiteField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageGBOutstandingRiskField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageGBRiskInvestorNotTakingField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageGBAdditionalRiskField} >
+                </lightning-input-field>
+            </div>
+            </div>
+
+            <lightning-button  
+                class="slds-m-top_small"  
+                variant="brand"  
+                type="submit"  
+                id="btnUpdateGBStorage2"
+                name="updateGBStorage"  
+                label="Update">  
+            </lightning-button> 
+
+        </lightning-record-edit-form>   
+        </div>
+    </lightning-card>
+
+    </template>
+
+    <template   if:true={editIrelandStorage} id="editIrelandStorage">
+
+    <lightning-card id="editIrelandStorageCard" title="Ireland Storage"> 
+
+        <lightning-button-stateful 
+            id="btnCancelIrelandStorage"
+            variant="brand"
+            label-when-off="Edit"
+            label-when-on="Cancel"
+            onclick={handleIrelandStorageEdit}
+            selected={editIrelandStorage}>
+        </lightning-button-stateful>
+
+        <div class="slds-var-m-around_medium">
+        <lightning-record-edit-form 
+            object-api-name="Investor_Account__c"
+            record-id={recordId}
+            onsuccess={irelandStorageSuccess}>
+
+            <lightning-button  
+                class="slds-m-top_small"  
+                variant="brand"  
+                type="submit"  
+                id="btnUpdateIrelandStorage1"
+                name="updateIrelandStorage"  
+                label="Update">  
+            </lightning-button> 
+
+            <div class="slds-grid">
+            <div class="slds-col slds-size_1-of-2">
+               
+                <lightning-input-field
+                    field-name={storageGridConfigurationField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageServiceNotAvailableField}>
+                </lightning-input-field>
+                <template if:true={viewStorageOtherServiceNotAvailableField} id="inputStorageIEOtherServiceNotAvailable">
+                    <lightning-input-field
+                        field-name={storageOtherServiceNotAvailableField}>
+                    </lightning-input-field>
+                </template>
+                <lightning-input-field
+                    field-name={storageIEFinancialDDProviderField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageIELegalDDProviderField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageIETechnicalDDProviderField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageIEPPDDProviderField}>
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageAdditionalCommentsField}>
+                </lightning-input-field>
+            </div>
+
+
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-input-field
+                    field-name={storageIEDurationAppetiteField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageIEOtherDurationAppetiteField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageIERouteToMarketField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageIEOtherRouteToMarketField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageIESizeAppetiteField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageIEOutstandingRiskField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageIERiskInvestorNotTakingField} >
+                </lightning-input-field>
+                <lightning-input-field
+                    field-name={storageIEAdditionalRiskField} >
+                </lightning-input-field>
+            </div>
+            </div>
+
+            <lightning-button  
+                class="slds-m-top_small"  
+                variant="brand"  
+                type="submit"  
+                id="btnUpdateIrelandStorage2"
+                name="updateIrelandStorage"  
+                label="Update">  
+            </lightning-button> 
+
+        </lightning-record-edit-form>   
+        </div>
+    </lightning-card>
+
+    </template>
+
+<!-- #endregion -->
+
+</lightning-accordion>
+
+</template>

@@ -1,0 +1,11 @@
+<apex:component controller="Milestone1_Charts_GanttController">
+  <apex:attribute name="componentValue" description="Attribute on the component."
+                  type="String" required="required" assignTo="{!mytarget}"/>
+    <apex:pageBlock title="My Custom Component">
+      <p>
+        <code>componentValue</code> is "{!componentValue}"
+        <br/>
+        <code>controllerValue</code> is "{!mytarget}"
+      </p>
+    </apex:pageBlock>
+</apex:component>

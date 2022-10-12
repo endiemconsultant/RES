@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>OrgChartConfig</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>OrgChartConfigs</value>
+    </caseValues>
+    <fields>
+        <label><!-- OrgHierarchyType --></label>
+        <name>orgHierarchyType__c</name>
+        <picklistValues>
+            <masterLabel>Contacts</masterLabel>
+            <translation><!-- Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Users</masterLabel>
+            <translation><!-- Users --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

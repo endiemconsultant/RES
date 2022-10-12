@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canvasConfig>
+        <accessMethod>Post</accessMethod>
+        <canvasUrl>https://safe-beach-61301.herokuapp.com/canvas</canvasUrl>
+        <locations>PageLayout</locations>
+        <samlInitiationMethod>None</samlInitiationMethod>
+    </canvasConfig>
+    <contactEmail>brian.zardus@res-americas.com</contactEmail>
+    <iconUrl>https://safe-beach-61301.herokuapp.com/icon.png</iconUrl>
+    <infoUrl>https://safe-beach-61301.herokuapp.com/welcome.jsp</infoUrl>
+    <label>Test</label>
+    <logoUrl>https://safe-beach-61301.herokuapp.com/logo.png</logoUrl>
+    <oauthConfig>
+        <callbackUrl>https://safe-beach-61301.herokuapp.com/callback</callbackUrl>
+        <consumerKey>3MVG9A2kN3Bn17hvA1wFdtR76xpan4aGUISplgQg2w1oJMtYmBFVftokbuPr7R3QB6V4VxbIpoU_dHXIwzlFN</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Basic</scopes>
+        <scopes>Chatter</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>System Administrator</profileName>
+</ConnectedApp>

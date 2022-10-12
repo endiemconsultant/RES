@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>brian.zardus@res-americas.com</contactEmail>
+    <label>REST API</label>
+    <oauthConfig>
+        <callbackUrl>https://arcane-mountain-1908.herokuapp.com</callbackUrl>
+        <consumerKey>3MVG9A2kN3Bn17hvA1wFdtR76xjH7xeW1YgzHZBVknOrQ3eZ46HYeRJbXzRB2CFpowFK.RQc7PTVj2lVrqWVj</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Full</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>zero</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>Company Communities User</profileName>
+    <profileName>Communities - Distributed 1</profileName>
+    <profileName>RES Marketing</profileName>
+    <profileName>Project Developments Profile</profileName>
+    <profileName>System Administrator</profileName>
+</ConnectedApp>

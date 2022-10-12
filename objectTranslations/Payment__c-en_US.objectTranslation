@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Payment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Agreement --></label>
+        <name>Agreement__c</name>
+        <relationshipLabel><!-- Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PMT Amount Due --></label>
+        <name>PMT_Amount_Due__c</name>
+    </fields>
+    <fields>
+        <help><!-- Has RES completed its payment obligation? --></help>
+        <label><!-- PMT Complete? --></label>
+        <name>PMT_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- PMT Due Date --></label>
+        <name>PMT_Due_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Includes any of the relevant updates, or notes related to this payment. --></help>
+        <label><!-- PMT Notes --></label>
+        <name>PMT_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- SEGL PMT Type --></label>
+        <name>SEGL_PMT_Type__c</name>
+        <picklistValues>
+            <masterLabel>Decommissioning</masterLabel>
+            <translation><!-- Decommissioning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Development</masterLabel>
+            <translation><!-- Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Obligations</masterLabel>
+            <translation><!-- Obligations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations</masterLabel>
+            <translation><!-- Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Payment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

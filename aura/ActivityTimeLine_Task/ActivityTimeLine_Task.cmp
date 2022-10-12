@@ -1,0 +1,96 @@
+<aura:component >
+    <!-- Here's an item -->
+     <li class="slds-timeline__item">
+         
+         <!-- Text Describing the item (hidden) -->
+         <span class="slds-assistive-text">Task</span>
+         
+         <!-- Wrapper for the item visualisation -->
+         <div class="slds-media">
+             
+             <div class="slds-media__body">
+                 
+                 <!-- Applies the left hand side line and the padding below -->
+                 <div class="slds-media slds-media--timeline slds-timeline__media--task">
+                     
+                     <!-- Container for the SVG Icon -->
+                     <div class="slds-media__figure">
+                         
+                         <c:svg class="slds-icon slds-icon-standard-task slds-timeline__icon" xlinkHref="/resource/SLDS0120/assets/icons/standard-sprite/svg/symbols.svg#task"/>
+    		
+                     </div>
+                     
+                     <!-- main body -->
+                     <div class="slds-media__body">
+                          
+                         	
+ 							<div class="slds-media slds-tile slds-media--small">                                   
+                            
+                                <!-- Mark as Complete -->
+                                <div class="slds-media__figure">
+                					<label class="slds-checkbox" for="mark-complete">
+                  						<input name="checkbox" type="checkbox" id="mark-complete" />
+                  						<span class="slds-checkbox--faux"></span>
+                  						<span class="slds-form-element__label slds-assistive-text">mark-complete</span>
+                					</label>
+              					</div>
+                         	
+                         		<!-- Header Text -->
+                         		<div class="slds-media__body">
+                				
+                                
+                                    <p class="slds-tile__title slds-truncate">
+                                        <a href="{!'/one/one.app?#/sObject/'+ v.itemDetail.RecordId +'/view'}" target="_blank">{!v.itemDetail.Subject}</a>
+                                    </p>
+                                    
+                                    <!-- Detail List --> 
+                                    <ul class="slds-tile__detail slds-list--horizontal slds-text-body--small">
+                                        
+                                        <!-- Related to:  --> 
+                                        <li class="slds-list__item slds-m-right--large">
+                                            <span>Contact:</span>
+                                            <span class="slds-m-left--xx-small">
+                                                <a href="{!'/one/one.app?#/sObject/'+ v.itemDetail.OwnerId +'/view'}" target="_blank">{!v.itemDetail.Recipients}</a>
+                                            </span>
+                                        </li>
+                      
+                                        <!-- Assigned to: -->
+                                        <li class="slds-list__item">
+                                            <span>Assigned to:</span>
+                                            <span class="slds-m-left--xx-small">
+                                                <a href="{!'/one/one.app?#/sObject/'+ v.itemDetail.AssignedId +'/view'}" target="_blank">{!v.itemDetail.Assigned}</a>
+                                            </span>
+                                        </li>
+                                    
+                                    </ul>
+                                </div>
+                 
+                         </div>
+                          
+                          
+                          
+                     </div>
+                     
+                 </div>
+                 
+                 
+             </div>
+             
+             
+  
+        <div class="slds-media__figure slds-media__figure--reverse">
+        <div class="slds-timeline__actions">
+          <p class="slds-timeline__date">Feb 24</p>
+          <button class="slds-button slds-button--icon-border-filled">
+          		<c:svg class="slds-button__icon" xlinkHref="/resource/SLDS0120/assets/icons/utility-sprite/svg/symbols.svg#switch">
+    </c:svg>
+            <span class="slds-assistive-text">Switch</span>
+          </button>
+        </div>
+      </div>
+         
+         </div>
+
+    </li>
+	
+</aura:component>

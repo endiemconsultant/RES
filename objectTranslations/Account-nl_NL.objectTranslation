@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Status --></label>
+        <name>Account_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Team Vision (2-3 Yrs) --></label>
+        <name>Account_Team_Vision__c</name>
+    </fields>
+    <fields>
+        <help><!-- C&amp;I:     Commercial &amp; Industrial
+IOU:     Independently Operated Utility
+IPP:      Independent Power Producer
+MOU:   Municipal Owned Utility
+Coop:  Cooperative Utility
+CCA:   Community Choice Aggregation
+G&amp;T:    Generation &amp; Transmission --></help>
+        <label><!-- Type of Company --></label>
+        <name>Account_Type__c</name>
+        <picklistValues>
+            <masterLabel>C&amp;I</masterLabel>
+            <translation><!-- C&amp;I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CCA</masterLabel>
+            <translation><!-- CCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation><!-- Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coop</masterLabel>
+            <translation><!-- Coop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Developer</masterLabel>
+            <translation><!-- Developer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G&amp;T</masterLabel>
+            <translation><!-- G&amp;T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IOU</masterLabel>
+            <translation><!-- IOU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IPP</masterLabel>
+            <translation><!-- IPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment</masterLabel>
+            <translation><!-- Investment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Municipal (MOU)</masterLabel>
+            <translation><!-- Municipal (MOU) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Muni Govt</masterLabel>
+            <translation><!-- Non-Muni Govt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Power Broker</masterLabel>
+            <translation><!-- Power Broker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REC Broker</masterLabel>
+            <translation><!-- REC Broker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trading Desk</masterLabel>
+            <translation><!-- Trading Desk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>University</masterLabel>
+            <translation><!-- University --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windfarm ltd.</masterLabel>
+            <translation><!-- Windfarm ltd. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RES&apos;s Unique Selling Proposition --></label>
+        <name>Account_Unique_Selling_Propositions__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Accounts --></label>
+        <name>Accounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Type --></label>
+        <name>Agreement_Type__c</name>
+        <picklistValues>
+            <masterLabel>AIA</masterLabel>
+            <translation><!-- AIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APA</masterLabel>
+            <translation><!-- APA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BLM Exclusive</masterLabel>
+            <translation><!-- BLM Exclusive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BLM Leased</masterLabel>
+            <translation><!-- BLM Leased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BOP</masterLabel>
+            <translation><!-- BOP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contribution</masterLabel>
+            <translation><!-- Contribution --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Agresso Vendor ID --></label>
+        <name>Agresso_Vendor_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Client&apos;s Business Pressures &amp; Business Drivers --></help>
+        <label><!-- Client&apos;s Business Drivers --></label>
+        <name>Client_s_Business_Drivers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Types --></label>
+        <name>Competitor_Customer_Types__c</name>
+        <picklistValues>
+            <masterLabel>C&amp;I</masterLabel>
+            <translation><!-- C&amp;I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential</masterLabel>
+            <translation><!-- Residential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utility</masterLabel>
+            <translation><!-- Utility --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- New Entrant? --></label>
+        <name>Competitor_New_Entrant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Services --></label>
+        <name>Competitor_Services__c</name>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Development &amp; Origination</masterLabel>
+            <translation><!-- Development &amp; Origination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financing</masterLabel>
+            <translation><!-- Financing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-House Engineering</masterLabel>
+            <translation><!-- In-House Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>O&amp;M</masterLabel>
+            <translation><!-- O&amp;M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement</masterLabel>
+            <translation><!-- Procurement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Territory Footprint --></label>
+        <name>Competitor_Territory_Footprint__c</name>
+        <picklistValues>
+            <masterLabel>Global</masterLabel>
+            <translation><!-- Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local/Regional</masterLabel>
+            <translation><!-- Local/Regional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National</masterLabel>
+            <translation><!-- National --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Competitor Tier --></label>
+        <name>Competitor_Tier__c</name>
+        <picklistValues>
+            <masterLabel>Tier 1</masterLabel>
+            <translation><!-- Tier 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 2</masterLabel>
+            <translation><!-- Tier 2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Number of days that the Account Owner is expected to reach out to someone within this Account.  This figure is determined by the Tier field, and will be measured against the # of days since the Last Activity for this Account was logged. --></help>
+        <label><!-- Contact Freq. (# Days) --></label>
+        <name>Contact_Freq__c</name>
+    </fields>
+    <fields>
+        <help><!-- The list of countries/markets where this account is active. --></help>
+        <label><!-- Countries where active --></label>
+        <name>Countries_where_active__c</name>
+        <picklistValues>
+            <masterLabel>Australia</masterLabel>
+            <translation><!-- Australia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Belgium</masterLabel>
+            <translation><!-- Belgium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chile</masterLabel>
+            <translation><!-- Chile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>England</masterLabel>
+            <translation><!-- England --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finland</masterLabel>
+            <translation><!-- Finland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>France</masterLabel>
+            <translation><!-- France --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Germany</masterLabel>
+            <translation><!-- Germany --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italy</masterLabel>
+            <translation><!-- Italy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japan</masterLabel>
+            <translation><!-- Japan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monaco</masterLabel>
+            <translation><!-- Monaco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Netherlands</masterLabel>
+            <translation><!-- Netherlands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northern Ireland</masterLabel>
+            <translation><!-- Northern Ireland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norway</masterLabel>
+            <translation><!-- Norway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poland</masterLabel>
+            <translation><!-- Poland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portugal</masterLabel>
+            <translation><!-- Portugal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puerto Rico</masterLabel>
+            <translation><!-- Puerto Rico --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Republic of Ireland</masterLabel>
+            <translation><!-- Republic of Ireland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scotland</masterLabel>
+            <translation><!-- Scotland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Africa</masterLabel>
+            <translation><!-- South Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spain</masterLabel>
+            <translation><!-- Spain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sweden</masterLabel>
+            <translation><!-- Sweden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Switzerland</masterLabel>
+            <translation><!-- Switzerland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkey</masterLabel>
+            <translation><!-- Turkey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United Kingdom</masterLabel>
+            <translation><!-- United Kingdom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United States</masterLabel>
+            <translation><!-- United States --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wales</masterLabel>
+            <translation><!-- Wales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Issue 1 Details --></label>
+        <name>Current_Issues__c</name>
+    </fields>
+    <fields>
+        <label><!-- EA CompanyID --></label>
+        <name>EnergyAcuity__Energy_Acuity_CompanyID__c</name>
+    </fields>
+    <fields>
+        <label><!-- EA Company Name --></label>
+        <name>EnergyAcuity__Energy_Acuity_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- EA Profile --></label>
+        <name>EnergyAcuity__Energy_Acuity_Profile__c</name>
+    </fields>
+    <fields>
+        <label><!-- EA Provinces --></label>
+        <name>EnergyAcuity__Provinces__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Sponsor --></label>
+        <name>Executive_Sponsor__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ExternalID --></label>
+        <name>ExternalID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is this Account a member of a Generation and Transmission Association? --></help>
+        <label><!-- G&amp;T Member --></label>
+        <name>G_T_Member__c</name>
+        <relationshipLabel><!-- Accounts (G&amp;T Member) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Investor Account --></label>
+        <name>Investor_Account__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Issue 1 --></label>
+        <name>Issue_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue 2 Details --></label>
+        <name>Issue_2_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue 2 --></label>
+        <name>Issue_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue 3 Details --></label>
+        <name>Issue_3_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue 3 --></label>
+        <name>Issue_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Landowner Ownership --></label>
+        <name>Landowner_Ownership__c</name>
+        <picklistValues>
+            <masterLabel>Co-Owner</masterLabel>
+            <translation><!-- Co-Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entity</masterLabel>
+            <translation><!-- Entity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sole Owner</masterLabel>
+            <translation><!-- Sole Owner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Landowner Type --></label>
+        <name>Landowner_Type__c</name>
+        <picklistValues>
+            <masterLabel>Farming Tenant</masterLabel>
+            <translation><!-- Farming Tenant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Land Agent</masterLabel>
+            <translation><!-- Land Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mineral Owner</masterLabel>
+            <translation><!-- Mineral Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surface Owner</masterLabel>
+            <translation><!-- Surface Owner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Any recent news, comment, feedback or other updates for the Account. --></help>
+        <label><!-- Latest Update --></label>
+        <name>Latest_Update__c</name>
+    </fields>
+    <fields>
+        <help><!-- # of Days since the Last Activity was logged on this Account, compared to the expected &apos;Contact Freq&apos; field. 
+If figure is Negative, it represents the # of Days this Account has been Neglected. --></help>
+        <label><!-- Neglected Accts Ticker --></label>
+        <name>Neglected_Accts_Ticker__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Projects Constructed by RES --></label>
+        <name>Number_of_Projects_Constructed_by_RES__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Opportunities Won --></label>
+        <name>Opportunities_Won__c</name>
+    </fields>
+    <fields>
+        <label><!-- PPA contract --></label>
+        <name>PPA_contract__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Parcel that this Landowner associated to. --></help>
+        <label><!-- Parcel --></label>
+        <name>Parcel__c</name>
+        <relationshipLabel><!-- Landowner Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent id Formula --></label>
+        <name>Parent_id_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Private? --></label>
+        <name>Private__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profile --></label>
+        <name>Profile__c</name>
+    </fields>
+    <fields>
+        <label><!-- RTO/Region --></label>
+        <name>RTO_Region__c</name>
+        <picklistValues>
+            <masterLabel>AESO</masterLabel>
+            <translation><!-- AESO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BASN</masterLabel>
+            <translation><!-- BASN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BC</masterLabel>
+            <translation><!-- BC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAISO</masterLabel>
+            <translation><!-- CAISO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALN</masterLabel>
+            <translation><!-- CALN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CALS</masterLabel>
+            <translation><!-- CALS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chile</masterLabel>
+            <translation><!-- Chile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DSW</masterLabel>
+            <translation><!-- DSW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERCOT</masterLabel>
+            <translation><!-- ERCOT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRCC</masterLabel>
+            <translation><!-- FRCC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HECO</masterLabel>
+            <translation><!-- HECO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IESO</masterLabel>
+            <translation><!-- IESO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IID (CA)</masterLabel>
+            <translation><!-- IID (CA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISO-NE (NEPOOL)</masterLabel>
+            <translation><!-- ISO-NE (NEPOOL) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAPP</masterLabel>
+            <translation><!-- MAPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISO</masterLabel>
+            <translation><!-- MISO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manitoba</masterLabel>
+            <translation><!-- Manitoba --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maritime</masterLabel>
+            <translation><!-- Maritime --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NYISO</masterLabel>
+            <translation><!-- NYISO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PJM</masterLabel>
+            <translation><!-- PJM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quebec</masterLabel>
+            <translation><!-- Quebec --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROCK</masterLabel>
+            <translation><!-- ROCK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERC</masterLabel>
+            <translation><!-- SERC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERC-E</masterLabel>
+            <translation><!-- SERC-E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERC-N</masterLabel>
+            <translation><!-- SERC-N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERC-SE</masterLabel>
+            <translation><!-- SERC-SE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SERC-W</masterLabel>
+            <translation><!-- SERC-W --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPP</masterLabel>
+            <translation><!-- SPP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saks Power</masterLabel>
+            <translation><!-- Saks Power --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WECC</masterLabel>
+            <translation><!-- WECC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- These include the Client&apos;s:
+Business goals,
+Vision,
+Financial Goals,
+Company Objectives --></help>
+        <label><!-- Client&apos;s Vision/Business Goals --></label>
+        <name>State_of_the_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- What&apos;s their Value Prop? Areas where RES may be vulnerable. --></help>
+        <label><!-- What are their Strengths? --></label>
+        <name>Strengths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technology Business Lines --></label>
+        <name>Technology_Business_Lines__c</name>
+        <picklistValues>
+            <masterLabel>Distributed</masterLabel>
+            <translation><!-- Distributed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services</masterLabel>
+            <translation><!-- Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solar</masterLabel>
+            <translation><!-- Solar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Storage</masterLabel>
+            <translation><!-- Storage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>T&amp;D</masterLabel>
+            <translation><!-- T&amp;D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wind</masterLabel>
+            <translation><!-- Wind --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- To help characterize the priority &amp; nature of RES&apos;s relationship with this Account.
+Previously called &apos;Tier&apos; --></help>
+        <label><!-- Type of Relationship --></label>
+        <name>Tier__c</name>
+        <picklistValues>
+            <masterLabel>BL Key</masterLabel>
+            <translation><!-- BL Key --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing Client</masterLabel>
+            <translation><!-- Existing Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Key</masterLabel>
+            <translation><!-- Global Key --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regional Key</masterLabel>
+            <translation><!-- Regional Key --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supplier</masterLabel>
+            <translation><!-- Supplier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target</masterLabel>
+            <translation><!-- Target --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total MWh --></label>
+        <name>Total_MWh__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of PPA --></label>
+        <name>Type_of_PPA__c</name>
+        <picklistValues>
+            <masterLabel>Corporate Buyer</masterLabel>
+            <translation><!-- Corporate Buyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPA Adviser</masterLabel>
+            <translation><!-- PPA Adviser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPA Trader/Broker</masterLabel>
+            <translation><!-- PPA Trader/Broker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Sector Buyer</masterLabel>
+            <translation><!-- Public Sector Buyer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What are their Weaknesses? --></label>
+        <name>What_are_their_Weaknesses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hierarchy Parents --></label>
+        <name>accHierarchy__Hierarchy_Parents__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Previous Hierarchy Level --></label>
+        <name>accHierarchy__On_Previous_Hierarchy_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Top Parent Id --></label>
+        <name>accHierarchy__TopParentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Child With Changes --></label>
+        <name>accHierarchy__hasChildWithChanges__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Open Opportunities --></label>
+        <name>of_Open_Opportunities__c</name>
+    </fields>
+    <fields>
+        <help><!-- This calculates the number of Opportunities that were won within the Current Fiscal Year --></help>
+        <label><!-- # of Opps Won Current FY --></label>
+        <name>of_Opps_Won_Current_FY__c</name>
+    </fields>
+    <layouts>
+        <layout>Account Layout New</layout>
+        <sections>
+            <label><!-- # of RES Opportunities currently Active &amp; Won --></label>
+            <section># of RES Opportunities currently Active &amp; Won</section>
+        </sections>
+        <sections>
+            <label><!-- Account Management Fields --></label>
+            <section>Account Management Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Current Issues --></label>
+            <section>Current Issues</section>
+        </sections>
+        <sections>
+            <label><!-- Current State of Business --></label>
+            <section>Current State of Business</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Competitor Account</layout>
+        <sections>
+            <label><!-- Competor Profile --></label>
+            <section>Competor Profile</section>
+        </sections>
+        <sections>
+            <label><!-- Relevant News --></label>
+            <section>Relevant News</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Landowner Account Layout</layout>
+        <sections>
+            <label><!-- Landowner Specific Fields --></label>
+            <section>Landowner Specific Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Market &amp; Policy Layout</layout>
+        <sections>
+            <label><!-- Market &amp; Policy Issues --></label>
+            <section>Market &amp; Policy Issues</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>T&amp;D Account Layout</layout>
+        <sections>
+            <label><!-- Account Management Fields --></label>
+            <section>Account Management Fields</section>
+        </sections>
+        <sections>
+            <label><!-- KAM Fields --></label>
+            <section>KAM Fields</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Competitor --></label>
+        <name>Competitor</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Landowner --></label>
+        <name>Landowner</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Is this a Prospective Client, Asset Owner, or Potential Offtaker? --></description>
+        <label><!-- Prospect / Client Account --></label>
+        <name>Standard_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Is this Account a Partner, Vendor, or entity that we are NOT actively selling to? --></description>
+        <label><!-- Supplier Account --></label>
+        <name>Supplier_Partnership_Account</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please Enter Account Type in order to save this record. --></errorMessage>
+        <name>Account_Type_is_Entered</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Bloomberg_News --></label>
+        <name>Bloomberg_News</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Billing --></label>
+        <name>EnergyAcuity__Billing</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Energy_Acuity --></label>
+        <name>EnergyAcuity__Energy_Acuity</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Import_Energy_Acuity_Company_Information --></label>
+        <name>EnergyAcuity__Import_Energy_Acuity_Company_Information</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Import_Energy_Acuity_Contacts --></label>
+        <name>EnergyAcuity__Import_Energy_Acuity_Contacts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- IHS_News --></label>
+        <name>IHS_News</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- KAM_Page --></label>
+        <name>KAM_Page</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Meeting_History --></label>
+        <name>Meeting_History</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Merge --></label>
+        <name>Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Open_Tasks_Activities --></label>
+        <name>Open_Tasks_Activities</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- REfocus_com_News --></label>
+        <name>REfocus_com_News</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Email_Docs --></label>
+        <name>SDOC__Email_Docs</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- S_Docs --></label>
+        <name>SDOC__S_Docs</name>
+    </webLinks>
+    <webLinks>
+        <label>Show Map</label>
+        <name>SIMBingMapsAccountButton</name>
+    </webLinks>
+    <webLinks>
+        <label>Show Map</label>
+        <name>SIMBingMapsAccountLink</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Button_View_Hierarchy --></label>
+        <name>accHierarchy__Button_View_Hierarchy</name>
+    </webLinks>
+    <workflowTasks>
+        <description><!-- 1 day after an account with over $100 in revenue is created, Raheleh Folkerts will send a introduction e-mail to account contact. --></description>
+        <name>Follow_up_with_New_Account</name>
+        <subject><!-- Follow-up with New Account --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

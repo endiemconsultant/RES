@@ -1,0 +1,10 @@
+<apex:page standardController="Opportunity" showHeader="false" sidebar="false">
+<apex:form >
+<center>
+    <apex:inputField value="{!Opportunity.Price_Request__c}" /><br />
+   <apex:commandButton action="{!Save}" onclick="javascript:window.close();" 
+   value="Save" />
+   <apex:commandButton action="{!Cancel}" onclick="javascript:window.close();" value="Cancel" />
+</center>
+</apex:form>
+</apex:page>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Proposals/RFP Support</name>
+    <queueMembers>
+        <users>
+            <user>justin.rickard@res-group.com</user>
+            <user>kyle.love@res-group.com</user>
+            <user>marketing.support@res-group.com</user>
+            <user>mickie.courtney@res-group.com</user>
+            <user>raheleh.folkerts@res-group.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

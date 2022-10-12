@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Account_Team</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Role__c</fullName>
+        <externalId>false</externalId>
+        <label>Role</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Account Owner</fullName>
+                    <default>false</default>
+                    <label>Account Owner</label>
+                </value>
+                <value>
+                    <fullName>Business Development</fullName>
+                    <default>false</default>
+                    <label>Business Development</label>
+                </value>
+                <value>
+                    <fullName>Construction</fullName>
+                    <default>false</default>
+                    <label>Construction</label>
+                </value>
+                <value>
+                    <fullName>Construction Lead</fullName>
+                    <default>false</default>
+                    <label>Construction Lead</label>
+                </value>
+                <value>
+                    <fullName>Contracts Team</fullName>
+                    <default>false</default>
+                    <label>Contracts Team</label>
+                </value>
+                <value>
+                    <fullName>Development</fullName>
+                    <default>false</default>
+                    <label>Development</label>
+                </value>
+                <value>
+                    <fullName>Development Lead</fullName>
+                    <default>false</default>
+                    <label>Development Lead</label>
+                </value>
+                <value>
+                    <fullName>Engineering - Civil</fullName>
+                    <default>false</default>
+                    <label>Engineering - Civil</label>
+                </value>
+                <value>
+                    <fullName>Engineering - Electrical</fullName>
+                    <default>false</default>
+                    <label>Engineering - Electrical</label>
+                </value>
+                <value>
+                    <fullName>Engineering - Mechanical</fullName>
+                    <default>false</default>
+                    <label>Engineering - Mechanical</label>
+                </value>
+                <value>
+                    <fullName>Engineering - SCADA</fullName>
+                    <default>false</default>
+                    <label>Engineering - SCADA</label>
+                </value>
+                <value>
+                    <fullName>Engineering - Structural</fullName>
+                    <default>false</default>
+                    <label>Engineering - Structural</label>
+                </value>
+                <value>
+                    <fullName>Engineering - Survey</fullName>
+                    <default>false</default>
+                    <label>Engineering - Survey</label>
+                </value>
+                <value>
+                    <fullName>Estimator</fullName>
+                    <default>false</default>
+                    <label>Estimator</label>
+                </value>
+                <value>
+                    <fullName>Executive Champion</fullName>
+                    <default>false</default>
+                    <label>Executive Champion</label>
+                </value>
+                <value>
+                    <fullName>Finance</fullName>
+                    <default>false</default>
+                    <label>Finance</label>
+                </value>
+                <value>
+                    <fullName>HSQE</fullName>
+                    <default>false</default>
+                    <label>HSQE</label>
+                </value>
+                <value>
+                    <fullName>IT</fullName>
+                    <default>false</default>
+                    <label>IT</label>
+                </value>
+                <value>
+                    <fullName>Legal</fullName>
+                    <default>false</default>
+                    <label>Legal</label>
+                </value>
+                <value>
+                    <fullName>Operation Maintenance</fullName>
+                    <default>false</default>
+                    <label>Operation Maintenance</label>
+                </value>
+                <value>
+                    <fullName>Opportunity Owner</fullName>
+                    <default>false</default>
+                    <label>Opportunity Owner</label>
+                </value>
+                <value>
+                    <fullName>Permitting - Property Manager</fullName>
+                    <default>false</default>
+                    <label>Permitting - Property Manager</label>
+                </value>
+                <value>
+                    <fullName>PM - Construction</fullName>
+                    <default>false</default>
+                    <label>PM - Construction</label>
+                </value>
+                <value>
+                    <fullName>PM - Development</fullName>
+                    <default>false</default>
+                    <label>PM - Development</label>
+                </value>
+                <value>
+                    <fullName>Procurement</fullName>
+                    <default>false</default>
+                    <label>Procurement</label>
+                </value>
+                <value>
+                    <fullName>Proposal Manager</fullName>
+                    <default>false</default>
+                    <label>Proposal Manager</label>
+                </value>
+                <value>
+                    <fullName>Technical Team</fullName>
+                    <default>false</default>
+                    <label>Technical Team</label>
+                </value>
+                <value>
+                    <fullName>Transmission Team</fullName>
+                    <default>false</default>
+                    <label>Transmission Team</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Team_Member__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Team Member</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>Account_Team</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Account Team Member</label>
+    <nameField>
+        <displayFormat>{0000}</displayFormat>
+        <label>Account Team Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Account Team Members</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Edit_Role</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Edit Role</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>https://res-group.lightning.force.com/lightning/r/Account_Team__c/{!Account_Team__c.Id}/edit</url>
+    </webLinks>
+</CustomObject>

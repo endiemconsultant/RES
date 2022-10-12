@@ -1,0 +1,7 @@
+<apex:page standardController="RES_Projects__c">
+	<style>
+        body{background:{!IF($User.UIThemeDisplayed=='Theme3','#ffffff;','#f3f3ec;')}}
+    </style>
+    <c:SIMBingMaps latitude="{!RES_Projects__c.RES_Latitude__c}" longitude="{!RES_Projects__c.RES_Longitude__c}"
+    />
+</apex:page>

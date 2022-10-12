@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>https://appexchange.salesforce.com/servlet/servlet.FileDownload?file=00P3A00000YKPUaUAP</description>
+    <disableProtocolSecurity>false</disableProtocolSecurity>
+    <isActive>true</isActive>
+    <url>https://res-group--htppv.na46.visual.force.com</url>
+</RemoteSiteSetting>

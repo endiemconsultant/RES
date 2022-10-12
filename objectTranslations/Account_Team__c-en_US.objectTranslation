@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Team Member</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account Team Members</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Account Team Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+        <picklistValues>
+            <masterLabel>Account Owner</masterLabel>
+            <translation><!-- Account Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Development</masterLabel>
+            <translation><!-- Business Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction Lead</masterLabel>
+            <translation><!-- Construction Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contracts Team</masterLabel>
+            <translation><!-- Contracts Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Development</masterLabel>
+            <translation><!-- Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Development Lead</masterLabel>
+            <translation><!-- Development Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering - Civil</masterLabel>
+            <translation><!-- Engineering - Civil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering - Electrical</masterLabel>
+            <translation><!-- Engineering - Electrical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering - Mechanical</masterLabel>
+            <translation><!-- Engineering - Mechanical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering - SCADA</masterLabel>
+            <translation><!-- Engineering - SCADA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering - Structural</masterLabel>
+            <translation><!-- Engineering - Structural --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering - Survey</masterLabel>
+            <translation><!-- Engineering - Survey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Estimator</masterLabel>
+            <translation><!-- Estimator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Champion</masterLabel>
+            <translation><!-- Executive Champion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HSQE</masterLabel>
+            <translation><!-- HSQE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation><!-- IT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operation Maintenance</masterLabel>
+            <translation><!-- Operation Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Owner</masterLabel>
+            <translation><!-- Opportunity Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM - Construction</masterLabel>
+            <translation><!-- PM - Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM - Development</masterLabel>
+            <translation><!-- PM - Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permitting - Property Manager</masterLabel>
+            <translation><!-- Permitting - Property Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procurement</masterLabel>
+            <translation><!-- Procurement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proposal Manager</masterLabel>
+            <translation><!-- Proposal Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Team</masterLabel>
+            <translation><!-- Technical Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transmission Team</masterLabel>
+            <translation><!-- Transmission Team --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Team Member --></label>
+        <name>Team_Member__c</name>
+        <relationshipLabel><!-- Account Team Members --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Account Team Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Edit_Role --></label>
+        <name>Edit_Role</name>
+    </webLinks>
+</CustomObjectTranslation>

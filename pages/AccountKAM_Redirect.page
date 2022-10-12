@@ -1,0 +1,14 @@
+<apex:page standardController="Account"  sidebar="false" showHeader="false" standardStylesheets="false" applyBodyTag="false" applyHtmlTag="false" showQuickActionVfHeader="false">
+     <script>
+        if(typeof sforce !== 'undefined' && sforce !== null && '{!$User.UIThemeDisplayed}' === 'Theme4d'){
+           window.open('https://res-group--c.eu34.visual.force.com/apex/Account_KAM?id={!Account.Id}', '_blank', 'width=800, height=780, toolbar=1,menubar=1,location=1,status=1,scrollbars=1');
+            <!-- '{!URLFOR($Action.Account.View, account.Id)}';-->
+        } else {
+             <!--sforce.one.navigateToURL('https://res-group--c.eu34.visual.force.com/apex/AccountKAM_Test');-->
+            window.open("https://res-group--c.eu34.visual.force.com/apex/Account_KAM?id={!Id}");
+        }
+         sforce.one.navigateToSObject('{!Account.Id}');
+
+    </script> 
+    
+</apex:page>

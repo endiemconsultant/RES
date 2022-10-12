@@ -1,0 +1,8 @@
+<apex:page standardController="Account">
+
+
+    <apex:relatedList list="Opportunities" />
+
+
+
+</apex:page>
